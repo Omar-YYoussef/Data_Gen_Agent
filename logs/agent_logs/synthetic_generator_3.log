@@ -1,0 +1,428 @@
+2025-09-06 23:39:54,775 - agent.synthetic_generator_3 - INFO - Starting execution of synthetic_generator_3
+2025-09-06 23:39:54,776 - agent.synthetic_generator_3 - INFO - Agent 3 generating triplets data for 79 topics
+2025-09-06 23:39:54,777 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (1/79): ÃÌåÒÉ ÇááíÒÑ ÇáãÓÊÎÏãÉ İí ÇáİíãÊæ áíÒß ÈãÓÊÔİì ÈÇäßæß
+2025-09-06 23:39:54,777 - agent.synthetic_generator_3 - ERROR - Synthetic data generation failed for agent 3: GeminiService.generate_synthetic_data() missing 1 required positional argument: 'language'
+2025-09-06 23:39:54,778 - agent.synthetic_generator_3 - ERROR - Error in synthetic_generator_3 after 0.00s: GeminiService.generate_synthetic_data() missing 1 required positional argument: 'language'
+Traceback (most recent call last):
+  File "D:\Learn\web_data_generation_pipeline\agents\base_agent.py", line 83, in run
+    result = self.execute(input_data, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\agents\synthetic_data_generator_agent.py", line 45, in execute
+    generated_items = gemini_service.generate_synthetic_data(topic, data_type)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GeminiService.generate_synthetic_data() missing 1 required positional argument: 'language'
+2025-09-07 00:24:55,983 - agent.synthetic_generator_3 - INFO - Starting execution of synthetic_generator_3
+2025-09-07 00:24:55,984 - agent.synthetic_generator_3 - INFO - Agent 3 generating triplets data for 76 topics in ar
+2025-09-07 00:24:55,984 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (1/76): ÏŞÉ æÖÚ ÇáÚáÇãÇÊ Úáì ÇáãäÊÌÇÊ ÇáÚÔÈíÉ
+2025-09-07 00:25:01,058 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÏŞÉ æÖÚ ÇáÚáÇãÇÊ Úáì ÇáãäÊÌÇÊ ÇáÚÔÈíÉ
+2025-09-07 00:25:01,059 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (2/76): ÇááæÇÆÍ ÇáÍßæãíÉ ÇáãäÙãÉ áØÈ ÇáÃÚÔÇÈ
+2025-09-07 00:25:07,018 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÇááæÇÆÍ ÇáÍßæãíÉ ÇáãäÙãÉ áØÈ ÇáÃÚÔÇÈ
+2025-09-07 00:25:07,018 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (3/76): ÏæÑ ÇáãÑßÈÇÊ ÇáäÈÇÊíÉ İí ÕäÇÚÉ ÇáÃÏæíÉ ÇáÍÏíËÉ
+2025-09-07 00:25:13,843 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÏæÑ ÇáãÑßÈÇÊ ÇáäÈÇÊíÉ İí ÕäÇÚÉ ÇáÃÏæíÉ ÇáÍÏíËÉ
+2025-09-07 00:25:13,843 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (4/76): ÇáÊÏÇæí ÇáĞÇÊí ÈÇáÃÚÔÇÈ áÏì ÇáÍíæÇäÇÊ
+2025-09-07 00:25:20,225 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÇáÊÏÇæí ÇáĞÇÊí ÈÇáÃÚÔÇÈ áÏì ÇáÍíæÇäÇÊ
+2025-09-07 00:25:20,225 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (5/76): ÊØÈíŞÇÊ ÇáÈÇÈæäÌ ÇáÚáÇÌíÉ
+2025-09-07 00:25:23,553 - agent.synthetic_generator_3 - ERROR - Synthetic data generation failed for agent 3: Failed to generate text after 3 attempts: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 36
+}
+]
+2025-09-07 00:25:23,554 - agent.synthetic_generator_3 - ERROR - Error in synthetic_generator_3 after 27.57s: Failed to generate text after 3 attempts: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 36
+}
+]
+Traceback (most recent call last):
+  File "D:\Learn\web_data_generation_pipeline\services\gemini_service.py", line 35, in generate_text
+    response = self.model.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\google\generativeai\generative_models.py", line 243, in generate_content
+    response = self._client.generate_content(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 566, in generate_content
+    response = rpc(
+               ^^^^
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 36
+}
+]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Learn\web_data_generation_pipeline\agents\base_agent.py", line 83, in run
+    result = self.execute(input_data, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\agents\synthetic_data_generator_agent.py", line 52, in execute
+    generated_items = gemini_service.generate_synthetic_data(topic, data_type, language)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\services\gemini_service.py", line 256, in generate_synthetic_data
+    response = self.generate_text(prompt, system_instruction)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\services\gemini_service.py", line 44, in generate_text
+    raise Exception(f"Failed to generate text after {max_retries} attempts: {e}")
+Exception: Failed to generate text after 3 attempts: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 36
+}
+]
+2025-09-07 01:02:30,594 - agent.synthetic_generator_3 - INFO - Starting execution of synthetic_generator_3
+2025-09-07 01:02:30,594 - agent.synthetic_generator_3 - INFO - Agent 3 generating triplets data for 141 topics in ar
+2025-09-07 01:02:30,594 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (1/141): ÎÏãÇÊ ÇáØÈ ÇáÃæáí
+2025-09-07 01:02:35,934 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÎÏãÇÊ ÇáØÈ ÇáÃæáí
+2025-09-07 01:02:35,934 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (2/141): ÇáÏİÇÚ Úä ÇáÃØİÇá İí ÇáÇÌÊãÇÚÇÊ ÇáãÏÑÓíÉ æÇáŞÇäæäíÉ
+2025-09-07 01:02:42,372 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÇáÏİÇÚ Úä ÇáÃØİÇá İí ÇáÇÌÊãÇÚÇÊ ÇáãÏÑÓíÉ æÇáŞÇäæäíÉ
+2025-09-07 01:02:42,372 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (3/141): ÈÑÇãÌ ÇáæŞÇíÉ ãä ÊÚÇØí ÇáãæÇÏ ÇáãÎÏÑÉ
+2025-09-07 01:02:46,052 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÈÑÇãÌ ÇáæŞÇíÉ ãä ÊÚÇØí ÇáãæÇÏ ÇáãÎÏÑÉ
+2025-09-07 01:02:46,052 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (4/141): ÅÒÇáÉ ÇáãÎÇØ ãä İã æÃäİ ÍÏíËí ÇáæáÇÏÉ
+2025-09-07 01:03:03,950 - agent.synthetic_generator_3 - ERROR - Synthetic data generation failed for agent 3: Failed to generate text after 9 attempts across all API keys: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 56
+}
+]
+2025-09-07 01:03:03,950 - agent.synthetic_generator_3 - ERROR - Error in synthetic_generator_3 after 33.36s: Failed to generate text after 9 attempts across all API keys: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 56
+}
+]
+Traceback (most recent call last):
+  File "D:\Learn\web_data_generation_pipeline\services\gemini_service.py", line 49, in generate_text
+    response = self.model.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\google\generativeai\generative_models.py", line 243, in generate_content
+    response = self._client.generate_content(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 566, in generate_content
+    response = rpc(
+               ^^^^
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 56
+}
+]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Learn\web_data_generation_pipeline\agents\base_agent.py", line 83, in run
+    result = self.execute(input_data, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\agents\synthetic_data_generator_agent.py", line 52, in execute
+    generated_items = gemini_service.generate_synthetic_data(topic, data_type, language)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\services\gemini_service.py", line 276, in generate_synthetic_data
+    response = self.generate_text(prompt, system_instruction)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\services\gemini_service.py", line 64, in generate_text
+    raise Exception(f"Failed to generate text after {max_retries * len(self.api_keys)} attempts across all API keys: {e}")
+Exception: Failed to generate text after 9 attempts across all API keys: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 56
+}
+]
+2025-09-07 13:49:37,293 - agent.synthetic_generator_3 - INFO - Starting execution of synthetic_generator_3
+2025-09-07 13:49:37,294 - agent.synthetic_generator_3 - INFO - Agent 3 generating Triplets data for 11 topics in ar (Description: (Query, Positive, Negative) (and mix them between (question query and answers in positiv and negative) or 3 sentences in query, posituve and negative))
+2025-09-07 13:49:37,295 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (1/11): ÊÍáíá ÇáÕæÑ ÇáØÈíÉ ÈÇáĞßÇÁ ÇáÇÕØäÇÚí áÊÔÎíÕ ÇáÃãÑÇÖ
+2025-09-07 13:49:37,295 - agent.synthetic_generator_3 - ERROR - Synthetic data generation failed for agent 3: GeminiService.generate_synthetic_data() takes 4 positional arguments but 5 were given
+2025-09-07 13:49:37,296 - agent.synthetic_generator_3 - ERROR - Error in synthetic_generator_3 after 0.00s: GeminiService.generate_synthetic_data() takes 4 positional arguments but 5 were given
+Traceback (most recent call last):
+  File "D:\Learn\web_data_generation_pipeline\agents\base_agent.py", line 83, in run
+    result = self.execute(input_data, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\agents\synthetic_data_generator_agent.py", line 56, in execute
+    generated_items = gemini_service.generate_synthetic_data(topic, data_type, language, description)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GeminiService.generate_synthetic_data() takes 4 positional arguments but 5 were given
+2025-09-07 13:57:04,300 - agent.synthetic_generator_3 - INFO - Starting execution of synthetic_generator_3
+2025-09-07 13:57:04,300 - agent.synthetic_generator_3 - INFO - Agent 3 generating Triplets data for 11 topics in ar (Description: (Query, Positive, Negative) (and mix them between (question query and answers in positiv and negative) or 3 sentences in query, posituve and negative))
+2025-09-07 13:57:04,301 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (1/11): ÂáíÉ Úãá ÇáÌåÇÒ ÇáãäÇÚí İí ÇáÊÚÑİ Úáì ÇáãÓÊÖÏÇÊ
+2025-09-07 13:57:15,094 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÂáíÉ Úãá ÇáÌåÇÒ ÇáãäÇÚí İí ÇáÊÚÑİ Úáì ÇáãÓÊÖÏÇÊ
+2025-09-07 13:57:15,094 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (2/11): Êßæíä ÇáÃÌÓÇã ÇáãÖÇÏÉ ÇáĞÇÊíÉ
+2025-09-07 13:57:21,835 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: Êßæíä ÇáÃÌÓÇã ÇáãÖÇÏÉ ÇáĞÇÊíÉ
+2025-09-07 13:57:21,835 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (3/11): ØÑŞ ÊÔÎíÕ ÇÖØÑÇÈÇÊ ÇáãäÇÚÉ ÇáĞÇÊíÉ
+2025-09-07 13:57:30,092 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ØÑŞ ÊÔÎíÕ ÇÖØÑÇÈÇÊ ÇáãäÇÚÉ ÇáĞÇÊíÉ
+2025-09-07 13:57:30,093 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (4/11): ãÈÇÏÆ ÚáÇÌ ÇÖØÑÇÈÇÊ ÇáãäÇÚÉ ÇáĞÇÊíÉ
+2025-09-07 13:57:36,619 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ãÈÇÏÆ ÚáÇÌ ÇÖØÑÇÈÇÊ ÇáãäÇÚÉ ÇáĞÇÊíÉ
+2025-09-07 13:57:36,619 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (5/11): ÂáíÉ Úãá ãÑÖ ÇáĞÆÈÉ ÇáÍãÇãíÉ ÇáÌåÇÒíÉ (SLE)
+2025-09-07 13:57:47,372 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÂáíÉ Úãá ãÑÖ ÇáĞÆÈÉ ÇáÍãÇãíÉ ÇáÌåÇÒíÉ (SLE)
+2025-09-07 13:57:47,372 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (6/11): ÇáÚæÇãá ÇáãÄÏíÉ áÊİÇŞã ÃÚÑÇÖ ÇáĞÆÈÉ ÇáÍãÑÇÁ
+2025-09-07 13:58:13,995 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÇáÚæÇãá ÇáãÄÏíÉ áÊİÇŞã ÃÚÑÇÖ ÇáĞÆÈÉ ÇáÍãÑÇÁ
+2025-09-07 13:58:15,996 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (7/11): ÏæÑ ÇáÃÌÓÇã ÇáãÖÇÏÉ ááäæÇÉ İí ÊÔÎíÕ SLE
+2025-09-07 13:58:25,022 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÏæÑ ÇáÃÌÓÇã ÇáãÖÇÏÉ ááäæÇÉ İí ÊÔÎíÕ SLE
+2025-09-07 13:58:25,023 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (8/11): ÇáÃÚÑÇÖ ÇáÓÑíÑíÉ ÇáÔÇÆÚÉ ááĞÆÈÉ ÇáÍãÑÇÁ
+2025-09-07 13:58:33,245 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÇáÃÚÑÇÖ ÇáÓÑíÑíÉ ÇáÔÇÆÚÉ ááĞÆÈÉ ÇáÍãÑÇÁ
+2025-09-07 13:58:33,245 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (9/11): ÃÓÇáíÈ ÊÔÎíÕ ÇáĞÆÈÉ ÇáÍãÇãíÉ ÇáÌåÇÒíÉ
+2025-09-07 13:58:40,378 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÃÓÇáíÈ ÊÔÎíÕ ÇáĞÆÈÉ ÇáÍãÇãíÉ ÇáÌåÇÒíÉ
+2025-09-07 13:58:40,378 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (10/11): ÇÓÊÎÏÇã ãËÈØÇÊ ÇáãäÇÚÉ æÇáÓÊíÑæíÏÇÊ İí ÚáÇÌ SLE
+2025-09-07 13:58:48,646 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÇÓÊÎÏÇã ãËÈØÇÊ ÇáãäÇÚÉ æÇáÓÊíÑæíÏÇÊ İí ÚáÇÌ SLE
+2025-09-07 13:58:48,646 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (11/11): ÅÑÔÇÏÇÊ ÇáÑÚÇíÉ ÇáĞÇÊíÉ áãÑÖì ÇáĞÆÈÉ ÇáÍãÑÇÁ
+2025-09-07 13:58:57,422 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÅÑÔÇÏÇÊ ÇáÑÚÇíÉ ÇáĞÇÊíÉ áãÑÖì ÇáĞÆÈÉ ÇáÍãÑÇÁ
+2025-09-07 13:58:59,423 - agent.synthetic_generator_3 - INFO - Agent 3 completed: 55 data points generated
+2025-09-07 13:58:59,423 - agent.synthetic_generator_3 - INFO - Success rate: 11/11 topics (100.0%)
+2025-09-07 13:58:59,425 - agent.synthetic_generator_3 - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\synthetic_data\generated_data_3.json
+2025-09-07 13:58:59,426 - agent.synthetic_generator_3 - INFO - Completed execution of synthetic_generator_3 in 115.13s
+2025-09-07 17:15:06,374 - agent.synthetic_generator_3 - INFO - Starting execution of synthetic_generator_3
+2025-09-07 17:15:06,375 - agent.synthetic_generator_3 - INFO - Agent 3 generating hard negative samples data for 15 topics in ar (Description: (anchore, positive, and 3 hard negatives). mix them between short negatives and positive samples and long negative and positive samples)
+2025-09-07 17:15:06,376 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (1/15): ÃäæÇÚ ÇáÃÓãÏÉ ÇáÓÇÆáÉ ÇáÒÑÇÚíÉ
+2025-09-07 17:15:32,175 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÃäæÇÚ ÇáÃÓãÏÉ ÇáÓÇÆáÉ ÇáÒÑÇÚíÉ
+2025-09-07 17:15:32,175 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (2/15): ÈĞæÑ ÇáÃÚáÇİ ÇáÒÑÇÚíÉ
+2025-09-07 17:15:47,201 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÈĞæÑ ÇáÃÚáÇİ ÇáÒÑÇÚíÉ
+2025-09-07 17:15:47,201 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (3/15): ÊÎØíØ ÇáÕÍÉ ÇáÈíØÑíÉ ááãæÇÔí
+2025-09-07 17:15:59,136 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÊÎØíØ ÇáÕÍÉ ÇáÈíØÑíÉ ááãæÇÔí
+2025-09-07 17:15:59,137 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (4/15): ÊŞííã ÇáãÎÇØÑ ÇáÕÍíÉ İí ÇáãÇÔíÉ
+2025-09-07 17:16:11,680 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÊŞííã ÇáãÎÇØÑ ÇáÕÍíÉ İí ÇáãÇÔíÉ
+2025-09-07 17:16:11,680 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (5/15): ÇáÃãä ÇáÍíæí İí ãÒÇÑÚ ÇáÃÈŞÇÑ ÇáÍáæÈ æÇááÍãíÉ
+2025-09-07 17:16:38,236 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÇáÃãä ÇáÍíæí İí ãÒÇÑÚ ÇáÃÈŞÇÑ ÇáÍáæÈ æÇááÍãíÉ
+2025-09-07 17:16:38,236 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (6/15): ÅÏÇÑÉ ÇáÓÑÓæÈ æÊÛĞíÉ ÇáÚÌæá
+2025-09-07 17:16:57,846 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÅÏÇÑÉ ÇáÓÑÓæÈ æÊÛĞíÉ ÇáÚÌæá
+2025-09-07 17:16:59,847 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (7/15): ÅÏÇÑÉ ÇáÅÓåÇá İí ÇáÚÌæá
+2025-09-07 17:17:16,476 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÅÏÇÑÉ ÇáÅÓåÇá İí ÇáÚÌæá
+2025-09-07 17:17:16,476 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (8/15): ãÔÇßá ÇáæáÇÏÉ (ÚÓÑ ÇáæáÇÏÉ) İí ÇáÃÈŞÇÑ
+2025-09-07 17:17:40,994 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ãÔÇßá ÇáæáÇÏÉ (ÚÓÑ ÇáæáÇÏÉ) İí ÇáÃÈŞÇÑ
+2025-09-07 17:17:40,994 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (9/15): ÇáÊåÇÈ ÇáÌáÏ ÇáÑŞãí İí ÇáÃÈŞÇÑ
+2025-09-07 17:18:00,565 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÇáÊåÇÈ ÇáÌáÏ ÇáÑŞãí İí ÇáÃÈŞÇÑ
+2025-09-07 17:18:00,565 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (10/15): ßÔİ ÇáÔÈŞ (ÇáÍÑÇÑÉ) İí ÇáÃÈŞÇÑ ÇáÍáæÈ
+2025-09-07 17:18:18,104 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ßÔİ ÇáÔÈŞ (ÇáÍÑÇÑÉ) İí ÇáÃÈŞÇÑ ÇáÍáæÈ
+2025-09-07 17:18:18,104 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (11/15): ÊÔÎíÕ ÇáÍãá İí ÇáÃÈŞÇÑ
+2025-09-07 17:18:35,016 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÊÔÎíÕ ÇáÍãá İí ÇáÃÈŞÇÑ
+2025-09-07 17:18:37,018 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (12/15): ãŞÇæãÉ ãÖÇÏÇÊ ÇáãíßÑæÈÇÊ İí ÇáãæÇÔí
+2025-09-07 17:18:56,027 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ãŞÇæãÉ ãÖÇÏÇÊ ÇáãíßÑæÈÇÊ İí ÇáãæÇÔí
+2025-09-07 17:18:56,028 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (13/15): ãßÇİÍÉ ÇáÏíÏÇä ÇáßÈÏíÉ İí ÇáÃÈŞÇÑ
+2025-09-07 17:19:08,402 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ãßÇİÍÉ ÇáÏíÏÇä ÇáßÈÏíÉ İí ÇáÃÈŞÇÑ
+2025-09-07 17:19:08,402 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (14/15): ÊÕãíã æÅÏÇÑÉ ãÓÇßä ÇáÚÌæá
+2025-09-07 17:19:23,454 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÊÕãíã æÅÏÇÑÉ ãÓÇßä ÇáÚÌæá
+2025-09-07 17:19:23,454 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (15/15): ÊÒÇãä ÇáÔÈŞ İí ŞØÚÇä ÇáÃÈŞÇÑ
+2025-09-07 17:19:40,346 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÊÒÇãä ÇáÔÈŞ İí ŞØÚÇä ÇáÃÈŞÇÑ
+2025-09-07 17:19:40,347 - agent.synthetic_generator_3 - INFO - Agent 3 completed: 75 data points generated
+2025-09-07 17:19:40,347 - agent.synthetic_generator_3 - INFO - Success rate: 15/15 topics (100.0%)
+2025-09-07 17:19:40,349 - agent.synthetic_generator_3 - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\synthetic_data\generated_data_3.json
+2025-09-07 17:19:40,349 - agent.synthetic_generator_3 - INFO - Completed execution of synthetic_generator_3 in 273.98s
+2025-09-07 17:33:27,971 - agent.synthetic_generator_3 - INFO - Starting execution of synthetic_generator_3
+2025-09-07 17:33:27,972 - agent.synthetic_generator_3 - INFO - Agent 3 generating triplets data for 7 topics in ar (Description: The dataset consists of (anchore, positive and 3 negatives (negative_1, negative_2, negative_3)) columns. The anchore is a sentence or a quewstion. mix between short and long sentences.)
+2025-09-07 17:33:27,972 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (1/7): ÇáÒÑÇÚÉ ÇáãÍãíÉ áÊÍÓíä ÌæÏÉ ÇáãÍÇÕíá
+2025-09-07 17:33:40,461 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÇáÒÑÇÚÉ ÇáãÍãíÉ áÊÍÓíä ÌæÏÉ ÇáãÍÇÕíá
+2025-09-07 17:33:40,461 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (2/7): ÊØæíÑ ÇáäÈÇÊÇÊ ÇáãÚÏáÉ æÑÇËíÇğ áãŞÇæãÉ ÇáÂİÇÊ
+2025-09-07 17:33:51,385 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÊØæíÑ ÇáäÈÇÊÇÊ ÇáãÚÏáÉ æÑÇËíÇğ áãŞÇæãÉ ÇáÂİÇÊ
+2025-09-07 17:33:51,385 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (3/7): ÊÍÓíä ßİÇÁÉ ÇÓÊÎÏÇã ÇáãÇÁ İí ÇáÒÑÇÚÉ
+2025-09-07 17:34:04,181 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÊÍÓíä ßİÇÁÉ ÇÓÊÎÏÇã ÇáãÇÁ İí ÇáÒÑÇÚÉ
+2025-09-07 17:34:04,182 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (4/7): ÇÓÊÎÏÇã ÇáÃÓãÏÉ ÇáÚÖæíÉ ÇáãÓÊÏÇãÉ
+2025-09-07 17:34:32,781 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÇÓÊÎÏÇã ÇáÃÓãÏÉ ÇáÚÖæíÉ ÇáãÓÊÏÇãÉ
+2025-09-07 17:34:32,781 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (5/7): ÇáÊÍßã ÇáÈíæáæÌí İí ÇáÂİÇÊ ÇáÒÑÇÚíÉ
+2025-09-07 17:34:43,915 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÇáÊÍßã ÇáÈíæáæÌí İí ÇáÂİÇÊ ÇáÒÑÇÚíÉ
+2025-09-07 17:34:43,915 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (6/7): ÇáÒÑÇÚÉ ÇáãÊßÇãáÉ áãßÇİÍÉ ÇáÂİÇÊ
+2025-09-07 17:34:56,285 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÇáÒÑÇÚÉ ÇáãÊßÇãáÉ áãßÇİÍÉ ÇáÂİÇÊ
+2025-09-07 17:34:58,287 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (7/7): ÇáãÑÇŞÈÉ ÇáÏŞíŞÉ ááÙÑæİ ÇáÈíÆíÉ İí ÇáÒÑÇÚÉ
+2025-09-07 17:35:07,258 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÇáãÑÇŞÈÉ ÇáÏŞíŞÉ ááÙÑæİ ÇáÈíÆíÉ İí ÇáÒÑÇÚÉ
+2025-09-07 17:35:07,259 - agent.synthetic_generator_3 - INFO - Agent 3 completed: 35 data points generated
+2025-09-07 17:35:07,259 - agent.synthetic_generator_3 - INFO - Success rate: 7/7 topics (100.0%)
+2025-09-07 17:35:07,260 - agent.synthetic_generator_3 - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\synthetic_data\generated_data_3.json
+2025-09-07 17:35:07,261 - agent.synthetic_generator_3 - INFO - Completed execution of synthetic_generator_3 in 99.29s
+2025-09-07 20:46:12,386 - agent.synthetic_generator_3 - INFO - Starting execution of synthetic_generator_3
+2025-09-07 20:46:12,387 - agent.synthetic_generator_3 - INFO - Agent 3 generating n-plet data for 6 topics in Egyptian Arabic (Description: The dataset consists of (anchore, positive and 3 negatives (negative_1, negative_2, negative_3)) columns. The anchore is a sentence or a quewstion. mix between short and long sentences.)
+2025-09-07 20:46:12,387 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (1/6): ãŞÇÑäÉ äãØ ÍÑßÉ ÇáÑí ÇáÎØí ÈÇáãÍæÑí
+2025-09-07 20:46:25,355 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ãŞÇÑäÉ äãØ ÍÑßÉ ÇáÑí ÇáÎØí ÈÇáãÍæÑí
+2025-09-07 20:46:25,355 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (2/6): ãÒÇíÇ æÚíæÈ ÇáÑí ÈÇáãÑÔÇÊ
+2025-09-07 20:46:39,136 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ãÒÇíÇ æÚíæÈ ÇáÑí ÈÇáãÑÔÇÊ
+2025-09-07 20:46:39,136 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (3/6): ØÑíŞÉ Úãá ÇáÑí ÈÇáÊäŞíØ
+2025-09-07 20:46:51,369 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ØÑíŞÉ Úãá ÇáÑí ÈÇáÊäŞíØ
+2025-09-07 20:46:51,369 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (4/6): ÊÍÏíÇÊ ÊÑßíÈ ÇáÑí ÈÇáÊäŞíØ
+2025-09-07 20:47:03,397 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÊÍÏíÇÊ ÊÑßíÈ ÇáÑí ÈÇáÊäŞíØ
+2025-09-07 20:47:03,397 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (5/6): İæÇÆÏ ÇáÑí ÈÇáİŞÇÚÇÊ ááÊÑÈÉ æÇáäÈÇÊ
+2025-09-07 20:47:16,598 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: İæÇÆÏ ÇáÑí ÈÇáİŞÇÚÇÊ ááÊÑÈÉ æÇáäÈÇÊ
+2025-09-07 20:47:16,598 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (6/6): ÚíæÈ ÇáÑí ÇáÓØÍí æİŞÏÇä ÇáãíÇå
+2025-09-07 20:47:29,718 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÚíæÈ ÇáÑí ÇáÓØÍí æİŞÏÇä ÇáãíÇå
+2025-09-07 20:47:31,719 - agent.synthetic_generator_3 - INFO - Agent 3 completed: 30 data points generated
+2025-09-07 20:47:31,719 - agent.synthetic_generator_3 - INFO - Success rate: 6/6 topics (100.0%)
+2025-09-07 20:47:31,721 - agent.synthetic_generator_3 - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\synthetic_data\generated_data_3.json
+2025-09-07 20:47:31,721 - agent.synthetic_generator_3 - INFO - Completed execution of synthetic_generator_3 in 79.33s
+2025-09-07 20:53:38,766 - agent.synthetic_generator_3 - INFO - Starting execution of synthetic_generator_3
+2025-09-07 20:53:38,766 - agent.synthetic_generator_3 - INFO - Agent 3 generating triplets data for 9 topics in Egyptian Arabic (Description: The dataset consists of (anchor, positive, and 3 negatives (negative_1, negative_2, negative_3)) columns. The anchor is a sentence or a question. mix between short and long sentences.)
+2025-09-07 20:53:38,766 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (1/9): ãÊÇÍİ æÊÇÑíÎ İí ÏÈí
+2025-09-07 20:53:49,350 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ãÊÇÍİ æÊÇÑíÎ İí ÏÈí
+2025-09-07 20:53:49,350 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (2/9): ÇáÊÎííã İí ŞØÑ
+2025-09-07 20:54:00,268 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÇáÊÎííã İí ŞØÑ
+2025-09-07 20:54:00,268 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (3/9): ÌæáÇÊ åáíßæÈÊÑ İí ãÓŞØ
+2025-09-07 20:54:14,004 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÌæáÇÊ åáíßæÈÊÑ İí ãÓŞØ
+2025-09-07 20:54:14,004 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (4/9): ÃäÔØÉ İí ÍÏíŞÉ ÔáÇáÇÊ ÇáÕÍÑÇÁ ááãÛÇãÑÇÊ ÇáãÇÆíÉ ÈŞØÑ
+2025-09-07 20:54:26,973 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÃäÔØÉ İí ÍÏíŞÉ ÔáÇáÇÊ ÇáÕÍÑÇÁ ááãÛÇãÑÇÊ ÇáãÇÆíÉ ÈŞØÑ
+2025-09-07 20:54:26,973 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (5/9): ÇáŞİÒ ÇáÏÇÎáí ÈÇáãÙáÇÊ İí ÇáßæíÊ
+2025-09-07 20:54:52,162 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÇáŞİÒ ÇáÏÇÎáí ÈÇáãÙáÇÊ İí ÇáßæíÊ
+2025-09-07 20:54:52,162 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (6/9): åÇíßäÌ İí ÚãÇä
+2025-09-07 20:55:08,454 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: åÇíßäÌ İí ÚãÇä
+2025-09-07 20:55:10,454 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (7/9): ÊÓæŞ İí ÏÈí
+2025-09-07 20:55:25,360 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÊÓæŞ İí ÏÈí
+2025-09-07 20:55:25,360 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (8/9): ÏÑÇÌÉ ÑÈÇÚíÉ İí ÃãáÌ
+2025-09-07 20:55:36,522 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÏÑÇÌÉ ÑÈÇÚíÉ İí ÃãáÌ
+2025-09-07 20:55:36,523 - agent.synthetic_generator_3 - DEBUG - Generating data for topic (9/9): ÑÍáÇÊ ÌÒíÑÉ İíáßÇ
+2025-09-07 20:55:46,461 - agent.synthetic_generator_3 - DEBUG - Generated 5 data points for topic: ÑÍáÇÊ ÌÒíÑÉ İíáßÇ
+2025-09-07 20:55:46,461 - agent.synthetic_generator_3 - INFO - Agent 3 completed: 45 data points generated
+2025-09-07 20:55:46,462 - agent.synthetic_generator_3 - INFO - Success rate: 9/9 topics (100.0%)
+2025-09-07 20:55:46,463 - agent.synthetic_generator_3 - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\synthetic_data\generated_data_3.json
+2025-09-07 20:55:46,463 - agent.synthetic_generator_3 - INFO - Completed execution of synthetic_generator_3 in 127.70s

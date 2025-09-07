@@ -1,0 +1,67 @@
+# Core Dependencies
+python-dotenv==1.0.0
+pydantic>=2.7.4,<3.0.0
+google-generativeai==0.3.0
+langgraph==0.2.20
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+
+# Web Search & Scraping (Updated versions)
+tavily-python>=0.7.0
+crawl4ai>=0.7.0
+requests>=2.31.0
+beautifulsoup4==4.12.3
+aiohttp>=3.9.0
+httpx>=0.25.0
+
+# Data Processing
+pandas==2.2.3
+numpy>=1.26.0,<3.0.0
+jsonschema==4.23.0
+
+# Async Processing & Concurrency  
+asyncio-throttle==1.0.2
+# concurrent-futures>=3.1.1  # ❌ REMOVED - This is part of Python stdlib
+
+# API & Web Framework
+fastapi>=0.104.0
+uvicorn>=0.24.0
+python-multipart>=0.0.6
+gradio>=4.0.0
+
+# CLI Interface
+click>=8.1.7
+rich>=13.7.0
+typer>=0.9.0
+
+# Monitoring & Analytics
+streamlit>=1.28.0
+plotly>=5.17.0
+prometheus-client>=0.19.0
+
+# Development & Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.1.0
+black>=23.10.0
+isort>=5.12.0
+mypy>=1.7.0
+
+# Logging & Monitoring
+structlog>=23.2.0
+colorlog>=6.8.0
+
+# Security & Environment
+cryptography>=41.0.8
+python-jose>=3.3.0
+
+# Optional: Database support
+# sqlalchemy>=2.0.23
+# alembic>=1.13.0
+# psycopg2-binary>=2.9.9
+# redis>=5.0.1
+
+# Optional: Container & Deployment
+# gunicorn>=21.2.0
+# supervisor>=4.2.5

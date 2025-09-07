@@ -1,0 +1,515 @@
+2025-09-04 19:50:52,531 - agent.web_search - INFO - Starting execution of web_search
+2025-09-04 19:50:52,532 - agent.web_search - INFO - Performing web search for 20 queries
+2025-09-04 19:50:52,532 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-04 19:50:52,532 - agent.web_search - INFO - Searching (1/20): Rare disease research breakthroughs
+2025-09-04 19:50:56,310 - agent.web_search - INFO - Searching (2/20): Telemedicine implementation challenges
+2025-09-04 19:51:01,272 - agent.web_search - INFO - Searching (3/20): Geriatric fall prevention programs
+2025-09-04 19:51:05,261 - agent.web_search - INFO - Searching (4/20): Immunotherapy for autoimmune diseases
+2025-09-04 19:51:09,283 - agent.web_search - INFO - Searching (5/20): Ethical considerations gene editing
+2025-09-04 19:51:12,899 - agent.web_search - INFO - Searching (6/20): Nutritional guidelines chronic kidney disease
+2025-09-04 19:51:17,035 - agent.web_search - INFO - Searching (7/20): Robotic surgery advancements neurosurgery
+2025-09-04 19:51:21,671 - agent.web_search - INFO - Searching (8/20): Public health initiatives pandemic preparedness
+2025-09-04 19:51:25,756 - agent.web_search - INFO - Searching (9/20): Biomarkers early disease detection
+2025-09-04 19:51:30,065 - agent.web_search - INFO - Searching (10/20): Healthcare policy universal access
+2025-09-04 19:51:33,681 - agent.web_search - INFO - Searching (11/20): Precision medicine oncology applications
+2025-09-04 19:51:38,258 - agent.web_search - INFO - Searching (12/20): Stem cell therapy regenerative medicine
+2025-09-04 19:51:41,993 - agent.web_search - INFO - Searching (13/20): Epidemiology infectious disease outbreaks
+2025-09-04 19:51:46,019 - agent.web_search - INFO - Searching (14/20): Wearable health devices chronic condition monitoring
+2025-09-04 19:51:51,995 - agent.web_search - INFO - Searching (15/20): Medical education curriculum updates
+2025-09-04 19:51:56,229 - agent.web_search - INFO - Searching (16/20): Drug discovery process challenges
+2025-09-04 19:52:00,472 - agent.web_search - INFO - Searching (17/20): Palliative care best practices
+2025-09-04 19:52:04,875 - agent.web_search - INFO - Searching (18/20): Vaccine development timeline factors
+2025-09-04 19:52:09,503 - agent.web_search - INFO - Searching (19/20): Genetic counseling services availability
+2025-09-04 19:52:13,623 - agent.web_search - INFO - Searching (20/20): Hospital infection control measures
+2025-09-04 19:52:16,724 - agent.web_search - INFO - Total search results collected: 100
+2025-09-04 19:52:16,726 - agent.web_search - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\web_search_results.json
+2025-09-04 19:52:16,726 - agent.web_search - INFO - Completed execution of web_search in 84.19s
+2025-09-06 21:00:16,402 - agent.web_search - INFO - Starting execution of web_search
+2025-09-06 21:00:16,402 - agent.web_search - INFO - Performing web search for 20 queries
+2025-09-06 21:00:16,402 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-06 21:00:16,402 - agent.web_search - INFO - Searching (1/20): Orphan drug development challenges
+2025-09-06 21:00:19,952 - agent.web_search - INFO - Searching (2/20): Age-related macular degeneration treatments
+2025-09-06 21:00:23,775 - agent.web_search - INFO - Searching (3/20): Informed consent in clinical trials
+2025-09-06 21:00:27,589 - agent.web_search - INFO - Searching (4/20): Global pandemic preparedness strategies
+2025-09-06 21:00:31,971 - agent.web_search - INFO - Searching (5/20): Wearable health monitoring technology
+2025-09-06 21:00:36,142 - agent.web_search - INFO - Searching (6/20): Drug-target interaction mechanisms
+2025-09-06 21:00:40,313 - agent.web_search - INFO - Searching (7/20): CRISPR gene editing applications in medicine
+2025-09-06 21:00:44,002 - agent.web_search - INFO - Searching (8/20): Autoimmune disease diagnostic biomarkers
+2025-09-06 21:00:48,705 - agent.web_search - INFO - Searching (9/20): Role of microbiome in gut health
+2025-09-06 21:00:52,502 - agent.web_search - INFO - Searching (10/20): Stroke patient physical therapy exercises
+2025-09-06 21:00:57,868 - agent.web_search - INFO - Searching (11/20): Remote patient monitoring benefits
+2025-09-06 21:01:03,299 - agent.web_search - INFO - Searching (12/20): Immunotherapy for solid tumors
+2025-09-06 21:01:09,580 - agent.web_search - INFO - Searching (13/20): Alzheimer's disease early detection methods
+2025-09-06 21:01:13,752 - agent.web_search - INFO - Searching (14/20): Atrial fibrillation management guidelines
+2025-09-06 21:01:18,287 - agent.web_search - INFO - Searching (15/20): Psoriasis treatment options
+2025-09-06 21:01:23,081 - agent.web_search - INFO - Searching (16/20): Type 1 diabetes insulin pump technology
+2025-09-06 21:01:26,980 - agent.web_search - INFO - Searching (17/20): Emerging viral infection surveillance
+2025-09-06 21:01:31,490 - agent.web_search - INFO - Searching (18/20): Pharmacogenomics in drug prescribing
+2025-09-06 21:01:36,574 - agent.web_search - INFO - Searching (19/20): Virtual reality training for surgeons
+2025-09-06 21:01:41,321 - agent.web_search - INFO - Searching (20/20): Universal healthcare system models
+2025-09-06 21:01:44,406 - agent.web_search - INFO - Total search results collected: 100
+2025-09-06 21:01:44,408 - agent.web_search - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\web_search_results.json
+2025-09-06 21:01:44,408 - agent.web_search - INFO - Completed execution of web_search in 88.01s
+2025-09-06 21:19:40,385 - agent.web_search - INFO - Starting execution of web_search
+2025-09-06 21:19:40,385 - agent.web_search - INFO - Performing web search for 20 queries
+2025-09-06 21:19:40,385 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-06 21:19:40,385 - agent.web_search - INFO - Searching (1/20): Autoimmune disease latest research
+2025-09-06 21:32:35,757 - agent.web_search - INFO - Starting execution of web_search
+2025-09-06 21:32:35,757 - agent.web_search - INFO - Performing web search for 20 queries
+2025-09-06 21:32:35,757 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-06 21:32:35,757 - agent.web_search - INFO - Searching (1/20): Autoimmune diseases research breakthroughs
+2025-09-06 21:32:39,325 - agent.web_search - INFO - Searching (2/20): Infectious disease epidemiology global trends
+2025-09-06 21:32:43,414 - agent.web_search - INFO - Searching (3/20): Neurological disorders diagnostic advancements
+2025-09-06 21:32:47,501 - agent.web_search - INFO - Searching (4/20): Rare genetic conditions treatment options
+2025-09-06 21:32:51,366 - agent.web_search - INFO - Searching (5/20): Chronic pain management innovative therapies
+2025-09-06 21:32:55,256 - agent.web_search - INFO - Searching (6/20): Cardiovascular health preventative measures
+2025-09-06 21:32:59,050 - agent.web_search - INFO - Searching (7/20): Gene therapy ethical considerations
+2025-09-06 21:33:03,066 - agent.web_search - INFO - Searching (8/20): Robotic surgery post-operative recovery
+2025-09-06 21:33:07,908 - agent.web_search - INFO - Searching (9/20): Immunotherapy for cancer applications
+2025-09-06 21:33:11,518 - agent.web_search - INFO - Searching (10/20): Physical rehabilitation for spinal injuries
+2025-09-06 21:33:16,596 - agent.web_search - INFO - Searching (11/20): Pharmacology drug interaction mechanisms
+2025-09-06 22:30:56,247 - agent.web_search - INFO - Starting execution of web_search
+2025-09-06 22:30:56,247 - agent.web_search - INFO - Performing web search for 20 queries
+2025-09-06 22:30:56,247 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-06 22:30:56,247 - agent.web_search - INFO - Searching (1/20): ÃÚÑÇÖ æÚáÇÌ ãÑÖ ÇáÓßÑí ãä ÇáäæÚ ÇáËÇäí
+2025-09-06 22:31:00,069 - agent.web_search - INFO - Searching (2/20): ÇÓÊÑÇÊíÌíÇÊ ÇáæŞÇíÉ ãä ÃãÑÇÖ ÇáŞáÈ æÇáÃæÚíÉ ÇáÏãæíÉ
+2025-09-06 22:31:05,463 - agent.web_search - INFO - Searching (3/20): ÃÍÏË ÊŞäíÇÊ ÇáÌÑÇÍÉ ÈÇáãäÙÇÑ
+2025-09-06 22:31:11,917 - agent.web_search - INFO - Searching (4/20): ÊİÇÚáÇÊ ÇáÃÏæíÉ ÇáÔÇÆÚÉ æãÎÇØÑåÇ
+2025-09-06 22:31:15,551 - agent.web_search - INFO - Searching (5/20): ØÑŞ ÊÔÎíÕ ÇáÃãÑÇÖ ÇáÚÕÈíÉ
+2025-09-06 22:31:20,917 - agent.web_search - INFO - Searching (6/20): ÈÑæÊæßæáÇÊ ÇáÅÓÚÇİÇÊ ÇáÃæáíÉ ááÍÇáÇÊ ÇáØÇÑÆÉ
+2025-09-06 22:31:26,581 - agent.web_search - INFO - Searching (7/20): ÇáÚáÇÌÇÊ ÇáäİÓíÉ ááÇßÊÆÇÈ æÇáŞáŞ
+2025-09-06 22:31:31,349 - agent.web_search - INFO - Searching (8/20): ÅÑÔÇÏÇÊ ÇáÑÚÇíÉ ÇáÕÍíÉ ááÃØİÇá ÍÏíËí ÇáæáÇÏÉ
+2025-09-06 22:31:36,995 - agent.web_search - INFO - Searching (9/20): ÂáíÇÊ ãŞÇæãÉ ÇáÈßÊíÑíÇ ááãÖÇÏÇÊ ÇáÍíæíÉ
+2025-09-06 22:31:41,574 - agent.web_search - INFO - Searching (10/20): ÊØÈíŞÇÊ ÇáÊÕæíÑ ÈÇáÑäíä ÇáãÛäÇØíÓí İí ÇáÊÔÎíÕ
+2025-09-06 22:31:47,250 - agent.web_search - INFO - Searching (11/20): ÃÓÈÇÈ æÚáÇÌ ÇáÕÏÇÚ ÇáäÕİí ÇáãÒãä
+2025-09-06 22:31:51,274 - agent.web_search - INFO - Searching (12/20): ÏæÑ ÇáÊÛĞíÉ İí ÊÚÒíÒ ÇáãäÇÚÉ
+2025-09-06 22:31:56,649 - agent.web_search - INFO - Searching (13/20): ÊØæÑÇÊ ÚáÇÌ ÇáÓÑØÇä ÈÇáÚáÇÌ ÇáãäÇÚí
+2025-09-06 22:32:02,379 - agent.web_search - INFO - Searching (14/20): ãÓÊŞÈá ÇáØÈ ÇáÏŞíŞ æÇáØÈ ÇáÔÎÕí
+2025-09-06 22:32:12,122 - agent.web_search - INFO - Searching (15/20): ÇáÊÍÏíÇÊ ÇáÃÎáÇŞíÉ İí ÇáÈÍæË ÇáØÈíÉ
+2025-09-06 22:32:18,276 - agent.web_search - INFO - Searching (16/20): ÇáÑÚÇíÉ ÇáÊáØíİíÉ ááãÑÖì ÇáãÕÇÈíä ÈÃãÑÇÖ ãÒãäÉ
+2025-09-06 22:32:23,806 - agent.web_search - INFO - Searching (17/20): ÃäæÇÚ ÇááŞÇÍÇÊ æİÚÇáíÊåÇ ÖÏ ÇáÃãÑÇÖ ÇáãÚÏíÉ
+2025-09-06 22:32:29,528 - agent.web_search - INFO - Searching (18/20): ÊŞííã ãÎÇØÑ ÇáÓãäÉ æÊÃËíÑåÇ Úáì ÇáÕÍÉ
+2025-09-06 22:32:32,975 - agent.web_search - INFO - Searching (19/20): ÇáÇÓÊÎÏÇãÇÊ ÇáÚáÇÌíÉ ááÎáÇíÇ ÇáÌĞÚíÉ
+2025-09-06 22:32:38,472 - agent.web_search - INFO - Searching (20/20): ÎÏãÇÊ ÇáØÈ Úä ÈÚÏ æÊÃËíÑåÇ Úáì ÇáÑÚÇíÉ ÇáÕÍíÉ
+2025-09-06 22:32:43,235 - agent.web_search - INFO - Total search results collected: 100
+2025-09-06 22:32:43,238 - agent.web_search - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\web_search_results.json
+2025-09-06 22:32:43,238 - agent.web_search - INFO - Completed execution of web_search in 106.99s
+2025-09-06 23:13:19,627 - agent.web_search - INFO - Starting execution of web_search
+2025-09-06 23:13:19,627 - agent.web_search - INFO - Performing web search for 20 queries
+2025-09-06 23:13:19,627 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-06 23:13:19,628 - agent.web_search - INFO - Searching (1/20): İæÇÆÏ ÇáÊãÇÑíä ÇáÑíÇÖíÉ ááÕÍÉ ÇáÚÇãÉ
+2025-09-06 23:13:25,374 - agent.web_search - INFO - Searching (2/20): ÃÍÏË ÚáÇÌÇÊ ãÑÖ ÇáÓßÑí ãä ÇáäæÚ ÇáËÇäí
+2025-09-06 23:13:30,999 - agent.web_search - INFO - Searching (3/20): ÊŞäíÇÊ ÇáÌÑÇÍÉ ÈÇáãäÙÇÑ İí ÇáÈØä
+2025-09-06 23:13:36,767 - agent.web_search - INFO - Searching (4/20): ÇáÂËÇÑ ÇáÌÇäÈíÉ ááÃÏæíÉ ÇáÎÇİÖÉ ááÖÛØ
+2025-09-06 23:13:41,322 - agent.web_search - INFO - Searching (5/20): ÏæÑ ÇáÊÕæíÑ ÈÇáÑäíä ÇáãÛäÇØíÓí İí ÊÔÎíÕ ÃãÑÇÖ ÇáÏãÇÛ
+2025-09-06 23:13:47,563 - agent.web_search - INFO - Searching (6/20): ÅÑÔÇÏÇÊ ÑÚÇíÉ ÇáÃØİÇá ÍÏíËí ÇáæáÇÏÉ
+2025-09-06 23:13:53,637 - agent.web_search - INFO - Searching (7/20): ØÑŞ ÚáÇÌ ÇáÇßÊÆÇÈ ÈÏæä ÃÏæíÉ
+2025-09-06 23:14:00,055 - agent.web_search - INFO - Searching (8/20): ÇÓÊÑÇÊíÌíÇÊ ÇáæŞÇíÉ ãä ÓÑØÇä ÇáŞæáæä
+2025-09-06 23:14:04,608 - agent.web_search - INFO - Searching (9/20): ÈÑæÊæßæáÇÊ ÇáÅÓÚÇİÇÊ ÇáÃæáíÉ ááÍÑæŞ
+2025-09-06 23:14:09,937 - agent.web_search - INFO - Searching (10/20): ÃåãíÉ áŞÇÍÇÊ ÇáÃØİÇá ÇáÑæÊíäíÉ
+2025-09-06 23:14:15,498 - agent.web_search - INFO - Searching (11/20): ÊØÈíŞÇÊ ÇáĞßÇÁ ÇáÇÕØäÇÚí İí ÇáÊÔÎíÕ ÇáØÈí
+2025-09-06 23:14:20,291 - agent.web_search - INFO - Searching (12/20): ÊÃËíÑ ÇáÊÛĞíÉ ÇáÓáíãÉ Úáì ÇáãäÇÚÉ
+2025-09-06 23:14:26,325 - agent.web_search - INFO - Searching (13/20): ÃÚÑÇÖ æÚáÇÌ ŞÕæÑ ÇáŞáÈ ÇáÇÍÊŞÇäí
+2025-09-06 23:14:31,800 - agent.web_search - INFO - Searching (14/20): ÃÓÈÇÈ æÃäæÇÚ ÇáÕÏÇÚ ÇáäÕİí
+2025-09-06 23:14:37,321 - agent.web_search - INFO - Searching (15/20): ÊÍÏíÇÊ ÇáÑÚÇíÉ ÇáÕÍíÉ áßÈÇÑ ÇáÓä
+2025-09-06 23:14:43,090 - agent.web_search - INFO - Searching (16/20): ÃÎáÇŞíÇÊ ÇáØÈ İí äåÇíÉ ÇáÍíÇÉ
+2025-09-06 23:14:49,525 - agent.web_search - INFO - Searching (17/20): ÈÑÇãÌ ÅÚÇÏÉ ÇáÊÃåíá ÈÚÏ ÇáÓßÊÉ ÇáÏãÇÛíÉ
+2025-09-06 23:14:55,181 - agent.web_search - INFO - Searching (18/20): ÇáİÍÕ ÇáãÈßÑ áÓÑØÇä ÇáËÏí
+2025-09-06 23:15:01,291 - agent.web_search - INFO - Searching (19/20): ÃãÑÇÖ ÇáãäÇÚÉ ÇáĞÇÊíÉ ÇáÔÇÆÚÉ
+2025-09-06 23:15:06,934 - agent.web_search - INFO - Searching (20/20): İÚÇáíÉ ÇáÚáÇÌ ÈÇáÃÚÔÇÈ ááÂáÇã ÇáãÒãäÉ
+2025-09-06 23:15:11,031 - agent.web_search - INFO - Total search results collected: 100
+2025-09-06 23:15:11,033 - agent.web_search - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\web_search_results.json
+2025-09-06 23:15:11,034 - agent.web_search - INFO - Completed execution of web_search in 111.41s
+2025-09-06 23:24:10,372 - agent.web_search - INFO - Starting execution of web_search
+2025-09-06 23:24:10,373 - agent.web_search - INFO - Performing web search for 20 queries
+2025-09-06 23:24:10,373 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-06 23:24:10,373 - agent.web_search - INFO - Searching (1/20): ÃÓÇáíÈ ÚáÇÌ ãÑÖ ÇáÓßÑí
+2025-09-06 23:24:16,600 - agent.web_search - INFO - Searching (2/20): ÇÓÊÑÇÊíÌíÇÊ ÇáæŞÇíÉ ãä ÇáÓÑØÇä
+2025-09-06 23:24:21,352 - agent.web_search - INFO - Searching (3/20): ÅÌÑÇÁÇÊ ÌÑÇÍíÉ İí ÃãÑÇÖ ÇáŞáÈ
+2025-09-06 23:24:26,366 - agent.web_search - INFO - Searching (4/20): ÊİÇÚáÇÊ ÇáÃÏæíÉ ÇáÕíÏáÇäíÉ
+2025-09-06 23:24:32,511 - agent.web_search - INFO - Searching (5/20): ÊŞäíÇÊ ÇáÊÔÎíÕ ÇáØÈí ÇáÍÏíËÉ
+2025-09-06 23:24:38,720 - agent.web_search - INFO - Searching (6/20): ÈÑæÊæßæáÇÊ ØÈ ÇáØæÇÑÆ
+2025-09-06 23:24:44,865 - agent.web_search - INFO - Searching (7/20): ÚáÇÌÇÊ ÇáÕÍÉ ÇáäİÓíÉ ÇáİÚÇáÉ
+2025-09-06 23:24:51,217 - agent.web_search - INFO - Searching (8/20): ÅÑÔÇÏÇÊ ÑÚÇíÉ ÇáÃØİÇá ÍÏíËí ÇáæáÇÏÉ
+2025-09-06 23:24:55,243 - agent.web_search - INFO - Searching (9/20): ÂáíÇÊ ãŞÇæãÉ ÇáãÖÇÏÇÊ ÇáÍíæíÉ
+2025-09-06 23:24:59,818 - agent.web_search - INFO - Searching (10/20): ÊØæÑÇÊ ÊŞäíÇÊ ÇáÊÕæíÑ ÇáØÈí
+2025-09-06 23:25:05,964 - agent.web_search - INFO - Searching (11/20): ÃåãíÉ ÇáİÍÕ ÇáÏæÑí ááßÔİ ÇáãÈßÑ Úä ÇáÃãÑÇÖ
+2025-09-06 23:25:12,266 - agent.web_search - INFO - Searching (12/20): ÇáÊÛĞíÉ ÇáÚáÇÌíÉ ááÃãÑÇÖ ÇáãÒãäÉ
+2025-09-06 23:25:17,184 - agent.web_search - INFO - Searching (13/20): ÃÍÏË ÇáÇÈÊßÇÑÇÊ İí ÚáÇÌ ÃãÑÇÖ ÇáÚíæä
+2025-09-06 23:25:22,954 - agent.web_search - INFO - Searching (14/20): ÊÃËíÑ ÇáÊáæË ÇáÈíÆí Úáì ÕÍÉ ÇáÌåÇÒ ÇáÊäİÓí
+2025-09-06 23:25:29,012 - agent.web_search - INFO - Searching (15/20): ãÈÇÏÆ ÇáÅÓÚÇİÇÊ ÇáÃæáíÉ ááÍÇáÇÊ ÇáØÇÑÆÉ
+2025-09-06 23:25:35,273 - agent.web_search - INFO - Searching (16/20): ÏæÑ ÇáØÈ ÇáÊßãíáí æÇáÈÏíá İí ÇáÑÚÇíÉ ÇáÕÍíÉ
+2025-09-06 23:25:41,189 - agent.web_search - INFO - Searching (17/20): ÊÍÏíÇÊ ÇáÑÚÇíÉ ÇáÕÍíÉ áßÈÇÑ ÇáÓä
+2025-09-06 23:25:44,971 - agent.web_search - INFO - Searching (18/20): ÃÎáÇŞíÇÊ ãåäÉ ÇáØÈ İí ÇáÚÕÑ ÇáÍÏíË
+2025-09-06 23:25:51,246 - agent.web_search - INFO - Searching (19/20): İåã äÊÇÆÌ ÊÍÇáíá ÇáÏã ÇáÔÇÆÚÉ
+2025-09-06 23:25:57,263 - agent.web_search - INFO - Searching (20/20): ÇÓÊÑÇÊíÌíÇÊ ãßÇİÍÉ ÇáÃæÈÆÉ æÇáÃãÑÇÖ ÇáãÚÏíÉ
+2025-09-06 23:26:00,163 - agent.web_search - INFO - Total search results collected: 100
+2025-09-06 23:26:00,172 - agent.web_search - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\web_search_results.json
+2025-09-06 23:26:00,172 - agent.web_search - INFO - Completed execution of web_search in 109.80s
+2025-09-06 23:44:54,176 - agent.web_search - INFO - Starting execution of web_search
+2025-09-06 23:44:54,176 - agent.web_search - INFO - Performing web search for 20 queries
+2025-09-06 23:44:54,177 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-06 23:44:54,177 - agent.web_search - INFO - Searching (1/20): ÅÏÇÑÉ ÇáÃãÑÇÖ ÇáãÒãäÉ
+2025-09-06 23:45:00,263 - agent.web_search - INFO - Searching (2/20): ÃÍÏË ÚáÇÌÇÊ ÇáÓÑØÇä
+2025-09-06 23:45:05,712 - agent.web_search - INFO - Searching (3/20): ÌÏÇæá ÊØÚíã ÇáÃØİÇá
+2025-09-06 23:45:09,747 - agent.web_search - INFO - Searching (4/20): ãÕÇÏÑ ÏÚã ÇáÕÍÉ ÇáäİÓíÉ
+2025-09-06 23:57:52,519 - agent.web_search - INFO - Starting execution of web_search
+2025-09-06 23:57:52,520 - agent.web_search - INFO - Performing web search for 20 queries
+2025-09-06 23:57:52,520 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-06 23:57:52,520 - agent.web_search - INFO - Searching (1/20): ÚáÇÌÇÊ ãÑÖ ÇáÓßÑí ÇáÍÏíËÉ
+2025-09-06 23:57:57,948 - agent.web_search - INFO - Searching (2/20): ÇÓÊÑÇÊíÌíÇÊ ÇáæŞÇíÉ ãä ÇáÓÑØÇä
+2025-09-06 23:58:01,023 - agent.web_search - INFO - Searching (3/20): ÅÌÑÇÁÇÊ ÌÑÇÍÉ ÇáŞáÈ ÇáãİÊæÍ
+2025-09-06 23:58:06,578 - agent.web_search - INFO - Searching (4/20): ÊİÇÚáÇÊ ÇáÃÏæíÉ ÇáÔÇÆÚÉ
+2025-09-06 23:58:10,642 - agent.web_search - INFO - Searching (5/20): ÊŞäíÇÊ ÇáÊÔÎíÕ ÇáØÈí ÇáÏŞíŞÉ
+2025-09-06 23:59:20,520 - agent.web_search - INFO - Starting execution of web_search
+2025-09-06 23:59:20,520 - agent.web_search - INFO - Performing web search for 20 queries
+2025-09-06 23:59:20,520 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-06 23:59:20,520 - agent.web_search - INFO - Searching (1/20): ØÑŞ ÚáÇÌ ãÑÖ ÇáÓßÑí ÇáÍÏíËÉ
+2025-09-06 23:59:24,575 - agent.web_search - INFO - Searching (2/20): ÇÓÊÑÇÊíÌíÇÊ ÇáæŞÇíÉ ãä ÇáÓÑØÇä
+2025-09-06 23:59:27,643 - agent.web_search - INFO - Searching (3/20): ÅÌÑÇÁÇÊ ÌÑÇÍÉ ÇáŞáÈ ÇáãİÊæÍ
+2025-09-06 23:59:31,030 - agent.web_search - INFO - Searching (4/20): ÊİÇÚáÇÊ ÇáÃÏæíÉ ÇáÕíÏáÇäíÉ ÇáÔÇÆÚÉ
+2025-09-06 23:59:36,656 - agent.web_search - INFO - Searching (5/20): ÊŞäíÇÊ ÇáÊÔÎíÕ ÇáØÈí ÇáãÊŞÏãÉ
+2025-09-06 23:59:42,496 - agent.web_search - INFO - Searching (6/20): ÈÑæÊæßæáÇÊ ØÈ ÇáØæÇÑÆ æÇáÅÓÚÇİÇÊ ÇáÃæáíÉ
+2025-09-06 23:59:48,848 - agent.web_search - INFO - Searching (7/20): ÇáÚáÇÌÇÊ ÇáäİÓíÉ ááÇßÊÆÇÈ æÇáŞáŞ
+2025-09-06 23:59:52,652 - agent.web_search - INFO - Searching (8/20): ÅÑÔÇÏÇÊ ÑÚÇíÉ ÇáÃØİÇá ÍÏíËí ÇáæáÇÏÉ
+2025-09-06 23:59:56,148 - agent.web_search - INFO - Searching (9/20): ÂáíÇÊ ãŞÇæãÉ ÇáãÖÇÏÇÊ ÇáÍíæíÉ
+2025-09-06 23:59:59,626 - agent.web_search - INFO - Searching (10/20): ÊßäæáæÌíÇ ÇáÊÕæíÑ ÈÇáÑäíä ÇáãÛäÇØíÓí ÇáØÈí
+2025-09-07 00:00:05,439 - agent.web_search - INFO - Searching (11/20): ÃÓÈÇÈ æÃÚÑÇÖ ÃãÑÇÖ ÇáãäÇÚÉ ÇáĞÇÊíÉ
+2025-09-07 00:00:11,151 - agent.web_search - INFO - Searching (12/20): ÏæÑ ÇáÊÛĞíÉ İí ÕÍÉ ÇáÌåÇÒ ÇáåÖãí
+2025-09-07 00:00:16,597 - agent.web_search - INFO - Searching (13/20): ÃÎáÇŞíÇÊ ÇáÈÍË ÇáÚáãí İí ÇáØÈ
+2025-09-07 00:00:22,535 - agent.web_search - INFO - Searching (14/20): ÊØæíÑ ÇááŞÇÍÇÊ æÇáÃãÑÇÖ ÇáãÚÏíÉ
+2025-09-07 00:00:28,161 - agent.web_search - INFO - Searching (15/20): ÃÍÏË ÇáÇÈÊßÇÑÇÊ İí ÌÑÇÍÉ ÇáÃÚÕÇÈ
+2025-09-07 00:00:33,540 - agent.web_search - INFO - Searching (16/20): ÅÏÇÑÉ ÇáÃáã ÇáãÒãä æÚáÇÌå
+2025-09-07 00:00:38,515 - agent.web_search - INFO - Searching (17/20): ÇáÕÍÉ ÇáÚÇãÉ æÇáæŞÇíÉ ãä ÇáÃæÈÆÉ
+2025-09-07 00:00:43,236 - agent.web_search - INFO - Searching (18/20): ÇáØÈ ÇáÊßãíáí æÇáÈÏíá áÈÚÖ ÇáÃãÑÇÖ
+2025-09-07 00:00:49,078 - agent.web_search - INFO - Searching (19/20): ÊÃËíÑ ÇáÊáæË ÇáÈíÆí Úáì ÕÍÉ ÇáÅäÓÇä
+2025-09-07 00:00:54,137 - agent.web_search - INFO - Searching (20/20): ÇÓÊÎÏÇã ÇáÎáÇíÇ ÇáÌĞÚíÉ İí ÇáÚáÇÌ ÇáØÈí
+2025-09-07 00:00:59,031 - agent.web_search - INFO - Total search results collected: 100
+2025-09-07 00:00:59,034 - agent.web_search - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\web_search_results.json
+2025-09-07 00:00:59,034 - agent.web_search - INFO - Completed execution of web_search in 98.51s
+2025-09-07 00:10:56,307 - agent.web_search - INFO - Starting execution of web_search
+2025-09-07 00:10:56,307 - agent.web_search - INFO - Performing web search for 20 queries
+2025-09-07 00:10:56,307 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-07 00:10:56,307 - agent.web_search - INFO - Searching (1/20): ÃÓÇáíÈ ÚáÇÌ ãÑÖ ÇáÓßÑí ÇáÍÏíËÉ
+2025-09-07 00:11:00,744 - agent.web_search - INFO - Searching (2/20): ÇÓÊÑÇÊíÌíÇÊ ÇáæŞÇíÉ ãä ÃãÑÇÖ ÇáŞáÈ
+2025-09-07 00:11:04,472 - agent.web_search - INFO - Searching (3/20): ÊŞäíÇÊ ÇáÊÔÎíÕ ÇáãÈßÑ ááÓÑØÇä
+2025-09-07 00:11:10,177 - agent.web_search - INFO - Searching (4/20): ÃÍÏË ÇáÊØæÑÇÊ İí ÌÑÇÍÉ ÇáÃÚÕÇÈ
+2025-09-07 00:11:16,197 - agent.web_search - INFO - Searching (5/20): ÊÃËíÑ ÇáÊÛĞíÉ Úáì ÇáÕÍÉ ÇáÚŞáíÉ
+2025-09-07 00:11:21,688 - agent.web_search - INFO - Searching (6/20): ÈÑæÊæßæáÇÊ ÇáÅÓÚÇİÇÊ ÇáÃæáíÉ ááÍæÇÏË
+2025-09-07 00:11:28,231 - agent.web_search - INFO - Searching (7/20): ãŞÇæãÉ ÇáãÖÇÏÇÊ ÇáÍíæíÉ æÃÓÈÇÈåÇ
+2025-09-07 00:11:33,811 - agent.web_search - INFO - Searching (8/20): ÏæÑ ÇáĞßÇÁ ÇáÇÕØäÇÚí İí ÇáØÈ
+2025-09-07 00:11:37,647 - agent.web_search - INFO - Searching (9/20): ÅÑÔÇÏÇÊ ÑÚÇíÉ ÇáÃØİÇá ÍÏíËí ÇáæáÇÏÉ
+2025-09-07 00:11:40,747 - agent.web_search - INFO - Searching (10/20): ÚáÇÌÇÊ ÇáÇßÊÆÇÈ æÇáŞáŞ ÇáİÚÇáÉ
+2025-09-07 00:11:44,247 - agent.web_search - INFO - Searching (11/20): ÃÓÈÇÈ ÇÑÊİÇÚ ÖÛØ ÇáÏã æÚáÇÌå
+2025-09-07 00:11:49,817 - agent.web_search - INFO - Searching (12/20): ãÎÇØÑ æİæÇÆÏ ÇááŞÇÍÇÊ ááÃØİÇá
+2025-09-07 00:11:55,665 - agent.web_search - INFO - Searching (13/20): ÊŞäíÇÊ ÇáÊÕæíÑ ÈÇáÑäíä ÇáãÛäÇØíÓí MRI
+2025-09-07 00:12:01,601 - agent.web_search - INFO - Searching (14/20): ÇáÃãÑÇÖ ÇáÌáÏíÉ ÇáÔÇÆÚÉ æØÑŞ ÚáÇÌåÇ
+2025-09-07 00:12:05,467 - agent.web_search - INFO - Searching (15/20): ÇáØÈ ÇáÈÏíá æÇáÚáÇÌ ÈÇáÃÚÔÇÈ
+2025-09-07 00:12:10,100 - agent.web_search - INFO - Searching (16/20): ÅÏÇÑÉ ÇáÃáã ÇáãÒãä ÈÏæä ÌÑÇÍÉ
+2025-09-07 00:12:15,605 - agent.web_search - INFO - Searching (17/20): ÇáÊÃåíá ÇáÈÏäí ÈÚÏ ÇáÅÕÇÈÇÊ ÇáÑíÇÖíÉ
+2025-09-07 00:12:20,951 - agent.web_search - INFO - Searching (18/20): ÃÎáÇŞíÇÊ ÇáØÈ æÍŞæŞ ÇáãÑíÖ
+2025-09-07 00:12:26,969 - agent.web_search - INFO - Searching (19/20): äÕÇÆÍ ááæŞÇíÉ ãä ÇáÃãÑÇÖ ÇáãÚÏíÉ
+2025-09-07 00:12:32,500 - agent.web_search - INFO - Searching (20/20): ÃÏæíÉ ÚáÇÌ ÃãÑÇÖ ÇáÌåÇÒ ÇáÊäİÓí
+2025-09-07 00:12:38,487 - agent.web_search - INFO - Total search results collected: 100
+2025-09-07 00:12:38,490 - agent.web_search - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\web_search_results.json
+2025-09-07 00:12:38,490 - agent.web_search - INFO - Completed execution of web_search in 102.18s
+2025-09-07 00:29:18,308 - agent.web_search - INFO - Starting execution of web_search
+2025-09-07 00:29:18,309 - agent.web_search - INFO - Performing web search for 20 queries
+2025-09-07 00:29:18,309 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-07 00:29:18,309 - agent.web_search - INFO - Searching (1/20): İæÇÆÏ ÇáÊÛĞíÉ ÇáÓáíãÉ ááÕÍÉ ÇáÚÇãÉ
+2025-09-07 00:29:23,423 - agent.web_search - INFO - Searching (2/20): ÃÍÏË ÚáÇÌÇÊ ÃãÑÇÖ ÇáŞáÈ æÇáÔÑÇííä
+2025-09-07 00:29:28,455 - agent.web_search - INFO - Searching (3/20): ÇÓÊÑÇÊíÌíÇÊ ÇáæŞÇíÉ ãä ÇáÓÑØÇä æÃäæÇÚå
+2025-09-07 00:29:35,053 - agent.web_search - INFO - Searching (4/20): ÃÚÑÇÖ æÚáÇÌ ÇáÕÏÇÚ ÇáäÕİí ÇáãÒãä
+2025-09-07 00:29:38,766 - agent.web_search - INFO - Searching (5/20): ÅÑÔÇÏÇÊ ÑÚÇíÉ ÇáÃØİÇá ÍÏíËí ÇáæáÇÏÉ
+2025-09-07 00:29:44,147 - agent.web_search - INFO - Searching (6/20): ØÑŞ ÚáÇÌ ÇáÇßÊÆÇÈ æÇáŞáŞ ÇáäİÓí
+2025-09-07 00:29:47,922 - agent.web_search - INFO - Searching (7/20): İÚÇáíÉ áŞÇÍÇÊ ÇáÃãÑÇÖ ÇáãÚÏíÉ
+2025-09-07 00:29:53,857 - agent.web_search - INFO - Searching (8/20): ÅÏÇÑÉ ÓßÑ ÇáÏã áãÑÖì ÇáÓßÑí ãä ÇáäæÚ ÇáËÇäí
+2025-09-07 00:29:59,768 - agent.web_search - INFO - Searching (9/20): ÇÓÊÎÏÇãÇÊ ÇáÊÕæíÑ ÈÇáÑäíä ÇáãÛäÇØíÓí İí ÇáÊÔÎíÕ
+2025-09-07 00:30:04,650 - agent.web_search - INFO - Searching (10/20): ÊŞäíÇÊ ÇáÌÑÇÍÉ ÇáÑæÈæÊíÉ İí ÇáØÈ ÇáÍÏíË
+2025-09-07 00:30:10,320 - agent.web_search - INFO - Searching (11/20): ÇáÂËÇÑ ÇáÌÇäÈíÉ ááÃÏæíÉ ÇáÔÇÆÚÉ æßíİíÉ ÇáÊÚÇãá ãÚåÇ
+2025-09-07 00:30:14,682 - agent.web_search - INFO - Searching (12/20): ÊÃËíÑ ÇáÊáæË ÇáÈíÆí Úáì ÕÍÉ ÇáÌåÇÒ ÇáÊäİÓí
+2025-09-07 00:30:20,475 - agent.web_search - INFO - Searching (13/20): ÊÍÏíÇÊ ÇáÑÚÇíÉ ÇáÕÍíÉ áßÈÇÑ ÇáÓä
+2025-09-07 00:30:26,868 - agent.web_search - INFO - Searching (14/20): ÚáÇÌÇÊ ÇáÃãÑÇÖ ÇáÌáÏíÉ ÇáÔÇÆÚÉ
+2025-09-07 00:30:33,445 - agent.web_search - INFO - Searching (15/20): ÏæÑ ÇáÌíäÇÊ İí ÇáÃãÑÇÖ ÇáæÑÇËíÉ
+2025-09-07 00:30:38,579 - agent.web_search - INFO - Searching (16/20): ÈÑæÊæßæáÇÊ ÇáÅÓÚÇİÇÊ ÇáÃæáíÉ ááÍæÇÏË ÇáãäÒáíÉ
+2025-09-07 00:30:44,122 - agent.web_search - INFO - Searching (17/20): ÇáØÈ ÇáÈÏíá æÇáÚáÇÌÇÊ ÇáÊßãíáíÉ
+2025-09-07 00:30:49,396 - agent.web_search - INFO - Searching (18/20): ÕÍÉ ÇáãÑÃÉ ÈÚÏ ÇäŞØÇÚ ÇáØãË
+2025-09-07 00:30:54,900 - agent.web_search - INFO - Searching (19/20): ÃÎáÇŞíÇÊ ãåäÉ ÇáØÈ æÍŞæŞ ÇáãÑíÖ
+2025-09-07 00:31:00,679 - agent.web_search - INFO - Searching (20/20): ÇáÃäÙãÉ ÇáÛĞÇÆíÉ áãÑÖì Çáßáì
+2025-09-07 00:31:05,029 - agent.web_search - INFO - Total search results collected: 100
+2025-09-07 00:31:05,031 - agent.web_search - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\web_search_results.json
+2025-09-07 00:31:05,032 - agent.web_search - INFO - Completed execution of web_search in 106.72s
+2025-09-07 00:43:24,533 - agent.web_search - INFO - Starting execution of web_search
+2025-09-07 00:43:24,533 - agent.web_search - INFO - Performing web search for 20 queries
+2025-09-07 00:43:24,533 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-07 00:43:24,533 - agent.web_search - INFO - Searching (1/20): ØÑŞ ÚáÇÌ ãÑÖ ÇáÓßÑí
+2025-09-07 00:43:28,571 - agent.web_search - INFO - Searching (2/20): ÇÓÊÑÇÊíÌíÇÊ ÇáæŞÇíÉ ãä ÇáÓÑØÇä
+2025-09-07 00:43:32,032 - agent.web_search - INFO - Searching (3/20): ÇáÅÌÑÇÁÇÊ ÇáÌÑÇÍíÉ İí ÃãÑÇÖ ÇáŞáÈ
+2025-09-07 00:43:36,494 - agent.web_search - INFO - Searching (4/20): ÊİÇÚáÇÊ ÇáÃÏæíÉ ÇáÕíÏáÇäíÉ
+2025-09-07 00:43:40,377 - agent.web_search - INFO - Searching (5/20): ÊŞäíÇÊ ÇáÊÔÎíÕ ÇáØÈí ÇáÍÏíËÉ
+2025-09-07 00:43:46,231 - agent.web_search - INFO - Searching (6/20): ÈÑæÊæßæáÇÊ ØÈ ÇáØæÇÑÆ
+2025-09-07 00:43:51,895 - agent.web_search - INFO - Searching (7/20): ÚáÇÌÇÊ ÇáÕÍÉ ÇáäİÓíÉ ááÃØİÇá
+2025-09-07 00:43:55,973 - agent.web_search - INFO - Searching (8/20): ÅÑÔÇÏÇÊ ÑÚÇíÉ ÇáãæÇáíÏ ÇáÌÏÏ
+2025-09-07 00:44:02,974 - agent.web_search - INFO - Searching (9/20): ÂáíÇÊ ãŞÇæãÉ ÇáãÖÇÏÇÊ ÇáÍíæíÉ
+2025-09-07 00:44:06,882 - agent.web_search - INFO - Searching (10/20): ÊŞäíÇÊ ÇáÊÕæíÑ ÈÇáÑäíä ÇáãÛäÇØíÓí
+2025-09-07 00:44:10,510 - agent.web_search - INFO - Searching (11/20): ÍãáÇÊ ÇáÊæÚíÉ ÈÇáÕÍÉ ÇáÚÇãÉ
+2025-09-07 00:44:15,398 - agent.web_search - INFO - Searching (12/20): ÊÍÏíÇÊ ÇáÑÚÇíÉ ÇáÕÍíÉ áßÈÇÑ ÇáÓä
+2025-09-07 00:44:18,585 - agent.web_search - INFO - Searching (13/20): İæÇÆÏ æÊØÈíŞÇÊ ÇáØÈ Úä ÈÚÏ
+2025-09-07 00:44:22,140 - agent.web_search - INFO - Searching (14/20): ÏæÑ ÇáĞßÇÁ ÇáÇÕØäÇÚí İí ÇáÌÑÇÍÉ
+2025-09-07 00:44:28,002 - agent.web_search - INFO - Searching (15/20): ÃÎáÇŞíÇÊ ÇáÊÈÑÚ ÈÇáÃÚÖÇÁ
+2025-09-07 00:44:33,911 - agent.web_search - INFO - Searching (16/20): ÅÑÔÇÏÇÊ ÇáÊÛĞíÉ áãÑÖì Çáßáì
+2025-09-07 00:44:40,524 - agent.web_search - INFO - Searching (17/20): ÇáÚáÇÌ ÇáØÈíÚí áÅÕÇÈÇÊ ÇáÚãæÏ ÇáİŞÑí
+2025-09-07 00:44:46,296 - agent.web_search - INFO - Searching (18/20): ÇáÃãÑÇÖ ÇáÌáÏíÉ ÇáæÑÇËíÉ
+2025-09-07 00:44:52,028 - agent.web_search - INFO - Searching (19/20): ØÑŞ ÊäÙíã ÇáÃÓÑÉ ÇáÍÏíËÉ
+2025-09-07 00:44:57,981 - agent.web_search - INFO - Searching (20/20): ÅÏÇÑÉ ÇáÃáã ÇáãÒãä ÈÏæä ÌÑÇÍÉ
+2025-09-07 00:45:00,066 - agent.web_search - INFO - Total search results collected: 100
+2025-09-07 00:45:00,068 - agent.web_search - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\web_search_results.json
+2025-09-07 00:45:00,069 - agent.web_search - INFO - Completed execution of web_search in 95.54s
+2025-09-07 01:32:08,352 - agent.web_search - INFO - Starting execution of web_search
+2025-09-07 01:32:08,352 - agent.web_search - INFO - Performing web search for 20 queries
+2025-09-07 01:32:08,353 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-07 01:32:08,353 - agent.web_search - INFO - Searching (1/20): ØÑŞ ÚáÇÌ ãÑÖ ÇáÓßÑí ÇáÍÏíËÉ
+2025-09-07 01:32:12,430 - agent.web_search - INFO - Searching (2/20): ÇÓÊÑÇÊíÌíÇÊ ÇáæŞÇíÉ ãä ÃãÑÇÖ ÇáŞáÈ
+2025-09-07 01:32:16,291 - agent.web_search - INFO - Searching (3/20): ÃÍÏË ÇáÊŞäíÇÊ İí ÌÑÇÍÉ ÇáÏãÇÛ
+2025-09-07 01:32:21,620 - agent.web_search - INFO - Searching (4/20): ÊİÇÚáÇÊ ÇáÃÏæíÉ ÇáÔÇÆÚÉ æÂËÇÑåÇ ÇáÌÇäÈíÉ
+2025-09-07 01:32:25,674 - agent.web_search - INFO - Searching (5/20): ÃÓÇáíÈ ÊÔÎíÕ ÇáÃãÑÇÖ ÇáäÇÏÑÉ
+2025-09-07 01:32:31,340 - agent.web_search - INFO - Searching (6/20): ÈÑæÊæßæáÇÊ ÇáØæÇÑÆ ÇáØÈíÉ áÅäŞÇĞ ÇáÍíÇÉ
+2025-09-07 01:32:36,914 - agent.web_search - INFO - Searching (7/20): ÇáÚáÇÌÇÊ ÇáäİÓíÉ ááÇßÊÆÇÈ æÇáŞáŞ
+2025-09-07 01:32:41,222 - agent.web_search - INFO - Searching (8/20): ÅÑÔÇÏÇÊ ÑÚÇíÉ ÇáÃØİÇá ÍÏíËí ÇáæáÇÏÉ
+2025-09-07 01:32:44,692 - agent.web_search - INFO - Searching (9/20): ÂáíÇÊ ãŞÇæãÉ ÇáÈßÊíÑíÇ ááãÖÇÏÇÊ ÇáÍíæíÉ
+2025-09-07 01:32:48,164 - agent.web_search - INFO - Searching (10/20): ÊØæÑÇÊ ÇáÊÕæíÑ ÇáØÈí ÈÇáÑäíä ÇáãÛäÇØíÓí
+2025-09-07 01:32:53,901 - agent.web_search - INFO - Searching (11/20): ÕÍÉ ÇáãÑÃÉ æŞÖÇíÇ ÇáÍãá æÇáÅäÌÇÈ
+2025-09-07 01:33:00,030 - agent.web_search - INFO - Searching (12/20): ÃåãíÉ ÇáİÍæÕÇÊ ÇáÏæÑíÉ ááßÔİ ÇáãÈßÑ Úä ÇáÃãÑÇÖ
+2025-09-07 01:33:05,476 - agent.web_search - INFO - Searching (13/20): ÇáÊÛĞíÉ ÇáÚáÇÌíÉ æÏæÑåÇ İí ÇáÔİÇÁ
+2025-09-07 01:33:12,324 - agent.web_search - INFO - Searching (14/20): ãÓÊŞÈá ÇáØÈ ÇáÔÎÕí æÇáÚáÇÌ ÇáÌíäí
+2025-09-07 01:33:17,737 - agent.web_search - INFO - Searching (15/20): ÊÍÏíÇÊ ÇáÑÚÇíÉ ÇáÕÍíÉ İí ÇáãäÇØŞ ÇáäÇÆíÉ
+2025-09-07 01:33:23,894 - agent.web_search - INFO - Searching (16/20): ÃÎáÇŞíÇÊ ãåäÉ ÇáØÈ æÍŞæŞ ÇáãÑÖì
+2025-09-07 01:33:31,323 - agent.web_search - INFO - Searching (17/20): ÚáÇÌÇÊ ÇáÓÑØÇä ÇáãæÌåÉ æÇáÚáÇÌ ÇáãäÇÚí
+2025-09-07 01:33:36,874 - agent.web_search - INFO - Searching (18/20): ÇáØÈ ÇáÑíÇÖí æÅÕÇÈÇÊ ÇáãáÇÚÈ
+2025-09-07 01:33:41,992 - agent.web_search - INFO - Searching (19/20): ÏæÑ ÇáĞßÇÁ ÇáÇÕØäÇÚí İí ÇáÊÔÎíÕ ÇáØÈí
+2025-09-07 01:33:48,130 - agent.web_search - INFO - Searching (20/20): ÇááŞÇÍÇÊ ÇáÌÏíÏÉ æÇáÓíØÑÉ Úáì ÇáÃæÈÆÉ
+2025-09-07 01:33:51,287 - agent.web_search - INFO - Total search results collected: 100
+2025-09-07 01:33:51,289 - agent.web_search - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\web_search_results.json
+2025-09-07 01:33:51,290 - agent.web_search - INFO - Completed execution of web_search in 102.94s
+2025-09-07 01:44:12,187 - agent.web_search - INFO - Starting execution of web_search
+2025-09-07 01:44:12,187 - agent.web_search - INFO - Performing web search for 20 queries
+2025-09-07 01:44:12,187 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-07 01:44:12,187 - agent.web_search - INFO - Searching (1/20): ØÑŞ ÚáÇÌ ãÑÖ ÇáÓßÑí ÇáÍÏíËÉ
+2025-09-07 01:44:15,587 - agent.web_search - INFO - Searching (2/20): ÇÓÊÑÇÊíÌíÇÊ ÇáæŞÇíÉ ãä ÃãÑÇÖ ÇáŞáÈ
+2025-09-07 01:44:18,549 - agent.web_search - INFO - Searching (3/20): ÅÌÑÇÁÇÊ ÌÑÇÍÉ ÇáãÎ æÇáÃÚÕÇÈ
+2025-09-07 01:44:24,348 - agent.web_search - INFO - Searching (4/20): ÊİÇÚáÇÊ ÇáÃÏæíÉ ÇáÔÇÆÚÉ æÂËÇÑåÇ ÇáÌÇäÈíÉ
+2025-09-07 01:44:27,513 - agent.web_search - INFO - Searching (5/20): ÊŞäíÇÊ ÇáÊÔÎíÕ ÇáãÈßÑ ááÃæÑÇã ÇáÓÑØÇäíÉ
+2025-09-07 01:44:33,528 - agent.web_search - INFO - Searching (6/20): ÈÑæÊæßæáÇÊ ÇáÅÓÚÇİÇÊ ÇáÃæáíÉ ááÍæÇÏË ÇáØÇÑÆÉ
+2025-09-07 01:44:37,348 - agent.web_search - INFO - Searching (7/20): ÇáÚáÇÌÇÊ ÇáäİÓíÉ ááÇßÊÆÇÈ æÇáŞáŞ
+2025-09-07 01:44:41,287 - agent.web_search - INFO - Searching (8/20): ÅÑÔÇÏÇÊ ÑÚÇíÉ ÍÏíËí ÇáæáÇÏÉ æÇáÃØİÇá
+2025-09-07 01:44:45,826 - agent.web_search - INFO - Searching (9/20): ÂáíÇÊ ãŞÇæãÉ ÇáÈßÊíÑíÇ ááãÖÇÏÇÊ ÇáÍíæíÉ
+2025-09-07 01:44:48,845 - agent.web_search - INFO - Searching (10/20): ÊØæÑÇÊ ÊßäæáæÌíÇ ÇáÊÕæíÑ ÇáØÈí
+2025-09-07 01:44:54,782 - agent.web_search - INFO - Searching (11/20): ÃÓÈÇÈ æÚáÇÌ ÂáÇã ÇáÙåÑ ÇáãÒãäÉ
+2025-09-07 01:45:01,056 - agent.web_search - INFO - Searching (12/20): ÏæÑ ÇáĞßÇÁ ÇáÇÕØäÇÚí İí ÇáÊÔÎíÕ ÇáØÈí
+2025-09-07 01:45:04,679 - agent.web_search - INFO - Searching (13/20): ÃåãíÉ ÇáİÍÕ ÇáÏæÑí ááßÔİ ÇáãÈßÑ Úä ÇáÃãÑÇÖ
+2025-09-07 01:45:10,725 - agent.web_search - INFO - Searching (14/20): ÊÍÏíÇÊ ÇáÑÚÇíÉ ÇáÕÍíÉ áßÈÇÑ ÇáÓä
+2025-09-07 01:45:16,961 - agent.web_search - INFO - Searching (15/20): ÇáÚáÇÌÇÊ ÇáØÈíÚíÉ æÇáÊßãíáíÉ ááÃãÑÇÖ ÇáãÒãäÉ
+2025-09-07 01:45:22,197 - agent.web_search - INFO - Searching (16/20): ÊÃËíÑ ÇáÊÛĞíÉ Úáì ÕÍÉ ÇáÌåÇÒ ÇáåÖãí
+2025-09-07 01:45:27,523 - agent.web_search - INFO - Searching (17/20): ÃÎáÇŞíÇÊ ÇáØÈ æŞÖÇíÇ ÇáÎÕæÕíÉ ááãÑÖì
+2025-09-07 01:45:32,363 - agent.web_search - INFO - Searching (18/20): ÃÍÏË ÇáÃÈÍÇË İí ÚáÇÌ ÇáÃãÑÇÖ ÇáãäÇÚíÉ ÇáĞÇÊíÉ
+2025-09-07 01:45:38,110 - agent.web_search - INFO - Searching (19/20): ÅÏÇÑÉ ÇáÃÒãÇÊ ÇáÕÍíÉ æÇáÃæÈÆÉ ÇáÚÇáãíÉ
+2025-09-07 01:45:43,496 - agent.web_search - INFO - Searching (20/20): ÇÓÊÎÏÇã ÇáÑæÈæÊÇÊ İí ÇáÚãáíÇÊ ÇáÌÑÇÍíÉ ÇáÏŞíŞÉ
+2025-09-07 01:45:48,204 - agent.web_search - INFO - Total search results collected: 100
+2025-09-07 01:45:48,206 - agent.web_search - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\web_search_results.json
+2025-09-07 01:45:48,206 - agent.web_search - INFO - Completed execution of web_search in 96.02s
+2025-09-07 01:53:31,516 - agent.web_search - INFO - Starting execution of web_search
+2025-09-07 01:53:31,517 - agent.web_search - INFO - Performing web search for 20 queries
+2025-09-07 01:53:31,517 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-07 01:53:31,517 - agent.web_search - INFO - Searching (1/20): ØÑŞ ÚáÇÌ ãÑÖ ÇáÓßÑí ÇáÍÏíËÉ
+2025-09-07 01:53:34,468 - agent.web_search - INFO - Searching (2/20): ÇÓÊÑÇÊíÌíÇÊ ÇáæŞÇíÉ ãä ÇáÓÑØÇä
+2025-09-07 01:53:38,600 - agent.web_search - INFO - Searching (3/20): ÅÌÑÇÁÇÊ ÌÑÇÍÉ ÇáŞáÈ ÇáãİÊæÍ
+2025-09-07 01:53:44,050 - agent.web_search - INFO - Searching (4/20): ÊİÇÚáÇÊ ÇáÃÏæíÉ ÇáÕíÏáÇäíÉ ÇáÔÇÆÚÉ
+2025-09-07 01:53:47,862 - agent.web_search - INFO - Searching (5/20): ÊŞäíÇÊ ÇáÊÔÎíÕ ÇáØÈí ÇáãÈßÑ
+2025-09-07 01:53:56,769 - agent.web_search - INFO - Searching (6/20): ÈÑæÊæßæáÇÊ ØÈ ÇáØæÇÑÆ
+2025-09-07 01:54:02,789 - agent.web_search - INFO - Searching (7/20): ÇáÚáÇÌÇÊ ÇáäİÓíÉ ááÇßÊÆÇÈ
+2025-09-07 01:54:06,705 - agent.web_search - INFO - Searching (8/20): ÅÑÔÇÏÇÊ ÑÚÇíÉ ÇáÃØİÇá ÍÏíËí ÇáæáÇÏÉ
+2025-09-07 01:55:02,400 - agent.web_search - INFO - Starting execution of web_search
+2025-09-07 01:55:02,401 - agent.web_search - INFO - Performing web search for 20 queries
+2025-09-07 01:55:02,401 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-07 01:55:02,401 - agent.web_search - INFO - Searching (1/20): İæÇÆÏ ÇáãÔí Çáíæãí ááÕÍÉ ÇáÚÇãÉ
+2025-09-07 01:55:08,174 - agent.web_search - INFO - Searching (2/20): ÃÍÏË ÚáÇÌÇÊ ãÑÖ ÇáÓßÑí ãä ÇáäæÚ ÇáËÇäí
+2025-09-07 01:55:14,093 - agent.web_search - INFO - Searching (3/20): ÇÓÊÑÇÊíÌíÇÊ ÇáæŞÇíÉ ãä ÇáÓÑØÇä
+2025-09-07 01:55:17,547 - agent.web_search - INFO - Searching (4/20): ÌÑÇÍÇÊ ÇáŞáÈ ÇáãİÊæÍ æãÎÇØÑåÇ
+2025-09-07 01:55:22,451 - agent.web_search - INFO - Searching (5/20): ÇáÊİÇÚáÇÊ ÇáÏæÇÆíÉ ÇáÔÇÆÚÉ
+2025-09-07 01:55:26,988 - agent.web_search - INFO - Searching (6/20): ÊŞäíÇÊ ÇáÊÔÎíÕ ÇáãÈßÑ ááÃãÑÇÖ
+2025-09-07 01:55:32,508 - agent.web_search - INFO - Searching (7/20): ÈÑæÊæßæáÇÊ ÇáÅÓÚÇİÇÊ ÇáÃæáíÉ ááÍÑæŞ
+2025-09-07 01:55:37,829 - agent.web_search - INFO - Searching (8/20): ÃäæÇÚ ÇáÚáÇÌ ÇáäİÓí ááÇßÊÆÇÈ
+2025-09-07 01:55:41,600 - agent.web_search - INFO - Searching (9/20): ÅÑÔÇÏÇÊ ÑÚÇíÉ ÇáÃØİÇá ÍÏíËí ÇáæáÇÏÉ
+2025-09-07 01:55:44,623 - agent.web_search - INFO - Searching (10/20): ÂáíÇÊ ãŞÇæãÉ ÇáÈßÊíÑíÇ ááãÖÇÏÇÊ ÇáÍíæíÉ
+2025-09-07 01:55:47,686 - agent.web_search - INFO - Searching (11/20): ÇÓÊÎÏÇã ÇáÑäíä ÇáãÛäÇØíÓí İí ÊÔÎíÕ ÃãÑÇÖ ÇáÏãÇÛ
+2025-09-07 01:55:53,494 - agent.web_search - INFO - Searching (12/20): ÃåãíÉ áŞÇÍÇÊ ÇáÃØİÇá ÇáÑæÊíäíÉ
+2025-09-07 01:55:59,217 - agent.web_search - INFO - Searching (13/20): ÊÍÏíÇÊ ÇáÑÚÇíÉ ÇáÕÍíÉ áßÈÇÑ ÇáÓä
+2025-09-07 01:56:02,758 - agent.web_search - INFO - Searching (14/20): ÃÚÑÇÖ æÚáÇÌ ÊßíÓ ÇáãÈÇíÖ
+2025-09-07 01:56:08,426 - agent.web_search - INFO - Searching (15/20): ÃÎáÇŞíÇÊ ãåäÉ ÇáØÈ İí ÇáÊÚÇãá ãÚ ÇáãÑÖì
+2025-09-07 01:56:12,846 - agent.web_search - INFO - Searching (16/20): ÏæÑ ÇáÊÛĞíÉ İí ÇáæŞÇíÉ ãä ÃãÑÇÖ ÇáŞáÈ
+2025-09-07 01:56:17,603 - agent.web_search - INFO - Searching (17/20): ãÓÊŞÈá ÇáØÈ Úä ÈÚÏ æÊØÈíŞÇÊå
+2025-09-07 01:56:22,853 - agent.web_search - INFO - Searching (18/20): ÃÓÈÇÈ æÃÚÑÇÖ ÃãÑÇÖ ÇáãäÇÚÉ ÇáĞÇÊíÉ
+2025-09-07 01:56:28,133 - agent.web_search - INFO - Searching (19/20): ÃÍÏË ÇáÃÈÍÇË İí ÚáÇÌ ãÑÖ ÇáÒåÇíãÑ
+2025-09-07 01:56:33,824 - agent.web_search - INFO - Searching (20/20): ÚáÇÌ ÅÕÇÈÇÊ ÇáÑÈÇØ ÇáÕáíÈí
+2025-09-07 01:56:38,148 - agent.web_search - INFO - Total search results collected: 100
+2025-09-07 01:56:38,150 - agent.web_search - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\web_search_results.json
+2025-09-07 01:56:38,150 - agent.web_search - INFO - Completed execution of web_search in 95.75s
+2025-09-07 13:33:13,674 - agent.web_search - INFO - Starting execution of web_search
+2025-09-07 13:33:13,674 - agent.web_search - INFO - Performing web search for 20 queries
+2025-09-07 13:33:13,675 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-07 13:33:13,675 - agent.web_search - INFO - Searching (1/20): ØÑŞ ÚáÇÌ ãÑÖ ÇáÓßÑí ãä ÇáäæÚ ÇáËÇäí
+2025-09-07 13:33:18,251 - agent.web_search - INFO - Searching (2/20): ÇÓÊÑÇÊíÌíÇÊ ÇáæŞÇíÉ ãä ÃãÑÇÖ ÇáŞáÈ æÇáÃæÚíÉ ÇáÏãæíÉ
+2025-09-07 13:33:22,279 - agent.web_search - INFO - Searching (3/20): ÃÍÏË ÊŞäíÇÊ ÌÑÇÍÉ ÇáÏãÇÛ æÇáÃÚÕÇÈ
+2025-09-07 13:33:29,405 - agent.web_search - INFO - Searching (4/20): ÊİÇÚáÇÊ ÇáÃÏæíÉ ÇáÔÇÆÚÉ æãÎÇØÑåÇ
+2025-09-07 13:33:32,912 - agent.web_search - INFO - Searching (5/20): ÃÓÇáíÈ ÇáÊÔÎíÕ ÇáãÈßÑ ááÃãÑÇÖ ÇáæÑÇËíÉ
+2025-09-07 13:33:38,350 - agent.web_search - INFO - Searching (6/20): ÈÑæÊæßæáÇÊ ÇáØæÇÑÆ ÇáØÈíÉ İí ÇáÍæÇÏË
+2025-09-07 13:33:44,204 - agent.web_search - INFO - Searching (7/20): ÇáÚáÇÌÇÊ ÇáäİÓíÉ ááÇßÊÆÇÈ æÇáŞáŞ
+2025-09-07 13:33:48,062 - agent.web_search - INFO - Searching (8/20): ÅÑÔÇÏÇÊ ÑÚÇíÉ ÇáÃØİÇá ÍÏíËí ÇáæáÇÏÉ
+2025-09-07 13:33:52,293 - agent.web_search - INFO - Searching (9/20): ãŞÇæãÉ ÇáãÖÇÏÇÊ ÇáÍíæíÉ æÂËÇÑåÇ
+2025-09-07 13:33:56,191 - agent.web_search - INFO - Searching (10/20): ÊØæÑÇÊ ÇáÊÕæíÑ ÈÇáÑäíä ÇáãÛäÇØíÓí İí ÇáÊÔÎíÕ
+2025-09-07 13:34:00,072 - agent.web_search - INFO - Searching (11/20): ÃÓÈÇÈ æØÑŞ ÚáÇÌ ÂáÇã ÇáÙåÑ ÇáãÒãäÉ
+2025-09-07 13:34:05,923 - agent.web_search - INFO - Searching (12/20): ÏæÑ ÇáÊÛĞíÉ İí ÊÚÒíÒ ÇáãäÇÚÉ
+2025-09-07 13:34:09,888 - agent.web_search - INFO - Searching (13/20): ÃÎáÇŞíÇÊ ÇáØÈ İí ÇÊÎÇĞ ÇáŞÑÇÑÇÊ ÇáÚáÇÌíÉ
+2025-09-07 13:34:21,972 - agent.web_search - INFO - Searching (14/20): ÊÍÏíÇÊ ÇáÕÍÉ ÇáÚÇãÉ İí ÇáÏæá ÇáäÇãíÉ
+2025-09-07 13:34:30,963 - agent.web_search - INFO - Searching (15/20): ÌÑÇÍÉ ÇáÚíæä ÈÇááíÒÑ: ÇáİæÇÆÏ æÇáãÎÇØÑ
+2025-09-07 13:34:36,573 - agent.web_search - INFO - Searching (16/20): ÇáØÈ ÇáÈÏíá æÇáÚáÇÌÇÊ ÇáÊßãíáíÉ
+2025-09-07 13:34:47,835 - agent.web_search - INFO - Searching (17/20): ÇáÃãÑÇÖ ÇáãÚÏíÉ æØÑŞ ÇäÊÔÇÑåÇ æÇáæŞÇíÉ ãäåÇ
+2025-09-07 13:34:52,322 - agent.web_search - INFO - Searching (18/20): ÑÚÇíÉ ÇáãÓäíä æÇáÃãÑÇÖ ÇáãÑÊÈØÉ ÈÇáÔíÎæÎÉ
+2025-09-07 13:34:58,485 - agent.web_search - INFO - Searching (19/20): ÇÓÊÎÏÇã ÇáĞßÇÁ ÇáÇÕØäÇÚí İí ÇáØÈ ÇáÔÎÕí
+2025-09-07 13:35:03,917 - agent.web_search - INFO - Searching (20/20): ÅÏÇÑÉ ÇáÃáã ÇáãÒãä Ïæä ÌÑÇÍÉ
+2025-09-07 13:35:09,362 - agent.web_search - INFO - Total search results collected: 100
+2025-09-07 13:35:09,364 - agent.web_search - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\web_search_results.json
+2025-09-07 13:35:09,365 - agent.web_search - INFO - Completed execution of web_search in 115.69s
+2025-09-07 13:38:44,404 - agent.web_search - INFO - Starting execution of web_search
+2025-09-07 13:38:44,404 - agent.web_search - INFO - Performing web search for 20 queries
+2025-09-07 13:38:44,404 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-07 13:38:44,404 - agent.web_search - INFO - Searching (1/20): ØÑŞ ÚáÇÌ ãÑÖ ÇáÓßÑí
+2025-09-07 13:38:48,700 - agent.web_search - INFO - Searching (2/20): ÇÓÊÑÇÊíÌíÇÊ ÇáæŞÇíÉ ãä ÇáÓÑØÇä
+2025-09-07 13:38:52,809 - agent.web_search - INFO - Searching (3/20): ÇáÅÌÑÇÁÇÊ ÇáÌÑÇÍíÉ İí ÃãÑÇÖ ÇáŞáÈ
+2025-09-07 13:38:57,941 - agent.web_search - INFO - Searching (4/20): ÊİÇÚáÇÊ ÇáÃÏæíÉ ÇáÕíÏáÇäíÉ
+2025-09-07 13:39:03,017 - agent.web_search - INFO - Searching (5/20): ÊŞäíÇÊ ÇáÊÔÎíÕ ÇáØÈí ÇáÍÏíËÉ
+2025-09-07 13:39:08,883 - agent.web_search - INFO - Searching (6/20): ÈÑæÊæßæáÇÊ ØÈ ÇáØæÇÑÆ
+2025-09-07 13:39:14,287 - agent.web_search - INFO - Searching (7/20): ÚáÇÌÇÊ ÇáÕÍÉ ÇáäİÓíÉ
+2025-09-07 13:39:17,894 - agent.web_search - INFO - Searching (8/20): ÅÑÔÇÏÇÊ ÑÚÇíÉ ÇáÃØİÇá ÍÏíËí ÇáæáÇÏÉ
+2025-09-07 13:39:21,580 - agent.web_search - INFO - Searching (9/20): ÂáíÇÊ ãŞÇæãÉ ÇáãÖÇÏÇÊ ÇáÍíæíÉ
+2025-09-07 13:39:29,946 - agent.web_search - INFO - Searching (10/20): ÊŞäíÇÊ ÇáÊÕæíÑ ÇáØÈí ÇáãÊŞÏãÉ
+2025-09-07 13:39:36,386 - agent.web_search - INFO - Searching (11/20): ÌÏÇæá ÊØÚíã ÇáÃØİÇá
+2025-09-07 13:39:42,004 - agent.web_search - INFO - Searching (12/20): ÃÓÈÇÈ ÃãÑÇÖ ÇáãäÇÚÉ ÇáĞÇÊíÉ
+2025-09-07 13:39:47,787 - agent.web_search - INFO - Searching (13/20): ÏæÑ ÇáĞßÇÁ ÇáÇÕØäÇÚí İí ÇáÊÔÎíÕ ÇáØÈí
+2025-09-07 13:39:53,177 - agent.web_search - INFO - Searching (14/20): ÇáÊÛĞíÉ áãÑÖì ÇáİÔá Çáßáæí ÇáãÒãä
+2025-09-07 13:39:58,691 - agent.web_search - INFO - Searching (15/20): ÇáÇÚÊÈÇÑÇÊ ÇáÃÎáÇŞíÉ İí ÇáåäÏÓÉ ÇáæÑÇËíÉ
+2025-09-07 13:40:04,386 - agent.web_search - INFO - Searching (16/20): ÊŞäíÇÊ ÅÚÇÏÉ ÇáÊÃåíá áãÑÖì ÇáÓßÊÉ ÇáÏãÇÛíÉ
+2025-09-07 13:40:10,653 - agent.web_search - INFO - Searching (17/20): ÇÓÊÑÇÊíÌíÇÊ ÅÏÇÑÉ ÇáÃáã ÇáãÒãä
+2025-09-07 13:40:15,922 - agent.web_search - INFO - Searching (18/20): ÃÍÏË ÇáÊØæÑÇÊ İí Úáã ÇáÃÚÕÇÈ
+2025-09-07 13:40:20,671 - agent.web_search - INFO - Searching (19/20): ÍãáÇÊ ÇáÕÍÉ ÇáÚÇãÉ ááÃãÑÇÖ ÇáãÚÏíÉ
+2025-09-07 13:40:24,114 - agent.web_search - INFO - Searching (20/20): İæÇÆÏ æÊÍÏíÇÊ ÇáØÈ Úä ÈÚÏ
+2025-09-07 13:41:07,865 - agent.web_search - INFO - Starting execution of web_search
+2025-09-07 13:41:07,865 - agent.web_search - INFO - Performing web search for 5 queries
+2025-09-07 13:41:07,865 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-07 13:41:07,865 - agent.web_search - INFO - Searching (1/5): ÇáæŞÇíÉ ãä ÇáÃãÑÇÖ ÇáãÒãäÉ
+2025-09-07 13:41:12,074 - agent.web_search - INFO - Searching (2/5): ÃÍÏË ÊŞäíÇÊ ÇáÌÑÇÍÉ ÇáÑæÈæÊíÉ
+2025-09-07 13:41:21,978 - agent.web_search - INFO - Searching (3/5): ÊÔÎíÕ æÚáÇÌ ÃãÑÇÖ ÇáÌåÇÒ ÇáåÖãí
+2025-09-07 13:41:27,710 - agent.web_search - INFO - Searching (4/5): ÊÃËíÑ ÇáÊÛĞíÉ Úáì ÕÍÉ ÇáÏãÇÛ
+2025-09-07 13:41:34,660 - agent.web_search - INFO - Searching (5/5): ÈÑæÊæßæáÇÊ ÇáØæÇÑÆ ÇáØÈíÉ ááÃØİÇá
+2025-09-07 13:41:39,950 - agent.web_search - INFO - Total search results collected: 25
+2025-09-07 13:41:39,952 - agent.web_search - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\web_search_results.json
+2025-09-07 13:41:39,952 - agent.web_search - INFO - Completed execution of web_search in 32.09s
+2025-09-07 13:42:26,085 - agent.web_search - INFO - Starting execution of web_search
+2025-09-07 13:42:26,085 - agent.web_search - INFO - Performing web search for 5 queries
+2025-09-07 13:42:26,085 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-07 13:42:26,085 - agent.web_search - INFO - Searching (1/5): ÚáÇÌ ãÑÖ ÇáÒåÇíãÑ ÇáÌÏíÏ
+2025-09-07 13:42:31,931 - agent.web_search - INFO - Searching (2/5): äÕÇÆÍ ááæŞÇíÉ ãä ÇáÃãÑÇÖ ÇáÔÇÆÚÉ
+2025-09-07 13:42:36,345 - agent.web_search - INFO - Searching (3/5): ÃÍÏË ÊŞäíÇÊ ÇáÊÕæíÑ ÇáØÈí
+2025-09-07 13:42:41,770 - agent.web_search - INFO - Searching (4/5): ÊŞäíÇÊ ÇáÌÑÇÍÉ ÇáÑæÈæÊíÉ
+2025-09-07 13:42:47,346 - agent.web_search - INFO - Searching (5/5): ÃÓÇáíÈ ÚáÇÌ ÇáÇßÊÆÇÈ
+2025-09-07 13:42:53,661 - agent.web_search - INFO - Total search results collected: 25
+2025-09-07 13:42:53,662 - agent.web_search - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\web_search_results.json
+2025-09-07 13:42:53,662 - agent.web_search - INFO - Completed execution of web_search in 27.58s
+2025-09-07 13:47:31,347 - agent.web_search - INFO - Starting execution of web_search
+2025-09-07 13:47:31,347 - agent.web_search - INFO - Performing web search for 5 queries
+2025-09-07 13:47:31,347 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-07 13:47:31,347 - agent.web_search - INFO - Searching (1/5): ÇÓÊÑÇÊíÌíÇÊ ÇáæŞÇíÉ ãä ÇáÃãÑÇÖ ÇáãÒãäÉ
+2025-09-07 13:47:35,635 - agent.web_search - INFO - Searching (2/5): ÊØÈíŞÇÊ ÇáĞßÇÁ ÇáÇÕØäÇÚí İí ÇáÊÔÎíÕ ÇáØÈí
+2025-09-07 13:47:40,333 - agent.web_search - INFO - Searching (3/5): ÃÍÏË ÊŞäíÇÊ ÌÑÇÍÉ ÇáŞáÈ ÇáãİÊæÍ
+2025-09-07 13:47:46,716 - agent.web_search - INFO - Searching (4/5): ÊİÇÚáÇÊ ÇáÃÏæíÉ ÇáÔÇÆÚÉ æßíİíÉ ÊÌäÈåÇ
+2025-09-07 13:47:50,434 - agent.web_search - INFO - Searching (5/5): ÅÑÔÇÏÇÊ ÑÚÇíÉ ãÑÖì ÇáÓßÑí İí ÇáãäÒá
+2025-09-07 13:47:54,903 - agent.web_search - INFO - Total search results collected: 25
+2025-09-07 13:47:54,904 - agent.web_search - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\web_search_results.json
+2025-09-07 13:47:54,904 - agent.web_search - INFO - Completed execution of web_search in 23.56s
+2025-09-07 13:54:44,030 - agent.web_search - INFO - Starting execution of web_search
+2025-09-07 13:54:44,030 - agent.web_search - INFO - Performing web search for 5 queries
+2025-09-07 13:54:44,030 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-07 13:54:44,030 - agent.web_search - INFO - Searching (1/5): ØÑŞ ÚáÇÌ ÃãÑÇÖ ÇáãäÇÚÉ ÇáĞÇÊíÉ
+2025-09-07 13:54:47,670 - agent.web_search - INFO - Searching (2/5): ÇÓÊÑÇÊíÌíÇÊ ÇáæŞÇíÉ ãä ÇáÃæÈÆÉ
+2025-09-07 13:54:51,205 - agent.web_search - INFO - Searching (3/5): ÇáÊŞäíÇÊ ÇáÌÑÇÍíÉ ÇáÑæÈæÊíÉ İí ÇáÃæÑÇã
+2025-09-07 13:54:56,449 - agent.web_search - INFO - Searching (4/5): ÇÓÊÎÏÇã ÇáÊÕæíÑ ÈÇáÑäíä ÇáãÛäÇØíÓí ÇáæÙíİí
+2025-09-07 13:55:02,615 - agent.web_search - INFO - Searching (5/5): ÃÈÍÇË ÊØæíÑ ÇááŞÇÍÇÊ ÇáÌÏíÏÉ
+2025-09-07 13:55:08,247 - agent.web_search - INFO - Total search results collected: 25
+2025-09-07 13:55:08,248 - agent.web_search - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\web_search_results.json
+2025-09-07 13:55:08,249 - agent.web_search - INFO - Completed execution of web_search in 24.22s
+2025-09-07 17:11:37,573 - agent.web_search - INFO - Starting execution of web_search
+2025-09-07 17:11:37,573 - agent.web_search - INFO - Performing web search for 5 queries
+2025-09-07 17:11:37,574 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-07 17:11:37,574 - agent.web_search - INFO - Searching (1/5): ÊŞäíÇÊ ÇáÑí ÇáÍÏíËÉ İí ÇáÒÑÇÚÉ
+2025-09-07 17:11:43,156 - agent.web_search - INFO - Searching (2/5): ÃãÑÇÖ ÇáãÇÔíÉ æØÑŞ ÇáæŞÇíÉ
+2025-09-07 17:11:49,295 - agent.web_search - INFO - Searching (3/5): ÇáÒÑÇÚÉ ÇáÚÖæíÉ æİæÇÆÏåÇ ÇáÈíÆíÉ
+2025-09-07 17:11:54,936 - agent.web_search - INFO - Searching (4/5): ÊØÈíŞÇÊ ÇáĞßÇÁ ÇáÇÕØäÇÚí İí ÇáÒÑÇÚÉ ÇáĞßíÉ
+2025-09-07 17:12:00,391 - agent.web_search - INFO - Searching (5/5): ÇáãßÇİÍÉ ÇáÍíæíÉ ááÂİÇÊ ÇáÒÑÇÚíÉ
+2025-09-07 17:12:04,963 - agent.web_search - INFO - Total search results collected: 25
+2025-09-07 17:12:04,965 - agent.web_search - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\web_search_results.json
+2025-09-07 17:12:04,966 - agent.web_search - INFO - Completed execution of web_search in 27.39s
+2025-09-07 17:31:41,008 - agent.web_search - INFO - Starting execution of web_search
+2025-09-07 17:31:41,008 - agent.web_search - INFO - Performing web search for 5 queries
+2025-09-07 17:31:41,008 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-07 17:31:41,008 - agent.web_search - INFO - Searching (1/5): ÊÍÓíä ÅäÊÇÌíÉ ÇáãÍÇÕíá ÇáÒÑÇÚíÉ
+2025-09-07 17:31:48,826 - agent.web_search - INFO - Searching (2/5): ÇáÃÓÇáíÈ ÇáÍÏíËÉ áÊÑÈíÉ ÇáãÇÔíÉ
+2025-09-07 17:31:54,429 - agent.web_search - INFO - Searching (3/5): ÊŞäíÇÊ ÇáÒÑÇÚÉ ÇáĞßíÉ
+2025-09-07 17:32:00,445 - agent.web_search - INFO - Searching (4/5): ããÇÑÓÇÊ ÇáÒÑÇÚÉ ÇáãÓÊÏÇãÉ
+2025-09-07 17:32:06,056 - agent.web_search - INFO - Searching (5/5): ÇÓÊÑÇÊíÌíÇÊ ãßÇİÍÉ ÇáÂİÇÊ ÇáÒÑÇÚíÉ
+2025-09-07 17:32:10,553 - agent.web_search - INFO - Total search results collected: 25
+2025-09-07 17:32:10,554 - agent.web_search - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\web_search_results.json
+2025-09-07 17:32:10,554 - agent.web_search - INFO - Completed execution of web_search in 29.55s
+2025-09-07 20:38:46,876 - agent.web_search - INFO - Starting execution of web_search
+2025-09-07 20:38:46,877 - agent.web_search - INFO - Performing web search for 5 queries
+2025-09-07 20:38:46,877 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-07 20:38:46,877 - agent.web_search - INFO - Searching (1/5): ØÑŞ ÒÑÇÚÉ ÇáŞãÍ ÇáÍÏíËÉ
+2025-09-07 20:38:52,643 - agent.web_search - INFO - Searching (2/5): ÅÏÇÑÉ ãÒÇÑÚ ÇáÃáÈÇä æÊÍÓíä ÇáÅäÊÇÌíÉ
+2025-09-07 20:38:58,604 - agent.web_search - INFO - Searching (3/5): ÊØÈíŞÇÊ ÇáĞßÇÁ ÇáÇÕØäÇÚí İí ÇáÒÑÇÚÉ
+2025-09-07 20:39:03,958 - agent.web_search - INFO - Searching (4/5): ÊÍÓíä ÎÕæÈÉ ÇáÊÑÈÉ æÇáããÇÑÓÇÊ ÇáãÓÊÏÇãÉ
+2025-09-07 20:39:09,791 - agent.web_search - INFO - Searching (5/5): ÊŞäíÇÊ ÇáÑí ÇáÍÏíËÉ áÊÑÔíÏ ÇÓÊåáÇß ÇáãíÇå
+2025-09-07 20:39:14,795 - agent.web_search - INFO - Total search results collected: 25
+2025-09-07 20:39:14,796 - agent.web_search - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\web_search_results.json
+2025-09-07 20:39:14,796 - agent.web_search - INFO - Completed execution of web_search in 27.92s
+2025-09-07 20:40:02,751 - agent.web_search - INFO - Starting execution of web_search
+2025-09-07 20:40:02,751 - agent.web_search - INFO - Performing web search for 5 queries
+2025-09-07 20:40:02,751 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-07 20:40:02,751 - agent.web_search - INFO - Searching (1/5): ÃİÖá ÃäæÇÚ ÇáÑÒ ááÒÑÇÚÉ İí ÇáÏáÊÇ
+2025-09-07 20:40:08,156 - agent.web_search - INFO - Searching (2/5): ØÑŞ ÇáÑí ÇáÍÏíËÉ áÊæİíÑ ÇáãÇíÉ İí ÇáÃÑÇÖí ÇáÕÍÑÇæíÉ
+2025-09-07 20:40:13,440 - agent.web_search - INFO - Searching (3/5): ÚáÇÌ ÃãÑÇÖ ÇáØãÇØã ÇáÔÇÆÚÉ İí ãÕÑ
+2025-09-07 20:40:19,174 - agent.web_search - INFO - Searching (4/5): ÊÑÈíÉ ÇáÏæÇÌä ÇáÈáÏí áÅäÊÇÌ ÇáÈíÖ
+2025-09-07 20:40:25,491 - agent.web_search - INFO - Searching (5/5): ÃÓãÏÉ ÚÖæíÉ áÊÍÓíä ÌæÏÉ ÇáÊÑÈÉ ÇáÒÑÇÚíÉ
+2025-09-07 20:40:29,811 - agent.web_search - INFO - Total search results collected: 25
+2025-09-07 20:40:29,812 - agent.web_search - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\web_search_results.json
+2025-09-07 20:40:29,812 - agent.web_search - INFO - Completed execution of web_search in 27.06s
+2025-09-07 20:44:17,829 - agent.web_search - INFO - Starting execution of web_search
+2025-09-07 20:44:17,829 - agent.web_search - INFO - Performing web search for 5 queries
+2025-09-07 20:44:17,829 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-07 20:44:17,829 - agent.web_search - INFO - Searching (1/5): ÃÍÓä ØÑŞ ÑÚÇíÉ ÇáãÍÇÕíá ÇáÒÑÇÚíÉ
+2025-09-07 20:44:24,662 - agent.web_search - INFO - Searching (2/5): ÃäÙãÉ ÇáÑí ÇáÍÏíËÉ áÊæİíÑ ÇáãíÇå
+2025-09-07 20:44:30,009 - agent.web_search - INFO - Searching (3/5): ÃÍÏË ØÑŞ ãßÇİÍÉ ÇáÂİÇÊ æÇáÃãÑÇÖ ÇáÒÑÇÚíÉ
+2025-09-07 20:44:35,732 - agent.web_search - INFO - Searching (4/5): ÃÓÇÓíÇÊ ÊÑÈíÉ ÇáÏæÇÌä İí ÇáãÒÇÑÚ ÇáÕÛíÑÉ
+2025-09-07 20:44:41,568 - agent.web_search - INFO - Searching (5/5): ÊØÈíŞÇÊ ÇáÊßäæáæÌíÇ ÇáÍÏíËÉ İí ÇáÒÑÇÚÉ ÇáĞßíÉ
+2025-09-07 20:44:46,689 - agent.web_search - INFO - Total search results collected: 25
+2025-09-07 20:44:46,690 - agent.web_search - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\web_search_results.json
+2025-09-07 20:44:46,690 - agent.web_search - INFO - Completed execution of web_search in 28.86s
+2025-09-07 20:51:24,179 - agent.web_search - INFO - Starting execution of web_search
+2025-09-07 20:51:24,179 - agent.web_search - INFO - Performing web search for 5 queries
+2025-09-07 20:51:24,180 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-07 20:51:24,180 - agent.web_search - INFO - Searching (1/5): ÃãÇßä ÓíÇÍÉ ÇáãÛÇãÑÇÊ İí ãÕÑ
+2025-09-07 20:51:29,843 - agent.web_search - INFO - Searching (2/5): ÃİÖá ÇáÃãÇßä ÇáÓíÇÍíÉ ÇáËŞÇİíÉ İí ÇáŞÇåÑÉ
+2025-09-07 20:51:35,500 - agent.web_search - INFO - Searching (3/5): äÕÇÆÍ ááÓİÑ ÈãíÒÇäíÉ ãÍÏæÏÉ İí ãÕÑ
+2025-09-07 20:51:41,109 - agent.web_search - INFO - Searching (4/5): ÃİÖá ÃãÇßä ÇáÛØÓ İí ÇáÈÍÑ ÇáÃÍãÑ
+2025-09-07 20:51:47,489 - agent.web_search - INFO - Searching (5/5): ÊÃËíÑ ÇáÓíÇÍÉ Úáì ÇáÇŞÊÕÇÏ ÇáãÍáí İí ãÕÑ
+2025-09-07 20:51:52,982 - agent.web_search - INFO - Total search results collected: 25
+2025-09-07 20:51:52,983 - agent.web_search - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\web_search_results.json
+2025-09-07 20:51:52,984 - agent.web_search - INFO - Completed execution of web_search in 28.81s

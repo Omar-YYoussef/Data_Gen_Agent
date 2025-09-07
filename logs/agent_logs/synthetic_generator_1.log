@@ -1,0 +1,585 @@
+2025-09-06 23:39:54,774 - agent.synthetic_generator_1 - INFO - Starting execution of synthetic_generator_1
+2025-09-06 23:39:54,774 - agent.synthetic_generator_1 - INFO - Agent 1 generating triplets data for 80 topics
+2025-09-06 23:39:54,775 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (1/80): ÊÔÎíÕ ÏÇÁ ÇáÓßÑí ãä ÇáäæÚ ÇáÃæá
+2025-09-06 23:39:54,775 - agent.synthetic_generator_1 - ERROR - Synthetic data generation failed for agent 1: GeminiService.generate_synthetic_data() missing 1 required positional argument: 'language'
+2025-09-06 23:39:54,776 - agent.synthetic_generator_1 - ERROR - Error in synthetic_generator_1 after 0.00s: GeminiService.generate_synthetic_data() missing 1 required positional argument: 'language'
+Traceback (most recent call last):
+  File "D:\Learn\web_data_generation_pipeline\agents\base_agent.py", line 83, in run
+    result = self.execute(input_data, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\agents\synthetic_data_generator_agent.py", line 45, in execute
+    generated_items = gemini_service.generate_synthetic_data(topic, data_type)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GeminiService.generate_synthetic_data() missing 1 required positional argument: 'language'
+2025-09-07 00:24:55,982 - agent.synthetic_generator_1 - INFO - Starting execution of synthetic_generator_1
+2025-09-07 00:24:55,982 - agent.synthetic_generator_1 - INFO - Agent 1 generating triplets data for 77 topics in ar
+2025-09-07 00:24:55,982 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (1/77): ÃÍÏË ØÑŞ ÚáÇÌ ãÑÖ ÇáÓßÑí İí ÃáãÇäíÇ
+2025-09-07 00:25:03,471 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÃÍÏË ØÑŞ ÚáÇÌ ãÑÖ ÇáÓßÑí İí ÃáãÇäíÇ
+2025-09-07 00:25:03,471 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (2/77): ÂáíÉ ÊÏãíÑ ÎáÇíÇ ÈíÊÇ İí ÇáÓßÑí ÇáäæÚ ÇáÃæá
+2025-09-07 00:25:09,573 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÂáíÉ ÊÏãíÑ ÎáÇíÇ ÈíÊÇ İí ÇáÓßÑí ÇáäæÚ ÇáÃæá
+2025-09-07 00:25:09,573 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (3/77): ÇáÃÚÑÇÖ ÇáãÈßÑÉ áãÑÖ ÇáÓßÑí ÇáäæÚ ÇáÃæá
+2025-09-07 00:25:17,666 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÃÚÑÇÖ ÇáãÈßÑÉ áãÑÖ ÇáÓßÑí ÇáäæÚ ÇáÃæá
+2025-09-07 00:25:17,666 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (4/77): ãŞÇæãÉ ÇáÃäÓæáíä ßÓÈÈ ááÓßÑí ÇáäæÚ ÇáËÇäí
+2025-09-07 00:25:20,956 - agent.synthetic_generator_1 - ERROR - Synthetic data generation failed for agent 1: Failed to generate text after 3 attempts: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 39
+}
+]
+2025-09-07 00:25:20,956 - agent.synthetic_generator_1 - ERROR - Error in synthetic_generator_1 after 24.97s: Failed to generate text after 3 attempts: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 39
+}
+]
+Traceback (most recent call last):
+  File "D:\Learn\web_data_generation_pipeline\services\gemini_service.py", line 35, in generate_text
+    response = self.model.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\google\generativeai\generative_models.py", line 243, in generate_content
+    response = self._client.generate_content(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 566, in generate_content
+    response = rpc(
+               ^^^^
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 39
+}
+]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Learn\web_data_generation_pipeline\agents\base_agent.py", line 83, in run
+    result = self.execute(input_data, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\agents\synthetic_data_generator_agent.py", line 52, in execute
+    generated_items = gemini_service.generate_synthetic_data(topic, data_type, language)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\services\gemini_service.py", line 256, in generate_synthetic_data
+    response = self.generate_text(prompt, system_instruction)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\services\gemini_service.py", line 44, in generate_text
+    raise Exception(f"Failed to generate text after {max_retries} attempts: {e}")
+Exception: Failed to generate text after 3 attempts: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 39
+}
+]
+2025-09-07 01:02:30,592 - agent.synthetic_generator_1 - INFO - Starting execution of synthetic_generator_1
+2025-09-07 01:02:30,592 - agent.synthetic_generator_1 - INFO - Agent 1 generating triplets data for 142 topics in ar
+2025-09-07 01:02:30,592 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (1/142): ÊŞäíÇÊ ŞíÇÓ ÇáÓßÑ İí ÇáÏã ÇáãäÒáíÉ
+2025-09-07 01:02:37,388 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊŞäíÇÊ ŞíÇÓ ÇáÓßÑ İí ÇáÏã ÇáãäÒáíÉ
+2025-09-07 01:02:37,389 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (2/142): ÊØÈíŞÇÊ ÊÊÈÚ ÇáÓßÑ æÇáÊÍßã Èå
+2025-09-07 01:02:43,283 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊØÈíŞÇÊ ÊÊÈÚ ÇáÓßÑ æÇáÊÍßã Èå
+2025-09-07 01:02:43,283 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (3/142): ÃÏæÇÊ ÌãÚ ÚíäÇÊ ÇáÏã áÇÎÊÈÇÑ ÇáÓßÑ
+2025-09-07 01:02:50,485 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÃÏæÇÊ ÌãÚ ÚíäÇÊ ÇáÏã áÇÎÊÈÇÑ ÇáÓßÑ
+2025-09-07 01:02:50,486 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (4/142): ÇáãæÇÑÏ ÇáÊÚáíãíÉ áãÑÖì ÇáÓßÑí
+2025-09-07 01:03:16,802 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáãæÇÑÏ ÇáÊÚáíãíÉ áãÑÖì ÇáÓßÑí
+2025-09-07 01:03:16,802 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (5/142): ãŞÇÑäÉ ÃÌåÒÉ ŞíÇÓ ÇáÓßÑ CONTOUR®NEXT æ CONTOUR® CARE
+2025-09-07 01:03:24,078 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ãŞÇÑäÉ ÃÌåÒÉ ŞíÇÓ ÇáÓßÑ CONTOUR®NEXT æ CONTOUR® CARE
+2025-09-07 01:03:24,079 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (6/142): ÏæÑ ÔÑÇÆØ ÇÎÊÈÇÑ ÇáÓßÑ İí ÇáãÊÇÈÚÉ ÇáĞÇÊíÉ
+2025-09-07 01:03:30,804 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÏæÑ ÔÑÇÆØ ÇÎÊÈÇÑ ÇáÓßÑ İí ÇáãÊÇÈÚÉ ÇáĞÇÊíÉ
+2025-09-07 01:03:32,804 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (7/142): ÊÔÎíÕ ÏÇÁ ÇáÓßÑí ãä ÇáäæÚ ÇáÃæá
+2025-09-07 01:03:37,859 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊÔÎíÕ ÏÇÁ ÇáÓßÑí ãä ÇáäæÚ ÇáÃæá
+2025-09-07 01:03:37,859 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (8/142): ÇÎÊÈÇÑ ÇáåíãæÛáæÈíä ÇáÓßÑí (A1C)
+2025-09-07 01:03:42,766 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇÎÊÈÇÑ ÇáåíãæÛáæÈíä ÇáÓßÑí (A1C)
+2025-09-07 01:03:42,767 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (9/142): ÊŞííã ãÊæÓØ ÓßÑ ÇáÏã ÈÇÓÊÎÏÇã A1C
+2025-09-07 01:03:47,560 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊŞííã ãÊæÓØ ÓßÑ ÇáÏã ÈÇÓÊÎÏÇã A1C
+2025-09-07 01:03:47,561 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (10/142): ãÈÏÃ ŞíÇÓ ÓßÑ ÇáÏã ÇáãÑÊÈØ ÈÇáÈÑæÊíä İí A1C
+2025-09-07 01:03:54,019 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ãÈÏÃ ŞíÇÓ ÓßÑ ÇáÏã ÇáãÑÊÈØ ÈÇáÈÑæÊíä İí A1C
+2025-09-07 01:03:54,019 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (11/142): ÇáæŞÇíÉ ãä ÇáÓÑØÇä
+2025-09-07 01:03:59,030 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáæŞÇíÉ ãä ÇáÓÑØÇä
+2025-09-07 01:04:01,032 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (12/142): ÇáÊÌÇÑÈ ÇáÓÑíÑíÉ
+2025-09-07 01:04:07,514 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÊÌÇÑÈ ÇáÓÑíÑíÉ
+2025-09-07 01:04:07,514 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (13/142): ÅÌÑÇÁÇÊ ÍÌÒ ÇáãæÇÚíÏ ÇáØÈíÉ
+2025-09-07 01:04:17,540 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÅÌÑÇÁÇÊ ÍÌÒ ÇáãæÇÚíÏ ÇáØÈíÉ
+2025-09-07 01:04:17,541 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (14/142): ÃäæÇÚ ÇáÇÎÊÈÇÑÇÊ æÇáÅÌÑÇÁÇÊ ÇáØÈíÉ
+2025-09-07 01:04:22,776 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÃäæÇÚ ÇáÇÎÊÈÇÑÇÊ æÇáÅÌÑÇÁÇÊ ÇáØÈíÉ
+2025-09-07 01:04:22,777 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (15/142): ÇÑÔÇÏÇÊ ÇÓÊÎÏÇã ÇáÃÏæíÉ æÇáãßãáÇÊ ÇáÛĞÇÆíÉ
+2025-09-07 01:04:29,852 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇÑÔÇÏÇÊ ÇÓÊÎÏÇã ÇáÃÏæíÉ æÇáãßãáÇÊ ÇáÛĞÇÆíÉ
+2025-09-07 01:04:29,853 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (16/142): ÇáÊÚáíã ÇáØÈí ÇáãÓÊãÑ
+2025-09-07 01:04:35,019 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÊÚáíã ÇáØÈí ÇáãÓÊãÑ
+2025-09-07 01:04:37,021 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (17/142): ÇÓÊÑÇÊíÌíÇÊ ÏÚã ÇáÕÍÉ ÇáÚŞáíÉ
+2025-09-07 01:04:42,048 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇÓÊÑÇÊíÌíÇÊ ÏÚã ÇáÕÍÉ ÇáÚŞáíÉ
+2025-09-07 01:04:42,048 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (18/142): ãÎÇØÑ ÇáÓÑØÇä ÇáãÑÊÈØÉ ÈãÄÔÑ ßÊáÉ ÇáÌÓã
+2025-09-07 01:04:49,611 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ãÎÇØÑ ÇáÓÑØÇä ÇáãÑÊÈØÉ ÈãÄÔÑ ßÊáÉ ÇáÌÓã
+2025-09-07 01:04:49,611 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (19/142): ÊÃËíÑ ÇáäÔÇØ ÇáÈÏäí Úáì ÇáæŞÇíÉ ãä ÓÑØÇä ÇáŞæáæä
+2025-09-07 01:04:54,496 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊÃËíÑ ÇáäÔÇØ ÇáÈÏäí Úáì ÇáæŞÇíÉ ãä ÓÑØÇä ÇáŞæáæä
+2025-09-07 01:04:54,497 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (20/142): ÇáÚáÇŞÉ Èíä ÇáÓãäÉ æÇáåÑãæäÇÊ ÇáÌäÓíÉ áÏì äÇÌíÇÊ ÓÑØÇä ÇáËÏí
+2025-09-07 01:05:01,762 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÚáÇŞÉ Èíä ÇáÓãäÉ æÇáåÑãæäÇÊ ÇáÌäÓíÉ áÏì äÇÌíÇÊ ÓÑØÇä ÇáËÏí
+2025-09-07 01:05:01,762 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (21/142): ÇäÊÔÇÑ ÇáÓãäÉ æÒíÇÏÉ ÇáæÒä İí ÇáæáÇíÇÊ ÇáãÊÍÏÉ
+2025-09-07 01:05:08,162 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇäÊÔÇÑ ÇáÓãäÉ æÒíÇÏÉ ÇáæÒä İí ÇáæáÇíÇÊ ÇáãÊÍÏÉ
+2025-09-07 01:05:10,163 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (22/142): ÏæÑ ÇáÊãÇÑíä ÇáÑíÇÖíÉ İí ÊŞáíá ÎØÑ ÇáÅÕÇÈÉ ÈÓÑØÇä ÇáËÏí
+2025-09-07 01:05:15,966 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÏæÑ ÇáÊãÇÑíä ÇáÑíÇÖíÉ İí ÊŞáíá ÎØÑ ÇáÅÕÇÈÉ ÈÓÑØÇä ÇáËÏí
+2025-09-07 01:05:15,966 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (23/142): ÇáãÊáÇÒãÉ ÇáÅßáíáíÉ (ãÊáÇÒãÉ ÇáÔÑíÇä ÇáÊÇÌí)
+2025-09-07 01:05:22,912 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáãÊáÇÒãÉ ÇáÅßáíáíÉ (ãÊáÇÒãÉ ÇáÔÑíÇä ÇáÊÇÌí)
+2025-09-07 01:05:22,912 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (24/142): æÙíİÉ ÇáÃæÚíÉ ÇáÏãæíÉ ÇáÊÇÌíÉ
+2025-09-07 01:05:28,518 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: æÙíİÉ ÇáÃæÚíÉ ÇáÏãæíÉ ÇáÊÇÌíÉ
+2025-09-07 01:05:28,518 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (25/142): ÂáíÉ ÊÖíøŞ ÕãÇã ÇáŞáÈ
+2025-09-07 01:05:34,082 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÂáíÉ ÊÖíøŞ ÕãÇã ÇáŞáÈ
+2025-09-07 01:05:34,082 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (26/142): ÂáíÉ ÊæÓøÚ ÕãÇã ÇáŞáÈ
+2025-09-07 01:05:40,519 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÂáíÉ ÊæÓøÚ ÕãÇã ÇáŞáÈ
+2025-09-07 01:05:42,520 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (27/142): ãäÙæãÉ ÇáÊæÕíá ÇáßåÑÈí ááŞáÈ
+2025-09-07 01:05:47,484 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ãäÙæãÉ ÇáÊæÕíá ÇáßåÑÈí ááŞáÈ
+2025-09-07 01:05:47,485 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (28/142): ÇÖØÑÇÈÇÊ ÇáäÙã ÇáßåÑÈí ááŞáÈ
+2025-09-07 01:05:51,276 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇÖØÑÇÈÇÊ ÇáäÙã ÇáßåÑÈí ááŞáÈ
+2025-09-07 01:05:51,277 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (29/142): ÃãÑÇÖ ÕãÇãÇÊ ÇáŞáÈ ÇáÎáŞíÉ
+2025-09-07 01:05:56,985 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÃãÑÇÖ ÕãÇãÇÊ ÇáŞáÈ ÇáÎáŞíÉ
+2025-09-07 01:05:56,985 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (30/142): ÊÃËíÑ ÊÕáÈ ÇáÔÑÇííä Úáì ÕãÇãÇÊ ÇáŞáÈ
+2025-09-07 01:06:02,842 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊÃËíÑ ÊÕáÈ ÇáÔÑÇííä Úáì ÕãÇãÇÊ ÇáŞáÈ
+2025-09-07 01:06:02,843 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (31/142): ÏæÑ ØÈíÈ ÇáŞáÈ İí ÊÔÎíÕ æÚáÇÌ ÃãÑÇÖ ÇáÕãÇãÇÊ
+2025-09-07 01:06:08,563 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÏæÑ ØÈíÈ ÇáŞáÈ İí ÊÔÎíÕ æÚáÇÌ ÃãÑÇÖ ÇáÕãÇãÇÊ
+2025-09-07 01:06:10,563 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (32/142): ÇáäİÎÇÊ ÇáŞáÈíÉ ßÚáÇãÉ áÃãÑÇÖ ÇáÕãÇãÇÊ
+2025-09-07 01:06:15,407 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáäİÎÇÊ ÇáŞáÈíÉ ßÚáÇãÉ áÃãÑÇÖ ÇáÕãÇãÇÊ
+2025-09-07 01:06:15,407 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (33/142): ÅÑÔÇÏÇÊ ÊÍÓíä ÌæÏÉ Çáäæã
+2025-09-07 01:06:22,523 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÅÑÔÇÏÇÊ ÊÍÓíä ÌæÏÉ Çáäæã
+2025-09-07 01:06:22,523 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (34/142): ÊæÕíÇÊ ÚáÇÌ ÇáÓáÓ ÇáÈæáí
+2025-09-07 01:06:30,189 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊæÕíÇÊ ÚáÇÌ ÇáÓáÓ ÇáÈæáí
+2025-09-07 01:06:30,189 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (35/142): ÃÓÇÓíÇÊ ÅÏÇÑÉ æÚáÇÌ ÇáÓßÑí
+2025-09-07 01:06:34,585 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÃÓÇÓíÇÊ ÅÏÇÑÉ æÚáÇÌ ÇáÓßÑí
+2025-09-07 01:06:34,585 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (36/142): ãäåÌíÇÊ ÊŞííã ÇáÃäÙãÉ ÇáÛĞÇÆíÉ
+2025-09-07 01:06:40,578 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ãäåÌíÇÊ ÊŞííã ÇáÃäÙãÉ ÇáÛĞÇÆíÉ
+2025-09-07 01:06:42,579 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (37/142): ÅÌÑÇÁÇÊ ÇáÊÌÇÑÈ ÇáÓÑíÑíÉ
+2025-09-07 01:06:48,520 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÅÌÑÇÁÇÊ ÇáÊÌÇÑÈ ÇáÓÑíÑíÉ
+2025-09-07 01:06:48,521 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (38/142): ÅÍÇáÉ ÇáãÑÖì Èíä ÇáÊÎÕÕÇÊ ÇáØÈíÉ
+2025-09-07 01:06:55,157 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÅÍÇáÉ ÇáãÑÖì Èíä ÇáÊÎÕÕÇÊ ÇáØÈíÉ
+2025-09-07 01:06:55,158 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (39/142): ÊŞííã ÇáÇÍÊíÇÌÇÊ ÇáÕÍíÉ ÇáãÌÊãÚíÉ
+2025-09-07 01:07:01,013 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊŞííã ÇáÇÍÊíÇÌÇÊ ÇáÕÍíÉ ÇáãÌÊãÚíÉ
+2025-09-07 01:07:01,014 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (40/142): ÊÏÇÎáÇÊ ÇáÃÏæíÉ ãÚ ÃÏæíÉ ÃÎÑì
+2025-09-07 01:07:11,440 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊÏÇÎáÇÊ ÇáÃÏæíÉ ãÚ ÃÏæíÉ ÃÎÑì
+2025-09-07 01:07:11,440 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (41/142): ÊÏÇÎáÇÊ ÇáÃÏæíÉ ãÚ ÇáÃØÚãÉ æÇáãßãáÇÊ ÇáÛĞÇÆíÉ
+2025-09-07 01:07:20,872 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊÏÇÎáÇÊ ÇáÃÏæíÉ ãÚ ÇáÃØÚãÉ æÇáãßãáÇÊ ÇáÛĞÇÆíÉ
+2025-09-07 01:07:22,873 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (42/142): ÊÃËíÑ ÇáÃÏæíÉ Úáì äÊÇÆÌ ÇáİÍæÕÇÊ ÇáãÎÈÑíÉ
+2025-09-07 01:07:30,068 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊÃËíÑ ÇáÃÏæíÉ Úáì äÊÇÆÌ ÇáİÍæÕÇÊ ÇáãÎÈÑíÉ
+2025-09-07 01:07:30,068 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (43/142): ÊÃËíÑ ÇáÃÏæíÉ Úáì ÍÇáÇÊ ãÑÖíÉ ãÚíäÉ
+2025-09-07 01:07:37,121 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊÃËíÑ ÇáÃÏæíÉ Úáì ÍÇáÇÊ ãÑÖíÉ ãÚíäÉ
+2025-09-07 01:07:37,121 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (44/142): ãÎÇØÑ ÇáÊÓãã ÇáÏæÇÆí æÇáãÖÇÚİÇÊ ÇáÕÍíÉ
+2025-09-07 01:07:42,276 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ãÎÇØÑ ÇáÊÓãã ÇáÏæÇÆí æÇáãÖÇÚİÇÊ ÇáÕÍíÉ
+2025-09-07 01:07:42,276 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (45/142): ÅÑÔÇÏÇÊ ááãÑÖì áÊÌäÈ ÇáÊÏÇÎáÇÊ ÇáÏæÇÆíÉ
+2025-09-07 01:07:51,171 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÅÑÔÇÏÇÊ ááãÑÖì áÊÌäÈ ÇáÊÏÇÎáÇÊ ÇáÏæÇÆíÉ
+2025-09-07 01:07:51,171 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (46/142): ÏæÑ ÇáÊßäæáæÌíÇ İí ÑÕÏ ÇáÊÚÇÑÖÇÊ ÇáÏæÇÆíÉ
+2025-09-07 01:07:56,334 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÏæÑ ÇáÊßäæáæÌíÇ İí ÑÕÏ ÇáÊÚÇÑÖÇÊ ÇáÏæÇÆíÉ
+2025-09-07 01:07:58,334 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (47/142): ÂáíÉ Úãá áŞÇÍÇÊ mRNA
+2025-09-07 01:08:02,077 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÂáíÉ Úãá áŞÇÍÇÊ mRNA
+2025-09-07 01:08:02,077 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (48/142): ÇáÇÓÊÎÏÇãÇÊ ÇáÚáÇÌíÉ áÊŞäíÉ mRNA
+2025-09-07 01:08:07,755 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÇÓÊÎÏÇãÇÊ ÇáÚáÇÌíÉ áÊŞäíÉ mRNA
+2025-09-07 01:08:07,756 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (49/142): ÇáæÇŞÚ ÇáÇİÊÑÇÖí İí ÚáÇÌ ÇáÃãÑÇÖ ÇáäİÓíÉ
+2025-09-07 01:08:13,235 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáæÇŞÚ ÇáÇİÊÑÇÖí İí ÚáÇÌ ÇáÃãÑÇÖ ÇáäİÓíÉ
+2025-09-07 01:08:13,235 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (50/142): ÊØÈíŞÇÊ ÇáæÇŞÚ ÇáÇİÊÑÇÖí İí ÅÏÇÑÉ ÇáÃáã
+2025-09-07 01:08:17,927 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊØÈíŞÇÊ ÇáæÇŞÚ ÇáÇİÊÑÇÖí İí ÅÏÇÑÉ ÇáÃáã
+2025-09-07 01:08:17,927 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (51/142): ÇáæÇŞÚ ÇáÇİÊÑÇÖí áÊÏÑíÈ ÇáÃØÈÇÁ
+2025-09-07 01:08:24,090 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáæÇŞÚ ÇáÇİÊÑÇÖí áÊÏÑíÈ ÇáÃØÈÇÁ
+2025-09-07 01:08:26,091 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (52/142): ãİÇåíã ÇáÊßäæáæÌíÇ ÇáÚÕÈíÉ İí ÇáÑÚÇíÉ ÇáÕÍíÉ
+2025-09-07 01:08:33,200 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ãİÇåíã ÇáÊßäæáæÌíÇ ÇáÚÕÈíÉ İí ÇáÑÚÇíÉ ÇáÕÍíÉ
+2025-09-07 01:08:33,200 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (53/142): ÏæÑ ÇáĞßÇÁ ÇáÇÕØäÇÚí İí ÇáØÈ ÇáÍÏíË
+2025-09-07 01:08:37,514 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÏæÑ ÇáĞßÇÁ ÇáÇÕØäÇÚí İí ÇáØÈ ÇáÍÏíË
+2025-09-07 01:08:37,514 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (54/142): ÊØÈíŞÇÊ ÇáØÈÇÚÉ ËáÇËíÉ ÇáÃÈÚÇÏ İí ÇáãÌÇá ÇáØÈí
+2025-09-07 01:08:47,088 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊØÈíŞÇÊ ÇáØÈÇÚÉ ËáÇËíÉ ÇáÃÈÚÇÏ İí ÇáãÌÇá ÇáØÈí
+2025-09-07 01:08:47,088 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (55/142): ÇáÊÔÎíÕÇÊ ÇáãÎÈÑíÉ
+2025-09-07 01:08:52,765 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÊÔÎíÕÇÊ ÇáãÎÈÑíÉ
+2025-09-07 01:08:52,766 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (56/142): ÇáÊÕæíÑ ÇáØÈí
+2025-09-07 01:08:57,147 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÊÕæíÑ ÇáØÈí
+2025-09-07 01:08:59,148 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (57/142): ÇáÊŞííãÇÊ ÇáæÙíİíÉ
+2025-09-07 01:09:03,231 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÊŞííãÇÊ ÇáæÙíİíÉ
+2025-09-07 01:09:03,232 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (58/142): ÊØæÑÇÊ ÇáØÈ Çáäææí ÇáÊÔÎíÕí
+2025-09-07 01:09:08,593 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊØæÑÇÊ ÇáØÈ Çáäææí ÇáÊÔÎíÕí
+2025-09-07 01:09:08,593 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (59/142): ÇáÊŞäíÇÊ ÇáÌíäæãíÉ İí ÇáÊÔÎíÕ
+2025-09-07 01:09:14,335 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÊŞäíÇÊ ÇáÌíäæãíÉ İí ÇáÊÔÎíÕ
+2025-09-07 01:09:14,336 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (60/142): ÇáÊŞÏã İí ÇáÃÔÚÉ ÇáÊÔÎíÕíÉ
+2025-09-07 01:09:21,959 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÊŞÏã İí ÇáÃÔÚÉ ÇáÊÔÎíÕíÉ
+2025-09-07 01:09:21,960 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (61/142): ÊØÈíŞÇÊ ÇáÍæÓÈÉ İí ÇáÊÔÎíÕ ÇáØÈí
+2025-09-07 01:09:28,103 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊØÈíŞÇÊ ÇáÍæÓÈÉ İí ÇáÊÔÎíÕ ÇáØÈí
+2025-09-07 01:09:30,104 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (62/142): ÈÑæÊæßæáÇÊ ÇáØæÇÑÆ ÇáØÈíÉ
+2025-09-07 01:09:34,509 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÈÑæÊæßæáÇÊ ÇáØæÇÑÆ ÇáØÈíÉ
+2025-09-07 01:09:34,509 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (63/142): ÅÏÇÑÉ ÇáãÎÇØÑ İí ÇáÃÌåÒÉ ÇáØÈíÉ
+2025-09-07 01:09:39,914 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÅÏÇÑÉ ÇáãÎÇØÑ İí ÇáÃÌåÒÉ ÇáØÈíÉ
+2025-09-07 01:09:39,914 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (64/142): ÈÑÇãÌ ÇáÕÍÉ æÇáÊÛĞíÉ İí ÍÇáÇÊ ÇáØæÇÑÆ
+2025-09-07 01:09:51,498 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÈÑÇãÌ ÇáÕÍÉ æÇáÊÛĞíÉ İí ÍÇáÇÊ ÇáØæÇÑÆ
+2025-09-07 01:09:51,498 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (65/142): ÅÏÇÑÉ ÇáãíÇå æÇáäÙÇİÉ ÇáÕÍíÉ ááæŞÇíÉ ãä ÇáÃãÑÇÖ İí ÇáÃÒãÇÊ
+2025-09-07 01:09:57,344 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÅÏÇÑÉ ÇáãíÇå æÇáäÙÇİÉ ÇáÕÍíÉ ááæŞÇíÉ ãä ÇáÃãÑÇÖ İí ÇáÃÒãÇÊ
+2025-09-07 01:09:57,345 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (66/142): ÇáÊÃåÈ ÇáØÈí æÇáÇÓÊÌÇÈÉ ááßæÇÑË ÇáØÈíÚíÉ
+2025-09-07 01:10:02,099 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÊÃåÈ ÇáØÈí æÇáÇÓÊÌÇÈÉ ááßæÇÑË ÇáØÈíÚíÉ
+2025-09-07 01:10:04,100 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (67/142): ÇáÕÍÉ ÇáäİÓíÉ æÇáÏÚã ÇáäİÓí ÇáÇÌÊãÇÚí İí ÍÇáÇÊ ÇáØæÇÑÆ
+2025-09-07 01:10:10,032 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÕÍÉ ÇáäİÓíÉ æÇáÏÚã ÇáäİÓí ÇáÇÌÊãÇÚí İí ÍÇáÇÊ ÇáØæÇÑÆ
+2025-09-07 01:10:10,032 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (68/142): äÙã ÊÑÕÏ ÇáÃãÑÇÖ ÇáæÈÇÆíÉ İí ãÎíãÇÊ ÇáäÒæÍ
+2025-09-07 01:10:14,867 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: äÙã ÊÑÕÏ ÇáÃãÑÇÖ ÇáæÈÇÆíÉ İí ãÎíãÇÊ ÇáäÒæÍ
+2025-09-07 01:10:14,868 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (69/142): ÇáÎØæÇÊ ÇáÃæáíÉ áØáÈ ÇáãÓÇÚÏÉ İí ÇáÕÍÉ ÇáäİÓíÉ ááÃØİÇá
+2025-09-07 01:10:24,143 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÎØæÇÊ ÇáÃæáíÉ áØáÈ ÇáãÓÇÚÏÉ İí ÇáÕÍÉ ÇáäİÓíÉ ááÃØİÇá
+2025-09-07 01:10:24,143 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (70/142): ÃåãíÉ ÇáÊŞííã ÇáÔÇãá áÊÔÎíÕ ÇÖØÑÇÈÇÊ ÇáÕÍÉ ÇáäİÓíÉ ááÃØİÇá
+2025-09-07 01:10:28,350 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÃåãíÉ ÇáÊŞííã ÇáÔÇãá áÊÔÎíÕ ÇÖØÑÇÈÇÊ ÇáÕÍÉ ÇáäİÓíÉ ááÃØİÇá
+2025-09-07 01:10:28,351 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (71/142): ÏæÑ ÇáÚáÇÌ ÇáäİÓí İí ÊÚáíã ãåÇÑÇÊ ÇáÊÃŞáã ááÃØİÇá
+2025-09-07 01:10:35,143 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÏæÑ ÇáÚáÇÌ ÇáäİÓí İí ÊÚáíã ãåÇÑÇÊ ÇáÊÃŞáã ááÃØİÇá
+2025-09-07 01:10:37,145 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (72/142): ÏãÌ ÇáÚáÇÌ ÇáäİÓí æÇáÃÏæíÉ İí ÎØØ ÚáÇÌ ÇáÕÍÉ ÇáäİÓíÉ ááÃØİÇá
+2025-09-07 01:10:43,657 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÏãÌ ÇáÚáÇÌ ÇáäİÓí æÇáÃÏæíÉ İí ÎØØ ÚáÇÌ ÇáÕÍÉ ÇáäİÓíÉ ááÃØİÇá
+2025-09-07 01:10:43,658 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (73/142): ãÔÇÑßÉ ÇáæÇáÏíä æãŞÏãí ÇáÑÚÇíÉ İí ÚáÇÌ ÇáÕÍÉ ÇáäİÓíÉ ááÃØİÇá
+2025-09-07 01:10:48,445 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ãÔÇÑßÉ ÇáæÇáÏíä æãŞÏãí ÇáÑÚÇíÉ İí ÚáÇÌ ÇáÕÍÉ ÇáäİÓíÉ ááÃØİÇá
+2025-09-07 01:10:48,445 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (74/142): ÃÓÇÓíÇÊ ÇáÑÖÇÚÉ ÇáØÈíÚíÉ áÍÏíËí ÇáæáÇÏÉ
+2025-09-07 01:10:52,424 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÃÓÇÓíÇÊ ÇáÑÖÇÚÉ ÇáØÈíÚíÉ áÍÏíËí ÇáæáÇÏÉ
+2025-09-07 01:10:52,424 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (75/142): ãÔÇßá ÇáÑÖÇÚÉ ÇáÔÇÆÚÉ ÚäÏ ÍÏíËí ÇáæáÇÏÉ
+2025-09-07 01:10:57,573 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ãÔÇßá ÇáÑÖÇÚÉ ÇáÔÇÆÚÉ ÚäÏ ÍÏíËí ÇáæáÇÏÉ
+2025-09-07 01:10:57,573 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (76/142): ÚáÇãÇÊ ÇáÌæÚ æÇáÔÈÚ áÏì ÍÏíËí ÇáæáÇÏÉ
+2025-09-07 01:11:03,752 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÚáÇãÇÊ ÇáÌæÚ æÇáÔÈÚ áÏì ÍÏíËí ÇáæáÇÏÉ
+2025-09-07 01:11:05,753 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (77/142): ÊÛĞíÉ ÍÏíËí ÇáæáÇÏÉ ÈÇáÑÖÇÚÉ ÇáÕäÇÚíÉ
+2025-09-07 01:11:10,554 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊÛĞíÉ ÍÏíËí ÇáæáÇÏÉ ÈÇáÑÖÇÚÉ ÇáÕäÇÚíÉ
+2025-09-07 01:11:10,555 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (78/142): ÇáÚäÇíÉ ÈËÏí ÇáÃã ÎáÇá İÊÑÉ ÇáÑÖÇÚÉ
+2025-09-07 01:11:15,344 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÚäÇíÉ ÈËÏí ÇáÃã ÎáÇá İÊÑÉ ÇáÑÖÇÚÉ
+2025-09-07 01:11:15,344 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (79/142): ÇßÊÆÇÈ ãÇ ÈÚÏ ÇáæáÇÏÉ ÇáÃÈæí
+2025-09-07 01:11:20,283 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇßÊÆÇÈ ãÇ ÈÚÏ ÇáæáÇÏÉ ÇáÃÈæí
+2025-09-07 01:11:20,283 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (80/142): ÇáÊÍÏíÇÊ ÇáİÓíæáæÌíÉ ÇáãÑÊÈØÉ ÈÇáÃÈæÉ ÇáÌÏíÏÉ
+2025-09-07 01:11:25,803 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÊÍÏíÇÊ ÇáİÓíæáæÌíÉ ÇáãÑÊÈØÉ ÈÇáÃÈæÉ ÇáÌÏíÏÉ
+2025-09-07 01:11:25,803 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (81/142): ÃåãíÉ ÇáäÔÇØ ÇáÈÏäí áÕÍÉ ÇáæÇáÏíä ÇáÌÏÏ
+2025-09-07 01:11:30,825 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÃåãíÉ ÇáäÔÇØ ÇáÈÏäí áÕÍÉ ÇáæÇáÏíä ÇáÌÏÏ
+2025-09-07 01:11:32,826 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (82/142): ÊÃËíÑ ÇáÍÑãÇä ãä Çáäæã Úáì ÕÍÉ ÇáæÇáÏíä ÇáÌÏÏ
+2025-09-07 01:11:40,216 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊÃËíÑ ÇáÍÑãÇä ãä Çáäæã Úáì ÕÍÉ ÇáæÇáÏíä ÇáÌÏÏ
+2025-09-07 01:11:40,216 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (83/142): ÃÓÇáíÈ ÅÏÇÑÉ ÇáÅÌåÇÏ ááÂÈÇÁ ÇáÌÏÏ
+2025-09-07 01:11:48,158 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÃÓÇáíÈ ÅÏÇÑÉ ÇáÅÌåÇÏ ááÂÈÇÁ ÇáÌÏÏ
+2025-09-07 01:11:48,158 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (84/142): ãİåæã ãŞÇæãÉ ÇáãÖÇÏÇÊ ÇáÍíæíÉ
+2025-09-07 01:11:52,541 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ãİåæã ãŞÇæãÉ ÇáãÖÇÏÇÊ ÇáÍíæíÉ
+2025-09-07 01:11:52,541 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (85/142): ÂáíÇÊ ãŞÇæãÉ ÇáÈßÊíÑíÇ ááãÖÇÏÇÊ ÇáÍíæíÉ
+2025-09-07 01:12:04,443 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÂáíÇÊ ãŞÇæãÉ ÇáÈßÊíÑíÇ ááãÖÇÏÇÊ ÇáÍíæíÉ
+2025-09-07 01:12:04,443 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (86/142): ÃÓÈÇÈ ãŞÇæãÉ ÇáãÖÇÏÇÊ ÇáÍíæíÉ
+2025-09-07 01:12:09,762 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÃÓÈÇÈ ãŞÇæãÉ ÇáãÖÇÏÇÊ ÇáÍíæíÉ
+2025-09-07 01:12:11,764 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (87/142): ãÎÇØÑ ãŞÇæãÉ ÇáãÖÇÏÇÊ ÇáÍíæíÉ
+2025-09-07 01:12:16,808 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ãÎÇØÑ ãŞÇæãÉ ÇáãÖÇÏÇÊ ÇáÍíæíÉ
+2025-09-07 01:12:16,808 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (88/142): ØÑŞ ÇáæŞÇíÉ ãä ãŞÇæãÉ ÇáãÖÇÏÇÊ ÇáÍíæíÉ
+2025-09-07 01:12:23,804 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ØÑŞ ÇáæŞÇíÉ ãä ãŞÇæãÉ ÇáãÖÇÏÇÊ ÇáÍíæíÉ
+2025-09-07 01:12:23,805 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (89/142): ÊÂÒÑ ÇáÈæáíÇãíäÇÊ ÇáØÈíÚíÉ æÇáÃÒíËÑæãíÓíä ÖÏ ÇáÈßÊíÑíÇ
+2025-09-07 01:12:29,726 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊÂÒÑ ÇáÈæáíÇãíäÇÊ ÇáØÈíÚíÉ æÇáÃÒíËÑæãíÓíä ÖÏ ÇáÈßÊíÑíÇ
+2025-09-07 01:12:29,726 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (90/142): ÂáíÇÊ ãŞÇæãÉ ÇáÈßÊíÑíÇ ÓÇáÈÉ ÇáÌÑÇã ááãÖÇÏÇÊ ÇáÍíæíÉ
+2025-09-07 01:12:37,640 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÂáíÇÊ ãŞÇæãÉ ÇáÈßÊíÑíÇ ÓÇáÈÉ ÇáÌÑÇã ááãÖÇÏÇÊ ÇáÍíæíÉ
+2025-09-07 01:12:37,640 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (91/142): ÏæÑ ÇáãÒÑÚÉ ÇáÈßÊíÑíÉ İí ÊÔÎíÕ ãŞÇæãÉ ÇáãÖÇÏÇÊ ÇáÍíæíÉ
+2025-09-07 01:12:45,481 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÏæÑ ÇáãÒÑÚÉ ÇáÈßÊíÑíÉ İí ÊÔÎíÕ ãŞÇæãÉ ÇáãÖÇÏÇÊ ÇáÍíæíÉ
+2025-09-07 01:12:47,482 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (92/142): ÈäíÉ ÌÏÇÑ ÇáÎáíÉ ááÈßÊíÑíÇ ÓÇáÈÉ ÇáÌÑÇã
+2025-09-07 01:12:53,837 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÈäíÉ ÌÏÇÑ ÇáÎáíÉ ááÈßÊíÑíÇ ÓÇáÈÉ ÇáÌÑÇã
+2025-09-07 01:12:53,837 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (93/142): ÊÃËíÑ ÇáÈæáíÇãíäÇÊ Úáì ÍÓÇÓíÉ ÇáãßæÑÇÊ ÇáÑÆæíÉ ááÃÒíËÑæãíÓíä
+2025-09-07 01:12:59,306 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊÃËíÑ ÇáÈæáíÇãíäÇÊ Úáì ÍÓÇÓíÉ ÇáãßæÑÇÊ ÇáÑÆæíÉ ááÃÒíËÑæãíÓíä
+2025-09-07 01:12:59,307 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (94/142): ÓíÇÓÇÊ ÎÕæÕíÉ ÇáÈíÇäÇÊ ÇáØÈíÉ ááãÑÖì
+2025-09-07 01:13:06,055 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÓíÇÓÇÊ ÎÕæÕíÉ ÇáÈíÇäÇÊ ÇáØÈíÉ ááãÑÖì
+2025-09-07 01:13:06,056 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (95/142): ÅÌÑÇÁÇÊ ÚÏã ÇáÊãííÒ İí ÊŞÏíã ÇáÑÚÇíÉ ÇáÕÍíÉ
+2025-09-07 01:13:11,942 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÅÌÑÇÁÇÊ ÚÏã ÇáÊãííÒ İí ÊŞÏíã ÇáÑÚÇíÉ ÇáÕÍíÉ
+2025-09-07 01:13:11,942 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (96/142): ÊÓåíáÇÊ ÇáæÕæá ÇáÑŞãí ááãÚáæãÇÊ ÇáÕÍíÉ áĞæí ÇáÅÚÇŞÉ
+2025-09-07 01:13:19,482 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊÓåíáÇÊ ÇáæÕæá ÇáÑŞãí ááãÚáæãÇÊ ÇáÕÍíÉ áĞæí ÇáÅÚÇŞÉ
+2025-09-07 01:13:21,484 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (97/142): ÇáãÈÇÏÆ ÇáÊæÌíåíÉ áÃÎáÇŞíÇÊ ÇáÅÚáÇä æÇáÑÚÇíÉ ÇáØÈíÉ
+2025-09-07 01:13:28,345 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáãÈÇÏÆ ÇáÊæÌíåíÉ áÃÎáÇŞíÇÊ ÇáÅÚáÇä æÇáÑÚÇíÉ ÇáØÈíÉ
+2025-09-07 01:13:28,346 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (98/142): ÅÏÇÑÉ ãáİÇÊ ÇáÇÑÊÈÇØ æÊÃËíÑåÇ Úáì ÈíÇäÇÊ ÇáãÓÊÎÏãíä İí ÇáãæÇŞÚ ÇáØÈíÉ
+2025-09-07 01:13:33,391 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÅÏÇÑÉ ãáİÇÊ ÇáÇÑÊÈÇØ æÊÃËíÑåÇ Úáì ÈíÇäÇÊ ÇáãÓÊÎÏãíä İí ÇáãæÇŞÚ ÇáØÈíÉ
+2025-09-07 01:13:33,392 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (99/142): ÇßÊÓÇÈ ÇáÈíÇäÇÊ İí ÇáÊÕæíÑ ÈÇáÑäíä ÇáãÛäÇØíÓí
+2025-09-07 01:13:37,310 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇßÊÓÇÈ ÇáÈíÇäÇÊ İí ÇáÊÕæíÑ ÈÇáÑäíä ÇáãÛäÇØíÓí
+2025-09-07 01:13:37,310 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (100/142): ÅÚÇÏÉ ÈäÇÁ ÇáÕæÑ İí ÇáÊÕæíÑ ÈÇáÑäíä ÇáãÛäÇØíÓí
+2025-09-07 01:13:42,509 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÅÚÇÏÉ ÈäÇÁ ÇáÕæÑ İí ÇáÊÕæíÑ ÈÇáÑäíä ÇáãÛäÇØíÓí
+2025-09-07 01:13:42,509 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (101/142): ÇáÇÈÊßÇÑÇÊ İí ãßæäÇÊ ÃÌåÒÉ ÇáÑäíä ÇáãÛäÇØíÓí
+2025-09-07 01:13:49,735 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÇÈÊßÇÑÇÊ İí ãßæäÇÊ ÃÌåÒÉ ÇáÑäíä ÇáãÛäÇØíÓí
+2025-09-07 01:13:51,736 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (102/142): ÊßÇãá Úáæã ÇáÍÇÓæÈ æãÚÇáÌÉ ÇáÈíÇäÇÊ İí ÇáÑäíä ÇáãÛäÇØíÓí
+2025-09-07 01:13:58,075 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊßÇãá Úáæã ÇáÍÇÓæÈ æãÚÇáÌÉ ÇáÈíÇäÇÊ İí ÇáÑäíä ÇáãÛäÇØíÓí
+2025-09-07 01:13:58,075 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (103/142): ÇáÍæÓÈÉ ÚÇáíÉ ÇáÃÏÇÁ İí ÇáÊÕæíÑ ÈÇáÑäíä ÇáãÛäÇØíÓí
+2025-09-07 01:14:03,092 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÍæÓÈÉ ÚÇáíÉ ÇáÃÏÇÁ İí ÇáÊÕæíÑ ÈÇáÑäíä ÇáãÛäÇØíÓí
+2025-09-07 01:14:03,093 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (104/142): ãÕÇÏÑ ÇáãÚáæãÇÊ ÇáÕÍíÉ ááÔÈÇÈ ÚÈÑ ÇáÅäÊÑäÊ
+2025-09-07 01:14:09,769 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ãÕÇÏÑ ÇáãÚáæãÇÊ ÇáÕÍíÉ ááÔÈÇÈ ÚÈÑ ÇáÅäÊÑäÊ
+2025-09-07 01:14:09,770 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (105/142): ÊÃËíÑ ÇáÍãáÇÊ ÇáÕÍíÉ ÇáÑŞãíÉ Úáì ÓáæßíÇÊ ÇáÔÈÇÈ
+2025-09-07 01:14:15,689 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊÃËíÑ ÇáÍãáÇÊ ÇáÕÍíÉ ÇáÑŞãíÉ Úáì ÓáæßíÇÊ ÇáÔÈÇÈ
+2025-09-07 01:14:15,689 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (106/142): ËŞÉ ÇáÔÈÇÈ İí ÇáãÚáæãÇÊ ÇáÕÍíÉ ÚÈÑ ãæÇŞÚ ÇáÊæÇÕá ÇáÇÌÊãÇÚí
+2025-09-07 01:14:21,810 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ËŞÉ ÇáÔÈÇÈ İí ÇáãÚáæãÇÊ ÇáÕÍíÉ ÚÈÑ ãæÇŞÚ ÇáÊæÇÕá ÇáÇÌÊãÇÚí
+2025-09-07 01:14:23,812 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (107/142): ãÚÑİÉ ÇáÔÈÇÈ ÈÍãáÇÊ ÇáÊæÚíÉ ÈİíÑæÓ ßæÑæäÇ ÇáãÓÊÌÏ
+2025-09-07 01:14:33,708 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ãÚÑİÉ ÇáÔÈÇÈ ÈÍãáÇÊ ÇáÊæÚíÉ ÈİíÑæÓ ßæÑæäÇ ÇáãÓÊÌÏ
+2025-09-07 01:14:33,708 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (108/142): ãÚÑİÉ ÇáÔÈÇÈ ÈÍãáÇÊ ÇáßÔİ ÇáãÈßÑ Úä ÇáÃãÑÇÖ
+2025-09-07 01:14:39,412 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ãÚÑİÉ ÇáÔÈÇÈ ÈÍãáÇÊ ÇáßÔİ ÇáãÈßÑ Úä ÇáÃãÑÇÖ
+2025-09-07 01:14:39,412 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (109/142): ÇÚÊãÇÏ ÇáãÓÊÔİíÇÊ İí áÈäÇä
+2025-09-07 01:14:45,436 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇÚÊãÇÏ ÇáãÓÊÔİíÇÊ İí áÈäÇä
+2025-09-07 01:14:45,437 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (110/142): ÎÏãÇÊ ÇáÑÚÇíÉ ÇáÕÍíÉ ÇáÃæáíÉ ÇáãŞÏãÉ
+2025-09-07 01:14:52,251 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÎÏãÇÊ ÇáÑÚÇíÉ ÇáÕÍíÉ ÇáÃæáíÉ ÇáãŞÏãÉ
+2025-09-07 01:14:52,251 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (111/142): ÂáíÉ ÊÍÏíÏ ãÄÔÑ ÃÓÚÇÑ ÇáÃÏæíÉ
+2025-09-07 01:14:57,669 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÂáíÉ ÊÍÏíÏ ãÄÔÑ ÃÓÚÇÑ ÇáÃÏæíÉ
+2025-09-07 01:14:59,670 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (112/142): ÅÌÑÇÁÇÊ æåÈ æÒÑÚ ÇáÃÚÖÇÁ æÇáÃäÓÌÉ ÇáÈÔÑíÉ
+2025-09-07 01:15:05,107 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÅÌÑÇÁÇÊ æåÈ æÒÑÚ ÇáÃÚÖÇÁ æÇáÃäÓÌÉ ÇáÈÔÑíÉ
+2025-09-07 01:15:05,108 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (113/142): ãäÕÉ ÇáÊÓÌíá áÃÎĞ áŞÇÍ ÇáßæÑæäÇ
+2025-09-07 01:15:10,367 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ãäÕÉ ÇáÊÓÌíá áÃÎĞ áŞÇÍ ÇáßæÑæäÇ
+2025-09-07 01:15:10,367 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (114/142): ÇÓÊÑÇÊíÌíÇÊ ÇáÇÓÊÌÇÈÉ áÊİÔí ÇáßæáíÑÇ İí áÈäÇä
+2025-09-07 01:15:14,861 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇÓÊÑÇÊíÌíÇÊ ÇáÇÓÊÌÇÈÉ áÊİÔí ÇáßæáíÑÇ İí áÈäÇä
+2025-09-07 01:15:14,861 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (115/142): ÈÑÇãÌ ÅÏÇÑÉ ØæÇÑÆ ÇáÕÍÉ ÇáÚÇãÉ
+2025-09-07 01:15:19,871 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÈÑÇãÌ ÅÏÇÑÉ ØæÇÑÆ ÇáÕÍÉ ÇáÚÇãÉ
+2025-09-07 01:15:19,871 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (116/142): ÊÕãíã ÍãáÇÊ ÇáÊæÚíÉ ÇáÕÍíÉ
+2025-09-07 01:15:28,669 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊÕãíã ÍãáÇÊ ÇáÊæÚíÉ ÇáÕÍíÉ
+2025-09-07 01:15:30,670 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (117/142): ÇáÎØ ÇáÓÇÎä áÏÎæá ÇáãÑÖì Åáì ÇáãÓÊÔİíÇÊ
+2025-09-07 01:15:36,543 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÎØ ÇáÓÇÎä áÏÎæá ÇáãÑÖì Åáì ÇáãÓÊÔİíÇÊ
+2025-09-07 01:15:36,543 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (118/142): ãÚÇííÑ ÊÑÎíÕ ÇáãäÔÂÊ ÇáÕÍíÉ
+2025-09-07 01:15:41,144 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ãÚÇííÑ ÊÑÎíÕ ÇáãäÔÂÊ ÇáÕÍíÉ
+2025-09-07 01:15:41,144 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (119/142): ÊÃËíÑ ÔíÎæÎÉ ÇáÓßÇä Úáì ÇáÈäíÉ ÇáÊÍÊíÉ ÇáÕÍíÉ
+2025-09-07 01:15:47,245 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊÃËíÑ ÔíÎæÎÉ ÇáÓßÇä Úáì ÇáÈäíÉ ÇáÊÍÊíÉ ÇáÕÍíÉ
+2025-09-07 01:15:47,245 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (120/142): ÂáíÇÊ Êãæíá ÇáÑÚÇíÉ ØæíáÉ ÇáÃãÏ áßÈÇÑ ÇáÓä
+2025-09-07 01:15:51,484 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÂáíÇÊ Êãæíá ÇáÑÚÇíÉ ØæíáÉ ÇáÃãÏ áßÈÇÑ ÇáÓä
+2025-09-07 01:15:51,485 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (121/142): ãßæäÇÊ ÇáÑÚÇíÉ ÇáÕÍíÉ ÇáãÊßÇãáÉ áßÈÇÑ ÇáÓä
+2025-09-07 01:15:57,733 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ãßæäÇÊ ÇáÑÚÇíÉ ÇáÕÍíÉ ÇáãÊßÇãáÉ áßÈÇÑ ÇáÓä
+2025-09-07 01:15:59,734 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (122/142): ãŞÇííÓ ÌæÏÉ ÇáÍíÇÉ áßÈÇÑ ÇáÓä İí ÓíÇŞÇÊ ÇáÑÚÇíÉ
+2025-09-07 01:16:06,247 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ãŞÇííÓ ÌæÏÉ ÇáÍíÇÉ áßÈÇÑ ÇáÓä İí ÓíÇŞÇÊ ÇáÑÚÇíÉ
+2025-09-07 01:16:06,247 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (123/142): ÈÑÇãÌ ÊÚÒíÒ ÇÓÊŞáÇáíÉ ßÈÇÑ ÇáÓä
+2025-09-07 01:16:11,358 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÈÑÇãÌ ÊÚÒíÒ ÇÓÊŞáÇáíÉ ßÈÇÑ ÇáÓä
+2025-09-07 01:16:11,359 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (124/142): ÎÏãÇÊ ÇáÑÚÇíÉ ÇáÕÍíÉ ÇáãäÒáíÉ áßÈÇÑ ÇáÓä
+2025-09-07 01:16:14,878 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÎÏãÇÊ ÇáÑÚÇíÉ ÇáÕÍíÉ ÇáãäÒáíÉ áßÈÇÑ ÇáÓä
+2025-09-07 01:16:14,878 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (125/142): ÇáÊÔÎíÕ ÇáÊİÑíŞí ááäÓíÇä æÖÚİ ÇáĞÇßÑÉ áÏì ßÈÇÑ ÇáÓä
+2025-09-07 01:16:25,608 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÊÔÎíÕ ÇáÊİÑíŞí ááäÓíÇä æÖÚİ ÇáĞÇßÑÉ áÏì ßÈÇÑ ÇáÓä
+2025-09-07 01:16:25,609 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (126/142): ÊÃËíÑ äŞÕ İíÊÇãíä È12 Úáì ÇáĞÇßÑÉ æÚáÇÌå
+2025-09-07 01:16:30,647 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊÃËíÑ äŞÕ İíÊÇãíä È12 Úáì ÇáĞÇßÑÉ æÚáÇÌå
+2025-09-07 01:16:32,648 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (127/142): ÊÃËíÑ ŞÕæÑ ÇáÛÏÉ ÇáÏÑŞíÉ Úáì ÇáæÙÇÆİ ÇáÅÏÑÇßíÉ áßÈÇÑ ÇáÓä
+2025-09-07 01:16:38,839 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊÃËíÑ ŞÕæÑ ÇáÛÏÉ ÇáÏÑŞíÉ Úáì ÇáæÙÇÆİ ÇáÅÏÑÇßíÉ áßÈÇÑ ÇáÓä
+2025-09-07 01:16:38,840 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (128/142): ÈÑÇãÌ ÇáÚáÇÌ ÇáØÈíÚí ÇáãäÒáí áßÈÇÑ ÇáÓä
+2025-09-07 01:16:43,945 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÈÑÇãÌ ÇáÚáÇÌ ÇáØÈíÚí ÇáãäÒáí áßÈÇÑ ÇáÓä
+2025-09-07 01:16:43,946 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (129/142): ÃÓÇáíÈ ÊäÔíØ ÇáĞÇßÑÉ ÛíÑ ÇáÏæÇÆíÉ áßÈÇÑ ÇáÓä
+2025-09-07 01:16:49,799 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÃÓÇáíÈ ÊäÔíØ ÇáĞÇßÑÉ ÛíÑ ÇáÏæÇÆíÉ áßÈÇÑ ÇáÓä
+2025-09-07 01:16:49,799 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (130/142): ÇáÑÚÇíÉ ÇáÕÍíÉ Úä ÈõÚÏ
+2025-09-07 01:16:56,080 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÑÚÇíÉ ÇáÕÍíÉ Úä ÈõÚÏ
+2025-09-07 01:16:56,082 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (131/142): ÇáÊÌÇÑÈ ÇáÓÑíÑíÉ İí ÇáØÈ
+2025-09-07 01:17:01,302 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÊÌÇÑÈ ÇáÓÑíÑíÉ İí ÇáØÈ
+2025-09-07 01:17:03,302 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (132/142): ÃäæÇÚ ÇáÇÎÊÈÇÑÇÊ ÇáÊÔÎíÕíÉ ÇáØÈíÉ
+2025-09-07 01:17:12,798 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÃäæÇÚ ÇáÇÎÊÈÇÑÇÊ ÇáÊÔÎíÕíÉ ÇáØÈíÉ
+2025-09-07 01:17:12,799 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (133/142): ÅÏÇÑÉ ÇÓÊÎÏÇã ÇáÃÏæíÉ æÇáãßãáÇÊ ÇáÛĞÇÆíÉ
+2025-09-07 01:17:18,327 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÅÏÇÑÉ ÇÓÊÎÏÇã ÇáÃÏæíÉ æÇáãßãáÇÊ ÇáÛĞÇÆíÉ
+2025-09-07 01:17:18,327 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (134/142): ÈÑÇãÌ ÇáÊÚáíã ÇáØÈí ÇáãÓÊãÑ
+2025-09-07 01:17:24,946 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÈÑÇãÌ ÇáÊÚáíã ÇáØÈí ÇáãÓÊãÑ
+2025-09-07 01:17:24,946 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (135/142): ÃÎáÇŞíÇÊ ÇáÈÍË ÇáÚáãí ÇáØÈí
+2025-09-07 01:17:30,140 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÃÎáÇŞíÇÊ ÇáÈÍË ÇáÚáãí ÇáØÈí
+2025-09-07 01:17:30,140 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (136/142): ÇÓÊÑÇÊíÌíÇÊ äãØ ÇáÍíÇÉ ÇáÕÍí
+2025-09-07 01:17:35,018 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇÓÊÑÇÊíÌíÇÊ äãØ ÇáÍíÇÉ ÇáÕÍí
+2025-09-07 01:17:37,019 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (137/142): ÎÏãÇÊ ÇáãÎÊÈÑÇÊ ÇáØÈíÉ
+2025-09-07 01:17:45,192 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÎÏãÇÊ ÇáãÎÊÈÑÇÊ ÇáØÈíÉ
+2025-09-07 01:17:45,193 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (138/142): ÇáÑÚÇíÉ ÇáãÊãÍæÑÉ Íæá ÇáãÑíÖ
+2025-09-07 01:17:50,054 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÑÚÇíÉ ÇáãÊãÍæÑÉ Íæá ÇáãÑíÖ
+2025-09-07 01:17:50,055 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (139/142): ÊØÈíŞÇÊ ÇáĞßÇÁ ÇáÇÕØäÇÚí İí ÇáÊäÈÄ ÈÇáãÎÇØÑ æÇáÊÔÎíÕ ÇáØÈí
+2025-09-07 01:17:59,031 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊØÈíŞÇÊ ÇáĞßÇÁ ÇáÇÕØäÇÚí İí ÇáÊäÈÄ ÈÇáãÎÇØÑ æÇáÊÔÎíÕ ÇáØÈí
+2025-09-07 01:17:59,031 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (140/142): ÇáĞßÇÁ ÇáÇÕØäÇÚí İí ÊØæíÑ ÎæÇÑÒãíÇÊ ÇáÚáÇÌ
+2025-09-07 01:18:03,060 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáĞßÇÁ ÇáÇÕØäÇÚí İí ÊØæíÑ ÎæÇÑÒãíÇÊ ÇáÚáÇÌ
+2025-09-07 01:18:03,060 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (141/142): ÏæÑ ÇáĞßÇÁ ÇáÇÕØäÇÚí İí ÊÚáíã æããÇÑÓÉ ÇáÌÑÇÍÉ
+2025-09-07 01:18:08,258 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÏæÑ ÇáĞßÇÁ ÇáÇÕØäÇÚí İí ÊÚáíã æããÇÑÓÉ ÇáÌÑÇÍÉ
+2025-09-07 01:18:10,259 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (142/142): ÏÚã ÇáŞÑÇÑ ÇáÓÑíÑí ÇáİæÑí ÈÇáĞßÇÁ ÇáÇÕØäÇÚí İí ÇáÌÑÇÍÉ
+2025-09-07 01:18:17,709 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÏÚã ÇáŞÑÇÑ ÇáÓÑíÑí ÇáİæÑí ÈÇáĞßÇÁ ÇáÇÕØäÇÚí İí ÇáÌÑÇÍÉ
+2025-09-07 01:18:17,709 - agent.synthetic_generator_1 - INFO - Agent 1 completed: 710 data points generated
+2025-09-07 01:18:17,709 - agent.synthetic_generator_1 - INFO - Success rate: 142/142 topics (100.0%)
+2025-09-07 01:18:17,719 - agent.synthetic_generator_1 - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\synthetic_data\generated_data_1.json
+2025-09-07 01:18:17,720 - agent.synthetic_generator_1 - INFO - Completed execution of synthetic_generator_1 in 947.13s
+2025-09-07 13:49:37,292 - agent.synthetic_generator_1 - INFO - Starting execution of synthetic_generator_1
+2025-09-07 13:49:37,292 - agent.synthetic_generator_1 - INFO - Agent 1 generating Triplets data for 12 topics in ar (Description: (Query, Positive, Negative) (and mix them between (question query and answers in positiv and negative) or 3 sentences in query, posituve and negative))
+2025-09-07 13:49:37,293 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (1/12): ÊÚÑíİ ÇáÃãÑÇÖ ÇáãÒãäÉ æÎÕÇÆÕåÇ
+2025-09-07 13:49:37,293 - agent.synthetic_generator_1 - ERROR - Synthetic data generation failed for agent 1: GeminiService.generate_synthetic_data() takes 4 positional arguments but 5 were given
+2025-09-07 13:49:37,294 - agent.synthetic_generator_1 - ERROR - Error in synthetic_generator_1 after 0.00s: GeminiService.generate_synthetic_data() takes 4 positional arguments but 5 were given
+Traceback (most recent call last):
+  File "D:\Learn\web_data_generation_pipeline\agents\base_agent.py", line 83, in run
+    result = self.execute(input_data, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\agents\synthetic_data_generator_agent.py", line 56, in execute
+    generated_items = gemini_service.generate_synthetic_data(topic, data_type, language, description)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GeminiService.generate_synthetic_data() takes 4 positional arguments but 5 were given
+2025-09-07 13:57:04,298 - agent.synthetic_generator_1 - INFO - Starting execution of synthetic_generator_1
+2025-09-07 13:57:04,298 - agent.synthetic_generator_1 - INFO - Agent 1 generating Triplets data for 11 topics in ar (Description: (Query, Positive, Negative) (and mix them between (question query and answers in positiv and negative) or 3 sentences in query, posituve and negative))
+2025-09-07 13:57:04,299 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (1/11): ÊÚÑíİ ãÑÖ ÇáãäÇÚÉ ÇáĞÇÊíÉ æÂáíÊå
+2025-09-07 13:57:13,274 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊÚÑíİ ãÑÖ ÇáãäÇÚÉ ÇáĞÇÊíÉ æÂáíÊå
+2025-09-07 13:57:13,275 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (2/11): ÇÓÊåÏÇİ ÃÚÖÇÁ æÃäÓÌÉ ãÍÏÏÉ İí ÃãÑÇÖ ÇáãäÇÚÉ ÇáĞÇÊíÉ
+2025-09-07 13:57:20,851 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇÓÊåÏÇİ ÃÚÖÇÁ æÃäÓÌÉ ãÍÏÏÉ İí ÃãÑÇÖ ÇáãäÇÚÉ ÇáĞÇÊíÉ
+2025-09-07 13:57:20,851 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (3/11): ÇáäÊÇÆÌ ÇáİÓíæáæÌíÉ áÊáİ ÇáÃäÓÌÉ İí ÃãÑÇÖ ÇáãäÇÚÉ ÇáĞÇÊíÉ
+2025-09-07 13:57:29,763 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáäÊÇÆÌ ÇáİÓíæáæÌíÉ áÊáİ ÇáÃäÓÌÉ İí ÃãÑÇÖ ÇáãäÇÚÉ ÇáĞÇÊíÉ
+2025-09-07 13:57:29,763 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (4/11): ÃäæÇÚ ÃãÑÇÖ ÇáãäÇÚÉ ÇáĞÇÊíÉ
+2025-09-07 13:57:40,654 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÃäæÇÚ ÃãÑÇÖ ÇáãäÇÚÉ ÇáĞÇÊíÉ
+2025-09-07 13:57:40,654 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (5/11): ãÑÖ ÇáÓßÑí ãä ÇáäæÚ ÇáÃæá ßäãæĞÌ áãÑÖ ãäÇÚí ĞÇÊí
+2025-09-07 13:57:50,676 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ãÑÖ ÇáÓßÑí ãä ÇáäæÚ ÇáÃæá ßäãæĞÌ áãÑÖ ãäÇÚí ĞÇÊí
+2025-09-07 13:57:50,676 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (6/11): Îáá ÇáÌåÇÒ ÇáãäÇÚí İí ÇáÃãÑÇÖ ÇáĞÇÊíÉ
+2025-09-07 13:58:15,218 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: Îáá ÇáÌåÇÒ ÇáãäÇÚí İí ÇáÃãÑÇÖ ÇáĞÇÊíÉ
+2025-09-07 13:58:17,219 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (7/11): ÇáÃÚÑÇÖ ÇáÚÇãÉ ÇáãÈßÑÉ áÃãÑÇÖ ÇáãäÇÚÉ ÇáĞÇÊíÉ
+2025-09-07 13:58:24,748 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÃÚÑÇÖ ÇáÚÇãÉ ÇáãÈßÑÉ áÃãÑÇÖ ÇáãäÇÚÉ ÇáĞÇÊíÉ
+2025-09-07 13:58:24,748 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (8/11): ÇáÃÚÑÇÖ ÇáÎÇÕÉ áÃäæÇÚ ãÎÊÇÑÉ ãä ÃãÑÇÖ ÇáãäÇÚÉ ÇáĞÇÊíÉ
+2025-09-07 13:58:33,991 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÃÚÑÇÖ ÇáÎÇÕÉ áÃäæÇÚ ãÎÊÇÑÉ ãä ÃãÑÇÖ ÇáãäÇÚÉ ÇáĞÇÊíÉ
+2025-09-07 13:58:33,991 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (9/11): ÚæÇãá ÇáÎØÑ ÇáæÑÇËíÉ æÇáÈÏÇäÉ áÃãÑÇÖ ÇáãäÇÚÉ ÇáĞÇÊíÉ
+2025-09-07 13:58:43,515 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÚæÇãá ÇáÎØÑ ÇáæÑÇËíÉ æÇáÈÏÇäÉ áÃãÑÇÖ ÇáãäÇÚÉ ÇáĞÇÊíÉ
+2025-09-07 13:58:43,515 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (10/11): ÊÃËíÑ ÇáÌäÓ Úáì ÇäÊÔÇÑ ÃãÑÇÖ ÇáãäÇÚÉ ÇáĞÇÊíÉ
+2025-09-07 13:58:51,910 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊÃËíÑ ÇáÌäÓ Úáì ÇäÊÔÇÑ ÃãÑÇÖ ÇáãäÇÚÉ ÇáĞÇÊíÉ
+2025-09-07 13:58:51,910 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (11/11): ÊÔÎíÕ ÃãÑÇÖ ÇáãäÇÚÉ ÇáĞÇÊíÉ
+2025-09-07 13:59:13,841 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊÔÎíÕ ÃãÑÇÖ ÇáãäÇÚÉ ÇáĞÇÊíÉ
+2025-09-07 13:59:15,842 - agent.synthetic_generator_1 - INFO - Agent 1 completed: 55 data points generated
+2025-09-07 13:59:15,842 - agent.synthetic_generator_1 - INFO - Success rate: 11/11 topics (100.0%)
+2025-09-07 13:59:15,844 - agent.synthetic_generator_1 - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\synthetic_data\generated_data_1.json
+2025-09-07 13:59:15,844 - agent.synthetic_generator_1 - INFO - Completed execution of synthetic_generator_1 in 131.55s
+2025-09-07 17:15:06,373 - agent.synthetic_generator_1 - INFO - Starting execution of synthetic_generator_1
+2025-09-07 17:15:06,374 - agent.synthetic_generator_1 - INFO - Agent 1 generating hard negative samples data for 16 topics in ar (Description: (anchore, positive, and 3 hard negatives). mix them between short negatives and positive samples and long negative and positive samples)
+2025-09-07 17:15:06,374 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (1/16): äÙã ÇáÑí ÈÇáÊäŞíØ
+2025-09-07 17:15:20,939 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: äÙã ÇáÑí ÈÇáÊäŞíØ
+2025-09-07 17:15:20,939 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (2/16): ÇáÑí ÈÇáÑÔ İí ÇáÒÑÇÚÉ
+2025-09-07 17:15:36,578 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÑí ÈÇáÑÔ İí ÇáÒÑÇÚÉ
+2025-09-07 17:15:36,578 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (3/16): ÇáÑí ÇáĞßí ÇáãÚÊãÏ Úáì ÇáÍÓÇÓÇÊ
+2025-09-07 17:15:52,049 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÑí ÇáĞßí ÇáãÚÊãÏ Úáì ÇáÍÓÇÓÇÊ
+2025-09-07 17:15:52,049 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (4/16): ÊÕãíã æÊØÈíŞ ÃäÙãÉ ÇáÑí ÇáÍÏíËÉ
+2025-09-07 17:16:09,509 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊÕãíã æÊØÈíŞ ÃäÙãÉ ÇáÑí ÇáÍÏíËÉ
+2025-09-07 17:16:09,509 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (5/16): ßİÇÁÉ ÇÓÊÎÏÇã ÇáãíÇå İí ÇáãÔÇÑíÚ ÇáÒÑÇÚíÉ
+2025-09-07 17:16:24,159 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ßİÇÁÉ ÇÓÊÎÏÇã ÇáãíÇå İí ÇáãÔÇÑíÚ ÇáÒÑÇÚíÉ
+2025-09-07 17:16:24,159 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (6/16): ÇáİæÇÆÏ ÇáÇŞÊÕÇÏíÉ áÊŞäíÇÊ ÇáÑí ÇáÍÏíËÉ
+2025-09-07 17:16:38,539 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáİæÇÆÏ ÇáÇŞÊÕÇÏíÉ áÊŞäíÇÊ ÇáÑí ÇáÍÏíËÉ
+2025-09-07 17:16:40,540 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (7/16): ÊÃËíÑ ÊŞäíÇÊ ÇáÑí ÇáÍÏíËÉ Úáì ßİÇÁÉ ÇÓÊÎÏÇã ÇáãíÇå İí ÇáÒÑÇÚÉ
+2025-09-07 17:17:01,223 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊÃËíÑ ÊŞäíÇÊ ÇáÑí ÇáÍÏíËÉ Úáì ßİÇÁÉ ÇÓÊÎÏÇã ÇáãíÇå İí ÇáÒÑÇÚÉ
+2025-09-07 17:17:01,223 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (8/16): ÎİÖ ÊßÇáíİ ÇáÑí æÇáÊÓãíÏ ÈÊŞäíÇÊ ÇáÑí ÇáÍÏíËÉ
+2025-09-07 17:17:15,964 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÎİÖ ÊßÇáíİ ÇáÑí æÇáÊÓãíÏ ÈÊŞäíÇÊ ÇáÑí ÇáÍÏíËÉ
+2025-09-07 17:17:15,965 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (9/16): ÈÑÇãÌ ÊÚÒíÒ ÇáãÑæäÉ ÇáÇŞÊÕÇÏíÉ æÇáÒÑÇÚíÉ İí Çáíãä
+2025-09-07 17:17:27,210 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÈÑÇãÌ ÊÚÒíÒ ÇáãÑæäÉ ÇáÇŞÊÕÇÏíÉ æÇáÒÑÇÚíÉ İí Çáíãä
+2025-09-07 17:17:27,210 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (10/16): ããÇÑÓÇÊ ÅÏÇÑÉ ÇáãæÇÑÏ ÇáãÇÆíÉ áãÒÇÑÚí ÇáãäÇØŞ ÇáŞÇÍáÉ
+2025-09-07 17:17:38,390 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ããÇÑÓÇÊ ÅÏÇÑÉ ÇáãæÇÑÏ ÇáãÇÆíÉ áãÒÇÑÚí ÇáãäÇØŞ ÇáŞÇÍáÉ
+2025-09-07 17:17:38,390 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (11/16): ÏæÑ äÏæÇÊ ÊÈÇÏá ÇáÎÈÑÇÊ İí äÔÑ ÊŞäíÇÊ ÇáÑí ÇáÍÏíËÉ
+2025-09-07 17:17:51,032 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÏæÑ äÏæÇÊ ÊÈÇÏá ÇáÎÈÑÇÊ İí äÔÑ ÊŞäíÇÊ ÇáÑí ÇáÍÏíËÉ
+2025-09-07 17:17:53,033 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (12/16): ÇáÒÑÇÚÉ ÇáÏŞíŞÉ
+2025-09-07 17:18:04,233 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÒÑÇÚÉ ÇáÏŞíŞÉ
+2025-09-07 17:18:04,234 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (13/16): ÇÓÊÎÏÇã ÇáØÇÆÑÇÊ ÈÏæä ØíÇÑ áãÑÇŞÈÉ ÇáãÍÇÕíá
+2025-09-07 17:18:23,382 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇÓÊÎÏÇã ÇáØÇÆÑÇÊ ÈÏæä ØíÇÑ áãÑÇŞÈÉ ÇáãÍÇÕíá
+2025-09-07 17:18:23,382 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (14/16): ÃäÙãÉ ÇáÑí ÇáĞßíÉ
+2025-09-07 17:18:44,643 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÃäÙãÉ ÇáÑí ÇáĞßíÉ
+2025-09-07 17:18:44,643 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (15/16): ÊØÈíŞÇÊ ÇáĞßÇÁ ÇáÇÕØäÇÚí İí ÊŞÏíÑ ÇáãÍÇÕíá
+2025-09-07 17:18:59,183 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊØÈíŞÇÊ ÇáĞßÇÁ ÇáÇÕØäÇÚí İí ÊŞÏíÑ ÇáãÍÇÕíá
+2025-09-07 17:18:59,183 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (16/16): ÅÏÇÑÉ ÇáÂİÇÊ æÇáÃãÑÇÖ ÇáÒÑÇÚíÉ ÈÇáĞßÇÁ ÇáÇÕØäÇÚí
+2025-09-07 17:19:10,754 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÅÏÇÑÉ ÇáÂİÇÊ æÇáÃãÑÇÖ ÇáÒÑÇÚíÉ ÈÇáĞßÇÁ ÇáÇÕØäÇÚí
+2025-09-07 17:19:12,755 - agent.synthetic_generator_1 - INFO - Agent 1 completed: 80 data points generated
+2025-09-07 17:19:12,755 - agent.synthetic_generator_1 - INFO - Success rate: 16/16 topics (100.0%)
+2025-09-07 17:19:12,757 - agent.synthetic_generator_1 - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\synthetic_data\generated_data_1.json
+2025-09-07 17:19:12,758 - agent.synthetic_generator_1 - INFO - Completed execution of synthetic_generator_1 in 246.39s
+2025-09-07 17:33:27,970 - agent.synthetic_generator_1 - INFO - Starting execution of synthetic_generator_1
+2025-09-07 17:33:27,970 - agent.synthetic_generator_1 - INFO - Agent 1 generating triplets data for 7 topics in ar (Description: The dataset consists of (anchore, positive and 3 negatives (negative_1, negative_2, negative_3)) columns. The anchore is a sentence or a quewstion. mix between short and long sentences.)
+2025-09-07 17:33:27,971 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (1/7): ããÇÑÓÇÊ ÇáÑİŞ ÈÇáÍíæÇä İí ãÒÇÑÚ ÇáÃáÈÇä
+2025-09-07 17:33:40,069 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ããÇÑÓÇÊ ÇáÑİŞ ÈÇáÍíæÇä İí ãÒÇÑÚ ÇáÃáÈÇä
+2025-09-07 17:33:40,069 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (2/7): ÊÕãíã ÍÙÇÆÑ ÇáÏæÇÌä áÊÍÓíä ÇáÑİÇåíÉ
+2025-09-07 17:33:50,846 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊÕãíã ÍÙÇÆÑ ÇáÏæÇÌä áÊÍÓíä ÇáÑİÇåíÉ
+2025-09-07 17:33:50,846 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (3/7): ÊÃËíÑ ÇáÊÛĞíÉ Úáì ÕÍÉ æÑİÇåíÉ ÇáãÇÔíÉ
+2025-09-07 17:34:01,827 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊÃËíÑ ÇáÊÛĞíÉ Úáì ÕÍÉ æÑİÇåíÉ ÇáãÇÔíÉ
+2025-09-07 17:34:01,827 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (4/7): ÈÑæÊæßæáÇÊ ÇáÊÚÇãá ãÚ ÇáÍíæÇäÇÊ ÃËäÇÁ ÇáäŞá ÇáÒÑÇÚí
+2025-09-07 17:34:15,452 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÈÑæÊæßæáÇÊ ÇáÊÚÇãá ãÚ ÇáÍíæÇäÇÊ ÃËäÇÁ ÇáäŞá ÇáÒÑÇÚí
+2025-09-07 17:34:15,453 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (5/7): ÊŞííã ãÓÊæíÇÊ ÇáÅÌåÇÏ İí ÍíæÇäÇÊ ÇáãÒÑÚÉ
+2025-09-07 17:34:32,614 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊŞííã ãÓÊæíÇÊ ÇáÅÌåÇÏ İí ÍíæÇäÇÊ ÇáãÒÑÚÉ
+2025-09-07 17:34:32,614 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (6/7): ÇáÒÑÇÚÉ ÇáÏŞíŞÉ
+2025-09-07 17:34:42,264 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÒÑÇÚÉ ÇáÏŞíŞÉ
+2025-09-07 17:34:44,264 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (7/7): ÇÓÊÎÏÇã ÇáØÇÆÑÇÊ ÈÏæä ØíÇÑ İí ãÑÇŞÈÉ ÇáãÍÇÕíá
+2025-09-07 17:34:54,900 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇÓÊÎÏÇã ÇáØÇÆÑÇÊ ÈÏæä ØíÇÑ İí ãÑÇŞÈÉ ÇáãÍÇÕíá
+2025-09-07 17:34:54,900 - agent.synthetic_generator_1 - INFO - Agent 1 completed: 35 data points generated
+2025-09-07 17:34:54,900 - agent.synthetic_generator_1 - INFO - Success rate: 7/7 topics (100.0%)
+2025-09-07 17:34:54,902 - agent.synthetic_generator_1 - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\synthetic_data\generated_data_1.json
+2025-09-07 17:34:54,902 - agent.synthetic_generator_1 - INFO - Completed execution of synthetic_generator_1 in 86.93s
+2025-09-07 20:46:12,385 - agent.synthetic_generator_1 - INFO - Starting execution of synthetic_generator_1
+2025-09-07 20:46:12,385 - agent.synthetic_generator_1 - INFO - Agent 1 generating n-plet data for 7 topics in Egyptian Arabic (Description: The dataset consists of (anchore, positive and 3 negatives (negative_1, negative_2, negative_3)) columns. The anchore is a sentence or a quewstion. mix between short and long sentences.)
+2025-09-07 20:46:12,385 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (1/7): ÊÍáíá ÇáÊÑÈÉ áÊÍÏíÏ ÇÍÊíÇÌÇÊ ÇáãÍÇÕíá
+2025-09-07 20:46:21,463 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊÍáíá ÇáÊÑÈÉ áÊÍÏíÏ ÇÍÊíÇÌÇÊ ÇáãÍÇÕíá
+2025-09-07 20:46:21,463 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (2/7): ŞíÇÓ ÏÑÌÉ ÍãæÖÉ ÇáÊÑÈÉ (pH) æÃËÑå Úáì ÇáÒÑÇÚÉ
+2025-09-07 20:46:32,479 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ŞíÇÓ ÏÑÌÉ ÍãæÖÉ ÇáÊÑÈÉ (pH) æÃËÑå Úáì ÇáÒÑÇÚÉ
+2025-09-07 20:46:32,479 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (3/7): ÇÓÊÎÏÇã ÇáÃÓãÏÉ ÇáĞßíÉ İí ÊÓãíÏ ÇáãÍÇÕíá
+2025-09-07 20:46:47,892 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇÓÊÎÏÇã ÇáÃÓãÏÉ ÇáĞßíÉ İí ÊÓãíÏ ÇáãÍÇÕíá
+2025-09-07 20:46:47,892 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (4/7): İæÇÆÏ ÇáÃÓãÏÉ ÇáÚÖæíÉ ÇáãÚÇáÌÉ ááÊÑÈÉ
+2025-09-07 20:47:01,983 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: İæÇÆÏ ÇáÃÓãÏÉ ÇáÚÖæíÉ ÇáãÚÇáÌÉ ááÊÑÈÉ
+2025-09-07 20:47:01,983 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (5/7): ÇáÊÓãíÏ ÇáÃÓÇÓí ááãÍÇÕíá ŞÈá ÇáÒÑÇÚÉ
+2025-09-07 20:47:14,912 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÊÓãíÏ ÇáÃÓÇÓí ááãÍÇÕíá ŞÈá ÇáÒÑÇÚÉ
+2025-09-07 20:47:14,912 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (6/7): ÇáÊÓãíÏ ÇáÊßãíáí ÎáÇá ãÑÇÍá äãæ ÇáäÈÇÊ
+2025-09-07 20:47:28,099 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÊÓãíÏ ÇáÊßãíáí ÎáÇá ãÑÇÍá äãæ ÇáäÈÇÊ
+2025-09-07 20:47:30,100 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (7/7): ÊÓãíÏ ÇáãÍÇÕíá İí ãÑÍáÉ ÇáÅËãÇÑ áÒíÇÏÉ ÇáÌæÏÉ
+2025-09-07 20:47:50,365 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊÓãíÏ ÇáãÍÇÕíá İí ãÑÍáÉ ÇáÅËãÇÑ áÒíÇÏÉ ÇáÌæÏÉ
+2025-09-07 20:47:50,365 - agent.synthetic_generator_1 - INFO - Agent 1 completed: 35 data points generated
+2025-09-07 20:47:50,365 - agent.synthetic_generator_1 - INFO - Success rate: 7/7 topics (100.0%)
+2025-09-07 20:47:50,366 - agent.synthetic_generator_1 - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\synthetic_data\generated_data_1.json
+2025-09-07 20:47:50,367 - agent.synthetic_generator_1 - INFO - Completed execution of synthetic_generator_1 in 97.98s
+2025-09-07 20:53:38,764 - agent.synthetic_generator_1 - INFO - Starting execution of synthetic_generator_1
+2025-09-07 20:53:38,764 - agent.synthetic_generator_1 - INFO - Agent 1 generating triplets data for 10 topics in Egyptian Arabic (Description: The dataset consists of (anchor, positive, and 3 negatives (negative_1, negative_2, negative_3)) columns. The anchor is a sentence or a question. mix between short and long sentences.)
+2025-09-07 20:53:38,764 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (1/10): ÇáÊÚÇãá ãÚ ÇáØŞÓ ÇáÍÇÑ İí ãÕÑ ÕíİÇğ
+2025-09-07 20:53:48,931 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÊÚÇãá ãÚ ÇáØŞÓ ÇáÍÇÑ İí ãÕÑ ÕíİÇğ
+2025-09-07 20:53:48,931 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (2/10): ÃäÔØÉ ÇáÇÓÊÑÎÇÁ İí Óåá ÍÔíÔ
+2025-09-07 20:53:59,761 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÃäÔØÉ ÇáÇÓÊÑÎÇÁ İí Óåá ÍÔíÔ
+2025-09-07 20:53:59,761 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (3/10): ÇáÍİáÇÊ ÇáÔÇØÆíÉ ÇááíáíÉ İí Óåá ÍÔíÔ
+2025-09-07 20:54:12,053 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÍİáÇÊ ÇáÔÇØÆíÉ ÇááíáíÉ İí Óåá ÍÔíÔ
+2025-09-07 20:54:12,054 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (4/10): ÇáÅÓßäÏÑíÉ ßæÌåÉ ÕíİíÉ ááåÑæÈ ãä ÍÑ ÇáŞÇåÑÉ
+2025-09-07 20:54:22,406 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÅÓßäÏÑíÉ ßæÌåÉ ÕíİíÉ ááåÑæÈ ãä ÍÑ ÇáŞÇåÑÉ
+2025-09-07 20:54:22,406 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (5/10): ÇáÛØÓ æÇÓÊßÔÇİ ÚÌÇÆÈ ÇáÈÍÑ ÇáÃÍãÑ
+2025-09-07 20:54:49,213 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÛØÓ æÇÓÊßÔÇİ ÚÌÇÆÈ ÇáÈÍÑ ÇáÃÍãÑ
+2025-09-07 20:54:49,213 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (6/10): ÑÍáÇÊ ÇáÓİÇÑí ÇáÕÍÑÇæíÉ İí ãÕÑ
+2025-09-07 20:54:58,740 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÑÍáÇÊ ÇáÓİÇÑí ÇáÕÍÑÇæíÉ İí ãÕÑ
+2025-09-07 20:55:00,741 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (7/10): ÇáÛæÕ æÇáÓäæÑßáíäÌ İí ÇáÈÍÑ ÇáÃÍãÑ
+2025-09-07 20:55:10,483 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÛæÕ æÇáÓäæÑßáíäÌ İí ÇáÈÍÑ ÇáÃÍãÑ
+2025-09-07 20:55:10,483 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (8/10): ÊÓáŞ ÇáÌÈÇá İí ÓíäÇÁ
+2025-09-07 20:55:22,290 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÊÓáŞ ÇáÌÈÇá İí ÓíäÇÁ
+2025-09-07 20:55:22,290 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (9/10): ÇáÑÍáÇÊ ÇáäíáíÉ ÈÇáãÑÇßÈ ÇáÔÑÇÚíÉ
+2025-09-07 20:55:34,609 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ÇáÑÍáÇÊ ÇáäíáíÉ ÈÇáãÑÇßÈ ÇáÔÑÇÚíÉ
+2025-09-07 20:55:34,609 - agent.synthetic_generator_1 - DEBUG - Generating data for topic (10/10): ŞíÇÏÉ ÇáÏÑÇÌÇÊ ÇáÑÈÇÚíÉ İí ÇáÕÍÑÇÁ ÇáãÕÑíÉ
+2025-09-07 20:55:49,101 - agent.synthetic_generator_1 - DEBUG - Generated 5 data points for topic: ŞíÇÏÉ ÇáÏÑÇÌÇÊ ÇáÑÈÇÚíÉ İí ÇáÕÍÑÇÁ ÇáãÕÑíÉ
+2025-09-07 20:55:49,101 - agent.synthetic_generator_1 - INFO - Agent 1 completed: 50 data points generated
+2025-09-07 20:55:49,101 - agent.synthetic_generator_1 - INFO - Success rate: 10/10 topics (100.0%)
+2025-09-07 20:55:49,103 - agent.synthetic_generator_1 - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\synthetic_data\generated_data_1.json
+2025-09-07 20:55:49,103 - agent.synthetic_generator_1 - INFO - Completed execution of synthetic_generator_1 in 130.34s

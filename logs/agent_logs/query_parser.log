@@ -1,0 +1,376 @@
+2025-09-04 19:31:35,698 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-04 19:31:35,698 - agent.query_parser - INFO - Parsing query: I want 1000 medical QA data points
+2025-09-04 19:31:39,285 - agent.query_parser - ERROR - Failed to parse query: Failed to generate text after 3 attempts: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-09-04 19:31:39,285 - agent.query_parser - ERROR - Error in query_parser after 3.59s: Failed to generate text after 3 attempts: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+Traceback (most recent call last):
+  File "D:\Learn\web_data_generation_pipeline\services\gemini_service.py", line 35, in generate_text
+    response = self.model.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abdom\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\generativeai\generative_models.py", line 243, in generate_content
+    response = self._client.generate_content(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abdom\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 566, in generate_content
+    response = rpc(
+               ^^^^
+  File "C:\Users\abdom\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abdom\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "C:\Users\abdom\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abdom\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\abdom\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "C:\Users\abdom\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abdom\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.NotFound: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Learn\web_data_generation_pipeline\agents\base_agent.py", line 83, in run
+    result = self.execute(input_data, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\agents\query_parser_agent.py", line 27, in execute
+    parsed_data = gemini_service.parse_query(input_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\services\gemini_service.py", line 87, in parse_query
+    response = self.generate_text(prompt, system_instruction)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\services\gemini_service.py", line 44, in generate_text
+    raise Exception(f"Failed to generate text after {max_retries} attempts: {e}")
+Exception: Failed to generate text after 3 attempts: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-09-04 19:50:41,485 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-04 19:50:41,485 - agent.query_parser - INFO - Parsing query: I want 1000 medical QA data points
+2025-09-04 19:50:42,880 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-04 19:50:42,880 - agent.query_parser - INFO -   - Domain: medical
+2025-09-04 19:50:42,881 - agent.query_parser - INFO -   - Data Type: QA
+2025-09-04 19:50:42,881 - agent.query_parser - INFO -   - Sample Count: 1000
+2025-09-04 19:50:42,881 - agent.query_parser - INFO -   - Required Subtopics: 200
+2025-09-04 19:50:42,881 - agent.query_parser - INFO - Completed execution of query_parser in 1.40s
+2025-09-06 20:51:52,823 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-06 20:51:52,823 - agent.query_parser - INFO - Parsing query: I want 100 medical QA data points in English
+2025-09-06 20:51:52,824 - agent.query_parser - ERROR - Failed to parse query: 'GeminiService' object has no attribute 'parse_query'
+2025-09-06 20:51:52,824 - agent.query_parser - ERROR - Error in query_parser after 0.00s: 'GeminiService' object has no attribute 'parse_query'
+Traceback (most recent call last):
+  File "D:\Learn\web_data_generation_pipeline\agents\base_agent.py", line 83, in run
+    result = self.execute(input_data, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\agents\query_parser_agent.py", line 27, in execute
+    parsed_data = gemini_service.parse_query(input_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GeminiService' object has no attribute 'parse_query'
+2025-09-06 20:53:37,159 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-06 20:53:37,159 - agent.query_parser - INFO - Parsing query: I want 100 medical QA data points in English
+2025-09-06 20:53:37,159 - agent.query_parser - ERROR - Failed to parse query: 'GeminiService' object has no attribute 'parse_query'
+2025-09-06 20:53:37,159 - agent.query_parser - ERROR - Error in query_parser after 0.00s: 'GeminiService' object has no attribute 'parse_query'
+Traceback (most recent call last):
+  File "D:\Learn\web_data_generation_pipeline\agents\base_agent.py", line 83, in run
+    result = self.execute(input_data, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\agents\query_parser_agent.py", line 27, in execute
+    parsed_data = gemini_service.parse_query(input_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GeminiService' object has no attribute 'parse_query'
+2025-09-06 20:55:44,737 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-06 20:55:44,737 - agent.query_parser - INFO - Parsing query: I want 100 medical QA data points in English
+2025-09-06 20:55:46,339 - agent.query_parser - ERROR - Failed to parse query: 1 validation error for ParsedQuery
+language
+  Field required [type=missing, input_value={'original_query': 'I wan...A', 'sample_count': 100}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-09-06 20:55:46,339 - agent.query_parser - ERROR - Error in query_parser after 1.60s: 1 validation error for ParsedQuery
+language
+  Field required [type=missing, input_value={'original_query': 'I wan...A', 'sample_count': 100}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Traceback (most recent call last):
+  File "D:\Learn\web_data_generation_pipeline\agents\base_agent.py", line 83, in run
+    result = self.execute(input_data, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\agents\query_parser_agent.py", line 30, in execute
+    parsed_query = ParsedQuery(
+                   ^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\pydantic\main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for ParsedQuery
+language
+  Field required [type=missing, input_value={'original_query': 'I wan...A', 'sample_count': 100}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-09-06 20:57:44,614 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-06 20:57:44,614 - agent.query_parser - INFO - Parsing query: I want 100 medical Triplets data points in English
+2025-09-06 20:57:46,915 - agent.query_parser - ERROR - Failed to parse query: 1 validation error for ParsedQuery
+language
+  Field required [type=missing, input_value={'original_query': 'I wan...s', 'sample_count': 100}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-09-06 20:57:46,916 - agent.query_parser - ERROR - Error in query_parser after 2.30s: 1 validation error for ParsedQuery
+language
+  Field required [type=missing, input_value={'original_query': 'I wan...s', 'sample_count': 100}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Traceback (most recent call last):
+  File "D:\Learn\web_data_generation_pipeline\agents\base_agent.py", line 83, in run
+    result = self.execute(input_data, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\agents\query_parser_agent.py", line 30, in execute
+    parsed_query = ParsedQuery(
+                   ^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\.venv\Lib\site-packages\pydantic\main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for ParsedQuery
+language
+  Field required [type=missing, input_value={'original_query': 'I wan...s', 'sample_count': 100}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-09-06 21:00:07,869 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-06 21:00:07,869 - agent.query_parser - INFO - Parsing query: I want 100 medical Triplets data points in English
+2025-09-06 21:00:11,283 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-06 21:00:11,283 - agent.query_parser - INFO -   - Domain: medical
+2025-09-06 21:00:11,283 - agent.query_parser - INFO -   - Data Type: triplets
+2025-09-06 21:00:11,283 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-06 21:00:11,284 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-06 21:00:11,284 - agent.query_parser - INFO - Completed execution of query_parser in 3.41s
+2025-09-06 21:19:31,426 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-06 21:19:31,426 - agent.query_parser - INFO - Parsing query: I want 100 medical Triplets data points in English
+2025-09-06 21:19:32,809 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-06 21:19:32,809 - agent.query_parser - INFO -   - Domain: medical
+2025-09-06 21:19:32,809 - agent.query_parser - INFO -   - Data Type: triplets
+2025-09-06 21:19:32,809 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-06 21:19:32,809 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-06 21:19:32,809 - agent.query_parser - INFO - Completed execution of query_parser in 1.38s
+2025-09-06 21:32:29,185 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-06 21:32:29,185 - agent.query_parser - INFO - Parsing query: I want 100 medical Triplets data points in Arabic
+2025-09-06 21:32:30,590 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-06 21:32:30,590 - agent.query_parser - INFO -   - Domain: medical
+2025-09-06 21:32:30,590 - agent.query_parser - INFO -   - Data Type: triplets
+2025-09-06 21:32:30,591 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-06 21:32:30,591 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-06 21:32:30,591 - agent.query_parser - INFO - Completed execution of query_parser in 1.41s
+2025-09-06 22:28:14,380 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-06 22:28:14,380 - agent.query_parser - INFO - Parsing query: I want 100 medical Triplets data points in Arabic
+2025-09-06 22:28:15,888 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-06 22:28:15,889 - agent.query_parser - INFO -   - Domain: medical
+2025-09-06 22:28:15,889 - agent.query_parser - INFO -   - Data Type: Triplets
+2025-09-06 22:28:15,889 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-06 22:28:15,890 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-06 22:28:15,890 - agent.query_parser - INFO - Completed execution of query_parser in 1.51s
+2025-09-06 22:30:46,292 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-06 22:30:46,293 - agent.query_parser - INFO - Parsing query: I want 100 medical Triplets data points in Arabic
+2025-09-06 22:30:47,577 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-06 22:30:47,578 - agent.query_parser - INFO -   - Domain: medical
+2025-09-06 22:30:47,578 - agent.query_parser - INFO -   - Data Type: triplets
+2025-09-06 22:30:47,578 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-06 22:30:47,579 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-06 22:30:47,579 - agent.query_parser - INFO - Completed execution of query_parser in 1.29s
+2025-09-06 23:13:11,707 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-06 23:13:11,708 - agent.query_parser - INFO - Parsing query: I want 100 medical Triplets data points in Arabic
+2025-09-06 23:13:13,387 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-06 23:13:13,387 - agent.query_parser - INFO -   - Domain: medical
+2025-09-06 23:13:13,388 - agent.query_parser - INFO -   - Data Type: triplets
+2025-09-06 23:13:13,388 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-06 23:13:13,388 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-06 23:13:13,388 - agent.query_parser - INFO - Completed execution of query_parser in 1.68s
+2025-09-06 23:23:59,133 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-06 23:23:59,133 - agent.query_parser - INFO - Parsing query: I want 100 medical Triplets data points in Arabic
+2025-09-06 23:24:02,899 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-06 23:24:02,899 - agent.query_parser - INFO -   - Domain: medical
+2025-09-06 23:24:02,899 - agent.query_parser - INFO -   - Data Type: triplets
+2025-09-06 23:24:02,899 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-06 23:24:02,899 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-06 23:24:02,899 - agent.query_parser - INFO - Completed execution of query_parser in 3.77s
+2025-09-06 23:44:46,036 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-06 23:44:46,037 - agent.query_parser - INFO - Parsing query: I want 100 medical Triplets data points in Arabic
+2025-09-06 23:44:47,453 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-06 23:44:47,453 - agent.query_parser - INFO -   - Domain: medical
+2025-09-06 23:44:47,453 - agent.query_parser - INFO -   - Data Type: triplets
+2025-09-06 23:44:47,453 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-06 23:44:47,454 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-06 23:44:47,454 - agent.query_parser - INFO - Completed execution of query_parser in 1.42s
+2025-09-06 23:57:44,440 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-06 23:57:44,440 - agent.query_parser - INFO - Parsing query: I want 100 medical Triplets data points in Arabic
+2025-09-06 23:57:45,873 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-06 23:57:45,873 - agent.query_parser - INFO -   - Domain: medical
+2025-09-06 23:57:45,875 - agent.query_parser - INFO -   - Data Type: triplets
+2025-09-06 23:57:45,875 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-06 23:57:45,875 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-06 23:57:45,875 - agent.query_parser - INFO - Completed execution of query_parser in 1.43s
+2025-09-06 23:59:12,451 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-06 23:59:12,452 - agent.query_parser - INFO - Parsing query: I want 100 medical Triplets data points in Arabic
+2025-09-06 23:59:13,838 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-06 23:59:13,838 - agent.query_parser - INFO -   - Domain: medical
+2025-09-06 23:59:13,839 - agent.query_parser - INFO -   - Data Type: triplets
+2025-09-06 23:59:13,839 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-06 23:59:13,839 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-06 23:59:13,839 - agent.query_parser - INFO - Completed execution of query_parser in 1.39s
+2025-09-07 00:10:47,409 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-07 00:10:47,409 - agent.query_parser - INFO - Parsing query: I want 100 medical Triplets data points in Arabic
+2025-09-07 00:10:48,819 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-07 00:10:48,820 - agent.query_parser - INFO -   - Domain: medical
+2025-09-07 00:10:48,820 - agent.query_parser - INFO -   - Data Type: triplets
+2025-09-07 00:10:48,820 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-07 00:10:48,820 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-07 00:10:48,821 - agent.query_parser - INFO - Completed execution of query_parser in 1.41s
+2025-09-07 00:29:08,608 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-07 00:29:08,608 - agent.query_parser - INFO - Parsing query: I want 100 medical Triplets data points in Arabic
+2025-09-07 00:29:10,810 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-07 00:29:10,811 - agent.query_parser - INFO -   - Domain: medical
+2025-09-07 00:29:10,811 - agent.query_parser - INFO -   - Data Type: triplets
+2025-09-07 00:29:10,811 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-07 00:29:10,811 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-07 00:29:10,812 - agent.query_parser - INFO - Completed execution of query_parser in 2.20s
+2025-09-07 00:43:14,133 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-07 00:43:14,133 - agent.query_parser - INFO - Parsing query: I want 100 medical Triplets data points in Arabic
+2025-09-07 00:43:15,635 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-07 00:43:15,635 - agent.query_parser - INFO -   - Domain: medical
+2025-09-07 00:43:15,635 - agent.query_parser - INFO -   - Data Type: triplets
+2025-09-07 00:43:15,636 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-07 00:43:15,636 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-07 00:43:15,636 - agent.query_parser - INFO - Completed execution of query_parser in 1.50s
+2025-09-07 01:31:57,877 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-07 01:31:57,877 - agent.query_parser - INFO - Parsing query: I want 100 medical Triplets (Query, Positive, Negative) (and mix them between (question query and answers in positiv and negative) or 3 sentences in query, posituve and negative) data points in Arabic
+2025-09-07 01:31:59,821 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-07 01:31:59,822 - agent.query_parser - INFO -   - Domain: medical
+2025-09-07 01:31:59,822 - agent.query_parser - INFO -   - Data Type: Triplets
+2025-09-07 01:31:59,823 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-07 01:31:59,823 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-07 01:31:59,823 - agent.query_parser - INFO - Completed execution of query_parser in 1.95s
+2025-09-07 01:44:02,792 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-07 01:44:02,792 - agent.query_parser - INFO - Parsing query: I want 100 medical Triplets (Query, Positive, Negative) (and mix them between (question query and answers in positiv and negative) or 3 sentences in query, posituve and negative) data points in Arabic
+2025-09-07 01:44:04,718 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-07 01:44:04,718 - agent.query_parser - INFO -   - Domain: medical
+2025-09-07 01:44:04,718 - agent.query_parser - INFO -   - Data Type: Triplets
+2025-09-07 01:44:04,718 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-07 01:44:04,718 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-07 01:44:04,718 - agent.query_parser - INFO - Completed execution of query_parser in 1.93s
+2025-09-07 01:53:20,188 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-07 01:53:20,188 - agent.query_parser - INFO - Parsing query: I want 100 medical Triplets (Query, Positive, Negative) (and mix them between (question query and answers in positiv and negative) or 3 sentences in query, posituve and negative) data points in Arabic
+2025-09-07 01:53:22,184 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-07 01:53:22,186 - agent.query_parser - INFO -   - Domain: medical
+2025-09-07 01:53:22,186 - agent.query_parser - INFO -   - Data Type: triplets
+2025-09-07 01:53:22,186 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-07 01:53:22,186 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-07 01:53:22,186 - agent.query_parser - INFO - Completed execution of query_parser in 2.00s
+2025-09-07 01:54:48,484 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-07 01:54:48,485 - agent.query_parser - INFO - Parsing query: I want 100 medical Triplets (Query, Positive, Negative) (and mix them between (question query and answers in positiv and negative) or 3 sentences in query, posituve and negative) data points in Arabic
+2025-09-07 01:54:50,745 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-07 01:54:50,746 - agent.query_parser - INFO -   - Domain: medical
+2025-09-07 01:54:50,746 - agent.query_parser - INFO -   - Data Type: Triplets
+2025-09-07 01:54:50,746 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-07 01:54:50,747 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-07 01:54:50,747 - agent.query_parser - INFO - Completed execution of query_parser in 2.26s
+2025-09-07 13:33:04,500 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-07 13:33:04,500 - agent.query_parser - INFO - Parsing query: I want 100 medical Triplets (Query, Positive, Negative) (and mix them between (question query and answers in positiv and negative) or 3 sentences in query, posituve and negative) data points in Arabic
+2025-09-07 13:33:06,427 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-07 13:33:06,427 - agent.query_parser - INFO -   - Domain: medical
+2025-09-07 13:33:06,427 - agent.query_parser - INFO -   - Data Type: Triplets
+2025-09-07 13:33:06,428 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-07 13:33:06,428 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-07 13:33:06,428 - agent.query_parser - INFO - Completed execution of query_parser in 1.93s
+2025-09-07 13:38:30,940 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-07 13:38:30,940 - agent.query_parser - INFO - Parsing query: I want 100 medical Triplets (Query, Positive, Negative) (and mix them between (question query and answers in positiv and negative) or 3 sentences in query, posituve and negative) data points in Arabic
+2025-09-07 13:38:36,923 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-07 13:38:36,924 - agent.query_parser - INFO -   - Domain: medical
+2025-09-07 13:38:36,924 - agent.query_parser - INFO -   - Data Type: Triplets
+2025-09-07 13:38:36,924 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-07 13:38:36,924 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-07 13:38:36,925 - agent.query_parser - INFO - Completed execution of query_parser in 5.98s
+2025-09-07 13:40:49,983 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-07 13:40:49,983 - agent.query_parser - INFO - Parsing query: I want 100 medical Triplets (Query, Positive, Negative) (and mix them between (question query and answers in positiv and negative) or 3 sentences in query, posituve and negative) data points in Arabic
+2025-09-07 13:41:04,148 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-07 13:41:04,148 - agent.query_parser - INFO -   - Domain: medical
+2025-09-07 13:41:04,148 - agent.query_parser - INFO -   - Data Type: triplets
+2025-09-07 13:41:04,149 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-07 13:41:04,149 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-07 13:41:04,149 - agent.query_parser - INFO - Completed execution of query_parser in 14.17s
+2025-09-07 13:42:15,719 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-07 13:42:15,720 - agent.query_parser - INFO - Parsing query: I want 100 medical Triplets (Query, Positive, Negative) (and mix them between (question query and answers in positiv and negative) or 3 sentences in query, posituve and negative) data points in Arabic
+2025-09-07 13:42:17,900 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-07 13:42:17,901 - agent.query_parser - INFO -   - Domain: medical
+2025-09-07 13:42:17,901 - agent.query_parser - INFO -   - Data Type: Triplets
+2025-09-07 13:42:17,901 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-07 13:42:17,902 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-07 13:42:17,902 - agent.query_parser - INFO - Completed execution of query_parser in 2.18s
+2025-09-07 13:47:23,270 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-07 13:47:23,271 - agent.query_parser - INFO - Parsing query: I want 100 medical Triplets (Query, Positive, Negative) (and mix them between (question query and answers in positiv and negative) or 3 sentences in query, posituve and negative) data points in Arabic
+2025-09-07 13:47:25,508 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-07 13:47:25,509 - agent.query_parser - INFO -   - Domain: medical
+2025-09-07 13:47:25,509 - agent.query_parser - INFO -   - Data Type: Triplets
+2025-09-07 13:47:25,509 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-07 13:47:25,510 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-07 13:47:25,510 - agent.query_parser - INFO - Completed execution of query_parser in 2.24s
+2025-09-07 13:54:36,733 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-07 13:54:36,734 - agent.query_parser - INFO - Parsing query: I want 100 medical Triplets (Query, Positive, Negative) (and mix them between (question query and answers in positiv and negative) or 3 sentences in query, posituve and negative) data points in Arabic
+2025-09-07 13:54:38,694 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-07 13:54:38,694 - agent.query_parser - INFO -   - Domain: medical
+2025-09-07 13:54:38,694 - agent.query_parser - INFO -   - Data Type: Triplets
+2025-09-07 13:54:38,695 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-07 13:54:38,695 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-07 13:54:38,695 - agent.query_parser - INFO - Completed execution of query_parser in 1.96s
+2025-09-07 17:11:20,810 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-07 17:11:20,811 - agent.query_parser - INFO - Parsing query: I want to generate 100 synthitic agricultural datasets in Egyptian Arabic, the data consist of hard negative samples (anchore, positive, and 3 hard negatives). mix them between short negatives and positive samples and long negative and positive samples
+2025-09-07 17:11:33,943 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-07 17:11:33,943 - agent.query_parser - INFO -   - Domain: agricultural
+2025-09-07 17:11:33,944 - agent.query_parser - INFO -   - Data Type: hard negative samples
+2025-09-07 17:11:33,944 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-07 17:11:33,944 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-07 17:11:33,945 - agent.query_parser - INFO - Completed execution of query_parser in 13.13s
+2025-09-07 17:31:21,398 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-07 17:31:21,398 - agent.query_parser - INFO - Parsing query: I want to generate 100 synthitic agricultural datasets in Egyptian Arabic, The dataset consists of 
+        (anchore, positive and 3 negatives (negative_1, negative_2, negative_3)) columns. The anchore is a sentence or a quewstion.
+         mix between short and long sentences.
+2025-09-07 17:31:28,955 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-07 17:31:28,955 - agent.query_parser - INFO - Parsing query: I want to generate 100 synthitic agricultural datasets in Egyptian Arabic, The dataset consists of 
+        (anchore, positive and 3 negatives (negative_1, negative_2, negative_3)) columns. The anchore is a sentence or a quewstion.
+         mix between short and long sentences.
+2025-09-07 17:31:36,521 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-07 17:31:36,522 - agent.query_parser - INFO -   - Domain: agricultural
+2025-09-07 17:31:36,522 - agent.query_parser - INFO -   - Data Type: triplets
+2025-09-07 17:31:36,522 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-07 17:31:36,522 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-07 17:31:36,522 - agent.query_parser - INFO - Completed execution of query_parser in 7.57s
+2025-09-07 20:38:36,902 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-07 20:38:36,902 - agent.query_parser - INFO - Parsing query: I want to generate 100 synthitic agricultural datasets in Egyptian Arabic, The dataset consists of 
+        (anchore, positive and 3 negatives (negative_1, negative_2, negative_3)) columns. The anchore is a sentence or a quewstion.
+         mix between short and long sentences.
+2025-09-07 20:38:42,780 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-07 20:38:42,780 - agent.query_parser - INFO -   - Domain: agricultural
+2025-09-07 20:38:42,780 - agent.query_parser - INFO -   - Data Type: triplets
+2025-09-07 20:38:42,780 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-07 20:38:42,780 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-07 20:38:42,780 - agent.query_parser - INFO - Completed execution of query_parser in 5.88s
+2025-09-07 20:39:54,003 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-07 20:39:54,003 - agent.query_parser - INFO - Parsing query: I want to generate 100 synthitic agricultural datasets in Egyptian Arabic, The dataset consists of 
+        (anchore, positive and 3 negatives (negative_1, negative_2, negative_3)) columns. The anchore is a sentence or a quewstion.
+         mix between short and long sentences.
+2025-09-07 20:39:58,344 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-07 20:39:58,344 - agent.query_parser - INFO -   - Domain: agricultural
+2025-09-07 20:39:58,344 - agent.query_parser - INFO -   - Data Type: triplets
+2025-09-07 20:39:58,345 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-07 20:39:58,345 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-07 20:39:58,345 - agent.query_parser - INFO - Completed execution of query_parser in 4.34s
+2025-09-07 20:43:59,136 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-07 20:43:59,137 - agent.query_parser - INFO - Parsing query: I want to generate 100 synthitic agricultural datasets in Egyptian Arabic, The dataset consists of 
+        (anchore, positive and 3 negatives (negative_1, negative_2, negative_3)) columns. The anchore is a sentence or a quewstion.
+         mix between short and long sentences.
+2025-09-07 20:44:10,837 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-07 20:44:10,837 - agent.query_parser - INFO -   - Domain: agricultural
+2025-09-07 20:44:10,838 - agent.query_parser - INFO -   - Data Type: n-plet
+2025-09-07 20:44:10,838 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-07 20:44:10,838 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-07 20:44:10,838 - agent.query_parser - INFO - Completed execution of query_parser in 11.70s
+2025-09-07 20:51:12,382 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-07 20:51:12,382 - agent.query_parser - INFO - Parsing query: I want to generate 100 synthetic Tourism datasets in Egyptian Arabic. The dataset consists of 
+        (anchor, positive, and 3 negatives (negative_1, negative_2, negative_3)) columns. The anchor is a sentence or a question.
+         mix between short and long sentences.
+2025-09-07 20:51:19,304 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-07 20:51:19,304 - agent.query_parser - INFO -   - Domain: Tourism
+2025-09-07 20:51:19,304 - agent.query_parser - INFO -   - Data Type: triplets
+2025-09-07 20:51:19,304 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-07 20:51:19,304 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-07 20:51:19,304 - agent.query_parser - INFO - Completed execution of query_parser in 6.92s

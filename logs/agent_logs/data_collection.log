@@ -1,0 +1,126 @@
+2025-09-06 23:39:54,780 - agent.data_collection - INFO - Starting execution of data_collection
+2025-09-06 23:39:54,780 - agent.data_collection - INFO - Collecting synthetic data from 3 generators
+2025-09-06 23:39:54,780 - agent.data_collection - INFO - Target sample count: 100
+2025-09-06 23:39:54,780 - agent.data_collection - INFO - Total data points before deduplication: 0
+2025-09-06 23:39:54,780 - agent.data_collection - INFO - Data points after deduplication: 0
+2025-09-06 23:39:54,782 - agent.data_collection - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\final_output\collected_datasets\final_dataset_triplets_medical.json
+2025-09-06 23:39:54,782 - agent.data_collection - INFO - Final dataset created with 0 samples
+2025-09-06 23:39:54,782 - agent.data_collection - INFO - Completion rate: 0.0%
+2025-09-06 23:39:54,782 - agent.data_collection - INFO - Completed execution of data_collection in 0.00s
+2025-09-07 00:25:23,558 - agent.data_collection - INFO - Starting execution of data_collection
+2025-09-07 00:25:23,559 - agent.data_collection - INFO - Collecting synthetic data from 3 generators
+2025-09-07 00:25:23,559 - agent.data_collection - INFO - Target sample count: 100
+2025-09-07 00:25:23,559 - agent.data_collection - INFO - Total data points before deduplication: 0
+2025-09-07 00:25:23,559 - agent.data_collection - INFO - Data points after deduplication: 0
+2025-09-07 00:25:23,561 - agent.data_collection - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\final_output\collected_datasets\final_dataset_triplets_medical.json
+2025-09-07 00:25:23,562 - agent.data_collection - INFO - Final dataset created with 0 samples
+2025-09-07 00:25:23,562 - agent.data_collection - INFO - Completion rate: 0.0%
+2025-09-07 00:25:23,562 - agent.data_collection - INFO - Completed execution of data_collection in 0.00s
+2025-09-07 00:40:25,654 - agent.data_collection - INFO - Starting execution of data_collection
+2025-09-07 00:40:25,654 - agent.data_collection - INFO - Collecting synthetic data from 3 generators
+2025-09-07 00:40:25,654 - agent.data_collection - INFO - Target sample count: 100
+2025-09-07 00:40:25,654 - agent.data_collection - INFO - Total data points before deduplication: 0
+2025-09-07 00:40:25,654 - agent.data_collection - INFO - Data points after deduplication: 0
+2025-09-07 00:40:25,655 - agent.data_collection - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\final_output\collected_datasets\final_dataset_triplets_medical.json
+2025-09-07 00:40:25,655 - agent.data_collection - INFO - Final dataset created with 0 samples
+2025-09-07 00:40:25,655 - agent.data_collection - INFO - Completion rate: 0.0%
+2025-09-07 00:40:25,655 - agent.data_collection - INFO - Completed execution of data_collection in 0.00s
+2025-09-07 01:18:17,722 - agent.data_collection - INFO - Starting execution of data_collection
+2025-09-07 01:18:17,722 - agent.data_collection - INFO - Collecting synthetic data from 3 generators
+2025-09-07 01:18:17,722 - agent.data_collection - INFO - Target sample count: 100
+2025-09-07 01:18:17,722 - agent.data_collection - INFO - Total data points before deduplication: 710
+2025-09-07 01:18:17,726 - agent.data_collection - INFO - Data points after deduplication: 710
+2025-09-07 01:18:17,729 - agent.data_collection - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\final_output\collected_datasets\final_dataset_triplets_medical.json
+2025-09-07 01:18:17,729 - agent.data_collection - INFO - Final dataset created with 100 samples
+2025-09-07 01:18:17,729 - agent.data_collection - INFO - Completion rate: 100.0%
+2025-09-07 01:18:17,730 - agent.data_collection - INFO - Completed execution of data_collection in 0.01s
+2025-09-07 01:40:08,350 - agent.data_collection - INFO - Starting execution of data_collection
+2025-09-07 01:40:08,350 - agent.data_collection - INFO - Collecting synthetic data from 3 generators
+2025-09-07 01:40:08,351 - agent.data_collection - INFO - Target sample count: 100
+2025-09-07 01:40:08,351 - agent.data_collection - INFO - Total data points before deduplication: 0
+2025-09-07 01:40:08,351 - agent.data_collection - INFO - Data points after deduplication: 0
+2025-09-07 01:40:08,352 - agent.data_collection - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\final_output\collected_datasets\final_dataset_Triplets_medical.json
+2025-09-07 01:40:08,352 - agent.data_collection - INFO - Final dataset created with 0 samples
+2025-09-07 01:40:08,352 - agent.data_collection - INFO - Completion rate: 0.0%
+2025-09-07 01:40:08,353 - agent.data_collection - INFO - Completed execution of data_collection in 0.00s
+2025-09-07 01:51:26,381 - agent.data_collection - INFO - Starting execution of data_collection
+2025-09-07 01:51:26,381 - agent.data_collection - INFO - Collecting synthetic data from 3 generators
+2025-09-07 01:51:26,382 - agent.data_collection - INFO - Target sample count: 100
+2025-09-07 01:51:26,382 - agent.data_collection - INFO - Total data points before deduplication: 0
+2025-09-07 01:51:26,382 - agent.data_collection - INFO - Data points after deduplication: 0
+2025-09-07 01:51:26,383 - agent.data_collection - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\final_output\collected_datasets\final_dataset_Triplets_medical.json
+2025-09-07 01:51:26,383 - agent.data_collection - INFO - Final dataset created with 0 samples
+2025-09-07 01:51:26,383 - agent.data_collection - INFO - Completion rate: 0.0%
+2025-09-07 01:51:26,383 - agent.data_collection - INFO - Completed execution of data_collection in 0.00s
+2025-09-07 02:03:30,411 - agent.data_collection - INFO - Starting execution of data_collection
+2025-09-07 02:03:30,412 - agent.data_collection - INFO - Collecting synthetic data from 3 generators
+2025-09-07 02:03:30,412 - agent.data_collection - INFO - Target sample count: 100
+2025-09-07 02:03:30,412 - agent.data_collection - INFO - Total data points before deduplication: 0
+2025-09-07 02:03:30,412 - agent.data_collection - INFO - Data points after deduplication: 0
+2025-09-07 02:03:30,413 - agent.data_collection - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\final_output\collected_datasets\final_dataset_Triplets_medical.json
+2025-09-07 02:03:30,413 - agent.data_collection - INFO - Final dataset created with 0 samples
+2025-09-07 02:03:30,413 - agent.data_collection - INFO - Completion rate: 0.0%
+2025-09-07 02:03:30,413 - agent.data_collection - INFO - Completed execution of data_collection in 0.00s
+2025-09-07 13:44:23,408 - agent.data_collection - INFO - Starting execution of data_collection
+2025-09-07 13:44:23,408 - agent.data_collection - INFO - Collecting synthetic data from 3 generators
+2025-09-07 13:44:23,408 - agent.data_collection - INFO - Target sample count: 100
+2025-09-07 13:44:23,408 - agent.data_collection - INFO - Total data points before deduplication: 0
+2025-09-07 13:44:23,409 - agent.data_collection - INFO - Data points after deduplication: 0
+2025-09-07 13:44:23,410 - agent.data_collection - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\final_output\collected_datasets\final_dataset_Triplets_medical.json
+2025-09-07 13:44:23,410 - agent.data_collection - INFO - Final dataset created with 0 samples
+2025-09-07 13:44:23,410 - agent.data_collection - INFO - Completion rate: 0.0%
+2025-09-07 13:44:23,411 - agent.data_collection - INFO - Completed execution of data_collection in 0.00s
+2025-09-07 13:49:37,298 - agent.data_collection - INFO - Starting execution of data_collection
+2025-09-07 13:49:37,298 - agent.data_collection - INFO - Collecting synthetic data from 3 generators
+2025-09-07 13:49:37,299 - agent.data_collection - INFO - Target sample count: 100
+2025-09-07 13:49:37,299 - agent.data_collection - INFO - Total data points before deduplication: 0
+2025-09-07 13:49:37,299 - agent.data_collection - INFO - Data points after deduplication: 0
+2025-09-07 13:49:37,301 - agent.data_collection - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\final_output\collected_datasets\final_dataset_Triplets_medical.json
+2025-09-07 13:49:37,301 - agent.data_collection - INFO - Final dataset created with 0 samples
+2025-09-07 13:49:37,301 - agent.data_collection - INFO - Completion rate: 0.0%
+2025-09-07 13:49:37,301 - agent.data_collection - INFO - Completed execution of data_collection in 0.00s
+2025-09-07 13:59:15,846 - agent.data_collection - INFO - Starting execution of data_collection
+2025-09-07 13:59:15,846 - agent.data_collection - INFO - Collecting synthetic data from 3 generators
+2025-09-07 13:59:15,846 - agent.data_collection - INFO - Target sample count: 100
+2025-09-07 13:59:15,846 - agent.data_collection - INFO - Total data points before deduplication: 110
+2025-09-07 13:59:15,847 - agent.data_collection - INFO - Data points after deduplication: 110
+2025-09-07 13:59:15,850 - agent.data_collection - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\final_output\collected_datasets\final_dataset_Triplets_medical.json
+2025-09-07 13:59:15,850 - agent.data_collection - INFO - Final dataset created with 100 samples
+2025-09-07 13:59:15,851 - agent.data_collection - INFO - Completion rate: 100.0%
+2025-09-07 13:59:15,851 - agent.data_collection - INFO - Completed execution of data_collection in 0.01s
+2025-09-07 17:19:40,350 - agent.data_collection - INFO - Starting execution of data_collection
+2025-09-07 17:19:40,350 - agent.data_collection - INFO - Collecting synthetic data from 3 generators
+2025-09-07 17:19:40,351 - agent.data_collection - INFO - Target sample count: 100
+2025-09-07 17:19:40,351 - agent.data_collection - INFO - Total data points before deduplication: 230
+2025-09-07 17:19:40,352 - agent.data_collection - INFO - Data points after deduplication: 230
+2025-09-07 17:19:40,354 - agent.data_collection - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\final_output\collected_datasets\final_dataset_hard negative samples_agricultural.json
+2025-09-07 17:19:40,355 - agent.data_collection - INFO - Final dataset created with 100 samples
+2025-09-07 17:19:40,355 - agent.data_collection - INFO - Completion rate: 100.0%
+2025-09-07 17:19:40,355 - agent.data_collection - INFO - Completed execution of data_collection in 0.00s
+2025-09-07 17:35:07,262 - agent.data_collection - INFO - Starting execution of data_collection
+2025-09-07 17:35:07,262 - agent.data_collection - INFO - Collecting synthetic data from 3 generators
+2025-09-07 17:35:07,263 - agent.data_collection - INFO - Target sample count: 100
+2025-09-07 17:35:07,263 - agent.data_collection - INFO - Total data points before deduplication: 105
+2025-09-07 17:35:07,264 - agent.data_collection - INFO - Data points after deduplication: 105
+2025-09-07 17:35:07,268 - agent.data_collection - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\final_output\collected_datasets\final_dataset_triplets_agricultural.json
+2025-09-07 17:35:07,268 - agent.data_collection - INFO - Final dataset created with 100 samples
+2025-09-07 17:35:07,268 - agent.data_collection - INFO - Completion rate: 100.0%
+2025-09-07 17:35:07,269 - agent.data_collection - INFO - Completed execution of data_collection in 0.01s
+2025-09-07 20:47:50,368 - agent.data_collection - INFO - Starting execution of data_collection
+2025-09-07 20:47:50,368 - agent.data_collection - INFO - Collecting synthetic data from 3 generators
+2025-09-07 20:47:50,368 - agent.data_collection - INFO - Target sample count: 100
+2025-09-07 20:47:50,368 - agent.data_collection - INFO - Total data points before deduplication: 100
+2025-09-07 20:47:50,370 - agent.data_collection - INFO - Data points after deduplication: 100
+2025-09-07 20:47:50,372 - agent.data_collection - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\final_output\collected_datasets\final_dataset_n-plet_agricultural.json
+2025-09-07 20:47:50,372 - agent.data_collection - INFO - Final dataset created with 100 samples
+2025-09-07 20:47:50,372 - agent.data_collection - INFO - Completion rate: 100.0%
+2025-09-07 20:47:50,372 - agent.data_collection - INFO - Completed execution of data_collection in 0.00s
+2025-09-07 20:55:49,104 - agent.data_collection - INFO - Starting execution of data_collection
+2025-09-07 20:55:49,104 - agent.data_collection - INFO - Collecting synthetic data from 3 generators
+2025-09-07 20:55:49,104 - agent.data_collection - INFO - Target sample count: 100
+2025-09-07 20:55:49,104 - agent.data_collection - INFO - Total data points before deduplication: 95
+2025-09-07 20:55:49,106 - agent.data_collection - INFO - Data points after deduplication: 95
+2025-09-07 20:55:49,111 - agent.data_collection - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\final_output\collected_datasets\final_dataset_triplets_Tourism.json
+2025-09-07 20:55:49,111 - agent.data_collection - INFO - Final dataset created with 95 samples
+2025-09-07 20:55:49,111 - agent.data_collection - INFO - Completion rate: 95.0%
+2025-09-07 20:55:49,112 - agent.data_collection - INFO - Completed execution of data_collection in 0.01s
