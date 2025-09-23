@@ -74,8 +74,7 @@ class TopicExtractionAgent(BaseAgent):
                 processed_chunks += 1
                 
                 # Small delay to respect API limits
-                if processed_chunks % 10 == 0:
-                    time.sleep(1)
+                time.sleep(3)
             
             # Remove duplicates while preserving order
             unique_topics = []

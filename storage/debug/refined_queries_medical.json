@@ -1,0 +1,27 @@
+[
+  {
+    "query": "أعراض مرض السكر وعلاجه",
+    "domain": "medical",
+    "priority": 1
+  },
+  {
+    "query": "أفضل طرق الوقاية من السرطان",
+    "domain": "medical",
+    "priority": 2
+  },
+  {
+    "query": "كيفية إجراء جراحة قلب مفتوح",
+    "domain": "medical",
+    "priority": 3
+  },
+  {
+    "query": "تفاعلات الأدوية مع بعضها البعض",
+    "domain": "medical",
+    "priority": 4
+  },
+  {
+    "query": "أحدث تقنيات التشخيص الطبي",
+    "domain": "medical",
+    "priority": 5
+  }
+]

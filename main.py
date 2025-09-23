@@ -15,28 +15,35 @@ from agents.query_parser_agent import QueryParserAgent
 from agents.query_refiner_agent import QueryRefinerAgent
 from agents.web_search_agent import WebSearchAgent
 from agents.filtration_agent import FiltrationAgent
-from workflows.parallel_processing import parallel_orchestrator
+from agents.web_scraping_agent import WebScrapingAgent
+from agents.topic_extraction_agent import TopicExtractionAgent
+from agents.synthetic_data_generator_agent import SyntheticDataGeneratorAgent
+from agents.data_collection_agent import DataCollectionAgent
+from services.chunking_service import chunking_service
 from utils.json_handler import JsonHandler
 
 # Setup enhanced logging
 logging.basicConfig(
     level=getattr(logging, settings.LOG_LEVEL),
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    encoding='utf-8'  # Explicitly set encoding to UTF-8
 )
 
 logger = logging.getLogger(__name__)
 
 async def main():
     """Complete pipeline execution with Weeks 3 & 4"""
-    
+    # I want to generate 2000 QA synthitic Medical datasets in Egyptian Arabic, The dataset consists of 
+    # the data set consisist of (question - answer) pairs, mix between short and long answers.
     # Get query from command-line arguments or use a default for direct execution
     if len(sys.argv) > 1:
         user_query = " ".join(sys.argv[1:])
     else:
         logger.warning("No query provided via command-line. Using default query from main.py.")
-        user_query = """I want to generate 100 synthitic agricultural datasets in Egyptian Arabic, The dataset consists of 
-        (anchore, positive and 3 negatives (negative_1, negative_2, negative_3)) columns. The anchore is a sentence or a quewstion.
-         mix between short and long sentences."""
+        user_query = """
+        I want to generate 2000 QA synthitic LAW datasets in Egyptian Arabic, The dataset consists of 
+        the data set consisist of (question - answer) pairs, mix between short and long answers.
+        """
     
     logger.info("="*80)
     logger.info(f"Starting Complete Web Search & Synthetic Data Pipeline")
@@ -87,34 +94,59 @@ async def main():
         logger.info("STEP 5: WEB SCRAPING")
         logger.info("="*60)
         
-        scraped_data = parallel_orchestrator.run_web_scraping(filtered_results)
+        scraping_agent = WebScrapingAgent()
+        scraped_content = await scraping_agent.execute_async(filtered_results)
         
-        # Step 6: Parallel Topic Extraction
+        # Convert to dict format for chunking service
+        scraped_data = []
+        for content in scraped_content:
+            if content.success:
+                scraped_data.append({
+                    "url": content.url,
+                    "title": content.title,
+                    "content": content.content,
+                    "success": True
+                })
+
+        # Step 6: Topic Extraction
         logger.info("\n" + "="*60)
-        logger.info("STEP 6: PARALLEL TOPIC EXTRACTION")
+        logger.info("STEP 6: TOPIC EXTRACTION")
         logger.info("="*60)
         
-        extracted_topics = parallel_orchestrator.run_parallel_topic_extraction(scraped_data, parsed_query.language, parsed_query)
+        all_chunks = chunking_service.chunk_content(scraped_data)
+        topic_extraction_agent = TopicExtractionAgent(agent_index=1)
+        extracted_topics = topic_extraction_agent.run({
+            "chunks": all_chunks,
+            "language": parsed_query.language,
+            "domain_type": parsed_query.domain_type,
+            "required_topics_count": parsed_query.calculate_required_subtopics()
+        })
         
         # ===== WEEK 4: Synthetic Data Generation =====
         
-        # Step 7: Parallel Synthetic Data Generation
+        # Step 7: Synthetic Data Generation
         logger.info("\n" + "="*60)
-        logger.info("STEP 7: PARALLEL SYNTHETIC DATA GENERATION")
+        logger.info("STEP 7: SYNTHETIC DATA GENERATION")
         logger.info("="*60)
         
-        synthetic_data_lists = parallel_orchestrator.run_parallel_synthetic_generation(
-            extracted_topics, parsed_query
-        )
+        synthetic_data_agent = SyntheticDataGeneratorAgent(agent_index=1)
+        synthetic_data = synthetic_data_agent.run({
+            "topics": extracted_topics,
+            "data_type": parsed_query.data_type,
+            "language": parsed_query.language,
+            "description": parsed_query.description
+        })
         
         # Step 8: Data Collection & Finalization
         logger.info("\n" + "="*60)
         logger.info("STEP 8: DATA COLLECTION & FINALIZATION")
         logger.info("="*60)
         
-        final_result = parallel_orchestrator.run_data_collection(
-            synthetic_data_lists, parsed_query
-        )
+        collection_agent = DataCollectionAgent()
+        final_result = collection_agent.run({
+            "synthetic_data_lists": [synthetic_data],
+            "parsed_query": parsed_query
+        })
         
         # ===== PIPELINE COMPLETION =====
         
@@ -179,8 +211,16 @@ async def main():
         
     except Exception as e:
         logger.error(f"Pipeline failed: {e}")
-        logger.exception("Full error traceback:")
-        raise
-
+        # No need to log the full traceback here as the agent already does.
+        # We just want to show the final, clean error message.
+        # logger.exception("Full error traceback:")
+        # The 'raise' is removed to prevent the full traceback from being printed on exit.
+        
 if __name__ == "__main__":
-    asyncio.run(main())
+    # It's better to catch the exception here to control the final output
+    try:
+        asyncio.run(main())
+    except Exception as e:
+        # This ensures that even if the pipeline is halted, we don't get a messy traceback at the end.
+        # The error is already logged cleanly by the time we get here.
+        pass

@@ -21,7 +21,7 @@ class ParsedQuery(BaseModel):
 class SearchQuery(BaseModel):
     query: str
     domain: str
-    priority: int = Field(ge=1, le=20)  # Updated for 20 queries
+    priority: int = Field(ge=1, le=50)  # Updated for 20 queries
 
 class SearchResult(BaseModel):
     url: str

@@ -94,7 +94,8 @@ class BaseAgent(ABC):
         except Exception as e:
             execution_time = (datetime.now() - start_time).total_seconds()
             error_msg = f"Error in {self.agent_name} after {execution_time:.2f}s: {str(e)}"
-            self.logger.exception(error_msg)
+            # self.logger.exception(error_msg) # This line prints the full traceback
+            self.logger.error(error_msg) # This line only prints the clean error message
             raise
     
     def save_data(self, data: Any, filename: str, directory: Path) -> Path:

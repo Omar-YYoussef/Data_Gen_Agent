@@ -14,7 +14,7 @@ class Settings:
         ] if key is not None
     ]
     TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
-    
+    SCRAPERAPI_API_KEY = os.getenv("SCRAPERAPI_API_KEY")
     # Development Settings
     DEVELOPMENT_MODE = os.getenv("DEVELOPMENT_MODE", "false").lower() == "true"
     LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
@@ -23,7 +23,6 @@ class Settings:
     REFINED_QUERIES_COUNT = int(os.getenv("REFINED_QUERIES_COUNT", "5"))
     SEARCH_RESULTS_PER_QUERY = int(os.getenv("SEARCH_RESULTS_PER_QUERY", "5"))
     ROWS_PER_SUBTOPIC = int(os.getenv("ROWS_PER_SUBTOPIC", "5"))
-    PARALLEL_AGENTS = int(os.getenv("PARALLEL_AGENTS", "3"))
     
     # Gemini Configuration
     GEMINI_MAX_TOKENS = int(os.getenv("GEMINI_MAX_TOKENS", "8192"))

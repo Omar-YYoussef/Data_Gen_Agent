@@ -58,8 +58,13 @@ class DataCollectionAgent(BaseAgent):
             
             self.logger.info(f"Data points after deduplication: {len(unique_data_points)}")
             
-            # Take only the required number of samples
-            final_data_points = unique_data_points[:target_count]
+            # If the process stops early, we take all unique points collected so far.
+            # If it completes fully, we truncate to the target count.
+            final_data_points = unique_data_points
+            if len(unique_data_points) >= target_count:
+                final_data_points = unique_data_points[:target_count]
+            
+            self.logger.info(f"Final data points to be saved: {len(final_data_points)}")
             
             # Create final dataset structure
             final_dataset = {

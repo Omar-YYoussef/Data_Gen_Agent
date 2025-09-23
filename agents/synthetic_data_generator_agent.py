@@ -34,29 +34,55 @@ class SyntheticDataGeneratorAgent(BaseAgent):
             all(isinstance(item, SyntheticDataPoint) for item in output_data)
         )
     
+    def _save_progress(self, data_type: str, topics_processed_count: int, successful_generations: int, failed_generations: int, synthetic_data_points: List[SyntheticDataPoint]):
+        """Saves the current progress of data generation."""
+        self.logger.info(f"Saving progress: {len(synthetic_data_points)} data points generated so far.")
+        generated_data = {
+            "agent_index": self.agent_index,
+            "data_type": data_type,
+            "topics_processed": topics_processed_count,
+            "successful_generations": successful_generations,
+            "failed_generations": failed_generations,
+            "total_data_points": len(synthetic_data_points),
+            "data": [
+                {
+                    "content": point.content,
+                    "source_topics": point.source_topics,
+                    "timestamp": point.generation_timestamp.isoformat()
+                }
+                for point in synthetic_data_points
+            ]
+        }
+        
+        self.save_data(
+            generated_data,
+            f"generated_data_{self.agent_index}.json",
+            settings.SYNTHETIC_DATA_PATH
+        )
+
     def execute(self, input_data: Dict[str, Any], context: Optional[Dict[str, Any]] = None) -> List[SyntheticDataPoint]:
-        """Generate synthetic data for assigned topics"""
+        """Generate synthetic data for assigned topics, handling API errors gracefully."""
         
         topics = input_data["topics"]
         data_type = input_data["data_type"]
         language = input_data["language"]
-        description = input_data.get("description", None)  # Extract optional description
+        description = input_data.get("description", None)
         
-        self.logger.info(f"Agent {self.agent_index} generating {data_type} data for {len(topics)} topics in {language} (Description: {description})")
+        self.logger.info(f"Agent {self.agent_index} generating {data_type} data for {len(topics)} topics in {language}")
         
         synthetic_data_points = []
         successful_generations = 0
         failed_generations = 0
+        last_save_count = 0
+        save_interval = 100
         
-        try:
-            for i, topic in enumerate(topics):
+        for i, topic in enumerate(topics):
+            try:
                 self.logger.debug(f"Generating data for topic ({i+1}/{len(topics)}): {topic}")
                 
-                # Generate 5 synthetic data points for this topic
                 generated_items = gemini_service.generate_synthetic_data(topic, data_type, language, description)
                 
                 if generated_items:
-                    # Convert to SyntheticDataPoint objects
                     for item in generated_items:
                         synthetic_point = SyntheticDataPoint(
                             data_type=data_type,
@@ -68,43 +94,30 @@ class SyntheticDataGeneratorAgent(BaseAgent):
                     
                     successful_generations += 1
                     self.logger.debug(f"Generated {len(generated_items)} data points for topic: {topic}")
+
+                    if len(synthetic_data_points) - last_save_count >= save_interval:
+                        self._save_progress(data_type, i + 1, successful_generations, failed_generations, synthetic_data_points)
+                        last_save_count = len(synthetic_data_points)
                 else:
                     failed_generations += 1
                     self.logger.warning(f"Failed to generate data for topic: {topic}")
                 
-                # Rate limiting to respect API limits
-                if i % 5 == 0 and i > 0:
-                    time.sleep(2)
-            
-            self.logger.info(f"Agent {self.agent_index} completed: {len(synthetic_data_points)} data points generated")
-            self.logger.info(f"Success rate: {successful_generations}/{len(topics)} topics ({(successful_generations/len(topics)*100):.1f}%)")
-            
-            # Save generated data for this agent
-            generated_data = {
-                "agent_index": self.agent_index,
-                "data_type": data_type,
-                "topics_processed": len(topics),
-                "successful_generations": successful_generations,
-                "failed_generations": failed_generations,
-                "total_data_points": len(synthetic_data_points),
-                "data": [
-                    {
-                        "content": point.content,
-                        "source_topics": point.source_topics,
-                        "timestamp": point.generation_timestamp.isoformat()
-                    }
-                    for point in synthetic_data_points
-                ]
-            }
-            
-            self.save_data(
-                generated_data,
-                f"generated_data_{self.agent_index}.json",
-                settings.SYNTHETIC_DATA_PATH
-            )
-            
-            return synthetic_data_points
-            
-        except Exception as e:
-            self.logger.error(f"Synthetic data generation failed for agent {self.agent_index}: {e}")
-            raise
+                time.sleep(3)
+
+            except Exception as e:
+                self.logger.error(f"An API error occurred during synthetic data generation: {e}")
+                self.logger.warning("This is likely due to exhausted API quotas or rate limits.")
+                self.logger.warning("The pipeline will now be terminated, but the data generated so far will be saved.")
+                
+                # Break the loop to stop further processing
+                break
+        
+        self.logger.info(f"Agent {self.agent_index} finished generation phase.")
+        self.logger.info(f"Total data points generated: {len(synthetic_data_points)}")
+        self.logger.info(f"Success rate: {successful_generations}/{i+1} topics attempted ({(successful_generations/(i+1)*100) if i > -1 else 0:.1f}%)")
+        
+        # Always save any data that was generated, especially after an error
+        if synthetic_data_points:
+            self._save_progress(data_type, i + 1, successful_generations, failed_generations, synthetic_data_points)
+        
+        return synthetic_data_points

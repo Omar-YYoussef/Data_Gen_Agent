@@ -185,3 +185,275 @@ TypeError: GeminiService.refine_queries() missing 1 required positional argument
 2025-09-07 20:51:24,177 - agent.query_refiner - INFO - Generated 5 refined queries
 2025-09-07 20:51:24,179 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_Tourism.json
 2025-09-07 20:51:24,179 - agent.query_refiner - INFO - Completed execution of query_refiner in 4.87s
+2025-09-07 22:41:48,804 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-07 22:41:48,804 - agent.query_refiner - INFO - Refining queries for domain: agricultural
+2025-09-07 22:41:48,804 - agent.query_refiner - INFO - Target: 5 queries
+2025-09-07 22:41:53,677 - agent.query_refiner - INFO - Generated 5 refined queries
+2025-09-07 22:41:53,678 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_agricultural.json
+2025-09-07 22:41:53,678 - agent.query_refiner - INFO - Completed execution of query_refiner in 4.87s
+2025-09-09 12:49:25,584 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-09 12:49:25,585 - agent.query_refiner - INFO - Refining queries for domain: Math
+2025-09-09 12:49:25,585 - agent.query_refiner - INFO - Target: 5 queries
+2025-09-09 12:49:58,891 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-09 12:49:58,892 - agent.query_refiner - INFO - Refining queries for domain: Math
+2025-09-09 12:49:58,892 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-09 12:50:07,903 - agent.query_refiner - INFO - Generated 20 refined queries
+2025-09-09 12:50:07,906 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_Math.json
+2025-09-09 12:50:07,906 - agent.query_refiner - INFO - Completed execution of query_refiner in 9.01s
+2025-09-09 14:49:22,979 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-09 14:49:22,979 - agent.query_refiner - INFO - Refining queries for domain: Math
+2025-09-09 14:49:22,979 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-09 14:49:30,911 - agent.query_refiner - INFO - Generated 20 refined queries
+2025-09-09 14:49:30,912 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_Math.json
+2025-09-09 14:49:30,912 - agent.query_refiner - INFO - Completed execution of query_refiner in 7.93s
+2025-09-09 14:54:36,729 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-09 14:54:36,729 - agent.query_refiner - INFO - Refining queries for domain: Math
+2025-09-09 14:54:36,729 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-09 14:54:44,806 - agent.query_refiner - INFO - Generated 20 refined queries
+2025-09-09 14:54:44,807 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_Math.json
+2025-09-09 14:54:44,807 - agent.query_refiner - INFO - Completed execution of query_refiner in 8.08s
+2025-09-09 15:00:35,230 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-09 15:00:35,230 - agent.query_refiner - INFO - Refining queries for domain: Math
+2025-09-09 15:00:35,230 - agent.query_refiner - INFO - Target: 5 queries
+2025-09-09 15:00:38,875 - agent.query_refiner - INFO - Generated 5 refined queries
+2025-09-09 15:00:38,876 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_Math.json
+2025-09-09 15:00:38,877 - agent.query_refiner - INFO - Completed execution of query_refiner in 3.65s
+2025-09-09 15:03:17,968 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-09 15:03:17,968 - agent.query_refiner - INFO - Refining queries for domain: Math
+2025-09-09 15:03:17,968 - agent.query_refiner - INFO - Target: 5 queries
+2025-09-09 15:03:23,802 - agent.query_refiner - INFO - Generated 5 refined queries
+2025-09-09 15:03:23,803 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_Math.json
+2025-09-09 15:03:23,803 - agent.query_refiner - INFO - Completed execution of query_refiner in 5.84s
+2025-09-09 15:08:41,558 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-09 15:08:41,558 - agent.query_refiner - INFO - Refining queries for domain: math
+2025-09-09 15:08:41,558 - agent.query_refiner - INFO - Target: 5 queries
+2025-09-09 15:08:45,491 - agent.query_refiner - INFO - Generated 5 refined queries
+2025-09-09 15:08:45,492 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_math.json
+2025-09-09 15:08:45,492 - agent.query_refiner - INFO - Completed execution of query_refiner in 3.93s
+2025-09-09 15:13:21,837 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-09 15:13:21,837 - agent.query_refiner - INFO - Refining queries for domain: math
+2025-09-09 15:13:21,837 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-09 15:13:28,520 - agent.query_refiner - INFO - Generated 20 refined queries
+2025-09-09 15:13:28,521 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_math.json
+2025-09-09 15:13:28,521 - agent.query_refiner - INFO - Completed execution of query_refiner in 6.68s
+2025-09-09 16:57:32,276 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-09 16:57:32,276 - agent.query_refiner - INFO - Refining queries for domain: general knowledge
+2025-09-09 16:57:32,276 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-09 16:57:32,565 - agent.query_refiner - INFO - Generated 20 refined queries
+2025-09-09 16:57:32,567 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_general_knowledge.json
+2025-09-09 16:57:32,567 - agent.query_refiner - INFO - Completed execution of query_refiner in 0.29s
+2025-09-09 17:01:40,701 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-09 17:01:40,701 - agent.query_refiner - INFO - Refining queries for domain: general knowledge
+2025-09-09 17:01:40,701 - agent.query_refiner - INFO - Target: 5 queries
+2025-09-09 17:01:44,650 - agent.query_refiner - INFO - Generated 5 refined queries
+2025-09-09 17:01:44,651 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_general_knowledge.json
+2025-09-09 17:01:44,652 - agent.query_refiner - INFO - Completed execution of query_refiner in 3.95s
+2025-09-09 17:04:08,896 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-09 17:04:08,896 - agent.query_refiner - INFO - Refining queries for domain: general knowledge
+2025-09-09 17:04:08,896 - agent.query_refiner - INFO - Target: 5 queries
+2025-09-09 17:04:09,526 - agent.query_refiner - INFO - Generated 5 refined queries
+2025-09-09 17:04:09,526 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_general_knowledge.json
+2025-09-09 17:04:09,526 - agent.query_refiner - INFO - Completed execution of query_refiner in 0.63s
+2025-09-09 17:04:57,547 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-09 17:04:57,548 - agent.query_refiner - INFO - Refining queries for domain: general knowledge
+2025-09-09 17:04:57,548 - agent.query_refiner - INFO - Target: 5 queries
+2025-09-09 17:04:57,917 - agent.query_refiner - INFO - Generated 5 refined queries
+2025-09-09 17:04:57,918 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_general_knowledge.json
+2025-09-09 17:04:57,919 - agent.query_refiner - INFO - Completed execution of query_refiner in 0.37s
+2025-09-09 17:08:39,951 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-09 17:08:39,951 - agent.query_refiner - INFO - Refining queries for domain: general knowledge
+2025-09-09 17:08:39,951 - agent.query_refiner - INFO - Target: 5 queries
+2025-09-09 17:08:40,306 - agent.query_refiner - INFO - Generated 5 refined queries
+2025-09-09 17:08:40,307 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_general_knowledge.json
+2025-09-09 17:08:40,307 - agent.query_refiner - INFO - Completed execution of query_refiner in 0.36s
+2025-09-09 17:09:52,020 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-09 17:09:52,020 - agent.query_refiner - INFO - Refining queries for domain: general knowledge
+2025-09-09 17:09:52,020 - agent.query_refiner - INFO - Target: 5 queries
+2025-09-09 17:09:57,448 - agent.query_refiner - INFO - Generated 5 refined queries
+2025-09-09 17:09:57,449 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_general_knowledge.json
+2025-09-09 17:09:57,449 - agent.query_refiner - INFO - Completed execution of query_refiner in 5.43s
+2025-09-09 17:12:37,147 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-09 17:12:37,147 - agent.query_refiner - INFO - Refining queries for domain: general knowledge
+2025-09-09 17:12:37,147 - agent.query_refiner - INFO - Target: 5 queries
+2025-09-09 17:12:42,338 - agent.query_refiner - INFO - Generated 5 refined queries
+2025-09-09 17:12:42,339 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_general_knowledge.json
+2025-09-09 17:12:42,339 - agent.query_refiner - INFO - Completed execution of query_refiner in 5.19s
+2025-09-09 17:14:52,747 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-09 17:14:52,747 - agent.query_refiner - INFO - Refining queries for domain: general knowledge
+2025-09-09 17:14:52,747 - agent.query_refiner - INFO - Target: 5 queries
+2025-09-09 17:16:15,117 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-09 17:16:15,117 - agent.query_refiner - INFO - Refining queries for domain: Math
+2025-09-09 17:16:15,117 - agent.query_refiner - INFO - Target: 5 queries
+2025-09-09 17:16:54,410 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-09 17:16:54,410 - agent.query_refiner - INFO - Refining queries for domain: Math
+2025-09-09 17:16:54,410 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-09 17:16:55,843 - agent.query_refiner - INFO - Generated 20 refined queries
+2025-09-09 17:16:55,845 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_Math.json
+2025-09-09 17:16:55,845 - agent.query_refiner - INFO - Completed execution of query_refiner in 1.44s
+2025-09-09 17:21:24,003 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-09 17:21:24,003 - agent.query_refiner - INFO - Refining queries for domain: Math
+2025-09-09 17:21:24,003 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-09 17:21:25,437 - agent.query_refiner - INFO - Generated 20 refined queries
+2025-09-09 17:21:25,439 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_Math.json
+2025-09-09 17:21:25,439 - agent.query_refiner - INFO - Completed execution of query_refiner in 1.44s
+2025-09-09 17:30:23,248 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-09 17:30:23,249 - agent.query_refiner - INFO - Refining queries for domain: Math
+2025-09-09 17:30:23,249 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-09 17:30:24,379 - agent.query_refiner - INFO - Generated 20 refined queries
+2025-09-09 17:30:24,380 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_Math.json
+2025-09-09 17:30:24,381 - agent.query_refiner - INFO - Completed execution of query_refiner in 1.13s
+2025-09-09 18:41:12,600 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-09 18:41:12,600 - agent.query_refiner - INFO - Refining queries for domain: Math
+2025-09-09 18:41:12,600 - agent.query_refiner - INFO - Target: 2 queries
+2025-09-09 18:41:12,955 - agent.query_refiner - INFO - Generated 2 refined queries
+2025-09-09 18:41:12,956 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_Math.json
+2025-09-09 18:41:12,957 - agent.query_refiner - INFO - Completed execution of query_refiner in 0.36s
+2025-09-09 18:44:19,523 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-09 18:44:19,523 - agent.query_refiner - INFO - Refining queries for domain: Math
+2025-09-09 18:44:19,523 - agent.query_refiner - INFO - Target: 2 queries
+2025-09-09 18:44:19,941 - agent.query_refiner - INFO - Generated 2 refined queries
+2025-09-09 18:44:19,942 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_Math.json
+2025-09-09 18:44:19,943 - agent.query_refiner - INFO - Completed execution of query_refiner in 0.42s
+2025-09-09 18:44:46,328 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-09 18:44:46,329 - agent.query_refiner - INFO - Refining queries for domain: Math
+2025-09-09 18:44:46,329 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-09 18:44:47,607 - agent.query_refiner - INFO - Generated 20 refined queries
+2025-09-09 18:44:47,609 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_Math.json
+2025-09-09 18:44:47,609 - agent.query_refiner - INFO - Completed execution of query_refiner in 1.28s
+2025-09-10 13:33:32,402 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-10 13:33:32,402 - agent.query_refiner - INFO - Refining queries for domain: medical
+2025-09-10 13:33:32,402 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-10 13:33:33,622 - agent.query_refiner - INFO - Generated 20 refined queries
+2025-09-10 13:33:33,623 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_medical.json
+2025-09-10 13:33:33,623 - agent.query_refiner - INFO - Completed execution of query_refiner in 1.22s
+2025-09-10 16:09:26,074 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-10 16:09:26,074 - agent.query_refiner - INFO - Refining queries for domain: medical
+2025-09-10 16:09:26,074 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-10 16:09:27,253 - agent.query_refiner - INFO - Generated 20 refined queries
+2025-09-10 16:09:27,255 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_medical.json
+2025-09-10 16:09:27,255 - agent.query_refiner - INFO - Completed execution of query_refiner in 1.18s
+2025-09-10 16:12:44,769 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-10 16:12:44,770 - agent.query_refiner - INFO - Refining queries for domain: medical
+2025-09-10 16:12:44,770 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-10 16:12:46,403 - agent.query_refiner - INFO - Generated 20 refined queries
+2025-09-10 16:12:46,405 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_medical.json
+2025-09-10 16:12:46,405 - agent.query_refiner - INFO - Completed execution of query_refiner in 1.64s
+2025-09-10 16:31:24,645 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-10 16:31:24,645 - agent.query_refiner - INFO - Refining queries for domain: medical
+2025-09-10 16:31:24,646 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-10 16:31:26,021 - agent.query_refiner - INFO - Generated 20 refined queries
+2025-09-10 16:31:26,022 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_medical.json
+2025-09-10 16:31:26,022 - agent.query_refiner - INFO - Completed execution of query_refiner in 1.38s
+2025-09-10 16:38:13,994 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-10 16:38:13,994 - agent.query_refiner - INFO - Refining queries for domain: medical
+2025-09-10 16:38:13,995 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-10 16:38:17,395 - agent.query_refiner - INFO - Generated 20 refined queries
+2025-09-10 16:38:17,396 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_medical.json
+2025-09-10 16:38:17,396 - agent.query_refiner - INFO - Completed execution of query_refiner in 3.40s
+2025-09-10 16:42:07,078 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-10 16:42:07,078 - agent.query_refiner - INFO - Refining queries for domain: medical
+2025-09-10 16:42:07,079 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-10 16:42:09,467 - agent.query_refiner - INFO - Generated 20 refined queries
+2025-09-10 16:42:09,468 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_medical.json
+2025-09-10 16:42:09,469 - agent.query_refiner - INFO - Completed execution of query_refiner in 2.39s
+2025-09-10 18:16:48,865 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-10 18:16:48,865 - agent.query_refiner - INFO - Refining queries for domain: medical
+2025-09-10 18:16:48,865 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-10 18:16:50,297 - agent.query_refiner - INFO - Generated 20 refined queries
+2025-09-10 18:16:50,298 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_medical.json
+2025-09-10 18:16:50,298 - agent.query_refiner - INFO - Completed execution of query_refiner in 1.43s
+2025-09-10 18:20:38,163 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-10 18:20:38,163 - agent.query_refiner - INFO - Refining queries for domain: medical
+2025-09-10 18:20:38,163 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-10 18:20:39,461 - agent.query_refiner - INFO - Generated 20 refined queries
+2025-09-10 18:20:39,462 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_medical.json
+2025-09-10 18:20:39,462 - agent.query_refiner - INFO - Completed execution of query_refiner in 1.30s
+2025-09-15 16:28:26,209 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-15 16:28:26,210 - agent.query_refiner - INFO - Refining queries for domain: medical
+2025-09-15 16:28:26,210 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-15 16:28:27,313 - agent.query_refiner - INFO - Generated 20 refined queries
+2025-09-15 16:28:27,315 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_medical.json
+2025-09-15 16:28:27,315 - agent.query_refiner - INFO - Completed execution of query_refiner in 1.11s
+2025-09-19 21:33:38,338 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-19 21:33:38,338 - agent.query_refiner - INFO - Refining queries for domain: medical
+2025-09-19 21:33:38,339 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-19 21:33:43,618 - agent.query_refiner - INFO - Generated 20 refined queries
+2025-09-19 21:33:43,622 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_medical.json
+2025-09-19 21:33:43,623 - agent.query_refiner - INFO - Completed execution of query_refiner in 5.28s
+2025-09-19 21:34:32,527 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-19 21:34:32,527 - agent.query_refiner - INFO - Refining queries for domain: medical
+2025-09-19 21:34:32,527 - agent.query_refiner - INFO - Target: 5 queries
+2025-09-19 21:34:36,613 - agent.query_refiner - INFO - Generated 5 refined queries
+2025-09-19 21:34:36,614 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_medical.json
+2025-09-19 21:34:36,614 - agent.query_refiner - INFO - Completed execution of query_refiner in 4.09s
+2025-09-19 22:02:06,087 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-19 22:02:06,087 - agent.query_refiner - INFO - Refining queries for domain: medical
+2025-09-19 22:02:06,087 - agent.query_refiner - INFO - Target: 5 queries
+2025-09-19 22:02:10,227 - agent.query_refiner - INFO - Generated 5 refined queries
+2025-09-19 22:02:10,229 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_medical.json
+2025-09-19 22:02:10,229 - agent.query_refiner - INFO - Completed execution of query_refiner in 4.14s
+2025-09-19 22:15:14,675 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-19 22:15:14,675 - agent.query_refiner - INFO - Refining queries for domain: LAW
+2025-09-19 22:15:14,675 - agent.query_refiner - INFO - Target: 5 queries
+2025-09-19 22:15:18,577 - agent.query_refiner - INFO - Generated 5 refined queries
+2025-09-19 22:15:18,579 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_LAW.json
+2025-09-19 22:15:18,579 - agent.query_refiner - INFO - Completed execution of query_refiner in 3.90s
+2025-09-20 14:40:16,536 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-20 14:40:16,536 - agent.query_refiner - INFO - Refining queries for domain: LAW
+2025-09-20 14:40:16,536 - agent.query_refiner - INFO - Target: 1 queries
+2025-09-20 14:40:20,345 - agent.query_refiner - INFO - Generated 1 refined queries
+2025-09-20 14:40:20,347 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_LAW.json
+2025-09-20 14:40:20,347 - agent.query_refiner - INFO - Completed execution of query_refiner in 3.81s
+2025-09-23 14:08:25,032 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-23 14:08:25,032 - agent.query_refiner - INFO - Refining queries for domain: LAW
+2025-09-23 14:08:25,032 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-23 14:08:46,386 - agent.query_refiner - INFO - Generated 20 refined queries
+2025-09-23 14:08:46,387 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_LAW.json
+2025-09-23 14:08:46,387 - agent.query_refiner - INFO - Completed execution of query_refiner in 21.35s
+2025-09-23 14:24:32,426 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-23 14:24:32,428 - agent.query_refiner - INFO - Refining queries for domain: law
+2025-09-23 14:24:32,428 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-23 14:24:45,898 - agent.query_refiner - INFO - Generated 20 refined queries
+2025-09-23 14:24:45,899 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_law.json
+2025-09-23 14:24:45,900 - agent.query_refiner - INFO - Completed execution of query_refiner in 13.47s
+2025-09-23 14:29:10,369 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-23 14:29:10,369 - agent.query_refiner - INFO - Refining queries for domain: law
+2025-09-23 14:29:10,369 - agent.query_refiner - INFO - Target: 1 queries
+2025-09-23 14:29:19,305 - agent.query_refiner - INFO - Generated 1 refined queries
+2025-09-23 14:29:19,306 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_law.json
+2025-09-23 14:29:19,306 - agent.query_refiner - INFO - Completed execution of query_refiner in 8.94s
+2025-09-23 14:37:06,074 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-23 14:37:06,074 - agent.query_refiner - INFO - Refining queries for domain: LAW
+2025-09-23 14:37:06,074 - agent.query_refiner - INFO - Target: 1 queries
+2025-09-23 14:37:17,183 - agent.query_refiner - INFO - Generated 1 refined queries
+2025-09-23 14:37:17,183 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_LAW.json
+2025-09-23 14:37:17,184 - agent.query_refiner - INFO - Completed execution of query_refiner in 11.11s
+2025-09-23 14:40:03,836 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-23 14:40:03,836 - agent.query_refiner - INFO - Refining queries for domain: LAW
+2025-09-23 14:40:03,836 - agent.query_refiner - INFO - Target: 1 queries
+2025-09-23 14:40:11,281 - agent.query_refiner - INFO - Generated 1 refined queries
+2025-09-23 14:40:11,283 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_LAW.json
+2025-09-23 14:40:11,283 - agent.query_refiner - INFO - Completed execution of query_refiner in 7.45s
+2025-09-23 16:07:13,112 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-23 16:07:13,112 - agent.query_refiner - INFO - Refining queries for domain: LAW
+2025-09-23 16:07:13,112 - agent.query_refiner - INFO - Target: 1 queries
+2025-09-23 16:07:20,653 - agent.query_refiner - INFO - Generated 1 refined queries
+2025-09-23 16:07:20,654 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_LAW.json
+2025-09-23 16:07:20,655 - agent.query_refiner - INFO - Completed execution of query_refiner in 7.54s
+2025-09-23 16:15:41,743 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-23 16:15:41,744 - agent.query_refiner - INFO - Refining queries for domain: law
+2025-09-23 16:15:41,744 - agent.query_refiner - INFO - Target: 30 queries
+2025-09-23 16:16:02,835 - agent.query_refiner - ERROR - Failed to refine queries: 1 validation error for SearchQuery
+priority
+  Input should be less than or equal to 20 [type=less_than_equal, input_value=21, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.11/v/less_than_equal
+2025-09-23 16:16:02,836 - agent.query_refiner - ERROR - Error in query_refiner after 21.09s: 1 validation error for SearchQuery
+priority
+  Input should be less than or equal to 20 [type=less_than_equal, input_value=21, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.11/v/less_than_equal
+2025-09-23 16:17:52,304 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-23 16:17:52,304 - agent.query_refiner - INFO - Refining queries for domain: LAW
+2025-09-23 16:17:52,304 - agent.query_refiner - INFO - Target: 30 queries
+2025-09-23 16:18:08,419 - agent.query_refiner - INFO - Generated 30 refined queries
+2025-09-23 16:18:08,421 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_LAW.json
+2025-09-23 16:18:08,421 - agent.query_refiner - INFO - Completed execution of query_refiner in 16.12s

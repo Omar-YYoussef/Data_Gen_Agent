@@ -5,6 +5,10 @@ import time
 import logging
 from config.settings import settings
 
+class GeminiQuotaExhaustedError(Exception):
+    """Custom exception for when all Gemini API keys have their quotas exhausted."""
+    pass
+
 class GeminiService:
     """Enhanced service with flexible JSON generation for user-specified data types"""
     
@@ -38,75 +42,167 @@ class GeminiService:
     def generate_text(self, prompt: str, 
                      system_instruction: Optional[str] = None,
                      max_retries: int = 3) -> str:
-        """Generate text using Gemini with retry logic and API key rotation"""
+        """Generate text using Gemini with enhanced retry logic, API key rotation, and cooldown."""
         
         full_prompt = prompt
         if system_instruction:
             full_prompt = f"System: {system_instruction}\n\nUser: {prompt}"
         
-        for attempt in range(max_retries * len(self.api_keys)):
-            try:
-                response = self.model.generate_content(
-                    full_prompt,
-                    generation_config=self.generation_config
-                )
+        # We will try each key up to `max_retries` times, with a 60s cooldown if all keys fail in a row.
+        for cycle in range(max_retries):
+            time.sleep(3)
+            # Try each key once in a cycle
+            for _ in range(len(self.api_keys)):
+                try:
+                    self.logger.info(f"Attempting Gemini API call with key index: {self.current_key_index}")
+                    response = self.model.generate_content(
+                        full_prompt,
+                        generation_config=self.generation_config
+                    )
+                    # Success!
+                    return response.text
                 
-                return response.text
-                
-            except Exception as e:
-                self.logger.error(f"Attempt {attempt+1}: Gemini API call failed with error: {e}")
-                
-                if "quota exceeded" in str(e).lower() or "rate limit" in str(e).lower():
-                    self.logger.warning("Rate limit hit or quota exceeded. Rotating API key...")
-                    self._rotate_api_key()
-                
-                if attempt == (max_retries * len(self.api_keys)) - 1:
-                    raise Exception(f"Failed to generate text after {max_retries * len(self.api_keys)} attempts across all API keys: {e}")
-                
-                # Exponential backoff (after key rotation or other errors)
-                time.sleep(2 ** (attempt // len(self.api_keys)))
-        
-        return ""
-    
-    def parse_query(self, user_query: str) -> Dict[str, Any]:
-        """Parse user query where user must specify language, domain, data type, and sample count"""
-        
-        system_instruction = """
-        You are a query parser. The user will provide a request that should contain:
-        1. domain_type: The field/domain they want (e.g., medical, finance, cybersecurity, etc.)
-        2. data_type: The type of data they want (e.g., QA, summarization, STS, classification, etc.)  
-        3. sample_count: How many data points they need
-        4. language: The language they want the data in (they must specify this)
-    5. description: (Optional) A description or example of the desired data format (e.g., "triplets: query, positive, negative") or content details.
+                except Exception as e:
+                    error_message = str(e).lower()
+                    self.logger.error(f"Gemini API call with key index {self.current_key_index} failed: {e}")
+                    
+                    # For any rate limit/quota error, we immediately rotate the key and try the next one.
+                    if "rate limit" in error_message or "quota" in error_message or "resource has been exhausted" in error_message:
+                        self.logger.warning("Rate limit/quota issue detected. Rotating to next API key.")
+                        self._rotate_api_key()
+                        continue # Try next key immediately
+                    else:
+                        # For other types of errors, rotate and continue the loop.
+                        self.logger.warning(f"An unexpected error occurred. Rotating to next API key.")
+                        self._rotate_api_key()
 
-    Extract these 5 pieces of information from the user's input.
-    If the user doesn't specify language, return "en" as default.
-    If any other information is missing, make a reasonable guess.
-    
-    Return ONLY a JSON object with these exact keys: domain_type, data_type, sample_count, language, description
-    No explanations or additional text.
-    """
-        
-        prompt = f"""
-        Parse this user request: "{user_query}"
-        
-        Examples:
-        "I want 1000 medical QA data points in English"
-        → {{"domain_type": "medical", "data_type": "QA", "sample_count": 1000, "language": "en", "description": null}}
-        
-        "Generate 500 finance classification examples in Spanish with columns: text, category"
-        → {{"domain_type": "finance", "data_type": "classification", "sample_count": 500, "language": "es", "description": "columns: text, category"}}
-        
-        "Need 200 cybersecurity summarization pairs in French about network attacks"
-        → {{"domain_type": "cybersecurity", "data_type": "summarization", "sample_count": 200, "language": "fr", "description": "about network attacks"}}
-        
-        "Create 300 legal QA data in Arabic, where question and answer are short"
-        → {{"domain_type": "legal", "data_type": "QA", "sample_count": 300, "language": "ar", "description": "question and answer are short"}}
-        
-        "I want 150 medical triplets in German language with fields: query, positive_example, negative_example"
-        → {{"domain_type": "medical", "data_type": "triplets", "sample_count": 150, "language": "de", "description": "fields: query, positive_example, negative_example"}}
+            # If we've completed a full loop through all keys and all of them failed
+            self.logger.warning(
+                f"All API keys failed in cycle {cycle + 1}/{max_retries}. "
+                f"Waiting for 60 seconds before starting the next cycle."
+            )
+            time.sleep(60)
+
+        # If all retry cycles fail
+        raise Exception(f"Failed to generate text after {max_retries} cycles through all API keys. Please check your API keys and quotas.")
+
+    def check_and_parse_query(self, user_query: str) -> Dict[str, Any]:
         """
+        Checks the user's query intent and parses it in a single request.
+
+        Returns a dictionary indicating the query type and, if applicable, the parsed details.
+        """
+        system_instruction = """
+
+
+            You are a specialized query classifier and parameter extractor for a data generation pipeline. Your role is to parse user requests with precision and return structured JSON responses that enable downstream processing.
+
+            ## Core Function
+            Analyze incoming user queries and classify them into one of three categories, extracting relevant parameters when applicable. Return only a single, valid JSON object with no additional text.
+
+            ## Analysis Framework
+
+            ### Step 1: Intent Classification
+            Determine the user's primary intent by evaluating:
+
+            **Data Generation Requests** - Look for:
+            - Explicit requests for data creation/generation
+            - Mentions of datasets, samples, examples, or data points
+            - Specifications of data types (e.g., "generate classification data", "create QA pairs")
+            - Keywords: generate, create, produce, build, make + data/dataset/samples/examples
+
+            **Non-Data Generation Requests** - Include:
+            - Greetings, casual conversation, or meta-questions
+            - Requests for explanations, help, or general information
+            - Questions about the system itself
+            - Any request not related to data generation
+
+            ### Step 2: Completeness Assessment
+            For data generation requests, verify ALL required parameters are present:
+
+            **Required Parameters:**
+            - **Sample Count**: Explicit numeric value (e.g., "100 samples", "50 examples", "1000 rows")
+            - **Data Description**: Clear indication of what type of data is needed
+            - **Data Type**: Format or structure specification
+            - **Language**: Target language for generation
+
+            **Optional Parameters:**
+            - **Domain**: Specific field or industry context
+
+            ## Response Format Specifications
+
+            ### Case 1: Non-Data Generation
+            {"query_type": "not_data_generation"}
+
+            ### Case 2: Incomplete Data Generation Request
+            {"query_type": "incomplete"} 
+
+            ### Case 3: Complete Data Generation Request
+            {
+                "query_type": "data_generation",
+                "domain_type": "string - specific domain/industry context or 'general' if unspecified",
+                "data_type": "string",
+                "sample_count": integer - exact number requested (never estimate or default),
+                "language": "string ",
+                "description": "string - comprehensive summary of requirements, constraints, and formatting details"
+            }
+
+            ## Critical Guidelines
+
+            1. **Strict JSON Output**: Return ONLY valid JSON. No explanations, comments, or additional text.
+
+            2. **No Assumptions**: If sample_count is missing or ambiguous, classify as "incomplete". Never guess quantities.
+
+            3. **Parameter Extraction Rules**:
+            - domain_type`: Extract from context clues (medical, finance, education, etc.) or use "general"
+            - data_type`: Identify structure (QA, classification, text-label pairs, etc.) or use "unspecified"
+            - sample_count`: Must be explicitly stated number only
+            - language: (English, Arabic, French, Egyptian Arabic,etc....), default to "Englishn" (Keep the dialect)
+            - description`: Capture ALL specific requirements, formatting needs, and constraints
+
+            4. **Edge Case Handling**:
+            - Ambiguous quantities (e.g., "some data", "a few examples") → incomplete
+            - Multiple conflicting requirements → capture all in description
+            - Vague data descriptions → may still be complete if sample count is clear
+
+            ## Quality Assurance
+            Before responding, verify:
+            - ✓ JSON is syntactically valid
+            - ✓ All required fields are present for complete requests
+            - ✓ No extraneous text or explanations included
+            - ✓ Classification aligns with intent analysis
+            - ✓ Parameter extraction is accurate and conservative """
+
+        prompt = f"""
+        Analyze this user query: "{user_query}"
+
+        ---
+        Examples:
+        User Query: "I want 1000 medical QA data points in English"
+        JSON Output: {{"query_type": "not_data_generation", "domain_type": "medical", "data_type": "QA", "sample_count": 1000, "language": "English", "description": null}}
+
+        User Query: "Generate 500 finance classification examples"
+        JSON Output: {{"query_type": "data_generation", "domain_type": "finance", "data_type": "classification", "sample_count": 500, "language": "English", "description": the data contains two columns(text, label)}}
+
+        User Query: "I need data about cybersecurity"
+        JSON Output: {{"query_type": "incomplete"}}
+
+        User Query: "Create some data for me"
+        JSON Output: {{"query_type": "incomplete"}}
         
+        User Query: "Generate medical QA data"
+        JSON Output: {{"query_type": "incomplete"}}
+
+        User Query: "How are you?"
+        JSON Output: {{"query_type": "not_data_generation"}}
+
+        User Query: "Who created you?"
+        JSON Output: {{"query_type": "not_data_generation"}}
+        ---
+
+        Now, analyze the user query provided at the start of this prompt and return the appropriate JSON object.
+        """
+
         response = self.generate_text(prompt, system_instruction)
         
         try:
@@ -115,41 +211,40 @@ class GeminiService:
             json_str = response[start_idx:end_idx]
             parsed_data = json.loads(json_str)
             
-            # Validate and set defaults
-            result = {
-                "domain_type": parsed_data.get("domain_type", "general knowledge"),
-                "data_type": parsed_data.get("data_type", "general_text"),
-                "sample_count": parsed_data.get("sample_count", 100), 
-                "language": parsed_data.get("language", "en"),
-                "description": parsed_data.get("description", None) # New: Add description
-            }
-            
-            # Ensure sample_count is integer
-            try:
-                result["sample_count"] = int(result["sample_count"])
-            except (ValueError, TypeError):
-                result["sample_count"] = 100
-                
-            return result
-            
-        except Exception as e:
-            self.logger.warning(f"Failed to parse query response: {e}")
-            return {
-                "domain_type": "general knowledge",
-                "data_type": "general_text", 
-                "sample_count": 100,
-                "language": "en"
-            }
+
+            return parsed_data
+
+        except (json.JSONDecodeError, IndexError) as e:
+            self.logger.error(f"Failed to decode JSON from query analysis: {e}. Response: '{response}'")
+            # Fallback for safety
+            return {"query_type": "not_data_generation"}
             
     def refine_queries(self, domain_type: str, language: str, count: int = 20) -> List[str]:
         """Generate domain-specific search queries in specified language"""
         
         system_instruction = f"""
-        Generate {count} diverse search queries for the "{domain_type}" domain in {language} language.
-        Focus on different subtopics to maximize topic diversity for synthetic data generation.
-        Each query should target different aspects within this domain.
-        Return only the queries, one per line, without numbering or bullet points.
-        All queries must be written in {language}.
+        You are an expert query generator specializing in creating diverse, high-quality search queries for synthetic data generation pipelines.
+
+        ## Task Overview
+            Generate {count} strategically diverse search queries for the "{domain_type}" domain in {language} language. 
+            These queries will be used to create training data, so maximize topical coverage and query variety.
+        ### Topic Breadth
+            - Cover ALL major subtopics and subfields within the {domain_type} domain
+            - Include both foundational concepts and advanced/specialized areas
+            - Balance theoretical knowledge with practical applications
+            - Span different complexity levels (beginner to expert)
+        ### Specificity
+            - Each query should target a distinct aspect of the domain
+            - Avoid overly generic or vague questions
+            - Include specific terminology, methods, tools, or concepts when relevant
+            - Ensure queries are detailed enough to generate meaningful responses
+        ## Output Format
+            - Return exactly {count} queries
+            - One query per line
+            - No numbering, bullet points, or additional formatting
+            - All queries must be grammatically correct in {language}
+            - Ensure each query is self-contained and clear
+        Generate diverse, high-quality search queries that will enable comprehensive synthetic data creation for the {domain_type} domain.
         """
         
         prompt = f"""
@@ -204,24 +299,46 @@ class GeminiService:
         """Extract subtopic names in specified language related to the given domain"""
         
         system_instruction = f"""
-        Extract specific, focused subtopics from the provided content in {language} language.
-        Each subtopic should be expressed in {language} and be specific enough to generate 5 high-quality synthetic data points.
-        Focus on concrete concepts, procedures, methods, or entities mentioned in the content, ensuring they are relevant to the {domain_type} domain.
-        Return only subtopic names as a JSON array of strings in {language}.
+        You are an expert content analyst specializing in subtopic extraction for synthetic data generation. 
+        Your task is to identify optimal subtopics from provided content that will enable high-quality, focused data point creation.
+        ## What to look for:
+            - Main concepts, methods, or procedures mentioned
+            - Specific topics that have enough depth for questions/examples
+            - Concrete subjects rather than vague themes
+
+        ## Guidelines:
+            - Each subtopic should be specific enough to create multiple related examples
+            - Focus only on topics clearly present in the content
+            - Use {language} for all subtopic names
+            - Keep subtopics relevant to {domain_type}
+
+        ## Examples:
+            Instead of: "General principles" 
+            Use: "Risk assessment procedures"
+
+            Instead of: "Technology" 
+            Use: "Database indexing strategies"
+
+        ## Output:
+            Return a JSON array of subtopic strings in {language}:
+            ["subtopic 1", "subtopic 2", "subtopic 3"]
+
+            Extract 5-10 focused subtopics from the content.
         """
         
         prompt = f"""
         Extract focused subtopics from this content and express them in {language}, ensuring relevance to the {domain_type} domain:
-        {content[:3000]}
+        {content}
         
-        Examples of good subtopics (but you should generate in {language} and related to {domain_type}):
+        Examples of good subtopics:
         "Diabetes medication side effects"
         "Heart surgery recovery protocols"
         "Cancer screening guidelines"
         "Antibiotic resistance mechanisms"
         "Network intrusion detection"
         "Financial risk assessment methods"
-        
+    
+        Make sure the subtopics are falling within the {domain_type}, this point is very important.
         Return JSON array with subtopics in {language}: ["subtopic1", "subtopic2", ...]
         """
         
@@ -255,19 +372,27 @@ class GeminiService:
                 
         system_instruction = f"""
         You are a synthetic data generation expert. Your task is to generate a list of JSON objects based on a given topic, data type, and language.
-        The output must be a valid JSON list (array of objects).
-        Each object in the list should be a unique data point related to the topic.
-        Generate exactly {settings.ROWS_PER_SUBTOPIC} data points.
-        All text content must be in {language}.
-        Do not include any explanations or introductory text outside of the JSON list.
+        Generate {settings.ROWS_PER_SUBTOPIC} unique data points for the given topic in {language}.
+        ## Requirements:
+        - Return only a valid JSON array
+        - Each object should be different but related to the topic
+        - All text must be in {language}
+        - No explanations or extra text
+
         """
                 
         prompt = f"""
-        Generate {settings.ROWS_PER_SUBTOPIC} synthetic data points for the topic: "{topic}".
-        The data should be of type: "{data_type}".
-        The language for all text must be: {language}.
-        {description_prompt}
-        Return a valid JSON list of objects.
+
+        Generate {settings.ROWS_PER_SUBTOPIC} data points about "{topic}" as {data_type} in {language}.
+
+        ## Requirements:
+            - Make each data point clear and self-explanatory
+            - Each data point is independent (don't reference other data points)
+            - Use {language} for all content
+            - Return valid JSON array only
+
+        This will help you 
+            {description_prompt}
         """
         
         response = self.generate_text(prompt, system_instruction)

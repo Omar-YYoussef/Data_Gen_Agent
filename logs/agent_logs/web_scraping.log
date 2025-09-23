@@ -2530,3 +2530,345 @@
 2025-09-07 20:53:19,359 - agent.web_scraping - INFO - Scraping complete: 21 successful, 2 failed
 2025-09-07 20:53:19,361 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\scraping_summary.json
 2025-09-07 20:53:19,361 - agent.web_scraping - INFO - Completed execution of web_scraping in 86.37s
+2025-09-07 22:42:25,405 - agent.web_scraping - INFO - Starting execution of web_scraping
+2025-09-07 22:42:25,406 - agent.web_scraping - INFO - Starting to scrape 21 URLs
+2025-09-07 22:42:25,406 - agent.web_scraping - INFO - Scraping (1/21): https://hundzsoil.com/%D8%AA%D8%B1%D8%B4%D9%8A%D8%AF-%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D9%8A%D8%A7%D9%87-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D9%86%D8%B8%D9%85-%D8%A7%D9%84%D8%B1/
+2025-09-07 22:42:28,777 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_000_9016.json
+2025-09-07 22:42:30,778 - agent.web_scraping - INFO - Scraping (2/21): https://infonile.org/ar/2022/10/%D8%A5%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%D9%8A%D8%AC%D9%8A%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A-%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AB%D8%A9-%D9%87%D8%AF%D9%81-%D9%85%D8%B5%D8%B1-%D8%A7%D9%84%D8%B0%D9%89/
+2025-09-07 22:42:32,057 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_001_5686.json
+2025-09-07 22:42:34,058 - agent.web_scraping - INFO - Scraping (3/21): https://mawdoo3.com/%D8%B7%D8%B1%D9%82_%D8%A7%D9%84%D8%B1%D9%8A_%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AB%D8%A9
+2025-09-07 22:42:34,647 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_002_7946.json
+2025-09-07 22:42:36,648 - agent.web_scraping - INFO - Scraping (4/21): https://tajagri.sa/blogs/%D8%A3%D9%86%D8%B8%D9%85%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%B2%D8%B1%D8%A7%D8%B9%D8%A9?srsltid=AfmBOoqGBTZ-9dyPULDXsur5e7cKn8is0p76UCD1fqc5k14RcOtE59Fy
+2025-09-07 22:42:37,263 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_003_3499.json
+2025-09-07 22:42:39,263 - agent.web_scraping - INFO - Scraping (5/21): https://farmonaut.com/africa/%D8%AA%D9%82%D9%86%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B1%D9%8A-%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AB%D8%A9-%D8%AD%D9%84-%D9%81%D8%B9%D8%A7%D9%84-%D9%84%D8%A7%D8%B3%D8%AA%D8%AF%D8%A7%D9%85%D8%A9-%D8%A7
+2025-09-07 22:42:39,989 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_004_3770.json
+2025-09-07 22:42:41,990 - agent.web_scraping - INFO - Scraping (6/21): https://alnaqaa.co/control-agricultural-pests-naturally/
+2025-09-07 22:42:43,321 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_005_8534.json
+2025-09-07 22:42:45,322 - agent.web_scraping - INFO - Scraping (7/21): https://www.ecomena.org/integrated-pest-management-ar/
+2025-09-07 22:42:46,743 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_006_1555.json
+2025-09-07 22:42:48,743 - agent.web_scraping - INFO - Scraping (8/21): https://www.rgh.com.sa/%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9-%D8%A7%D9%84%D8%A2%D9%81%D8%A7%D8%AA-%D8%A7%D9%84%D8%B2%D8%B1%D8%A7%D8%B9%D9%8A%D8%A9/
+2025-09-07 22:42:49,645 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_007_3830.json
+2025-09-07 22:42:51,645 - agent.web_scraping - INFO - Scraping (9/21): https://www.iaea.org/ar/almawadie/tahsin-khasawiat-altaraba
+2025-09-07 22:42:56,662 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_008_2066.json
+2025-09-07 22:42:58,663 - agent.web_scraping - INFO - Scraping (10/21): https://ezzouhour.ma/%D8%AA%D8%AD%D8%B3%D9%8A%D9%86-%D8%AE%D8%B5%D9%88%D8%A8%D8%A9-%D8%A7%D9%84%D8%AA%D8%B1%D8%A8%D8%A9-%D8%AA%D9%82%D9%86%D9%8A%D8%A7%D8%AA-%D9%88%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA-%D9%85%D8%A8%D8%AA/
+2025-09-07 22:43:00,120 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_009_4183.json
+2025-09-07 22:43:02,121 - agent.web_scraping - INFO - Scraping (11/21): https://misrelzraea.com/%D8%AA%D8%AD%D8%B3%D9%8A%D9%86-%D8%A7%D9%84%D8%A3%D8%B1%D8%A7%D8%B6%D9%8A-%D9%8A%D9%82%D8%AF%D9%85-%D8%B1%D9%88%D8%B4%D8%AA%D8%A9-%D8%B2%D8%B1%D8%A7%D8%B9%D9%8A%D8%A9-%D9%84%D8%A7%D8%B3/
+2025-09-07 22:43:02,993 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_010_0286.json
+2025-09-07 22:43:04,993 - agent.web_scraping - INFO - Scraping (12/21): https://tajagri.sa/blogs/%D9%83%D9%8A%D9%81%D9%8A%D8%A9-%D8%AA%D8%AE%D8%B5%D9%8A%D8%A8-%D8%A7%D9%84%D8%AA%D8%B1%D8%A8%D8%A9?srsltid=AfmBOooqN9xN05EB11JfsuiGnQTjzRGblMO94Pn56h2YjhCRWK0eX7gn
+2025-09-07 22:43:05,616 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_011_2321.json
+2025-09-07 22:43:07,616 - agent.web_scraping - INFO - Scraping (13/21): https://www.agro-lib.site/2023/01/blog-post_534.html
+2025-09-07 22:43:08,865 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_012_8267.json
+2025-09-07 22:43:10,866 - agent.web_scraping - INFO - Scraping (14/21): https://ar.leonfarming.com/info/10-essentials-of-chicken-raising-basics-74031813.html
+2025-09-07 22:43:12,009 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_013_9955.json
+2025-09-07 22:43:14,010 - agent.web_scraping - INFO - Scraping (15/21): https://ar.wikipedia.org/wiki/%D8%AA%D8%B1%D8%A8%D9%8A%D8%A9_%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D8%AC%D9%86
+2025-09-07 22:43:15,188 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_014_3813.json
+2025-09-07 22:43:17,189 - agent.web_scraping - INFO - Scraping (16/21): https://misrelzraea.com/%D8%AA%D8%B1%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D8%AC%D9%86-%D8%A3%D9%87%D9%85-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%8A%D8%A7%D8%B7%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D8%A7%D8%AC%D8%A8-%D9%85/
+2025-09-07 22:43:18,012 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_015_1628.json
+2025-09-07 22:43:20,014 - agent.web_scraping - INFO - Scraping (17/21): http://www.expoegypt.gov.eg/co/%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%D8%A9-%D9%84%D8%AA%D8%B3%D9%88%D9%8A%D9%82-%D8%A7%D9%84%D8%AD%D8%A7%D8%B5%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%B2%D8%B1%D8%A7%D8%B9%D9%8A%D8%A9
+2025-09-07 22:43:20,519 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_016_7465.json
+2025-09-07 22:43:22,521 - agent.web_scraping - INFO - Scraping (18/21): https://leadertrans-eg.com/%D8%AA%D8%B5%D8%AF%D9%8A%D8%B1-%D8%A7%D9%84%D8%AD%D8%A7%D8%B5%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%B2%D8%B1%D8%A7%D8%B9%D9%8A%D8%A9/
+2025-09-07 22:43:24,748 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_017_2919.json
+2025-09-07 22:43:26,749 - agent.web_scraping - INFO - Scraping (19/21): https://agrimisr.com/index.php?dispatch=pages.view&page_id=2
+2025-09-07 22:43:34,690 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_018_9096.json
+2025-09-07 22:43:36,691 - agent.web_scraping - INFO - Scraping (20/21): https://agrimisr.com/
+2025-09-07 22:43:40,049 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_019_2932.json
+2025-09-07 22:43:42,050 - agent.web_scraping - INFO - Scraping (21/21): https://techvillageeg.com/%D8%A7%D9%84%D8%AA%D8%B3%D9%88%D9%8A%D9%82-%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A-%D9%84%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA-%D8%A7%D9%84%D8%B2%D8%B1%D8%A7%D8%B9%D9%8A%D8%A9/
+2025-09-07 22:43:43,144 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_020_1663.json
+2025-09-07 22:43:43,145 - agent.web_scraping - INFO - Scraping complete: 21 successful, 0 failed
+2025-09-07 22:43:43,146 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\scraping_summary.json
+2025-09-07 22:43:43,146 - agent.web_scraping - INFO - Completed execution of web_scraping in 77.74s
+2025-09-09 12:51:56,678 - agent.web_scraping - INFO - Starting execution of web_scraping
+2025-09-09 12:51:56,679 - agent.web_scraping - INFO - Starting to scrape 88 URLs
+2025-09-09 12:51:56,679 - agent.web_scraping - INFO - Scraping (1/88): https://ar.wikipedia.org/wiki/%D8%AA%D9%81%D8%A7%D8%B6%D9%84_%D9%88%D8%AA%D9%83%D8%A7%D9%85%D9%84
+2025-09-09 12:51:57,461 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_000_8867.json
+2025-09-09 12:51:59,462 - agent.web_scraping - INFO - Scraping (2/88): https://www.edraak.org/programs/course/calc1-v2016-t3/
+2025-09-09 12:52:00,150 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_001_9740.json
+2025-09-09 12:52:02,150 - agent.web_scraping - INFO - Scraping (3/88): https://books.altafser.com/book/135
+2025-09-09 12:52:02,903 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_002_2449.json
+2025-09-09 12:52:04,904 - agent.web_scraping - INFO - Scraping (4/88): https://archive.org/details/asasyat_altafadhil_wa_altakamol
+2025-09-09 12:52:09,487 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_003_7793.json
+2025-09-09 12:52:11,488 - agent.web_scraping - INFO - Scraping (5/88): https://mawdoo3.com/%D8%B7%D8%B1%D9%82_%D8%AD%D9%84_%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%AF%D9%84%D8%A7%D8%AA
+2025-09-09 12:52:12,113 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_004_1757.json
+2025-09-09 12:52:14,114 - agent.web_scraping - INFO - Scraping (6/88): https://ar.wikihow.com/%D8%AD%D9%84-%D8%A3%D9%86%D8%B8%D9%85%D8%A9-%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%AF%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%AC%D8%A8%D8%B1%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D9%8A-%D8%AA%D8%AD%D8%AA%D9%88%D9%8A-%D8%B9%D9%84%D9%89-%D9%85%D8%AA%D8%BA%D9%8A%D8%B1%D9%8A%D9%86
+2025-09-09 12:52:15,345 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_005_0749.json
+2025-09-09 12:52:17,346 - agent.web_scraping - INFO - Scraping (7/88): https://ar.wikipedia.org/wiki/%D9%85%D8%B9%D8%A7%D8%AF%D9%84%D8%A9_%D8%AC%D8%A8%D8%B1%D9%8A%D8%A9
+2025-09-09 12:52:18,291 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_006_9302.json
+2025-09-09 12:52:20,292 - agent.web_scraping - INFO - Scraping (8/88): https://ar.wikihow.com/%D8%AA%D8%AD%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%AF%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%AC%D8%A8%D8%B1%D9%8A%D8%A9
+2025-09-09 12:52:21,031 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_007_4472.json
+2025-09-09 12:52:23,032 - agent.web_scraping - INFO - Scraping (9/88): https://reiadyat.com/e/%D9%85%D8%A7-%D9%87%D9%8A-%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%AF%D9%84%D8%A9-%D8%A7%D9%84%D8%AC%D8%A8%D8%B1%D9%8A%D8%A9-%D9%85%D8%B9-%D8%A7%D9%84%D8%A3%D9%85%D8%AB%D9%84%D8%A9
+2025-09-09 12:52:23,657 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_008_6445.json
+2025-09-09 12:52:25,658 - agent.web_scraping - INFO - Scraping (10/88): https://scienceworksar.wordpress.com/2024/08/18/%D8%A7%D9%84%D9%85%D8%B3%D9%84%D9%85%D8%A9-%D8%A7%D9%84%D8%AE%D8%A7%D9%85%D8%B3%D8%A9-%D9%85%D9%86-%D8%A3%D8%B2%D9%85%D8%A9-%D8%B4%D9%83-%D8%A5%D9%84%D9%89-%D8%A8%D9%88%D8%A7%D8%A8%D8%A9-%D9%84%D8%A2/
+2025-09-09 12:52:26,798 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_009_8589.json
+2025-09-09 12:52:28,799 - agent.web_scraping - INFO - Scraping (11/88): https://ar.wikipedia.org/wiki/%D9%87%D9%86%D8%AF%D8%B3%D8%A9_%D8%A5%D9%82%D9%84%D9%8A%D8%AF%D9%8A%D8%A9
+2025-09-09 12:52:29,899 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_010_6284.json
+2025-09-09 12:52:31,900 - agent.web_scraping - INFO - Scraping (12/88): https://mawdoo3.com/%D8%AA%D8%B9%D8%B1%D9%8A%D9%81_%D9%86%D8%B8%D8%B1%D9%8A%D8%A7%D8%AA_%D8%A5%D9%82%D9%84%D9%8A%D8%AF%D8%B3_%D8%A7%D9%84%D8%AE%D9%85%D8%B3
+2025-09-09 12:52:32,500 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_011_3865.json
+2025-09-09 12:52:34,501 - agent.web_scraping - INFO - Scraping (13/88): https://mawdoo3.com/%D8%AA%D8%B9%D8%B1%D9%8A%D9%81_%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D8%A9_%D8%A7%D9%84%D8%A5%D9%82%D9%84%D9%8A%D8%AF%D9%8A%D8%A9
+2025-09-09 12:52:35,067 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_012_3032.json
+2025-09-09 12:52:37,068 - agent.web_scraping - INFO - Scraping (14/88): https://alnoorystationery.com/category/Arzqp
+2025-09-09 12:52:38,109 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_013_1012.json
+2025-09-09 12:52:40,111 - agent.web_scraping - INFO - Scraping (15/88): https://ar.wikipedia.org/wiki/%D9%86%D8%B8%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%85%D8%A7%D9%84
+2025-09-09 12:52:40,748 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_014_7236.json
+2025-09-09 12:52:42,749 - agent.web_scraping - INFO - Scraping (16/88): https://www.intellspot.com/applications-of-statistics/
+2025-09-09 12:52:49,720 - agent.web_scraping - INFO - Scraping (17/88): https://unacademy.com/content/jee/study-material/mathematics/how-probability-can-be-applied-in-real-life-situations/
+2025-09-09 12:52:51,113 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_016_6768.json
+2025-09-09 12:52:53,114 - agent.web_scraping - INFO - Scraping (18/88): https://www.cuemath.com/learn/mathematics/probability-in-real-life/
+2025-09-09 12:52:55,311 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_017_8338.json
+2025-09-09 12:52:57,313 - agent.web_scraping - INFO - Scraping (19/88): https://portal.arid.my/ar-LY/Posts/Details/5c18ea08-2ac0-4360-a8c1-abd19d3fbb12
+2025-09-09 12:52:59,296 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_018_3765.json
+2025-09-09 12:53:01,296 - agent.web_scraping - INFO - Scraping (20/88): https://ar.wikipedia.org/wiki/%D9%86%D8%B8%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D8%A3%D8%B9%D8%AF%D8%A7%D8%AF
+2025-09-09 12:53:02,238 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_019_3446.json
+2025-09-09 12:53:04,239 - agent.web_scraping - INFO - Scraping (21/88): https://ar.wikipedia.org/wiki/%D9%85%D8%A8%D8%B1%D9%87%D9%86%D8%A9_%D8%A7%D9%84%D8%A3%D8%B9%D8%AF%D8%A7%D8%AF_%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%8A%D8%A9
+2025-09-09 12:53:05,273 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_020_0190.json
+2025-09-09 12:53:07,275 - agent.web_scraping - INFO - Scraping (22/88): https://mawdoo3.com/%D9%85%D8%A7_%D9%87%D9%8A_%D8%A7%D9%84%D8%A3%D8%B9%D8%AF%D8%A7%D8%AF_%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%8A%D8%A9
+2025-09-09 12:53:07,914 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_021_5004.json
+2025-09-09 12:53:09,915 - agent.web_scraping - INFO - Scraping (23/88): https://wiki-arabic.com/%D8%A7%D9%84%D8%A3%D8%B9%D8%AF%D8%A7%D8%AF-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%8A%D8%A9-%D9%85%D9%86-1-%D8%A5%D9%84%D9%89-20/
+2025-09-09 12:53:12,591 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_022_6608.json
+2025-09-09 12:53:14,592 - agent.web_scraping - INFO - Scraping (24/88): https://edmodo.org/compound_interest_calcualtor/
+2025-09-09 12:53:15,551 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_023_6430.json
+2025-09-09 12:53:17,553 - agent.web_scraping - INFO - Scraping (25/88): https://naga.com/ar/academy/alfaedeh-almorkbeh
+2025-09-09 12:53:18,640 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_024_3180.json
+2025-09-09 12:53:20,640 - agent.web_scraping - INFO - Scraping (26/88): https://ar.wikipedia.org/wiki/%D9%81%D8%A7%D8%A6%D8%AF%D8%A9_%D9%85%D8%B1%D9%83%D8%A8%D8%A9
+2025-09-09 12:53:21,220 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_025_4564.json
+2025-09-09 12:53:23,221 - agent.web_scraping - INFO - Scraping (27/88): https://a2-finance.com/ar/calculators/%D8%AC%D9%85%D9%8A%D8%B9-%D8%A7%D9%84%D8%A2%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D8%A8%D8%A9/%D9%81%D8%A7%D8%A6%D8%AF%D8%A9-%D9%85%D8%B1%D9%83%D8%A8%D8%A9
+2025-09-09 12:53:25,675 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_026_2169.json
+2025-09-09 12:53:27,676 - agent.web_scraping - INFO - Scraping (28/88): https://ar.wikipedia.org/wiki/%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA_%D9%85%D8%A7%D9%84%D9%8A%D8%A9
+2025-09-09 12:53:28,750 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_027_6305.json
+2025-09-09 12:53:30,751 - agent.web_scraping - INFO - Scraping (29/88): https://www.massira.jo/content/%D9%85%D9%82%D8%AF%D9%85%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%AC%D8%A8%D8%B1-%D8%A7%D9%84%D8%AE%D8%B7%D9%8A
+2025-09-09 12:53:31,700 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_028_9544.json
+2025-09-09 12:53:33,701 - agent.web_scraping - INFO - Scraping (30/88): https://ar.wikipedia.org/wiki/%D8%AC%D8%A8%D8%B1_%D8%AE%D8%B7%D9%8A
+2025-09-09 12:53:34,928 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_029_2480.json
+2025-09-09 12:53:36,930 - agent.web_scraping - INFO - Scraping (31/88): https://tariq-library.com/%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%82%D8%AF%D9%85%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%AC%D8%A8%D8%B1-%D8%A7%D9%84%D8%AE%D8%B7%D9%8A-pdf/
+2025-09-09 12:53:37,632 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_030_5886.json
+2025-09-09 12:53:39,633 - agent.web_scraping - INFO - Scraping (32/88): https://ar.wikipedia.org/wiki/%D9%85%D8%B5%D9%81%D9%88%D9%81%D8%A9_(%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA)
+2025-09-09 12:53:41,779 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_031_2003.json
+2025-09-09 12:53:43,780 - agent.web_scraping - INFO - Scraping (33/88): https://www.marefa.org/%D9%82%D8%A7%D8%A6%D9%85%D8%A9_%D8%A7%D9%84%D9%86%D8%B8%D8%B1%D9%8A%D8%A7%D8%AA_%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A9
+2025-09-09 12:53:44,676 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_032_6620.json
+2025-09-09 12:53:46,676 - agent.web_scraping - INFO - Scraping (34/88): https://ar.wikipedia.org/wiki/%D9%86%D8%B8%D8%B1%D9%8A%D8%A9_%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A9
+2025-09-09 12:53:47,524 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_033_5648.json
+2025-09-09 12:53:49,525 - agent.web_scraping - INFO - Scraping (35/88): https://www.aljazeera.net/science/2021/12/29/%D8%A3%D9%87%D9%85-5-%D9%85%D8%B9%D8%A7%D8%AF%D9%84%D8%A7%D8%AA-%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A9-%D8%BA%D9%8A%D8%B1%D8%AA-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85
+2025-09-09 12:53:50,343 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_034_2662.json
+2025-09-09 12:53:52,343 - agent.web_scraping - INFO - Scraping (36/88): https://ar.wikipedia.org/wiki/%D8%AA%D8%B5%D9%86%D9%8A%D9%81:%D9%86%D8%B8%D8%B1%D9%8A%D8%A7%D8%AA_%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA%D9%8A%D8%A9
+2025-09-09 12:53:53,202 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_035_1094.json
+2025-09-09 12:53:55,204 - agent.web_scraping - INFO - Scraping (37/88): https://www.mathplanet.com/
+2025-09-09 12:53:55,957 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_036_4591.json
+2025-09-09 12:53:57,958 - agent.web_scraping - INFO - Scraping (38/88): https://mathmate.academy/
+2025-09-09 12:53:58,935 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_037_3739.json
+2025-09-09 12:54:00,936 - agent.web_scraping - INFO - Scraping (39/88): https://destinationknowledge.com/10-free-math-websites-teachers-can-use-right-now/
+2025-09-09 12:54:08,944 - agent.web_scraping - INFO - Scraping (40/88): https://doroosonline.com/category/%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA/245
+2025-09-09 12:54:09,924 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_039_8331.json
+2025-09-09 12:54:11,925 - agent.web_scraping - INFO - Scraping (41/88): https://wordwall.net/ar-ae/community/%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA/%D8%A7%D9%84%D8%B9%D8%A7%D8%A8
+2025-09-09 12:54:12,647 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_040_1609.json
+2025-09-09 12:54:14,648 - agent.web_scraping - INFO - Scraping (42/88): https://mawdoo3.com/%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA_%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82_%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A
+2025-09-09 12:54:15,200 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_041_2566.json
+2025-09-09 12:54:17,201 - agent.web_scraping - INFO - Scraping (43/88): https://toposuranos.com/material/ar/%D9%85%D8%A7-%D9%87%D9%88-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%9F-%D8%A7%D8%B3%D8%AA%D9%83%D8%B4%D8%A7%D9%81-%D8%A3%D8%B3%D8%B3%D9%87/
+2025-09-09 12:54:18,866 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_042_1663.json
+2025-09-09 12:54:20,867 - agent.web_scraping - INFO - Scraping (44/88): https://mawdoo3.com/%D8%A3%D9%87%D9%85%D9%8A%D8%A9_%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82_%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A_%D9%81%D9%8A_%D8%AD%D9%8A%D8%A7%D8%AA%D9%86%D8%A7
+2025-09-09 12:54:21,467 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_043_7785.json
+2025-09-09 12:54:23,468 - agent.web_scraping - INFO - Scraping (45/88): https://ar.wikipedia.org/wiki/%D9%85%D9%86%D8%B7%D9%82_%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A
+2025-09-09 12:54:24,114 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_044_3277.json
+2025-09-09 12:54:26,115 - agent.web_scraping - INFO - Scraping (46/88): https://www.tumblr.com/mathworld2/66896621980/%D8%B9%D9%84%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82-%D8%A8%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA-%D8%B9%D9%86%D8%AF-%D8%B1%D8%B3%D9%84
+2025-09-09 12:54:26,980 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_045_5695.json
+2025-09-09 12:54:28,982 - agent.web_scraping - INFO - Scraping (47/88): https://mawdoo3.com/%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE_%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA_%D8%B9%D9%86%D8%AF_%D8%A7%D9%84%D8%B9%D8%B1%D8%A8_%D9%88%D8%A7%D9%84%D9%85%D8%B3%D9%84%D9%85%D9%8A%D9%86
+2025-09-09 12:54:29,561 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_046_7177.json
+2025-09-09 12:54:31,562 - agent.web_scraping - INFO - Scraping (48/88): https://ar.wikipedia.org/wiki/%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE_%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA
+2025-09-09 12:54:32,573 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_047_5624.json
+2025-09-09 12:54:34,573 - agent.web_scraping - INFO - Scraping (49/88): https://www.islamweb.net/ar/article/144585/%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D8%AD%D8%B3%D8%A7%D8%A8-%D9%88%D8%A7%D9%84%D8%A3%D8%B9%D8%AF%D8%A7%D8%AF-%D8%B9%D9%86%D8%AF-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8
+2025-09-09 12:54:35,556 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_048_2135.json
+2025-09-09 12:54:37,557 - agent.web_scraping - INFO - Scraping (50/88): https://islamonline.net/%D8%A7%D9%84%D9%85%D8%B3%D9%84%D9%85%D9%88%D9%86-%D9%88%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA/
+2025-09-09 12:54:38,251 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_049_0762.json
+2025-09-09 12:54:40,252 - agent.web_scraping - INFO - Scraping (51/88): https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA_%D9%81%D9%8A_%D8%B9%D8%B5%D8%B1_%D8%A7%D9%84%D8%AD%D8%B6%D8%A7%D8%B1%D8%A9_%D8%A7%D9%84%D8%A5%D8%B3%D9%84%D8%A7%D9%85%D9%8A%D8%A9
+2025-09-09 12:54:41,544 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_050_4093.json
+2025-09-09 12:54:43,544 - agent.web_scraping - INFO - Scraping (52/88): https://www.nagwa.com/ar/explainers/896159039737/
+2025-09-09 12:54:50,173 - agent.web_scraping - INFO - Scraping (53/88): https://ar.wikipedia.org/wiki/%D9%85%D8%AA%D8%AC%D9%87
+2025-09-09 12:54:50,748 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_052_5010.json
+2025-09-09 12:54:52,749 - agent.web_scraping - INFO - Scraping (54/88): https://www.edarabia.com/ar/3-%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A8%D8%AD%D8%AB-%D8%B9%D9%86-%D8%A7%D9%84%D9%85%D8%AA%D8%AC%D9%87%D8%A7%D8%AA/
+2025-09-09 12:54:53,813 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_053_4509.json
+2025-09-09 12:54:55,814 - agent.web_scraping - INFO - Scraping (55/88): https://feeziaa.com/e/%D8%B4%D8%B1%D8%AD-%D8%AA%D9%81%D8%B5%D9%8A%D9%84%D9%8A-%D8%B9%D9%86-%D8%A7%D9%84%D9%85%D8%AA%D8%AC%D9%87%D8%A7%D8%AA
+2025-09-09 12:54:56,463 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_054_2974.json
+2025-09-09 12:54:58,463 - agent.web_scraping - INFO - Scraping (56/88): https://afidni.com/%D8%AD%D9%84-%D8%A3%D8%B3%D8%A6%D9%84%D8%A9-%D9%88%D8%AD%D8%AF%D8%A9-%D8%AD%D8%B3%D8%A7%D8%A8-%D8%A7%D9%84%D9%85%D8%AB%D9%84%D8%AB%D8%A7%D8%AA/
+2025-09-09 12:54:59,603 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_055_7861.json
+2025-09-09 12:55:01,604 - agent.web_scraping - INFO - Scraping (57/88): https://xn-------z5fbcbahhilmahu9db0c4hc0wahhbffqk1kn.a3erf.com/
+2025-09-09 12:55:02,463 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_056_7335.json
+2025-09-09 12:55:04,463 - agent.web_scraping - INFO - Scraping (58/88): https://mawdoo3.com/%D8%A3%D9%87%D9%85_%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA_%D8%B9%D9%84%D9%85_%D8%A7%D9%84%D9%85%D8%AB%D9%84%D8%AB%D8%A7%D8%AA
+2025-09-09 12:55:05,055 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_057_7546.json
+2025-09-09 12:55:07,055 - agent.web_scraping - INFO - Scraping (59/88): http://mathappily.blogspot.com/2017/05/blog-post_769.html
+2025-09-09 12:55:07,714 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_058_5013.json
+2025-09-09 12:55:09,715 - agent.web_scraping - INFO - Scraping (60/88): https://nurs.uomus.edu.iq/NewDep.aspx?depid=44&newid=66380
+2025-09-09 12:55:10,703 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_059_4400.json
+2025-09-09 12:55:12,704 - agent.web_scraping - INFO - Scraping (61/88): https://ar.wikipedia.org/wiki/%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA_%D9%85%D8%AA%D9%82%D8%B7%D8%B9%D8%A9
+2025-09-09 12:55:13,846 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_060_8762.json
+2025-09-09 12:55:15,848 - agent.web_scraping - INFO - Scraping (62/88): https://mawdoo3.com/%D8%B9%D9%84%D8%A7%D9%82%D8%A9_%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA_%D8%A8%D8%B9%D9%84%D9%88%D9%85_%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8
+2025-09-09 12:55:16,404 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_061_3597.json
+2025-09-09 12:55:18,405 - agent.web_scraping - INFO - Scraping (63/88): https://tafkera.com/courses/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AA%D9%82%D8%B7%D8%B9%D8%A9-discrete-mathematics/
+2025-09-09 12:55:19,437 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_062_4245.json
+2025-09-09 12:55:21,438 - agent.web_scraping - INFO - Scraping (64/88): https://www.noor-book.com/tag/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AA%D9%82%D8%B7%D8%B9%D8%A9-%D9%81%D9%8A-%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8
+2025-09-09 12:55:27,947 - agent.web_scraping - INFO - Scraping (65/88): https://aanaab.com/blog/teaching-math-for-children
+2025-09-09 12:55:28,963 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_064_4659.json
+2025-09-09 12:55:30,965 - agent.web_scraping - INFO - Scraping (66/88): https://apps.apple.com/us/app/%D8%A7%EF%BB%9F%EF%BB%8C%EF%BA%8E%D8%A8-%D8%A7%EF%BB%9F%EF%BA%AE%EF%BB%B3%EF%BA%8E%EF%BA%BF%EF%BB%B4%EF%BA%8E%D8%AA-%EF%BB%9F%EF%BB%B8%EF%BB%83%EF%BB%94%EF%BA%8E%D9%84/id1468255864?l=ar
+2025-09-09 12:55:32,088 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_065_5394.json
+2025-09-09 12:55:34,089 - agent.web_scraping - INFO - Scraping (67/88): https://wordwall.net/ar-ae/community/%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA/%D9%84%D9%84%D8%A7%D8%B7%D9%81%D8%A7%D9%84
+2025-09-09 12:55:34,803 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_066_8065.json
+2025-09-09 12:55:36,803 - agent.web_scraping - INFO - Scraping (68/88): https://poki.com/ar/%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA
+2025-09-09 12:55:37,579 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_067_3585.json
+2025-09-09 12:55:39,579 - agent.web_scraping - INFO - Scraping (69/88): https://play.google.com/store/apps/details?id=com.rvappstudios.math.kids.counting&hl=ar
+2025-09-09 12:55:45,199 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_068_7120.json
+2025-09-09 12:55:47,201 - agent.web_scraping - INFO - Scraping (70/88): https://akwaam.com/blog/mathematical-problem-solving-app/
+2025-09-09 12:55:48,024 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_069_9620.json
+2025-09-09 12:55:50,024 - agent.web_scraping - INFO - Scraping (71/88): https://math.now/ar
+2025-09-09 12:55:51,539 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_070_4682.json
+2025-09-09 12:55:53,540 - agent.web_scraping - INFO - Scraping (72/88): https://www.edutopia.org/article/teacher-tested-math-apps/
+2025-09-09 12:55:54,219 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_071_5207.json
+2025-09-09 12:55:56,221 - agent.web_scraping - INFO - Scraping (73/88): https://moias.org/content.php?id=465
+2025-09-09 12:55:57,699 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_072_4367.json
+2025-09-09 12:55:59,700 - agent.web_scraping - INFO - Scraping (74/88): https://hamadacademy.net/%D8%B7%D8%B1%D9%82-%D8%AA%D8%AF%D8%B1%D9%8A%D8%B3-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA/
+2025-09-09 12:56:02,166 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_073_4520.json
+2025-09-09 12:56:04,167 - agent.web_scraping - INFO - Scraping (75/88): https://almo3allem.com/m/%D8%A3%D8%AD%D8%AF%D8%AB-%D8%B7%D8%B1%D9%82-%D8%AA%D8%AF%D8%B1%D9%8A%D8%B3-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA
+2025-09-09 12:56:04,801 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_074_1674.json
+2025-09-09 12:56:06,802 - agent.web_scraping - INFO - Scraping (76/88): https://www.researchgate.net/publication/323150988_asalyb_tdrys_alryadyat_talyf_d_slah_abw_asd
+2025-09-09 12:56:13,312 - agent.web_scraping - INFO - Scraping (77/88): https://aanaab.com/blog/math-teaching-strategies
+2025-09-09 12:56:14,273 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_076_4748.json
+2025-09-09 12:56:16,273 - agent.web_scraping - INFO - Scraping (78/88): https://ar.quora.com/%D9%85%D8%A7-%D9%87%D9%88-%D8%A7%D9%84%D9%81%D8%B1%D9%82-%D8%A8%D9%8A%D9%86-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A8%D8%AD%D8%AA%D8%A9
+2025-09-09 12:56:17,184 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_077_5288.json
+2025-09-09 12:56:19,185 - agent.web_scraping - INFO - Scraping (79/88): https://ar.wikipedia.org/wiki/%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA_%D8%A8%D8%AD%D8%AA%D8%A9
+2025-09-09 12:56:20,141 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_078_6231.json
+2025-09-09 12:56:22,142 - agent.web_scraping - INFO - Scraping (80/88): https://www.omegalearn.org/high-math-contests
+2025-09-09 12:56:22,968 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_079_1446.json
+2025-09-09 12:56:24,968 - agent.web_scraping - INFO - Scraping (81/88): http://aghandoura.com/dora_mowhoob.htm
+2025-09-09 12:56:25,623 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_080_2184.json
+2025-09-09 12:56:27,624 - agent.web_scraping - INFO - Scraping (82/88): https://www.davidsongifted.org/gifted-blog/list-of-academic-competitions-for-gifted-students/
+2025-09-09 12:56:34,190 - agent.web_scraping - INFO - Scraping (83/88): https://math-mawhoben.com/
+2025-09-09 12:56:35,084 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_082_8223.json
+2025-09-09 12:56:37,085 - agent.web_scraping - INFO - Scraping (84/88): https://ar.statisticseasily.com/glossario/what-is-graph-understanding-graphs-in-data-science/
+2025-09-09 12:56:37,762 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_083_8067.json
+2025-09-09 12:56:39,763 - agent.web_scraping - INFO - Scraping (85/88): https://ar.wikipedia.org/wiki/%D8%A8%D9%8A%D8%A7%D9%86_(%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA_%D9%85%D8%AA%D9%82%D8%B7%D8%B9%D8%A9)
+2025-09-09 12:56:40,780 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_084_4528.json
+2025-09-09 12:56:42,781 - agent.web_scraping - INFO - Scraping (86/88): https://arabiska.matteboken.se/lektioner/skolar-9/uttryck-ekvationer-och-funktioner/funktioner
+2025-09-09 12:56:43,600 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_085_3792.json
+2025-09-09 12:56:45,601 - agent.web_scraping - INFO - Scraping (87/88): https://ar.statisticseasily.com/%D9%82%D8%A7%D9%85%D9%88%D8%B3-%D9%85%D8%B5%D8%B7%D9%84%D8%AD%D8%A7%D8%AA/%D9%85%D8%A7-%D9%87%D9%8A-%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D8%A9-%D8%A7%D9%84%D8%AA%D8%B1%D8%A8%D9%8A%D8%B9%D9%8A%D8%A9-%D9%85%D9%88%D8%B6%D8%AD%D8%A9-%D8%A8%D8%A7%D9%84%D8%AA%D9%81%D8%B5%D9%8A%D9%84/
+2025-09-09 12:56:46,224 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_086_7515.json
+2025-09-09 12:56:48,225 - agent.web_scraping - INFO - Scraping (88/88): https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%B7%D8%B7_%D8%A8%D9%8A%D8%A7%D9%86%D9%8A
+2025-09-09 12:56:49,260 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\raw_content\scraped_files\scraped_087_3661.json
+2025-09-09 12:56:49,260 - agent.web_scraping - INFO - Scraping complete: 82 successful, 6 failed
+2025-09-09 12:56:49,262 - agent.web_scraping - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\scraping_summary.json
+2025-09-09 12:56:49,262 - agent.web_scraping - INFO - Completed execution of web_scraping in 292.58s
+2025-09-09 14:51:55,844 - agent.web_scraping - INFO - Starting execution of web_scraping
+2025-09-09 14:51:55,844 - agent.web_scraping - INFO - Starting to scrape 88 URLs
+2025-09-09 14:51:55,844 - agent.web_scraping - INFO - Scraping (1/88): https://mawdoo3.com/%D8%B7%D8%B1%D9%82_%D8%AD%D9%84_%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%AF%D9%84%D8%A7%D8%AA
+2025-09-09 14:51:55,845 - agent.web_scraping - ERROR - Web scraping failed: asyncio.run() cannot be called from a running event loop
+2025-09-09 14:51:55,845 - agent.web_scraping - ERROR - Error in web_scraping after 0.00s: asyncio.run() cannot be called from a running event loop
+Traceback (most recent call last):
+  File "D:\Learn\web_data_generation_pipeline\agents\base_agent.py", line 83, in run
+    result = self.execute(input_data, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\agents\web_scraping_agent.py", line 39, in execute
+    scrape_data = crawl4ai_service.scrape_url(search_result.url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\services\crawl4ai_service.py", line 35, in scrape_url
+    return asyncio.run(self.ascrape_url(url, max_retries))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abdom\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 191, in run
+    raise RuntimeError(
+RuntimeError: asyncio.run() cannot be called from a running event loop
+2025-09-09 14:57:12,288 - agent.web_scraping - INFO - Starting execution of web_scraping
+2025-09-09 14:57:12,288 - agent.web_scraping - INFO - Starting to scrape 79 URLs
+2025-09-09 14:57:12,288 - agent.web_scraping - INFO - Scraping (1/79): https://ar.wikihow.com/%D8%AA%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D8%AC%D8%A8%D8%B1
+2025-09-09 14:57:12,289 - agent.web_scraping - ERROR - Web scraping failed: asyncio.run() cannot be called from a running event loop
+2025-09-09 14:57:12,289 - agent.web_scraping - ERROR - Error in web_scraping after 0.00s: asyncio.run() cannot be called from a running event loop
+Traceback (most recent call last):
+  File "D:\Learn\web_data_generation_pipeline\agents\base_agent.py", line 83, in run
+    result = self.execute(input_data, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\agents\web_scraping_agent.py", line 39, in execute
+    scrape_data = crawl4ai_service.scrape_url(search_result.url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\services\crawl4ai_service.py", line 33, in scrape_url
+    return asyncio.run(self.ascrape_url(url, max_retries))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abdom\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 191, in run
+    raise RuntimeError(
+RuntimeError: asyncio.run() cannot be called from a running event loop
+2025-09-09 15:01:13,454 - agent.web_scraping - INFO - Starting execution of web_scraping
+2025-09-09 15:01:13,454 - agent.web_scraping - INFO - Starting to scrape 20 URLs concurrently
+2025-09-09 15:01:13,455 - agent.web_scraping - ERROR - Error in web_scraping after 0.00s: asyncio.run() cannot be called from a running event loop
+Traceback (most recent call last):
+  File "D:\Learn\web_data_generation_pipeline\agents\base_agent.py", line 83, in run
+    result = self.execute(input_data, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\agents\web_scraping_agent.py", line 33, in execute
+    scraped_results = asyncio.run(self.ascrape_all(input_data))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abdom\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 191, in run
+    raise RuntimeError(
+RuntimeError: asyncio.run() cannot be called from a running event loop
+2025-09-09 15:04:00,733 - agent.web_scraping - INFO - Starting execution of web_scraping
+2025-09-09 15:04:00,734 - agent.web_scraping - INFO - Starting to scrape 22 URLs concurrently
+2025-09-09 15:04:00,734 - agent.web_scraping - ERROR - Error in web_scraping after 0.00s: This event loop is already running
+Traceback (most recent call last):
+  File "D:\Learn\web_data_generation_pipeline\agents\base_agent.py", line 83, in run
+    result = self.execute(input_data, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learn\web_data_generation_pipeline\agents\web_scraping_agent.py", line 38, in execute
+    scraped_results = loop.run_until_complete(self.ascrape_all(input_data))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abdom\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 667, in run_until_complete
+    self._check_running()
+  File "C:\Users\abdom\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 626, in _check_running
+    raise RuntimeError('This event loop is already running')
+RuntimeError: This event loop is already running
+2025-09-09 15:09:13,619 - agent.web_scraping - INFO - Starting to scrape 23 URLs concurrently (async)
+2025-09-09 15:09:26,619 - agent.web_scraping - INFO - Scraping complete: 23 successful, 0 failed
+2025-09-09 15:15:58,160 - agent.web_scraping - INFO - Starting to scrape 83 URLs concurrently (async)
+2025-09-09 15:16:39,728 - agent.web_scraping - INFO - Scraping complete: 80 successful, 3 failed
+2025-09-09 16:59:12,844 - agent.web_scraping - INFO - Starting to scrape 10 URLs concurrently (async)
+2025-09-09 16:59:23,616 - agent.web_scraping - INFO - Scraping complete: 8 successful, 2 failed
+2025-09-09 17:02:16,652 - agent.web_scraping - INFO - Starting to scrape 23 URLs concurrently (async)
+2025-09-09 17:02:29,167 - agent.web_scraping - INFO - Scraping complete: 22 successful, 1 failed
+2025-09-09 17:05:20,960 - agent.web_scraping - INFO - Starting to scrape 10 URLs concurrently (async)
+2025-09-09 17:05:28,949 - agent.web_scraping - INFO - Scraping complete: 9 successful, 1 failed
+2025-09-09 17:09:02,222 - agent.web_scraping - INFO - Starting to scrape 10 URLs concurrently (async)
+2025-09-09 17:19:40,254 - agent.web_scraping - INFO - Starting execution of web_scraping
+2025-09-09 17:19:40,254 - agent.web_scraping - INFO - Starting to scrape 0 URLs concurrently
+2025-09-09 17:19:40,254 - agent.web_scraping - DEBUG - Running in existing event loop - using thread executor
+2025-09-09 17:19:40,257 - agent.web_scraping - INFO - Scraping complete: 0 successful, 0 failed
+2025-09-09 17:19:40,257 - agent.web_scraping - INFO - Completed execution of web_scraping in 0.00s
+2025-09-09 17:23:43,357 - agent.web_scraping - INFO - Starting execution of web_scraping
+2025-09-09 17:23:43,358 - agent.web_scraping - INFO - Starting to scrape 78 URLs concurrently
+2025-09-09 17:23:43,358 - agent.web_scraping - DEBUG - Running in existing event loop - using thread executor
+2025-09-09 17:24:16,791 - agent.web_scraping - INFO - Scraping complete: 73 successful, 5 failed
+2025-09-09 17:24:16,791 - agent.web_scraping - INFO - Completed execution of web_scraping in 33.43s
+2025-09-09 17:32:46,951 - agent.web_scraping - INFO - Starting execution of web_scraping
+2025-09-09 17:32:46,951 - agent.web_scraping - INFO - Starting to scrape 74 URLs concurrently
+2025-09-09 17:32:46,951 - agent.web_scraping - DEBUG - Running in existing event loop - using thread executor
+2025-09-09 17:33:19,978 - agent.web_scraping - INFO - Scraping complete: 68 successful, 6 failed
+2025-09-09 17:33:19,978 - agent.web_scraping - INFO - Completed execution of web_scraping in 33.03s
+2025-09-09 18:41:28,805 - agent.web_scraping - INFO - Starting to scrape 6 URLs concurrently (async)
+2025-09-09 18:41:30,781 - agent.web_scraping - INFO - Scraping complete: 6 successful, 0 failed
+2025-09-09 18:47:16,529 - agent.web_scraping - INFO - Starting to scrape 88 URLs concurrently (async)
+2025-09-09 18:47:44,057 - agent.web_scraping - INFO - Scraping complete: 77 successful, 11 failed
+2025-09-10 13:36:12,516 - agent.web_scraping - INFO - Starting to scrape 96 URLs concurrently (async)
+2025-09-10 13:36:42,367 - agent.web_scraping - INFO - Scraping complete: 95 successful, 1 failed
+2025-09-10 16:15:21,537 - agent.web_scraping - INFO - Starting to scrape 96 URLs concurrently (async)
+2025-09-10 16:17:16,983 - agent.web_scraping - INFO - Scraping complete: 91 successful, 5 failed
+2025-09-10 16:38:18,367 - agent.web_scraping - INFO - Starting to scrape 0 URLs concurrently (async)
+2025-09-10 16:38:18,367 - agent.web_scraping - INFO - Scraping complete: 0 successful, 0 failed
+2025-09-19 21:35:08,243 - agent.web_scraping - INFO - Starting to scrape 24 URLs concurrently (async)
+2025-09-19 21:35:18,908 - agent.web_scraping - INFO - Scraping complete: 23 successful, 1 failed
+2025-09-19 22:02:39,772 - agent.web_scraping - INFO - Starting to scrape 25 URLs concurrently (async)
+2025-09-19 22:03:21,944 - agent.web_scraping - INFO - Scraping complete: 22 successful, 3 failed
+2025-09-19 22:15:51,679 - agent.web_scraping - INFO - Starting to scrape 22 URLs concurrently (async)
+2025-09-19 22:15:59,772 - agent.web_scraping - INFO - Scraping complete: 21 successful, 1 failed
+2025-09-20 14:40:25,417 - agent.web_scraping - INFO - Starting to scrape 4 URLs concurrently (async)
+2025-09-20 14:40:26,749 - agent.web_scraping - INFO - Scraping complete: 4 successful, 0 failed
+2025-09-23 14:11:20,450 - agent.web_scraping - INFO - Starting to scrape 88 URLs concurrently (async)
+2025-09-23 14:14:01,273 - agent.web_scraping - INFO - Scraping complete: 78 successful, 10 failed
+2025-09-23 14:29:24,232 - agent.web_scraping - INFO - Starting to scrape 1 URLs with Scrapy (async)
+2025-09-23 14:29:24,317 - agent.web_scraping - INFO - Scrapy scraping complete: 0 successful, 0 failed
+2025-09-23 14:37:21,282 - agent.web_scraping - INFO - Starting to scrape 1 URLs with Scrapy (async)
+2025-09-23 14:37:21,334 - agent.web_scraping - INFO - Scrapy scraping complete: 0 successful, 0 failed
+2025-09-23 14:40:14,975 - agent.web_scraping - INFO - Starting to scrape 1 URLs with Scrapy (async)
+2025-09-23 14:40:15,262 - agent.web_scraping - INFO - Scrapy scraping complete: 0 successful, 0 failed
+2025-09-23 16:07:23,049 - agent.web_scraping - INFO - Starting to scrape 1 URLs concurrently (async)
+2025-09-23 16:08:30,886 - agent.web_scraping - INFO - Scraping complete: 1 successful, 0 failed
+2025-09-23 16:22:01,218 - agent.web_scraping - INFO - Starting to scrape 100 URLs concurrently (async)
+2025-09-23 16:29:59,626 - agent.web_scraping - INFO - Scraping complete: 99 successful, 1 failed

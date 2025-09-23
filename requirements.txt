@@ -14,6 +14,11 @@ requests>=2.31.0
 beautifulsoup4==4.12.3
 aiohttp>=3.9.0
 httpx>=0.25.0
+Scrapy
+
+# ScraperAPI Integration
+scraperapi-sdk>=1.5.3
+langchain-scraperapi>=0.1.0
 
 # Data Processing
 pandas==2.2.3
@@ -22,7 +27,7 @@ jsonschema==4.23.0
 
 # Async Processing & Concurrency  
 asyncio-throttle==1.0.2
-# concurrent-futures>=3.1.1  # ❌ REMOVED - This is part of Python stdlib
+nest_asyncio
 
 # API & Web Framework
 fastapi>=0.104.0
@@ -55,13 +60,3 @@ colorlog>=6.8.0
 # Security & Environment
 cryptography>=41.0.8
 python-jose>=3.3.0
-
-# Optional: Database support
-# sqlalchemy>=2.0.23
-# alembic>=1.13.0
-# psycopg2-binary>=2.9.9
-# redis>=5.0.1
-
-# Optional: Container & Deployment
-# gunicorn>=21.2.0
-# supervisor>=4.2.5

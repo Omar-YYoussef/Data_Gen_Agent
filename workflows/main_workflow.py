@@ -13,7 +13,11 @@ from agents.query_parser_agent import QueryParserAgent
 from agents.query_refiner_agent import QueryRefinerAgent
 from agents.web_search_agent import WebSearchAgent
 from agents.filtration_agent import FiltrationAgent
-from workflows.parallel_processing import parallel_orchestrator
+from agents.web_scraping_agent import WebScrapingAgent
+from agents.topic_extraction_agent import TopicExtractionAgent
+from agents.synthetic_data_generator_agent import SyntheticDataGeneratorAgent
+from agents.data_collection_agent import DataCollectionAgent
+from services.chunking_service import chunking_service
 from utils.json_handler import JsonHandler
 
 class PipelineState(Dict):
@@ -179,7 +183,8 @@ class WebSearchSyntheticDataWorkflow:
         self._log_stage_start(state, "scrape_content")
         
         try:
-            scraped_data = parallel_orchestrator.run_web_scraping(state["filtered_results"])
+            agent = WebScrapingAgent()
+            scraped_data = agent.run(state["filtered_results"])
             state["scraped_data"] = scraped_data
             
             successful_scrapes = len([d for d in scraped_data if d.get("success", False)])
@@ -196,7 +201,8 @@ class WebSearchSyntheticDataWorkflow:
         self._log_stage_start(state, "extract_topics")
         
         try:
-            extracted_topics = parallel_orchestrator.run_parallel_topic_extraction(state["scraped_data"])
+            agent = TopicExtractionAgent()
+            extracted_topics = agent.run(state["scraped_data"])
             state["extracted_topics"] = extracted_topics
             
             self.logger.info(f"Extracted {len(extracted_topics)} unique topics")
@@ -260,14 +266,12 @@ class WebSearchSyntheticDataWorkflow:
         self._log_stage_start(state, "generate_synthetic_data")
         
         try:
-            synthetic_data_lists = parallel_orchestrator.run_parallel_synthetic_generation(
-                state["extracted_topics"], 
-                state["parsed_query"]
-            )
-            state["synthetic_data"] = synthetic_data_lists
+            agent = SyntheticDataGeneratorAgent()
+            synthetic_data = agent.run(state["extracted_topics"], state["parsed_query"])
+            state["synthetic_data"] = synthetic_data
             
-            total_generated = sum(len(data_list) for data_list in synthetic_data_lists)
-            self.logger.info(f"Generated {total_generated} synthetic data points across 3 agents")
+            total_generated = len(synthetic_data)
+            self.logger.info(f"Generated {total_generated} synthetic data points")
             self._log_stage_end(state, "generate_synthetic_data", True)
             
         except Exception as e:
@@ -280,10 +284,8 @@ class WebSearchSyntheticDataWorkflow:
         self._log_stage_start(state, "collect_final_data")
         
         try:
-            final_result = parallel_orchestrator.run_data_collection(
-                state["synthetic_data"], 
-                state["parsed_query"]
-            )
+            agent = DataCollectionAgent()
+            final_result = agent.run(state["synthetic_data"], state["parsed_query"])
             state["final_dataset"] = final_result
             state["status"] = "completed"
             

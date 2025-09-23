@@ -3,9 +3,11 @@ from typing import List, Dict, Any
 from models.data_schemas import ContentChunk
 from config.settings import settings
 import logging
+from utils.json_handler import JsonHandler
+from datetime import datetime
 
 class ChunkingService:
-    """Service to chunk content for parallel processing"""
+    """Service to chunk content for processing"""
     
     def __init__(self):
         self.logger = logging.getLogger(__name__)
@@ -61,23 +63,33 @@ class ChunkingService:
                     chunk_id_counter += 1
         
         self.logger.info(f"Created {len(chunks)} chunks from {len(scraped_data)} scraped pages")
+        
+        # Save the chunks to a file
+        self._save_chunks_to_file(chunks)
+        
         return chunks
-    
-    def distribute_chunks(self, chunks: List[ContentChunk], num_agents: int = 3) -> List[List[ContentChunk]]:
-        """Distribute chunks evenly across parallel agents"""
+
+    def _save_chunks_to_file(self, chunks: List[ContentChunk]):
+        """Saves the generated chunks to a JSON file for inspection."""
+        if not chunks:
+            self.logger.info("No chunks were generated, nothing to save.")
+            return
+            
+        self.logger.info(f"Saving {len(chunks)} chunks to a file for inspection.")
         
-        chunk_sets = [[] for _ in range(num_agents)]
+        # Convert chunk objects to a list of dictionaries
+        chunks_as_dicts = [chunk.dict() for chunk in chunks]
         
-        # Round-robin distribution
-        for i, chunk in enumerate(chunks):
-            agent_index = i % num_agents
-            chunk_sets[agent_index].append(chunk)
+        # Define the file path
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        file_path = settings.PROCESSED_CHUNKS_PATH / f"chunks_{timestamp}.json"
         
-        self.logger.info(f"Distributed {len(chunks)} chunks across {num_agents} agents:")
-        for i, chunk_set in enumerate(chunk_sets):
-            self.logger.info(f"  Agent {i + 1}: {len(chunk_set)} chunks")
-        
-        return chunk_sets
+        # Save the data using the JsonHandler
+        try:
+            JsonHandler.save_json(chunks_as_dicts, file_path)
+            self.logger.info(f"Successfully saved chunks to {file_path}")
+        except Exception as e:
+            self.logger.error(f"Failed to save chunks to file: {e}")
 
 # Initialize service
 chunking_service = ChunkingService()
