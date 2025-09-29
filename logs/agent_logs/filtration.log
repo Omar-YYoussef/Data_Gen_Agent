@@ -797,3 +797,334 @@
 2025-09-23 16:22:01,217 - agent.filtration - INFO -   - Regular URLs: 100
 2025-09-23 16:22:01,217 - agent.filtration - INFO -   - Valid results: 100
 2025-09-23 16:22:01,217 - agent.filtration - INFO - Completed execution of filtration in 0.02s
+2025-09-23 20:49:24,887 - agent.filtration - INFO - Starting execution of filtration
+2025-09-23 20:49:24,888 - agent.filtration - ERROR - Error in filtration after 0.00s: Output validation failed
+2025-09-23 21:18:51,902 - agent.filtration - INFO - Starting execution of filtration
+2025-09-23 21:18:51,902 - agent.filtration - ERROR - Error in filtration after 0.00s: Output validation failed
+2025-09-23 23:01:55,642 - agent.filtration - INFO - Filtering 4 search results for ScraperAPI compatibility
+2025-09-23 23:01:55,650 - agent.filtration - INFO -   - Incompatible URLs: 0
+2025-09-23 23:01:55,650 - agent.filtration - INFO -   - Binary files detected: 0
+2025-09-23 23:01:55,650 - agent.filtration - INFO -   - Duplicate URLs: 0
+2025-09-23 23:01:55,650 - agent.filtration - INFO -   - Duplicate content: 0
+2025-09-23 23:01:55,650 - agent.filtration - INFO -   - Autoparse URLs: 0
+2025-09-23 23:01:55,650 - agent.filtration - INFO -   - Premium URLs: 0
+2025-09-23 23:01:55,650 - agent.filtration - INFO -   - Regular URLs: 4
+2025-09-23 23:01:55,650 - agent.filtration - INFO -   - Valid results: 4
+2025-09-23 23:32:45,485 - agent.filtration - INFO - Filtering 120 search results for ScraperAPI compatibility
+2025-09-23 23:32:45,488 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.presidency.eg/media/46122/%D8%AF%D8%B3%D8%AA%D9%88%D8%B1-%D8%AC%D9%85%D9%87%D9%88%D8%B1%D9%8A%D8%A9-%D9%85%D8%B5%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-2019.pdf
+2025-09-23 23:32:45,488 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.manpower.gov.eg/PDF/WorkLow/law2003.pdf
+2025-09-23 23:32:45,489 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.du.edu.eg/upFilesCenter/exStore/law/1619516569.pdf
+2025-09-23 23:32:45,489 - agent.filtration - DEBUG - Filtered binary file by extension: https://constitutionnet.org/sites/default/files/lrqb_l_dstwry_lqwnyn_-_drs_mqrn.pdf
+2025-09-23 23:32:45,489 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.damascusuniversity.edu.sy/mag/law/images/stories/3-2013/a/105-137.pdf
+2025-09-23 23:32:45,490 - agent.filtration - DEBUG - Filtered binary file by extension: https://faolex.fao.org/docs/pdf/egy173248.pdf
+2025-09-23 23:32:45,490 - agent.filtration - DEBUG - Filtered binary file by extension: https://elec.eecourts.gov.eg/assets/laws/16%20-%20%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%87%D9%84%D9%83.pdf
+2025-09-23 23:32:45,490 - agent.filtration - DEBUG - Filtered binary file by extension: https://cldp.doc.gov/sites/default/files/Arbitration%20Guidebook%20%20%20%20%20%20%20%20%20%20%20-Iraq-Final.pdf
+2025-09-23 23:32:45,490 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.international-arbitration-attorney.com/wp-content/uploads/arbitrationlaw921201135543am448arbitration.pdf
+2025-09-23 23:32:45,492 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.fdhrd.org/wp-content/uploads/2023/02/%D8%AD%D9%82%D9%88%D9%82-%D8%A7%D9%84%D9%85%D8%B1%D8%A3%D8%A9-%D9%81%D9%8A-%D8%B8%D9%84-%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%A7%D9%84%D8%A3%D8%AD%D9%88%D8%A7%D9%84-%D8%A7%D9%84%D8%B4%D8%AE%D8%B5%D9%8A%D8%A9.pdf
+2025-09-23 23:32:45,493 - agent.filtration - DEBUG - Filtered binary file by extension: https://sadanykhalifa.com/uploads/Laws/1576751803.pdf
+2025-09-23 23:32:45,493 - agent.filtration - DEBUG - Filtered binary file by extension: https://faolex.fao.org/docs/pdf/egy212999.pdf
+2025-09-23 23:32:45,493 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.privacylaws.com/media/3263/egypt-data-protection-law-151-of-2020.pdf
+2025-09-23 23:32:45,494 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.icrc.org/sites/default/files/external/doc/ar/assets/files/other/ihl-and-challenges-contemporary-armed-conflicts.pdf
+2025-09-23 23:32:45,494 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.icrc.org/sites/default/files/external/doc/ar/assets/files/other/icrc_004_0703.pdf
+2025-09-23 23:32:45,494 - agent.filtration - DEBUG - Filtered restricted social media: https://www.egx.com.eg/
+2025-09-23 23:32:45,495 - agent.filtration - DEBUG - Filtered binary file by extension: https://law.uodiyala.edu.iq/uploads/%D8%B2%D9%8A%D9%86%D8%A8/%D8%A8%D8%AD%D9%88%D8%AB%20%D8%A7%D9%84%D8%B7%D9%84%D8%A8%D8%A9%202018/%D8%A7%D8%AD%D9%85%D8%AF%20%D8%B9%D9%84%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AF%D9%8A%D9%86%20%D8%AD%D8%B3%D9%8A%D9%86.pdf
+2025-09-23 23:32:45,495 - agent.filtration - DEBUG - Filtered binary file by extension: https://elec.eecourts.gov.eg/assets/laws/9-%20%D8%A7%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%B1%D9%82%D9%85%2082%20%D9%84%D8%B3%D9%86%D8%A9%202002%D8%A8%D8%B4%D8%A3%D9%86%20%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%AD%D9%82%D9%88%D9%82%20%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%8A%D8%A9%20%D8%A7%D9%84%D9%81%D9%83%D8%B1%D9%8A%D8%A9.pdf
+2025-09-23 23:32:45,495 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.eeaa.gov.eg/Uploads/Laws/Files/2022101012091581.doc
+2025-09-23 23:32:45,498 - agent.filtration - DEBUG - Filtered binary file by extension: https://journals.ekb.eg/article_259093_d6561ac71df37465a27cf7cfb45d0eb3.pdf
+2025-09-23 23:32:45,499 - agent.filtration - DEBUG - Filtered binary file by extension: https://moj.gov.eg:73/Doc/001/70640132025.pdf
+2025-09-23 23:32:47,071 - agent.filtration - DEBUG - Binary content detected via character analysis: https://almerja.com/more.php?idm=178300
+2025-09-23 23:32:47,071 - agent.filtration - DEBUG - Filtered binary file by content inspection: https://almerja.com/more.php?idm=178300
+2025-09-23 23:32:47,102 - agent.filtration - DEBUG - Binary content detected via character analysis: https://almerja.com/reading.php?idm=206449
+2025-09-23 23:32:47,102 - agent.filtration - DEBUG - Filtered binary file by content inspection: https://almerja.com/reading.php?idm=206449
+2025-09-23 23:32:48,063 - agent.filtration - INFO -   - Incompatible URLs: 23
+2025-09-23 23:32:48,064 - agent.filtration - INFO -   - Binary files detected: 0
+2025-09-23 23:32:48,064 - agent.filtration - INFO -   - Duplicate URLs: 1
+2025-09-23 23:32:48,064 - agent.filtration - INFO -   - Duplicate content: 0
+2025-09-23 23:32:48,064 - agent.filtration - INFO -   - Autoparse URLs: 0
+2025-09-23 23:32:48,064 - agent.filtration - INFO -   - Premium URLs: 0
+2025-09-23 23:32:48,064 - agent.filtration - INFO -   - Regular URLs: 96
+2025-09-23 23:32:48,064 - agent.filtration - INFO -   - Valid results: 96
+2025-09-24 13:34:31,843 - agent.filtration - INFO - Filtering 1 search results for ScraperAPI compatibility
+2025-09-24 13:34:31,934 - agent.filtration - INFO -   - Incompatible URLs: 0
+2025-09-24 13:34:31,935 - agent.filtration - INFO -   - Binary files detected: 0
+2025-09-24 13:34:31,935 - agent.filtration - INFO -   - Duplicate URLs: 0
+2025-09-24 13:34:31,935 - agent.filtration - INFO -   - Duplicate content: 0
+2025-09-24 13:34:31,935 - agent.filtration - INFO -   - Autoparse URLs: 0
+2025-09-24 13:34:31,936 - agent.filtration - INFO -   - Premium URLs: 0
+2025-09-24 13:34:31,936 - agent.filtration - INFO -   - Regular URLs: 1
+2025-09-24 13:34:31,936 - agent.filtration - INFO -   - Valid results: 1
+2025-09-24 13:53:48,872 - agent.filtration - INFO - Filtering 250 search results for ScraperAPI compatibility
+2025-09-24 13:53:48,876 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.europarl.europa.eu/RegData/etudes/note/join/2014/433846/EXPO-AFET_NT(2014)433846_EN.pdf
+2025-09-24 13:53:48,876 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.presidency.eg/media/46122/%D8%AF%D8%B3%D8%AA%D9%88%D8%B1-%D8%AC%D9%85%D9%87%D9%88%D8%B1%D9%8A%D8%A9-%D9%85%D8%B5%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-2019.pdf
+2025-09-24 13:53:48,876 - agent.filtration - DEBUG - Filtered restricted social media: https://www.facebook.com/AlSisiofficial/
+2025-09-24 13:53:48,877 - agent.filtration - DEBUG - Filtered binary file by extension: https://bibliotheque.cspj.ma/uploads/files/etudes/10c15b0e-d9f7-4449-ac62-cb2518484b87.pdf
+2025-09-24 13:53:48,877 - agent.filtration - DEBUG - Filtered restricted social media: https://www.facebook.com/100057080995387/posts/%D8%A3%D8%AD%D9%83%D8%A7%D9%85-%D8%AD%D9%82-%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%8A%D8%A9%D8%A3%D8%AD%D9%83%D8%A7%D9%85-%D8%AD%D9%82-%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%8A%D8%A9-%D9%8A%D8%B4%D9%85%D9%84-%D9%87%D8%B0%D8%A7-%D8%A7%D9%84%D9%82%D8%B3%D9%85-%D8%A7%D9%84%D8%A2%D8%AA%D9%89-%D8%A3%D9%88%D9%84%D8%A7-%D8%A7%D9%84%D8%AA%D8%B9%D8%B1%D9%8A%D9%81-%D8%A8%D8%AD%D9%82-%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%8A%D8%A9-%D9%88/1753480231579769/
+2025-09-24 13:53:48,881 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.uomus.edu.iq/img/lectures21/MUCLecture_2023_102148735.pdf
+2025-09-24 13:53:48,882 - agent.filtration - DEBUG - Filtered restricted social media: https://www.pharmaciax.com/2022/02/182-1960.html
+2025-09-24 13:53:48,885 - agent.filtration - DEBUG - Filtered restricted social media: https://www.facebook.com/IraqiPMO/posts/„Ã·”-«·Ê“—«¡-Ì’Ê -⁄·Ï- ⁄œÌ·-ﬁ—«—Â-—ﬁ„-20-·”‰…-2025-«·Œ«’-»»Ì⁄-«·√—«÷Ì-«·”ﬂ‰Ì…-«·/1236665091840781/
+2025-09-24 13:53:48,885 - agent.filtration - DEBUG - Filtered restricted social media: https://www.facebook.com/salamsalim07728/posts/ﬁ—«—-„Ã·”-«·Ê“—«¡-—ﬁ„-20-·”‰…-2025-«·Œ«’-» „·Ìﬂ-«·«—«÷Ì-«·”ﬂ‰Ì…-«·„›—“…-œ«Œ·-ÕœÊ/634894708930221/
+2025-09-24 13:53:48,886 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.ajsp.net/research/%D8%B3%D8%AD%D8%A8%20%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%B3%D9%84%D9%8A%D9%85.pdf
+2025-09-24 13:53:48,886 - agent.filtration - DEBUG - Filtered binary file by extension: https://jlaw.journals.ekb.eg/article_256236_925777895fc16c035730313e10c4b612.pdf
+2025-09-24 13:53:48,887 - agent.filtration - DEBUG - Filtered restricted social media: https://www.facebook.com/councilofstate1/posts/%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%B9%D8%A9-%D8%A7%D9%84%D9%85%D9%88%D8%B6%D9%88%D8%B9%D9%8A%D8%A9-%D9%84%D8%AF%D8%B9%D9%88%D9%89-%D8%A7%D9%84%D8%A5%D9%84%D8%BA%D8%A7%D8%A1-%D9%88%D8%A3%D8%AB%D8%B1%D9%87%D8%A7-%D8%B9%D9%84%D9%89-%D8%B4%D8%B1%D9%88%D8%B7-%D9%82%D8%A8%D9%88%D9%84-%D8%A7%D9%84%D8%AF%D8%B9%D9%88%D9%89%D8%AF%D8%B9%D9%88%D9%89-%D8%A7%D9%84%D8%A5%D9%84%D8%BA%D8%A7%D8%A1-%D8%B0%D8%A7%D8%AA-%D8%B7%D8%A8%D9%8A%D8%B9/1112860554200755/
+2025-09-24 13:53:48,887 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.investinegypt.gov.eg/Documents/Law%20No.%20159%20of%201981%20promulgating%20the%20Law%20of%20Joint%20Stock%20Companies,%20Limited%20Liability%20Companies%20and%20Limited%20Liability%20Companies.pdf
+2025-09-24 13:53:48,890 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.nosi.gov.eg/ar/Lists/NOSILibrary/2-12-2019%20%D9%83%D8%AA%D8%A7%D8%A8%20%D8%A7%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF.pdf
+2025-09-24 13:53:48,891 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.un.org/en/genocideprevention/documents/atrocity-crimes/Doc.23_convention%20refugees.pdf
+2025-09-24 13:53:48,892 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.wipo.int/edocs/mdocs/arab/ar/wipo_ip_dipl_mct_05/wipo_ip_dipl_mct_05_1.pdf
+2025-09-24 13:53:48,893 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.uspto.gov/sites/default/files/documents/GIPA-Arabic-Trademark.pdf
+2025-09-24 13:53:48,895 - agent.filtration - DEBUG - Filtered binary file by extension: https://mabdaa.edu.iq/wp-content/uploads/2022/02/%D8%A7%D8%AD%D9%83%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D8%B3%D8%A4%D9%88%D9%84%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%AF%D9%86%D9%8A%D8%A9-%D8%B9%D9%86-%D8%A7%D9%84%D8%AA%D9%84%D9%88%D8%AB-%D8%A7%D9%84%D8%A8%D9%8A%D8%A6%D9%8A-%D8%A7%D9%84%D9%86%D8%A7%D8%B4%D8%A6-%D8%B9%D9%86-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA-%D8%A7%D9%84%D9%86%D9%81%D8%B7%D9%8A%D8%A9.pdf
+2025-09-24 13:53:48,895 - agent.filtration - DEBUG - Filtered binary file by extension: https://faolex.fao.org/docs/pdf/leb192741.pdf
+2025-09-24 13:53:48,896 - agent.filtration - DEBUG - Filtered binary file by extension: https://mc.gov.sa/ar/guides/CustomerGuide/Documents/MCIDoc.pdf
+2025-09-24 13:53:48,896 - agent.filtration - DEBUG - Filtered binary file by extension: https://courts.rak.ae/Shared%20Documents/Lawsanddecisions/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%AC%D8%B1%D8%A7%D9%8A%D9%94%D9%85%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.pdf
+2025-09-24 13:53:48,897 - agent.filtration - DEBUG - Filtered binary file by extension: https://asp.icc-cpi.int/sites/asp/files/asp_docs/Resolutions/ICC-ASP-ASP4-Res-01-ARA.pdf
+2025-09-24 13:53:49,772 - agent.filtration - DEBUG - Content type check failed for https://libraryresources.unog.ch/c.php?g=462675&p=3162869: HTTPSConnectionPool(host='libraryresources.unog.ch', port=443): Max retries exceeded with url: /c.php?g=462675&p=3162869 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))
+2025-09-24 13:53:50,513 - agent.filtration - DEBUG - Binary content detected via character analysis: https://mail.almerja.net/more.php?idm=75857
+2025-09-24 13:53:50,513 - agent.filtration - DEBUG - Filtered binary file by content inspection: https://mail.almerja.net/more.php?idm=75857
+2025-09-24 13:53:50,579 - agent.filtration - DEBUG - Binary content detected via character analysis: https://almerja.com/reading.php?idm=50128
+2025-09-24 13:53:50,580 - agent.filtration - DEBUG - Filtered binary file by content inspection: https://almerja.com/reading.php?idm=50128
+2025-09-24 13:53:50,630 - agent.filtration - DEBUG - Binary content detected via character analysis: https://mail.almerja.com/reading.php?idm=229834
+2025-09-24 13:53:50,630 - agent.filtration - DEBUG - Filtered binary file by content inspection: https://mail.almerja.com/reading.php?idm=229834
+2025-09-24 13:53:51,033 - agent.filtration - DEBUG - Binary content detected via character analysis: https://manara.edu.sy/admin/index.php?page=show&ex=2&dir=items&service=72&cat_id=794&lang=1
+2025-09-24 13:53:51,033 - agent.filtration - DEBUG - Filtered binary file by content inspection: https://manara.edu.sy/admin/index.php?page=show&ex=2&dir=items&service=72&cat_id=794&lang=1
+2025-09-24 13:53:59,286 - agent.filtration - DEBUG - Binary content detected via headers: http://ism.biblio.ma/ar/doc_num.php?explnum_id=137 -> application/pdf
+2025-09-24 13:53:59,287 - agent.filtration - DEBUG - Filtered binary file by content inspection: http://ism.biblio.ma/ar/doc_num.php?explnum_id=137
+2025-09-24 13:53:59,296 - agent.filtration - INFO -   - Incompatible URLs: 27
+2025-09-24 13:53:59,296 - agent.filtration - INFO -   - Binary files detected: 0
+2025-09-24 13:53:59,297 - agent.filtration - INFO -   - Duplicate URLs: 8
+2025-09-24 13:53:59,297 - agent.filtration - INFO -   - Duplicate content: 0
+2025-09-24 13:53:59,297 - agent.filtration - INFO -   - Autoparse URLs: 1
+2025-09-24 13:53:59,297 - agent.filtration - INFO -   - Premium URLs: 0
+2025-09-24 13:53:59,297 - agent.filtration - INFO -   - Regular URLs: 214
+2025-09-24 13:53:59,297 - agent.filtration - INFO -   - Valid results: 215
+2025-09-25 14:48:34,007 - agent.filtration - INFO - Filtering 250 search results for ScraperAPI compatibility
+2025-09-25 14:48:34,011 - agent.filtration - DEBUG - Filtered binary file by extension: https://cma.gov.sa/Awareness/Publications/booklets/Booklet_4.pdf
+2025-09-25 14:48:34,011 - agent.filtration - DEBUG - Filtered binary file by extension: https://falawadhi.com/wp-content/uploads/2021/11/%D8%AF%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D9%85%D8%A8%D8%AA%D8%AF%D8%A6-%D9%84%D9%81%D9%87%D9%85-%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%A6%D9%85-%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A%D8%A9.pdf
+2025-09-25 14:48:34,013 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.cbe.org.eg/-/media/project/cbe/page-content/rich-text/laws-and-regulations/laws/ar/antimoneylaunderinglaw-ar-other-laws-2.pdf
+2025-09-25 14:48:34,014 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.findevgateway.org/sites/default/files/publications/files/mfg-ar-managing-operational-risks-22283_0.pdf
+2025-09-25 14:48:34,015 - agent.filtration - DEBUG - Filtered restricted social media: https://www.egx.com.eg/ar/Surveillance.aspx
+2025-09-25 14:48:34,015 - agent.filtration - DEBUG - Filtered restricted social media: https://www.facebook.com/fra.egypt/
+2025-09-25 14:48:34,016 - agent.filtration - DEBUG - Filtered binary file by extension: https://cma.gov.sa/Awareness/Publications/booklets/Booklet_13.pdf
+2025-09-25 14:48:34,016 - agent.filtration - DEBUG - Filtered binary file by extension: https://iefpedia.com/arab/wp-content/uploads/2010/04/%D8%AF%D9%88%D8%B1-%D8%A7%D9%84%D8%AD%D9%88%D9%83%D9%85%D8%A9-%D9%81%D9%8A-%D8%AA%D9%85%D9%83%D9%8A%D9%86-%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D9%87%D9%85%D9%8A%D9%86-%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AB%D9%85%D8%B1%D9%8A%D9%86-%D9%88%D8%A7%D8%B3%D8%AA%D9%82%D8%B1%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D8%B3%D9%88%D8%A7%D9%82-%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A%D8%A9-%D8%AC%D9%87%D8%A7%D8%AF-%D8%AE%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D9%88%D8%B2%D9%8A%D8%B1.pdf
+2025-09-25 14:48:34,016 - agent.filtration - DEBUG - Filtered binary file by extension: https://unioninvest.org/media/documents/32207Corporate_Governance_HUINYwG.pdf
+2025-09-25 14:48:34,016 - agent.filtration - DEBUG - Filtered binary file by extension: https://cma.gov.sa/ResearchAndReports/Documents/ImpactTDCGRPICCLOnTADAWULar002.pdf
+2025-09-25 14:48:34,018 - agent.filtration - DEBUG - Filtered restricted social media: https://www.egx.com.eg/getdoc/b9d895c5-7c71-4601-820c-c1b5fb19ebbb/EGX-30-Methodology-Brochure_ar.aspx
+2025-09-25 14:48:34,018 - agent.filtration - DEBUG - Filtered restricted social media: https://www.egx.com.eg/ar/indices.aspx
+2025-09-25 14:48:34,021 - agent.filtration - DEBUG - Filtered binary file by extension: https://jelc.journals.ekb.eg/article_341029_e0f697c9a6276252b70a0b1e846c4a98.pdf
+2025-09-25 14:48:36,509 - agent.filtration - DEBUG - Binary content detected via headers: https://knowledgecommons.popcouncil.org/cgi/viewcontent.cgi?article=1335&context=departments_sbsr-pgy -> application/pdf
+2025-09-25 14:48:36,509 - agent.filtration - DEBUG - Filtered binary file by content inspection: https://knowledgecommons.popcouncil.org/cgi/viewcontent.cgi?article=1335&context=departments_sbsr-pgy
+2025-09-25 14:48:36,580 - agent.filtration - INFO -   - Incompatible URLs: 14
+2025-09-25 14:48:36,580 - agent.filtration - INFO -   - Binary files detected: 0
+2025-09-25 14:48:36,580 - agent.filtration - INFO -   - Duplicate URLs: 4
+2025-09-25 14:48:36,580 - agent.filtration - INFO -   - Duplicate content: 0
+2025-09-25 14:48:36,581 - agent.filtration - INFO -   - Autoparse URLs: 0
+2025-09-25 14:48:36,581 - agent.filtration - INFO -   - Premium URLs: 0
+2025-09-25 14:48:36,581 - agent.filtration - INFO -   - Regular URLs: 232
+2025-09-25 14:48:36,581 - agent.filtration - INFO -   - Valid results: 232
+2025-09-25 15:47:31,371 - agent.filtration - INFO - Filtering 250 search results for ScraperAPI compatibility
+2025-09-25 15:47:31,375 - agent.filtration - DEBUG - Filtered restricted social media: https://www.facebook.com/groups/1502689423339634/
+2025-09-25 15:47:31,377 - agent.filtration - DEBUG - Filtered binary file by extension: https://uomus.edu.iq/img/lectures21/MUCLecture_2023_11122354.pdf
+2025-09-25 15:47:31,377 - agent.filtration - DEBUG - Filtered restricted social media: https://www.egx.com.eg/ar/indices.aspx
+2025-09-25 15:47:31,377 - agent.filtration - DEBUG - Filtered binary file by extension: https://meu.edu.jo/libraryTheses/586b8bc00b284_1.pdf
+2025-09-25 15:47:31,377 - agent.filtration - DEBUG - Filtered binary file by extension: https://cma.gov.sa/Awareness/Publications/booklets/Booklet_4.pdf
+2025-09-25 15:47:31,380 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.bis.org/publ/bcbs230_ar.pdf
+2025-09-25 15:47:31,381 - agent.filtration - DEBUG - Filtered binary file by extension: https://meu.edu.jo/libraryTheses/5ca89f2188284_1.pdf
+2025-09-25 15:47:31,382 - agent.filtration - DEBUG - Filtered binary file by extension: https://uomus.edu.iq/img/lectures21/MUCLecture_2025_32356882.pdf
+2025-09-25 15:47:31,383 - agent.filtration - DEBUG - Filtered restricted social media: https://shooterfx.com/%D8%A3%D8%B3%D8%B1%D8%A7%D8%B1-%D9%88-%D8%AE%D8%A8%D8%A7%D9%8A%D8%A7-%D8%A7%D9%84%D8%AA%D8%AD%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D9%81%D9%86%D9%8A-%D9%84%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D8%B9%D9%85%D9%84/
+2025-09-25 15:47:31,384 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.findevgateway.org/sites/default/files/publications/files/mfg-ar-the-strategy-of-investment-and-finance-in-small-projects-93851_0.pdf
+2025-09-25 15:47:31,384 - agent.filtration - DEBUG - Filtered binary file by extension: https://faolex.fao.org/docs/pdf/egy173248.pdf
+2025-09-25 15:47:31,385 - agent.filtration - DEBUG - Filtered binary file by extension: https://elec.eecourts.gov.eg/assets/laws/16%20-%20%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%87%D9%84%D9%83.pdf
+2025-09-25 15:47:31,385 - agent.filtration - DEBUG - Filtered binary file by extension: https://iefpedia.com/arab/wp-content/uploads/2011/03/%D8%B6%D9%88%D8%A7%D8%A8%D8%B7-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%82%D8%B1%D8%A7%D8%B1-%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D8%A7%D9%84%D8%A5%D8%B3%D9%84%D8%A7%D9%85%D9%8A-%D9%85%D9%8A%D9%84%D9%88%D8%AF-%D8%B2%D9%8A%D8%AF-%D8%A7%D9%84%D8%AE%D9%8A%D8%B1.pdf
+2025-09-25 15:47:31,386 - agent.filtration - DEBUG - Filtered binary file by extension: https://alqashi.com/rch/rch26.pdf
+2025-09-25 15:47:31,387 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.amf.org.ae/sites/default/files/publications/2023-10/%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B7%D8%A9%20%D8%A8%D9%8A%D9%86%20%D8%A7%D9%84%D9%85%D8%AE%D8%A7%D8%B7%D8%B1%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%AF%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D8%A7%D9%95%D8%B3%D8%AA%D9%82%D8%B1%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8Afinal.pdf
+2025-09-25 15:47:31,387 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.dhaman.org/uploads/publicationproducts/dhaman1731396318.pdf
+2025-09-25 15:47:31,387 - agent.filtration - DEBUG - Filtered binary file by extension: https://idsc.gov.eg/upload/DocumentLibrary/AttachmentA/8800/%D9%86%D8%AD%D9%88%20%D8%AA%D8%B9%D8%B2%D9%8A%D8%B2%20%D8%AF%D9%88%D8%B1%20%D8%A7%D9%84%D8%A8%D9%88%D8%B1%D8%B5%D8%A9%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9%20%D9%84%D9%84%D8%B3%D9%84%D8%B9%20%D9%81%D9%8A%20%D8%B6%D9%88%D8%A1%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A8%20%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D8%A7%D9%8A%D9%94%D8%AF%D8%A9%D9%A2.pdf
+2025-09-25 15:47:31,387 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.amf.org.ae/sites/default/files/publications/2022-09/»Ê—’«  «·”·⁄.pdf
+2025-09-25 15:47:31,388 - agent.filtration - DEBUG - Filtered binary file by extension: https://jslem.journals.ekb.eg/article_377862_e667414766e0ceb49ccf4f6b39ad239d.pdf
+2025-09-25 15:47:31,388 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.univ-emir-constantine.edu.dz/download/revues/revu-cha/ch1-bezaze-halima.pdf
+2025-09-25 15:47:41,577 - agent.filtration - DEBUG - Content type check failed for https://www.egulfinnovation.com/course.php?id=176: HTTPSConnectionPool(host='www.egulfinnovation.com', port=443): Max retries exceeded with url: /course.php?id=176 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001CA3D9C4E30>, 'Connection to www.egulfinnovation.com timed out. (connect timeout=10)'))
+2025-09-25 15:47:41,586 - agent.filtration - INFO -   - Incompatible URLs: 20
+2025-09-25 15:47:41,586 - agent.filtration - INFO -   - Binary files detected: 0
+2025-09-25 15:47:41,586 - agent.filtration - INFO -   - Duplicate URLs: 2
+2025-09-25 15:47:41,586 - agent.filtration - INFO -   - Duplicate content: 0
+2025-09-25 15:47:41,586 - agent.filtration - INFO -   - Autoparse URLs: 1
+2025-09-25 15:47:41,586 - agent.filtration - INFO -   - Premium URLs: 0
+2025-09-25 15:47:41,587 - agent.filtration - INFO -   - Regular URLs: 227
+2025-09-25 15:47:41,587 - agent.filtration - INFO -   - Valid results: 228
+2025-09-25 16:21:43,865 - agent.filtration - INFO - Filtering 100 search results for ScraperAPI compatibility
+2025-09-25 16:21:43,867 - agent.filtration - DEBUG - Filtered restricted social media: https://www.facebook.com/groups/2780899355506455/posts/4025515874378124/
+2025-09-25 16:21:43,867 - agent.filtration - DEBUG - Filtered restricted social media: https://www.egx.com.eg/ar/Become-a-member.aspx
+2025-09-25 16:21:43,867 - agent.filtration - DEBUG - Filtered restricted social media: https://www.facebook.com/EgyptianCabinet/posts/-%D9%87%D9%8A%D8%A6%D8%A9-%D8%A7%D9%84%D8%B1%D9%82%D8%A7%D8%A8%D8%A9-%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A%D8%A9-%D8%AA%D8%B5%D8%AF%D8%B1-%D8%A3%D9%88%D9%84-%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1-%D9%85%D8%B5%D8%B1%D9%8A%D8%A9-%D9%84%D9%84%D8%AA%D9%82%D9%8A%D9%8A%D9%85-%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A-%D9%84%D9%84%D8%A3%D8%B5%D9%88%D9%84-%D8%BA%D9%8A%D8%B1-%D8%A7%D9%84%D9%85%D9%84%D9%85%D9%88%D8%B3%D8%A9-%D8%AA/1303242168512867/
+2025-09-25 16:21:43,868 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.nosi.gov.eg/ar/Lists/NOSILibrary/2-12-2019 ﬂ «» «·ﬁ«‰Ê‰ «·ÃœÌœ.pdf
+2025-09-25 16:21:43,869 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.dof.gov.ae/en-us/publications/Lists/ContentListing/Attachments/728/%D8%AF%D9%88%D8%B1%20%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AA%D8%AD%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A.pdf
+2025-09-25 16:21:43,869 - agent.filtration - DEBUG - Filtered binary file by extension: https://iefpedia.com/arab/wp-content/uploads/2011/02/%D8%A7%D9%84%D8%AA%D9%85%D9%88%D9%8A%D9%84-%D8%A7%D9%84%D8%A5%D8%B3%D9%84%D8%A7%D9%85%D9%8A-%D8%A7%D9%84%D8%A3%D8%B3%D8%B3-%D9%88%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%AF%D8%A6-%D9%85%D9%8A%D9%84%D9%88%D8%AF-%D8%B2%D9%8A%D8%AF-%D8%A7%D9%84%D8%AE%D9%8A%D8%B1.pdf
+2025-09-25 16:21:43,869 - agent.filtration - DEBUG - Filtered restricted social media: https://www.facebook.com/EgyptianCabinet/posts/-%D9%84%D8%AC%D9%86%D8%A9-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9-%D8%A7%D9%84%D9%86%D9%82%D8%AF%D9%8A%D9%80%D8%A9-%D8%AA%D9%82%D8%B1%D8%B1-%D8%AE%D9%81%D8%B6-%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1-%D8%A7%D9%84%D8%B9%D8%A7%D8%A6%D8%AF-%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A9-%D8%A8%D9%88%D8%A7%D9%82%D8%B9-200-%D9%86%D9%82%D8%B7%D8%A9-%D8%A3%D8%B3%D8%A7%D8%B3%D8%A8%D9%8A%D8%A7%D9%86-%D8%B5%D8%A7/1323584676478616/
+2025-09-25 16:21:43,870 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.cbe.org.eg/-/media/project/cbe/listing/research/volumes/2024-2025/%D9%85%D8%AC%D9%84%D8%AF-65-%D8%B1%D9%82%D9%85--1.pdf
+2025-09-25 16:21:43,870 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.eta.gov.eg/sites/default/files/2024-10/law-95-1992.pdf
+2025-09-25 16:21:43,870 - agent.filtration - DEBUG - Filtered restricted social media: https://www.atfx.com/ar/analysis/trading-strategies/how-to-trade-gold
+2025-09-25 16:21:43,871 - agent.filtration - DEBUG - Filtered binary file by extension: http://monzer.kahf.com/preview/asaseeyat.pdf
+2025-09-25 16:21:43,876 - agent.filtration - INFO -   - Incompatible URLs: 11
+2025-09-25 16:21:43,876 - agent.filtration - INFO -   - Binary files detected: 0
+2025-09-25 16:21:43,876 - agent.filtration - INFO -   - Duplicate URLs: 4
+2025-09-25 16:21:43,877 - agent.filtration - INFO -   - Duplicate content: 0
+2025-09-25 16:21:43,877 - agent.filtration - INFO -   - Autoparse URLs: 1
+2025-09-25 16:21:43,877 - agent.filtration - INFO -   - Premium URLs: 0
+2025-09-25 16:21:43,877 - agent.filtration - INFO -   - Regular URLs: 84
+2025-09-25 16:21:43,877 - agent.filtration - INFO -   - Valid results: 85
+2025-09-28 19:06:24,818 - agent.filtration - INFO - Filtering 100 search results for ScraperAPI compatibility
+2025-09-28 19:06:24,820 - agent.filtration - DEBUG - Filtered binary file by extension: https://jdl.journals.ekb.eg/article_288629_4d601f33e76072e0ef6ae1b719a315a9.pdf
+2025-09-28 19:06:24,820 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.iccp-portal.org/sites/default/files/plans/KWT_B3_s21_%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%D9%8A%D8%AC%D9%8A%D8%A9%20%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%D8%A9%20%D9%84%D9%84%D9%88%D9%82%D8%A7%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D8%AA%D8%B5%D8%AF%D9%8A%20%D9%84%D9%84%D8%A7%D9%94%D9%85%D8%B1%D8%A7%D8%B6%20%D8%A7%D9%84%D9%85%D8%B2%D9%85%D9%86%D8%A9%20%D8%BA%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B3%D8%A7%D8%B1%D9%8A%D8%A9%202020-2025%20%D8%A7%D9%84%D9%86%D9%87%D8%A7%D9%8A%D9%94%D9%8A%D8%A9.pdf
+2025-09-28 19:06:24,820 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.iccp-portal.org/sites/default/files/plans/ARE_B3_%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%D9%8A%D8%AC%D9%8A%D8%A9%20%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%D8%A9%20%D9%84%D9%84%D8%A3%D9%85%D8%B1%D8%A7%D8%B6%20%D8%BA%D9%8A%D8%B1%20%D8%A7%D9%84%D9%85%D8%B9%D8%AF%D9%8A%D8%A9%20-%20%D8%A8%D8%B9%D8%AF%20%D8%A7%D9%84%D8%AA%D8%B9%D8%AF%D9%8A%D9%84.pdf
+2025-09-28 19:06:24,821 - agent.filtration - DEBUG - Filtered restricted social media: https://www.facebook.com/100078041975718/posts/%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D8%A7%D8%B6-%D8%A7%D9%84%D9%85%D8%B2%D9%85%D9%86%D9%87-%D8%AA%D8%AD%D8%AF%D9%8A%D8%AF-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D8%A7%D8%B6-%D8%A7%D9%84%D9%85%D8%B2%D9%85%D9%86%D9%87-%D9%82%D8%B1%D8%A7%D8%B1-%D9%88%D8%B2%D9%8A%D8%B1-%D8%A7%D9%84%D8%B5%D8%AD%D9%87-%D9%82%D8%B1%D8%A7%D8%B1-%D9%88%D8%B2%D9%8A%D8%B1-%D8%A7%D9%84%D8%B5%D8%AD%D8%A9-%D9%88%D8%A7%D9%84%D8%B3%D9%83%D8%A7%D9%86-%D8%B1%D9%82/697465496198177/
+2025-09-28 19:06:24,821 - agent.filtration - DEBUG - Filtered binary file by extension: https://jsrep.journals.ekb.eg/article_34008_3a9d07220b32441a95b6025c3f00f5e2.pdf
+2025-09-28 19:06:24,821 - agent.filtration - DEBUG - Filtered binary file by extension: https://jes.journals.ekb.eg/article_145849_02d8fb6d7e274ba86ce7d5a609bdfaa8.pdf
+2025-09-28 19:06:24,824 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.unescwa.org/sites/default/files/pubs/pdf/new-urban-agenda-arabic.pdf
+2025-09-28 19:06:24,825 - agent.filtration - DEBUG - Filtered binary file by extension: https://meae.journals.ekb.eg/article_223833_db97744f4b0777d4ec8bd96f8d18cc1d.pdf
+2025-09-28 19:06:24,826 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.unescwa.org/sites/default/files/inline-files/ABLF-2023-consumer-CP-Egypt-arabic.pdf
+2025-09-28 19:06:24,826 - agent.filtration - DEBUG - Filtered binary file by extension: https://faolex.fao.org/docs/pdf/egy173248.pdf
+2025-09-28 19:06:24,826 - agent.filtration - DEBUG - Filtered binary file by extension: https://elec.eecourts.gov.eg/assets/laws/16%20-%20%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%87%D9%84%D9%83.pdf
+2025-09-28 19:06:24,827 - agent.filtration - DEBUG - Filtered restricted social media: https://www.facebook.com/MinistryTransportation/posts/«‰Ã«“« -Ê“«—…-«·‰ﬁ·-„‰–-⁄«„-2014-Õ Ì-30-ÌÊ‰ÌÊ-2025√Ê·«-›Ì-„Ã«·-«·ÿ—ﬁ-Ê«·ﬂ»«—Ì-«/1037568968540159/
+2025-09-28 19:06:24,827 - agent.filtration - DEBUG - Filtered binary file by extension: https://publication-cpas-egypt.com/wp-content/uploads/2023/09/5-1-1.pdf
+2025-09-28 19:06:24,827 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.eeaa.gov.eg/Uploads/Project/Files/2022120713075876.pdf
+2025-09-28 19:06:24,827 - agent.filtration - DEBUG - Filtered binary file by extension: https://journals.ekb.eg/article_315544_b44be2ad96958fdaca8088c68e43edc5.pdf
+2025-09-28 19:06:24,827 - agent.filtration - DEBUG - Filtered login page: https://jaauth.journals.ekb.eg/article_273971_2239b28a63e4bf895629a0b6061d7d6c.pdf
+2025-09-28 19:06:24,828 - agent.filtration - DEBUG - Filtered binary file by extension: https://eces.org.eg/wp-content/uploads/2024/05/%D8%A3%D9%87%D9%85-%D8%AA%D8%AD%D8%AF%D9%8A%D8%A7%D8%AA-%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D8%B9%D9%85%D9%84-%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A-%D9%88%D8%A8%D8%B9%D8%B6-%D9%85%D9%82%D8%AA%D8%B1%D8%AD%D8%A7%D8%AA-%D9%83%D9%8A%D9%81%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%85%D9%84-%D9%85%D8%B9%D9%87%D8%A7.pdf
+2025-09-28 19:06:24,828 - agent.filtration - DEBUG - Filtered binary file by extension: https://egypt.unfpa.org/sites/default/files/pub-pdf/Egypt DDI Arabic - 2.pdf
+2025-09-28 19:06:24,828 - agent.filtration - DEBUG - Filtered binary file by extension: https://jelc.journals.ekb.eg/article_341029_e0f697c9a6276252b70a0b1e846c4a98.pdf
+2025-09-28 19:06:24,828 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.isaaa.org/resources/publications/briefs/46/executivesummary/pdf/Brief%2046%20-%20Executive%20Summary%20-%20Arabic.pdf
+2025-09-28 19:06:26,811 - agent.filtration - DEBUG - Binary content detected via headers: https://bcc.iq/download/14 -> application/pdf
+2025-09-28 19:06:26,811 - agent.filtration - DEBUG - Filtered binary file by content inspection: https://bcc.iq/download/14
+2025-09-28 19:06:26,906 - agent.filtration - INFO -   - Incompatible URLs: 21
+2025-09-28 19:06:26,906 - agent.filtration - INFO -   - Binary files detected: 0
+2025-09-28 19:06:26,906 - agent.filtration - INFO -   - Duplicate URLs: 0
+2025-09-28 19:06:26,906 - agent.filtration - INFO -   - Duplicate content: 0
+2025-09-28 19:06:26,906 - agent.filtration - INFO -   - Autoparse URLs: 0
+2025-09-28 19:06:26,907 - agent.filtration - INFO -   - Premium URLs: 0
+2025-09-28 19:06:26,907 - agent.filtration - INFO -   - Regular URLs: 79
+2025-09-28 19:06:26,907 - agent.filtration - INFO -   - Valid results: 79
+2025-09-28 19:47:10,373 - agent.filtration - INFO - Filtering 80 search results for ScraperAPI compatibility
+2025-09-28 19:47:10,375 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.privacylaws.com/media/3263/egypt-data-protection-law-151-of-2020.pdf
+2025-09-28 19:47:10,375 - agent.filtration - DEBUG - Filtered binary file by extension: https://mc.gov.sa/ar/guides/CustomerGuide/Documents/MCIDoc.pdf
+2025-09-28 19:47:10,376 - agent.filtration - DEBUG - Filtered binary file by extension: https://www.sfda.gov.sa/sites/default/files/2022-08/Ta-03.pdf
+2025-09-28 19:47:10,382 - agent.filtration - INFO -   - Incompatible URLs: 3
+2025-09-28 19:47:10,382 - agent.filtration - INFO -   - Binary files detected: 0
+2025-09-28 19:47:10,382 - agent.filtration - INFO -   - Duplicate URLs: 0
+2025-09-28 19:47:10,382 - agent.filtration - INFO -   - Duplicate content: 0
+2025-09-28 19:47:10,382 - agent.filtration - INFO -   - Autoparse URLs: 0
+2025-09-28 19:47:10,383 - agent.filtration - INFO -   - Premium URLs: 1
+2025-09-28 19:47:10,383 - agent.filtration - INFO -   - Regular URLs: 76
+2025-09-28 19:47:10,383 - agent.filtration - INFO -   - Valid results: 77
+2025-09-29 11:03:25,559 - agent.filtration - INFO - Filtering 25 search results for ScraperAPI compatibility
+2025-09-29 11:03:25,561 - agent.filtration - DEBUG - Filtered binary file by extension: https://maed.journals.ekb.eg/article_302895_6bd679ac6b24b0e1ed61c3ee1112307d.pdf
+2025-09-29 11:03:25,561 - agent.filtration - DEBUG - Filtered binary file by extension: https://jsrep.journals.ekb.eg/article_48759_6e94b0a265248e0b872afa1783872761.pdf
+2025-09-29 11:03:25,561 - agent.filtration - DEBUG - Filtered binary file by extension: https://sssd.shj.ae/archive/eprints/bNUbsOD1bNj7p0CGRA5tKQH4oUNvO9KTcP3n0I7y.pdf
+2025-09-29 11:03:25,652 - agent.filtration - INFO -   - Incompatible URLs: 3
+2025-09-29 11:03:25,652 - agent.filtration - INFO -   - Binary files detected: 0
+2025-09-29 11:03:25,652 - agent.filtration - INFO -   - Duplicate URLs: 1
+2025-09-29 11:03:25,652 - agent.filtration - INFO -   - Duplicate content: 0
+2025-09-29 11:03:25,652 - agent.filtration - INFO -   - Autoparse URLs: 0
+2025-09-29 11:03:25,652 - agent.filtration - INFO -   - Premium URLs: 0
+2025-09-29 11:03:25,652 - agent.filtration - INFO -   - Regular URLs: 21
+2025-09-29 11:03:25,652 - agent.filtration - INFO -   - Valid results: 21
+2025-09-29 11:48:03,227 - agent.filtration - INFO - Filtering 5 search results for ScraperAPI compatibility
+2025-09-29 11:48:03,228 - agent.filtration - DEBUG - Filtered binary file by extension: https://jes.journals.ekb.eg/article_145849_02d8fb6d7e274ba86ce7d5a609bdfaa8.pdf
+2025-09-29 11:48:03,232 - agent.filtration - INFO -   - Incompatible URLs: 1
+2025-09-29 11:48:03,232 - agent.filtration - INFO -   - Binary files detected: 0
+2025-09-29 11:48:03,233 - agent.filtration - INFO -   - Duplicate URLs: 0
+2025-09-29 11:48:03,233 - agent.filtration - INFO -   - Duplicate content: 0
+2025-09-29 11:48:03,233 - agent.filtration - INFO -   - Autoparse URLs: 0
+2025-09-29 11:48:03,233 - agent.filtration - INFO -   - Premium URLs: 0
+2025-09-29 11:48:03,233 - agent.filtration - INFO -   - Regular URLs: 4
+2025-09-29 11:48:03,234 - agent.filtration - INFO -   - Valid results: 4
+2025-09-29 11:48:49,007 - agent.filtration - INFO - Filtering 5 search results for ScraperAPI compatibility
+2025-09-29 11:48:49,009 - agent.filtration - INFO -   - Incompatible URLs: 0
+2025-09-29 11:48:49,009 - agent.filtration - INFO -   - Binary files detected: 0
+2025-09-29 11:48:49,009 - agent.filtration - INFO -   - Duplicate URLs: 0
+2025-09-29 11:48:49,009 - agent.filtration - INFO -   - Duplicate content: 0
+2025-09-29 11:48:49,009 - agent.filtration - INFO -   - Autoparse URLs: 0
+2025-09-29 11:48:49,010 - agent.filtration - INFO -   - Premium URLs: 0
+2025-09-29 11:48:49,010 - agent.filtration - INFO -   - Regular URLs: 5
+2025-09-29 11:48:49,010 - agent.filtration - INFO -   - Valid results: 5
+2025-09-29 11:49:32,113 - agent.filtration - INFO - Filtering 5 search results for ScraperAPI compatibility
+2025-09-29 11:49:32,115 - agent.filtration - INFO -   - Incompatible URLs: 0
+2025-09-29 11:49:32,115 - agent.filtration - INFO -   - Binary files detected: 0
+2025-09-29 11:49:32,115 - agent.filtration - INFO -   - Duplicate URLs: 0
+2025-09-29 11:49:32,115 - agent.filtration - INFO -   - Duplicate content: 0
+2025-09-29 11:49:32,115 - agent.filtration - INFO -   - Autoparse URLs: 0
+2025-09-29 11:49:32,115 - agent.filtration - INFO -   - Premium URLs: 0
+2025-09-29 11:49:32,116 - agent.filtration - INFO -   - Regular URLs: 5
+2025-09-29 11:49:32,116 - agent.filtration - INFO -   - Valid results: 5
+2025-09-29 11:50:14,061 - agent.filtration - INFO - Filtering 5 search results for ScraperAPI compatibility
+2025-09-29 11:50:14,061 - agent.filtration - DEBUG - Filtered binary file by extension: https://journals.ekb.eg/article_362545_4cc4e9dfbc73cf11f577ea369133e505.pdf
+2025-09-29 11:50:14,063 - agent.filtration - INFO -   - Incompatible URLs: 1
+2025-09-29 11:50:14,064 - agent.filtration - INFO -   - Binary files detected: 0
+2025-09-29 11:50:14,064 - agent.filtration - INFO -   - Duplicate URLs: 0
+2025-09-29 11:50:14,064 - agent.filtration - INFO -   - Duplicate content: 0
+2025-09-29 11:50:14,064 - agent.filtration - INFO -   - Autoparse URLs: 0
+2025-09-29 11:50:14,064 - agent.filtration - INFO -   - Premium URLs: 0
+2025-09-29 11:50:14,064 - agent.filtration - INFO -   - Regular URLs: 4
+2025-09-29 11:50:14,064 - agent.filtration - INFO -   - Valid results: 4
+2025-09-29 11:53:47,296 - agent.filtration - INFO - Filtering 5 search results for ScraperAPI compatibility
+2025-09-29 11:53:47,301 - agent.filtration - INFO -   - Incompatible URLs: 0
+2025-09-29 11:53:47,301 - agent.filtration - INFO -   - Binary files detected: 0
+2025-09-29 11:53:47,301 - agent.filtration - INFO -   - Duplicate URLs: 0
+2025-09-29 11:53:47,302 - agent.filtration - INFO -   - Duplicate content: 0
+2025-09-29 11:53:47,302 - agent.filtration - INFO -   - Autoparse URLs: 0
+2025-09-29 11:53:47,302 - agent.filtration - INFO -   - Premium URLs: 0
+2025-09-29 11:53:47,302 - agent.filtration - INFO -   - Regular URLs: 5
+2025-09-29 11:53:47,302 - agent.filtration - INFO -   - Valid results: 5
+2025-09-29 12:05:58,350 - agent.filtration - INFO - Filtering 5 search results for ScraperAPI compatibility
+2025-09-29 12:05:58,350 - agent.filtration - DEBUG - Filtered binary file by extension: https://uomustansiriyah.edu.iq/media/lectures/9/9_2022_03_12!03_18_16_PM.pdf
+2025-09-29 12:05:58,354 - agent.filtration - INFO -   - Incompatible URLs: 1
+2025-09-29 12:05:58,355 - agent.filtration - INFO -   - Binary files detected: 0
+2025-09-29 12:05:58,355 - agent.filtration - INFO -   - Duplicate URLs: 0
+2025-09-29 12:05:58,355 - agent.filtration - INFO -   - Duplicate content: 0
+2025-09-29 12:05:58,355 - agent.filtration - INFO -   - Autoparse URLs: 0
+2025-09-29 12:05:58,355 - agent.filtration - INFO -   - Premium URLs: 0
+2025-09-29 12:05:58,355 - agent.filtration - INFO -   - Regular URLs: 4
+2025-09-29 12:05:58,356 - agent.filtration - INFO -   - Valid results: 4
+2025-09-29 12:24:40,507 - agent.filtration - INFO - Filtering 3 search results for ScraperAPI compatibility
+2025-09-29 12:24:40,512 - agent.filtration - INFO -   - Incompatible URLs: 0
+2025-09-29 12:24:40,512 - agent.filtration - INFO -   - Binary files detected: 0
+2025-09-29 12:24:40,512 - agent.filtration - INFO -   - Duplicate URLs: 0
+2025-09-29 12:24:40,512 - agent.filtration - INFO -   - Duplicate content: 0
+2025-09-29 12:24:40,512 - agent.filtration - INFO -   - Autoparse URLs: 0
+2025-09-29 12:24:40,513 - agent.filtration - INFO -   - Premium URLs: 0
+2025-09-29 12:24:40,513 - agent.filtration - INFO -   - Regular URLs: 3
+2025-09-29 12:24:40,513 - agent.filtration - INFO -   - Valid results: 3
+2025-09-29 12:56:46,349 - agent.filtration - INFO - Filtering 3 search results for ScraperAPI compatibility
+2025-09-29 12:56:46,354 - agent.filtration - INFO -   - Incompatible URLs: 0
+2025-09-29 12:56:46,354 - agent.filtration - INFO -   - Binary files detected: 0
+2025-09-29 12:56:46,354 - agent.filtration - INFO -   - Duplicate URLs: 0
+2025-09-29 12:56:46,355 - agent.filtration - INFO -   - Duplicate content: 0
+2025-09-29 12:56:46,355 - agent.filtration - INFO -   - Autoparse URLs: 0
+2025-09-29 12:56:46,355 - agent.filtration - INFO -   - Premium URLs: 0
+2025-09-29 12:56:46,355 - agent.filtration - INFO -   - Regular URLs: 3
+2025-09-29 12:56:46,355 - agent.filtration - INFO -   - Valid results: 3
+2025-09-29 13:00:11,050 - agent.filtration - INFO - Filtering 3 search results for ScraperAPI compatibility
+2025-09-29 13:00:11,051 - agent.filtration - DEBUG - Filtered binary file by extension: https://jes.journals.ekb.eg/article_145849_02d8fb6d7e274ba86ce7d5a609bdfaa8.pdf
+2025-09-29 13:00:11,058 - agent.filtration - INFO -   - Incompatible URLs: 1
+2025-09-29 13:00:11,058 - agent.filtration - INFO -   - Binary files detected: 0
+2025-09-29 13:00:11,058 - agent.filtration - INFO -   - Duplicate URLs: 0
+2025-09-29 13:00:11,058 - agent.filtration - INFO -   - Duplicate content: 0
+2025-09-29 13:00:11,059 - agent.filtration - INFO -   - Autoparse URLs: 0
+2025-09-29 13:00:11,059 - agent.filtration - INFO -   - Premium URLs: 0
+2025-09-29 13:00:11,059 - agent.filtration - INFO -   - Regular URLs: 2
+2025-09-29 13:00:11,059 - agent.filtration - INFO -   - Valid results: 2
+2025-09-29 13:07:00,518 - agent.filtration - INFO - Filtering 3 search results for ScraperAPI compatibility
+2025-09-29 13:07:00,518 - agent.filtration - DEBUG - Filtered binary file by extension: https://jes.journals.ekb.eg/article_145849_02d8fb6d7e274ba86ce7d5a609bdfaa8.pdf
+2025-09-29 13:07:00,523 - agent.filtration - INFO -   - Incompatible URLs: 1
+2025-09-29 13:07:00,523 - agent.filtration - INFO -   - Binary files detected: 0
+2025-09-29 13:07:00,523 - agent.filtration - INFO -   - Duplicate URLs: 0
+2025-09-29 13:07:00,523 - agent.filtration - INFO -   - Duplicate content: 0
+2025-09-29 13:07:00,523 - agent.filtration - INFO -   - Autoparse URLs: 0
+2025-09-29 13:07:00,523 - agent.filtration - INFO -   - Premium URLs: 0
+2025-09-29 13:07:00,524 - agent.filtration - INFO -   - Regular URLs: 2
+2025-09-29 13:07:00,524 - agent.filtration - INFO -   - Valid results: 2
+2025-09-29 13:10:11,636 - agent.filtration - INFO - Filtering 3 search results for ScraperAPI compatibility
+2025-09-29 13:10:11,641 - agent.filtration - INFO -   - Incompatible URLs: 0
+2025-09-29 13:10:11,641 - agent.filtration - INFO -   - Binary files detected: 0
+2025-09-29 13:10:11,641 - agent.filtration - INFO -   - Duplicate URLs: 0
+2025-09-29 13:10:11,641 - agent.filtration - INFO -   - Duplicate content: 0
+2025-09-29 13:10:11,641 - agent.filtration - INFO -   - Autoparse URLs: 0
+2025-09-29 13:10:11,642 - agent.filtration - INFO -   - Premium URLs: 0
+2025-09-29 13:10:11,642 - agent.filtration - INFO -   - Regular URLs: 3
+2025-09-29 13:10:11,642 - agent.filtration - INFO -   - Valid results: 3

@@ -47,20 +47,20 @@ class QueryRefinerAgent(BaseAgent):
             self.logger.info(f"Generated {len(search_queries)} refined queries")
             
             # Save queries for debugging
-            queries_data = [
-                {
-                    "query": sq.query, 
-                    "domain": sq.domain, 
-                    "priority": sq.priority
-                } 
-                for sq in search_queries
-            ]
+            # queries_data = [
+            #     {
+            #         "query": sq.query, 
+            #         "domain": sq.domain, 
+            #         "priority": sq.priority
+            #     } 
+            #     for sq in search_queries
+            # ]
             
-            self.save_data(
-                queries_data,
-                f"refined_queries_{input_data.domain_type.replace(' ', '_')}.json",
-                settings.DEBUG_PATH
-            )
+            # self.save_data(
+            #     queries_data,
+            #     f"refined_queries_{input_data.domain_type.replace(' ', '_')}.json",
+            #     settings.DEBUG_PATH
+            # )
             
             return search_queries
             

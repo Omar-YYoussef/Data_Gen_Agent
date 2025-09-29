@@ -142,7 +142,6 @@ from urllib.parse import urlparse
 import hashlib
 import requests
 import asyncio
-from scraperapi_sdk import ScraperAPIClient
 
 
 class FiltrationAgent(BaseAgent):

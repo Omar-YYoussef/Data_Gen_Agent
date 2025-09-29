@@ -1121,3 +1121,509 @@ Exception: Web search failed completely due to Tavily quota exhaustion. Halting 
 2025-09-23 16:21:55,929 - agent.web_search - INFO - Searching (30/30): Ê«Ã»«  «·„ÊŸ› «·⁄«„ Ê„”ƒÊ·Ì« Â «·ﬁ«‰Ê‰Ì…
 2025-09-23 16:22:01,199 - agent.web_search - INFO - Total search results collected: 120
 2025-09-23 16:22:01,199 - agent.web_search - INFO - Completed execution of web_search in 232.78s
+2025-09-23 20:45:28,782 - agent.web_search - INFO - Starting execution of web_search
+2025-09-23 20:45:28,782 - agent.web_search - INFO - Performing web search for 30 queries
+2025-09-23 20:45:28,783 - agent.web_search - INFO - Strategy: 4 results per query
+2025-09-23 20:45:38,278 - agent.web_search - INFO - Searching (2/30): Ã—«∆„ «·≈‰ —‰  Ê⁄ﬁÊ»« Â« ›Ì «·ﬁ«‰Ê‰ «·„’—Ì
+2025-09-23 20:45:44,957 - agent.web_search - INFO - Searching (3/30): ‘—Êÿ ’Õ… «·⁄ﬁœ ›Ì «·ﬁ«‰Ê‰ «·„œ‰Ì «·„’—Ì
+2025-09-23 20:45:51,667 - agent.web_search - INFO - Searching (4/30): ≈Ã—«¡«   √”Ì” «·‘—ﬂ«  »√‰Ê«⁄Â« ›Ì „’—
+2025-09-23 20:45:59,415 - agent.web_search - INFO - Searching (5/30): ÕﬁÊﬁ ÊÊ«Ã»«  «·⁄«„· Ê’«Õ» «·⁄„· »ﬁ«‰Ê‰ «·⁄„· «·„’—Ì
+2025-09-23 20:46:07,261 - agent.web_search - INFO - Searching (6/30): ﬁ«‰Ê‰ «·√ÕÊ«· «·‘Œ’Ì… «·ÃœÌœ ··Ê«›œÌ‰ ›Ì „’—
+2025-09-23 20:46:14,781 - agent.web_search - INFO - Searching (7/30): «·›—ﬁ »Ì‰ «·Ã‰«Ì… Ê«·Ã‰Õ… Ê«·„Œ«·›… ›Ì «·ﬁ«‰Ê‰ «·Ã‰«∆Ì
+2025-09-23 20:46:22,359 - agent.web_search - INFO - Searching (8/30): œÊ— «·„Õﬂ„… «·œ” Ê—Ì… «·⁄·Ì« ›Ì «·—ﬁ«»… ⁄·Ï «· ‘—Ì⁄« 
+2025-09-23 20:46:31,354 - agent.web_search - INFO - Searching (9/30): ﬁÊ«‰Ì‰ Õ„«Ì… «·„” Â·ﬂ ›Ì «·”Êﬁ «·„’—Ì
+2025-09-23 20:46:39,556 - agent.web_search - INFO - Searching (10/30): «·„”ƒÊ·Ì… «·Ã‰«∆Ì… ··ﬁ«’—Ì‰ ›Ì «·ﬁ«‰Ê‰ «·„’—Ì
+2025-09-23 20:46:48,265 - agent.web_search - INFO - Searching (11/30): ÿ—ﬁ ›÷ «·„‰«“⁄«  «· Ã«—Ì… «·œÊ·Ì…
+2025-09-23 20:46:54,327 - agent.web_search - INFO - Searching (12/30): √Õﬂ«„ «·„Ì—«À Ê«·Ê’Ì… ›Ì «·‘—Ì⁄… «·≈”·«„Ì… Ê«·ﬁ«‰Ê‰ «·„’—Ì
+2025-09-23 20:47:02,689 - agent.web_search - INFO - Searching (13/30): ≈Ã—«¡«   ”ÃÌ· «·„·ﬂÌ… «·⁄ﬁ«—Ì… ›Ì «·‘Â— «·⁄ﬁ«—Ì
+2025-09-23 20:47:11,478 - agent.web_search - INFO - Searching (14/30): ﬁ«‰Ê‰ „ﬂ«›Õ… €”· «·√„Ê«· Ê „ÊÌ· «·≈—Â«»
+2025-09-23 20:47:19,152 - agent.web_search - INFO - Searching (15/30): œÊ— „Ã·” «·œÊ·… ›Ì «·„‰«“⁄«  «·≈œ«—Ì…
+2025-09-23 20:47:26,953 - agent.web_search - INFO - Searching (16/30): ÕﬁÊﬁ «·≈‰”«‰ «·√”«”Ì… ›Ì «·„Ê«ÀÌﬁ «·œÊ·Ì… Ê«·œ” Ê— «·„’—Ì
+2025-09-23 20:47:34,945 - agent.web_search - INFO - Searching (17/30): ﬁÊ«‰Ì‰ Õ„«Ì… «·»Ì∆… Ê«· ·ÊÀ «·’‰«⁄Ì ›Ì „’—
+2025-09-23 20:47:47,873 - agent.web_search - INFO - Searching (18/30): „›ÂÊ„ «·⁄›Ê «·‘«„· Ê«·⁄›Ê «·Œ«’ ›Ì «·ﬁ«‰Ê‰ «·Ã‰«∆Ì
+2025-09-23 20:47:55,404 - agent.web_search - INFO - Searching (19/30): ‘—Êÿ «·Õ’Ê· ⁄·Ï «·Ã‰”Ì… «·„’—Ì… Ê«· Ã‰Ì”
+2025-09-23 20:48:03,413 - agent.web_search - INFO - Searching (20/30): ﬁ«‰Ê‰ «·„·ﬂÌ… «·›ﬂ—Ì… ÊÕ„«Ì… «·⁄·«„«  «· Ã«—Ì…
+2025-09-23 20:48:10,500 - agent.web_search - INFO - Searching (21/30): ≈Ã—«¡«  «·«” ∆‰«› Ê«·‰ﬁ÷ ›Ì «·ﬁ÷«Ì« «·Ã‰«∆Ì… Ê«·„œ‰Ì…
+2025-09-23 20:48:16,719 - agent.web_search - INFO - Searching (22/30): «·„”ƒÊ·Ì… «·„œ‰Ì… ⁄‰ «·√÷—«— «·‰« Ã… ⁄‰ ÕÊ«œÀ «·”Ì«—« 
+2025-09-23 20:48:25,328 - agent.web_search - INFO - Searching (23/30): œÊ— «·„Õ«„Ì ›Ì «·œ›«⁄ ⁄‰ «·„ Â„ √„«„ «·„Õ«ﬂ„
+2025-09-23 20:48:33,095 - agent.web_search - INFO - Searching (24/30): ﬁÊ«‰Ì‰ «· √„Ì‰ «·«Ã „«⁄Ì Ê«·„⁄«‘«  ›Ì „’—
+2025-09-23 20:48:41,800 - agent.web_search - INFO - Searching (25/30): √‰Ê«⁄ «·⁄ﬁÊœ «·≈œ«—Ì… Ê≈Ã—«¡«  ≈»—«„Â«
+2025-09-23 20:48:49,936 - agent.web_search - INFO - Searching (26/30):  ÕœÌ«   ÿ»Ìﬁ «·ﬁ«‰Ê‰ «·œÊ·Ì «·≈‰”«‰Ì ›Ì «·‰“«⁄«  «·„”·Õ…
+2025-09-23 20:48:56,553 - agent.web_search - INFO - Searching (27/30): √Õﬂ«„ «·ÕÌ«“… Ê«·„·ﬂÌ… ›Ì «·ﬁ«‰Ê‰ «·„œ‰Ì «·„’—Ì
+2025-09-23 20:49:04,273 - agent.web_search - INFO - Searching (28/30): ﬁ«‰Ê‰ «· ÕﬂÌ„ «· Ã«—Ì «·œÊ·Ì ›Ì „’—
+2025-09-23 20:49:12,037 - agent.web_search - INFO - Searching (29/30): Ã—«∆„ «·‰’» Ê«·«Õ Ì«· «·≈·ﬂ —Ê‰Ì Ê⁄ﬁÊ»« Â«
+2025-09-23 20:49:19,871 - agent.web_search - INFO - Searching (30/30): «· ﬂÌÌ› «·ﬁ«‰Ê‰Ì ··⁄„·«  «·—ﬁ„Ì… «·„‘›—… ›Ì «· ‘—Ì⁄ «·„’—Ì
+2025-09-23 20:49:24,883 - agent.web_search - INFO - Total search results collected: 120
+2025-09-23 20:49:24,883 - agent.web_search - INFO - Completed execution of web_search in 236.10s
+2025-09-23 21:14:52,970 - agent.web_search - INFO - Starting execution of web_search
+2025-09-23 21:14:52,971 - agent.web_search - INFO - Performing web search for 30 queries
+2025-09-23 21:14:52,971 - agent.web_search - INFO - Strategy: 4 results per query
+2025-09-23 21:14:52,971 - agent.web_search - INFO - Searching (1/30): œ” Ê— „’— «·Õ«·Ì Ê√Â„ «· ⁄œÌ·« 
+2025-09-23 21:15:00,381 - agent.web_search - INFO - Searching (2/30): ﬁ«‰Ê‰ «·√ÕÊ«· «·‘Œ’Ì… ··„”·„Ì‰ ›Ì „’—
+2025-09-23 21:15:08,467 - agent.web_search - INFO - Searching (3/30): √—ﬂ«‰ Ã—Ì„… «·”—ﬁ… Ê«·⁄ﬁÊ»«  ›Ì «·ﬁ«‰Ê‰ «·„’—Ì
+2025-09-23 21:15:15,946 - agent.web_search - INFO - Searching (4/30): ‘—Êÿ ’Õ… «·⁄ﬁœ «·„œ‰Ì Ê≈»ÿ«·Â
+2025-09-23 21:15:24,246 - agent.web_search - INFO - Searching (5/30): ÕﬁÊﬁ ÊÊ«Ã»«  «·⁄«„· Ê’«Õ» «·⁄„· ÿ»ﬁ« ·ﬁ«‰Ê‰ «·⁄„· «·„’—Ì
+2025-09-23 21:15:31,355 - agent.web_search - INFO - Searching (6/30): ≈Ã—«¡«   √”Ì” «·‘—ﬂ«  «·„”«Â„… ›Ì „’—
+2025-09-23 21:15:39,575 - agent.web_search - INFO - Searching (7/30): ﬁ«‰Ê‰ Õ„«Ì… «·„” Â·ﬂ «·ÃœÌœ ›Ì „’—
+2025-09-23 21:15:46,260 - agent.web_search - INFO - Searching (8/30): «· ⁄ÊÌ÷ ⁄‰ «·√÷—«— «·„«œÌ… Ê«·„⁄‰ÊÌ… ›Ì «·ﬁ«‰Ê‰ «·„œ‰Ì
+2025-09-23 21:15:54,885 - agent.web_search - INFO - Searching (9/30): ﬁÊ«⁄œ «·„Ì—«À «·‘—⁄Ì ›Ì «·ﬁ«‰Ê‰ «·„’—Ì
+2025-09-23 21:16:02,708 - agent.web_search - INFO - Searching (10/30): «·œ›«⁄ «·‘—⁄Ì Ê‘—ÊÿÂ «·ﬁ«‰Ê‰Ì… ›Ì «·ﬁ«‰Ê‰ «·Ã‰«∆Ì
+2025-09-23 21:16:10,569 - agent.web_search - INFO - Searching (11/30): √‰Ê«⁄ «·„·ﬂÌ… «·⁄ﬁ«—Ì… Êÿ—ﬁ  ”ÃÌ·Â« ›Ì „’—
+2025-09-23 21:16:18,002 - agent.web_search - INFO - Searching (12/30): «·—ﬁ«»… «·ﬁ÷«∆Ì… ⁄·Ï «·ﬁ—«—«  «·≈œ«—Ì… ›Ì «·ﬁ«‰Ê‰ «·„’—Ì
+2025-09-23 21:16:24,321 - agent.web_search - INFO - Searching (13/30): œÊ— «·‰Ì«»… «·⁄«„… ›Ì «· ÕﬁÌﬁ«  «·Ã‰«∆Ì… »„’—
+2025-09-23 21:16:32,823 - agent.web_search - INFO - Searching (14/30): Õ„«Ì… ÕﬁÊﬁ «·„·ﬂÌ… «·›ﬂ—Ì… Ê»—«¡«  «·«Œ —«⁄ ›Ì „’—
+2025-09-23 21:16:40,880 - agent.web_search - INFO - Searching (15/30): ﬁ«‰Ê‰ «·≈ÌÃ«—«  «·ﬁœÌ„ Ê«·ÃœÌœ ›Ì „’— Ê«·›—Êﬁ »Ì‰Â„«
+2025-09-23 21:16:46,695 - agent.web_search - INFO - Searching (16/30): «·„”ƒÊ·Ì… «·Ã‰«∆Ì… ··√‘Œ«’ «·«⁄ »«—Ì… ›Ì «·ﬁ«‰Ê‰ «·„’—Ì
+2025-09-23 21:16:54,803 - agent.web_search - INFO - Searching (17/30): ≈Ã—«¡«  «·ÿ⁄‰ ⁄·Ï «·√Õﬂ«„ «·ﬁ÷«∆Ì… ›Ì «·„Õ«ﬂ„ «·„’—Ì…
+2025-09-23 21:17:02,543 - agent.web_search - INFO - Searching (18/30): Ã—«∆„ «·≈‰ —‰  Ê«·Ã—«∆„ «·≈·ﬂ —Ê‰Ì… Ê⁄ﬁÊ»« Â« ›Ì „’—
+2025-09-23 21:17:11,555 - agent.web_search - INFO - Searching (19/30): œÊ— «·„Õﬂ„… «·œ” Ê—Ì… «·⁄·Ì« ›Ì  ›”Ì— «·ﬁÊ«‰Ì‰
+2025-09-23 21:17:19,099 - agent.web_search - INFO - Searching (20/30): ﬁ«‰Ê‰ „ﬂ«›Õ… €”· «·√„Ê«· Ê „ÊÌ· «·≈—Â«» ›Ì „’—
+2025-09-23 21:17:28,200 - agent.web_search - INFO - Searching (21/30): ‘—Êÿ «·Õ’Ê· ⁄·Ï «·Ã‰”Ì… «·„’—Ì… Ê›ﬁœ«‰Â«
+2025-09-23 21:17:36,337 - agent.web_search - INFO - Searching (22/30): «·ﬁÊ«‰Ì‰ «·„‰Ÿ„… ··Ã„⁄Ì«  «·√Â·Ì… Ê«·⁄„· «·„œ‰Ì ›Ì „’—
+2025-09-23 21:17:44,633 - agent.web_search - INFO - Searching (23/30): «Œ ’«’«  «·„Õ«ﬂ„ «·«ﬁ ’«œÌ… ÊœÊ—Â« ›Ì ›÷ «·„‰«“⁄«  «· Ã«—Ì…
+2025-09-23 21:17:52,446 - agent.web_search - INFO - Searching (24/30): ÕﬁÊﬁ «·ÿ›· ÊÊ«Ã»« Â ›Ì «·ﬁ«‰Ê‰ «·„’—Ì
+2025-09-23 21:18:01,764 - agent.web_search - INFO - Searching (25/30): «·ﬁÊ«‰Ì‰ «·»Ì∆Ì… ·Õ„«Ì… «·„Ê«—œ «·ÿ»Ì⁄Ì… ›Ì „’—
+2025-09-23 21:18:11,184 - agent.web_search - INFO - Searching (26/30): √Œ·«ﬁÌ«  „Â‰… «·„Õ«„«… Ê«·„”ƒÊ·Ì… «· √œÌ»Ì… ··„Õ«„Ì
+2025-09-23 21:18:19,267 - agent.web_search - INFO - Searching (27/30): ⁄ﬁÊ»… «· “ÊÌ— ›Ì «·„Õ——«  «·—”„Ì… Ê«·⁄—›Ì…
+2025-09-23 21:18:27,147 - agent.web_search - INFO - Searching (28/30): «··ÃÊ¡ «·”Ì«”Ì ÊﬁÊ«⁄œÂ ›Ì «·ﬁ«‰Ê‰ «·œÊ·Ì Ê«·„’—Ì
+2025-09-23 21:18:37,813 - agent.web_search - INFO - Searching (29/30): ≈Ã—«¡«  «· ÕﬂÌ„ «· Ã«—Ì «·œÊ·Ì ›Ì «·„‰«“⁄« 
+2025-09-23 21:18:46,505 - agent.web_search - INFO - Searching (30/30): ﬁ«‰Ê‰ «· √„Ì‰«  «·«Ã „«⁄Ì… Ê«·„⁄«‘«  «·ÃœÌœ ›Ì „’—
+2025-09-23 21:18:51,898 - agent.web_search - INFO - Total search results collected: 120
+2025-09-23 21:18:51,898 - agent.web_search - INFO - Completed execution of web_search in 238.93s
+2025-09-23 23:01:50,287 - agent.web_search - INFO - Starting execution of web_search
+2025-09-23 23:01:50,287 - agent.web_search - INFO - Performing web search for 1 queries
+2025-09-23 23:01:50,288 - agent.web_search - INFO - Strategy: 4 results per query
+2025-09-23 23:01:50,288 - agent.web_search - INFO - Searching (1/1): ÕﬁÊﬁ «·⁄«„· ⁄‰œ «·›’· «· ⁄”›Ì ›Ì «·ﬁ«‰Ê‰ «·„’—Ì
+2025-09-23 23:01:55,640 - agent.web_search - INFO - Total search results collected: 4
+2025-09-23 23:01:55,640 - agent.web_search - INFO - Completed execution of web_search in 5.35s
+2025-09-23 23:28:37,494 - agent.web_search - INFO - Starting execution of web_search
+2025-09-23 23:28:37,494 - agent.web_search - INFO - Performing web search for 30 queries
+2025-09-23 23:28:37,494 - agent.web_search - INFO - Strategy: 4 results per query
+2025-09-23 23:28:37,494 - agent.web_search - INFO - Searching (1/30): «·ﬁ«‰Ê‰ «·œ” Ê—Ì «·„’—Ì ÊÕﬁÊﬁ «·„Ê«ÿ‰
+2025-09-23 23:28:46,405 - agent.web_search - INFO - Searching (2/30): ≈Ã—«¡«  —›⁄ œ⁄ÊÏ ÿ·«ﬁ ··÷—— ›Ì „’—
+2025-09-23 23:28:55,649 - agent.web_search - INFO - Searching (3/30): ⁄ﬁÊ»… Ã—Ì„… «·‰’» Ê«·«Õ Ì«· ›Ì «·ﬁ«‰Ê‰ «·Ã‰«∆Ì «·„’—Ì
+2025-09-23 23:29:03,057 - agent.web_search - INFO - Searching (4/30): ‘—Êÿ  ”ÃÌ· »—«¡… «Œ —«⁄ ›Ì „’—
+2025-09-23 23:29:10,867 - agent.web_search - INFO - Searching (5/30): √Õﬂ«„ ﬁ«‰Ê‰ «·⁄„· «·„’—Ì »Œ’Ê’ «·›’· «· ⁄”›Ì
+2025-09-23 23:29:19,370 - agent.web_search - INFO - Searching (6/30): √‰Ê«⁄ «·⁄ﬁÊœ «· Ã«—Ì… Ê√—ﬂ«‰Â« ›Ì «·ﬁ«‰Ê‰ «·„’—Ì
+2025-09-23 23:29:27,689 - agent.web_search - INFO - Searching (7/30): ﬂÌ›Ì…  √”Ì” ‘—ﬂ… „”«Â„… ›Ì „’—
+2025-09-23 23:29:34,914 - agent.web_search - INFO - Searching (8/30): ﬁÊ«⁄œ «·≈À»«  ›Ì «·œ⁄«ÊÏ «·„œ‰Ì… √„«„ «·„Õ«ﬂ„ «·„’—Ì…
+2025-09-23 23:29:42,342 - agent.web_search - INFO - Searching (9/30): «·›—ﬁ »Ì‰ «·Ã‰Õ… Ê«·Ã‰«Ì… ›Ì «·ﬁ«‰Ê‰ «·„’—Ì
+2025-09-23 23:29:51,318 - agent.web_search - INFO - Searching (10/30): ÕﬁÊﬁ «·„” √Ã— Ê«·„«·ﬂ ›Ì ﬁ«‰Ê‰ «·≈ÌÃ«— «·ﬁœÌ„ Ê«·ÃœÌœ
+2025-09-23 23:30:00,515 - agent.web_search - INFO - Searching (11/30): œÊ— «·„Õﬂ„… «·œ” Ê—Ì… «·⁄·Ì« ›Ì «·—ﬁ«»… ⁄·Ï œ” Ê—Ì… «·ﬁÊ«‰Ì‰
+2025-09-23 23:30:08,736 - agent.web_search - INFO - Searching (12/30): „›ÂÊ„ «·„”ƒÊ·Ì… «·„œ‰Ì… Ê«· ⁄ÊÌ÷ ⁄‰ «·√÷—«—
+2025-09-23 23:30:16,796 - agent.web_search - INFO - Searching (13/30): √Õﬂ«„ ﬁ«‰Ê‰ Õ„«Ì… «·„” Â·ﬂ «·„’—Ì
+2025-09-23 23:30:26,969 - agent.web_search - INFO - Searching (14/30): «· ÕﬂÌ„ «· Ã«—Ì «·œÊ·Ì ﬂ»œÌ· ·›÷ «·„‰«“⁄« 
+2025-09-23 23:30:36,281 - agent.web_search - INFO - Searching (15/30): ÕﬁÊﬁ «·„—√… ›Ì ﬁ«‰Ê‰ «·√ÕÊ«· «·‘Œ’Ì… «·„’—Ì
+2025-09-23 23:30:43,955 - agent.web_search - INFO - Searching (16/30): «·Ã—«∆„ «·≈·ﬂ —Ê‰Ì… Ê⁄ﬁÊ»« Â« ›Ì «·ﬁ«‰Ê‰ «·„’—Ì
+2025-09-23 23:30:52,147 - agent.web_search - INFO - Searching (17/30): ‘—Êÿ ’Õ… ⁄ﬁœ «·»Ì⁄ ›Ì «·ﬁ«‰Ê‰ «·„œ‰Ì «·„’—Ì
+2025-09-23 23:31:00,338 - agent.web_search - INFO - Searching (18/30): «·≈Ã—«¡«  «·ﬁ«‰Ê‰Ì… ·—›⁄ œ⁄ÊÏ ‰›ﬁ… “ÊÃÌ…
+2025-09-23 23:31:08,118 - agent.web_search - INFO - Searching (19/30): √Â„Ì… ﬁ«‰Ê‰ Õ„«Ì… «·»Ì«‰«  «·‘Œ’Ì… ›Ì „’—
+2025-09-23 23:31:14,983 - agent.web_search - INFO - Searching (20/30): œÊ— «·‰Ì«»… «·⁄«„… ›Ì «· ÕﬁÌﬁ«  «·Ã‰«∆Ì…
+2025-09-23 23:31:22,576 - agent.web_search - INFO - Searching (21/30): „»«œ∆ «·ﬁ«‰Ê‰ «·œÊ·Ì «·≈‰”«‰Ì ›Ì «·‰“«⁄«  «·„”·Õ…
+2025-09-23 23:31:31,058 - agent.web_search - INFO - Searching (22/30): «·÷Ê«»ÿ «·ﬁ«‰Ê‰Ì… · œ«Ê· «·√Ê—«ﬁ «·„«·Ì… ›Ì «·»Ê—’… «·„’—Ì…
+2025-09-23 23:31:38,714 - agent.web_search - INFO - Searching (23/30): „›ÂÊ„ «· “ÊÌ— ›Ì «·„Õ——«  «·—”„Ì… Ê«·⁄—›Ì…
+2025-09-23 23:31:46,826 - agent.web_search - INFO - Searching (24/30): ÕﬁÊﬁ «·„·ﬂÌ… «·›ﬂ—Ì… ··›‰«‰Ì‰ Ê«·„»œ⁄Ì‰ ›Ì „’—
+2025-09-23 23:31:56,382 - agent.web_search - INFO - Searching (25/30): ﬂÌ›Ì… «·ÿ⁄‰ ⁄·Ï «·√Õﬂ«„ «·ﬁ÷«∆Ì… ›Ì «·ﬁ«‰Ê‰ «·„’—Ì
+2025-09-23 23:32:04,029 - agent.web_search - INFO - Searching (26/30): ﬁ«‰Ê‰ Õ„«Ì… «·»Ì∆… «·„’—Ì ÊœÊ—Â ›Ì «· ‰„Ì… «·„” œ«„…
+2025-09-23 23:32:11,915 - agent.web_search - INFO - Searching (27/30): „»«œ∆ «·ﬁ«‰Ê‰ «·≈œ«—Ì «·„’—Ì Ê⁄·«ﬁ Â »«·ÊŸÌ›… «·⁄«„…
+2025-09-23 23:32:19,595 - agent.web_search - INFO - Searching (28/30): «·›—ﬁ »Ì‰ «·„Ì—«À Ê«·Ê’Ì… ›Ì «·‘—Ì⁄… Ê«·ﬁ«‰Ê‰ «·„’—Ì
+2025-09-23 23:32:27,417 - agent.web_search - INFO - Searching (29/30): „”ƒÊ·Ì… «·ÿ»Ì» «·ﬁ«‰Ê‰Ì… ⁄‰ «·√Œÿ«¡ «·ÿ»Ì… ›Ì „’—
+2025-09-23 23:32:35,129 - agent.web_search - INFO - Searching (30/30): ‰Ÿ«„ «· ﬁ«÷Ì «·≈·ﬂ —Ê‰Ì ›Ì «·„Õ«ﬂ„ «·„’—Ì… Ê ÕœÌ« Â
+2025-09-23 23:32:45,482 - agent.web_search - INFO - Total search results collected: 120
+2025-09-23 23:32:45,482 - agent.web_search - INFO - Completed execution of web_search in 247.99s
+2025-09-24 12:19:21,055 - agent.web_search - INFO - Starting execution of web_search
+2025-09-24 12:19:21,055 - agent.web_search - INFO - Performing web search for 30 queries
+2025-09-24 12:19:21,055 - agent.web_search - INFO - Strategy: 4 results per query
+2025-09-24 12:19:21,055 - agent.web_search - INFO - Searching (1/30): ‘—Êÿ ’Õ… ⁄ﬁœ «·»Ì⁄ ›Ì «·ﬁ«‰Ê‰ «·„œ‰Ì «·„’—Ì
+2025-09-24 12:19:28,592 - agent.web_search - INFO - Searching (2/30): ≈Ã—«¡«   √”Ì” «·‘—ﬂ«  «·„”«Â„… Ê›ﬁ« ··ﬁ«‰Ê‰ «·„’—Ì
+2025-09-24 12:19:35,544 - agent.web_search - INFO - Searching (3/30): ⁄ﬁÊ»… Ã—Ì„… «·”—ﬁ… »«·≈ﬂ—«Â ›Ì ﬁ«‰Ê‰ «·⁄ﬁÊ»«  «·„’—Ì
+2025-09-24 12:22:41,669 - agent.web_search - INFO - Starting execution of web_search
+2025-09-24 12:22:41,669 - agent.web_search - INFO - Performing web search for 30 queries
+2025-09-24 12:22:41,670 - agent.web_search - INFO - Strategy: 4 results per query
+2025-09-24 12:22:41,670 - agent.web_search - INFO - Searching (1/30): ’·«ÕÌ«  —∆Ì” «·Ã„ÂÊ—Ì… ›Ì «·œ” Ê— «·„’—Ì
+2025-09-24 12:22:47,820 - agent.web_search - INFO - Searching (2/30): ‘—Êÿ ’Õ… «·⁄ﬁÊœ «·„œ‰Ì… ›Ì «·ﬁ«‰Ê‰ «·„’—Ì
+2025-09-24 12:48:47,568 - agent.web_search - INFO - Starting execution of web_search
+2025-09-24 12:48:47,568 - agent.web_search - INFO - Performing web search for 30 queries
+2025-09-24 12:48:47,568 - agent.web_search - INFO - Strategy: 4 results per query
+2025-09-24 12:48:47,568 - agent.web_search - INFO - Searching (1/30): √”«”Ì«  «·ﬁ«‰Ê‰ «·„œ‰Ì «·„’—Ì
+2025-09-24 12:48:56,270 - agent.web_search - INFO - Searching (2/30): ≈Ã—«¡«  —›⁄ œ⁄ÊÏ ÿ·«ﬁ ›Ì „’—
+2025-09-24 12:49:03,450 - agent.web_search - INFO - Searching (3/30): ⁄ﬁÊ»… Ã—Ì„… «·”—ﬁ… ›Ì «·ﬁ«‰Ê‰ «·Ã‰«∆Ì «·„’—Ì
+2025-09-24 13:12:12,469 - agent.web_search - INFO - Starting execution of web_search
+2025-09-24 13:12:12,469 - agent.web_search - INFO - Performing web search for 30 queries
+2025-09-24 13:12:12,469 - agent.web_search - INFO - Strategy: 4 results per query
+2025-09-24 13:12:12,469 - agent.web_search - INFO - Searching (1/30): ’·«ÕÌ«  —∆Ì” «·Ã„ÂÊ—Ì… ›Ì «·œ” Ê— «·„’—Ì
+2025-09-24 13:12:17,627 - agent.web_search - INFO - Searching (2/30): ‘—Êÿ ’Õ… «·⁄ﬁÊœ «·„œ‰Ì… ›Ì «·ﬁ«‰Ê‰ «·„’—Ì
+2025-09-24 13:12:23,000 - agent.web_search - INFO - Searching (3/30): √—ﬂ«‰ Ã—Ì„… «·”—ﬁ… ›Ì ﬁ«‰Ê‰ «·⁄ﬁÊ»«  «·„’—Ì
+2025-09-24 13:20:55,128 - agent.web_search - INFO - Starting execution of web_search
+2025-09-24 13:20:55,129 - agent.web_search - INFO - Performing web search for 30 queries
+2025-09-24 13:20:55,129 - agent.web_search - INFO - Strategy: 4 results per query
+2025-09-24 13:20:55,129 - agent.web_search - INFO - Searching (1/30): ’·«ÕÌ«  —∆Ì” «·Ã„ÂÊ—Ì… Õ”» «·œ” Ê— «·„’—Ì
+2025-09-24 13:21:03,654 - agent.web_search - INFO - Searching (2/30): √—ﬂ«‰ Ã—Ì„… «·‰’» Ê«·«Õ Ì«· ›Ì «·ﬁ«‰Ê‰ «·Ã‰«∆Ì
+2025-09-24 13:34:27,553 - agent.web_search - INFO - Starting execution of web_search
+2025-09-24 13:34:27,553 - agent.web_search - INFO - Performing web search for 1 queries
+2025-09-24 13:34:27,553 - agent.web_search - INFO - Strategy: 1 results per query
+2025-09-24 13:34:27,553 - agent.web_search - INFO - Searching (1/1):  √ÀÌ— «· ÷Œ„ ⁄·Ï «·«” À„«—«  ›Ì „’—
+2025-09-24 13:34:31,840 - agent.web_search - INFO - Total search results collected: 1
+2025-09-24 13:34:31,841 - agent.web_search - INFO - Completed execution of web_search in 4.29s
+2025-09-24 13:37:25,994 - agent.web_search - INFO - Starting execution of web_search
+2025-09-24 13:37:25,994 - agent.web_search - INFO - Performing web search for 1 queries
+2025-09-24 13:37:25,994 - agent.web_search - INFO - Strategy: 1 results per query
+2025-09-24 13:37:25,994 - agent.web_search - INFO - Searching (1/1): «” —« ÌÃÌ«  «·«” À„«— «·⁄ﬁ«—Ì ›Ì «·ﬁ«Â—…
+2025-09-24 13:47:12,677 - agent.web_search - INFO - Starting execution of web_search
+2025-09-24 13:47:12,677 - agent.web_search - INFO - Performing web search for 50 queries
+2025-09-24 13:47:12,678 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-24 13:47:12,678 - agent.web_search - INFO - Searching (1/50):  ›”Ì— «·œ” Ê— «·„’—Ì
+2025-09-24 13:47:20,800 - agent.web_search - INFO - Searching (2/50): ÷„«‰«  «·Õ—Ì«  «·⁄«„… ›Ì «·œ” Ê—
+2025-09-24 13:47:29,190 - agent.web_search - INFO - Searching (3/50): ’·«ÕÌ«  —∆Ì” «·Ã„ÂÊ—Ì… ›Ì „’—
+2025-09-24 13:47:36,873 - agent.web_search - INFO - Searching (4/50): ¬·Ì«   ⁄œÌ· «·œ” Ê— «·„’—Ì
+2025-09-24 13:47:45,234 - agent.web_search - INFO - Searching (5/50): √—ﬂ«‰ ⁄ﬁœ «·»Ì⁄ ›Ì «·ﬁ«‰Ê‰ «·„œ‰Ì
+2025-09-24 13:47:52,989 - agent.web_search - INFO - Searching (6/50): „”ƒÊ·Ì… «·ÿ»Ì» «·„œ‰Ì… ⁄‰ «·√Œÿ«¡ «·ÿ»Ì…
+2025-09-24 13:48:01,067 - agent.web_search - INFO - Searching (7/50): ≈Ã—«¡«   ”ÃÌ· ⁄ﬁ«— ›Ì «·‘Â— «·⁄ﬁ«—Ì
+2025-09-24 13:48:10,356 - agent.web_search - INFO - Searching (8/50): ›”Œ «·⁄ﬁœ Ê‘—ÊÿÂ
+2025-09-24 13:48:18,214 - agent.web_search - INFO - Searching (9/50): «· ⁄ÊÌ÷ ⁄‰ «·÷—— «·„«œÌ Ê«·„⁄‰ÊÌ
+2025-09-24 13:48:25,720 - agent.web_search - INFO - Searching (10/50): √‰Ê«⁄ «·„·ﬂÌ… ›Ì «·ﬁ«‰Ê‰ «·„’—Ì
+2025-09-24 13:48:33,192 - agent.web_search - INFO - Searching (11/50): ≈Ã—«¡«  «·ÿ·«ﬁ ··÷—— ›Ì „’—
+2025-09-24 13:48:45,789 - agent.web_search - INFO - Searching (12/50): ÕﬁÊﬁ Õ÷«‰… «·√ÿ›«· »⁄œ «·«‰›’«·
+2025-09-24 13:48:53,775 - agent.web_search - INFO - Searching (13/50):  ﬁ”Ì„ «·„Ì—«À Õ”» «·‘—Ì⁄… Ê«·ﬁ«‰Ê‰
+2025-09-24 13:49:02,171 - agent.web_search - INFO - Searching (14/50): ‘—Êÿ «·“Ê«Ã «·„œ‰Ì ›Ì „’—
+2025-09-24 13:49:11,486 - agent.web_search - INFO - Searching (15/50): √—ﬂ«‰ Ã—Ì„… «·”—ﬁ… Ê«·⁄ﬁÊ»…
+2025-09-24 13:49:19,499 - agent.web_search - INFO - Searching (16/50): ÕﬁÊﬁ «·„ Â„ √À‰«¡ «· ÕﬁÌﬁ «·Ã‰«∆Ì
+2025-09-24 13:49:27,304 - agent.web_search - INFO - Searching (17/50): √‰Ê«⁄ «·Ã—«∆„ «·≈·ﬂ —Ê‰Ì… ›Ì «·ﬁ«‰Ê‰ «·„’—Ì
+2025-09-24 13:49:36,322 - agent.web_search - INFO - Searching (18/50): «·œ›«⁄ «·‘—⁄Ì Ê‘—ÊÿÂ
+2025-09-24 13:49:45,077 - agent.web_search - INFO - Searching (19/50): ≈Ã—«¡«  —›⁄ œ⁄ÊÏ Ã‰«∆Ì…
+2025-09-24 13:49:52,350 - agent.web_search - INFO - Searching (20/50): ⁄ﬁÊ»… ÕÌ«“… «·„Œœ—«  ›Ì „’—
+2025-09-24 13:50:01,839 - agent.web_search - INFO - Searching (21/50): —ﬁ«»… «·ﬁ÷«¡ «·≈œ«—Ì ⁄·Ï ﬁ—«—«  «·ÕﬂÊ„…
+2025-09-24 13:50:10,084 - agent.web_search - INFO - Searching (22/50): ‘—Êÿ ”Õ» «·ﬁ—«— «·≈œ«—Ì
+2025-09-24 13:50:18,149 - agent.web_search - INFO - Searching (23/50): œ⁄ÊÏ «·≈·€«¡ √„«„ „Ã·” «·œÊ·…
+2025-09-24 13:50:25,662 - agent.web_search - INFO - Searching (24/50): √‰Ê«⁄ «·‘—ﬂ«  «· Ã«—Ì… ›Ì «·ﬁ«‰Ê‰ «·„’—Ì
+2025-09-24 13:50:34,054 - agent.web_search - INFO - Searching (25/50): ‘—Êÿ  √”Ì” ‘—ﬂ… „”«Â„…
+2025-09-24 13:50:41,600 - agent.web_search - INFO - Searching (26/50): Õ„«Ì… «·⁄·«„«  «· Ã«—Ì…
+2025-09-24 13:50:47,124 - agent.web_search - INFO - Searching (27/50): «·≈›·«” «· Ã«—Ì Ê≈Ã—«¡« Â
+2025-09-24 13:50:54,492 - agent.web_search - INFO - Searching (28/50): ﬁ«‰Ê‰ «· Ã«—… «·≈·ﬂ —Ê‰Ì…
+2025-09-24 13:51:02,180 - agent.web_search - INFO - Searching (29/50): ÕﬁÊﬁ «·⁄«„· ›Ì ≈‰Â«¡ «·Œœ„…
+2025-09-24 13:51:09,474 - agent.web_search - INFO - Searching (30/50): ‘—Êÿ ⁄ﬁœ «·⁄„· „Õœœ «·„œ…
+2025-09-24 13:51:17,033 - agent.web_search - INFO - Searching (31/50):  ”ÊÌ… «·‰“«⁄«  «·⁄„«·Ì…
+2025-09-24 13:51:24,642 - agent.web_search - INFO - Searching (32/50): ﬁ«‰Ê‰ «· √„Ì‰«  «·«Ã „«⁄Ì… «·ÃœÌœ
+2025-09-24 13:51:32,287 - agent.web_search - INFO - Searching (33/50): „»«œ∆ «·ﬁ«‰Ê‰ «·œÊ·Ì «·⁄«„
+2025-09-24 13:51:40,073 - agent.web_search - INFO - Searching (34/50): œÊ— «·„Õﬂ„… «·Ã‰«∆Ì… «·œÊ·Ì…
+2025-09-24 13:51:46,123 - agent.web_search - INFO - Searching (35/50): « ›«ﬁÌ«  Õ„«Ì… «··«Ã∆Ì‰
+2025-09-24 13:51:52,550 - agent.web_search - INFO - Searching (36/50):  ”ÃÌ· »—«¡… «·«Œ —«⁄ ›Ì „’—
+2025-09-24 13:52:00,845 - agent.web_search - INFO - Searching (37/50): Õ„«Ì… ÕﬁÊﬁ «·„ƒ·› «·—ﬁ„Ì…
+2025-09-24 13:52:08,653 - agent.web_search - INFO - Searching (38/50): «·›—ﬁ »Ì‰ «·⁄·«„… «· Ã«—Ì… Ê»—«¡… «·«Œ —«⁄
+2025-09-24 13:52:16,294 - agent.web_search - INFO - Searching (39/50): √‰Ê«⁄ «·÷—«∆» ›Ì „’—
+2025-09-24 13:52:24,009 - agent.web_search - INFO - Searching (40/50): ≈Ã—«¡«  «·ÿ⁄‰ ⁄·Ï «· ﬁœÌ— «·÷—Ì»Ì
+2025-09-24 13:52:31,421 - agent.web_search - INFO - Searching (41/50): ﬁ«‰Ê‰ ÷—Ì»… «·ﬁÌ„… «·„÷«›…
+2025-09-24 13:52:39,652 - agent.web_search - INFO - Searching (42/50): „”ƒÊ·Ì… «·‘—ﬂ«  ⁄‰ «· ·ÊÀ «·»Ì∆Ì
+2025-09-24 13:52:47,502 - agent.web_search - INFO - Searching (43/50): ﬁÊ«‰Ì‰ Õ„«Ì… «·„Õ„Ì«  «·ÿ»Ì⁄Ì…
+2025-09-24 13:52:55,014 - agent.web_search - INFO - Searching (44/50): ÕﬁÊﬁ «·„” Â·ﬂ ⁄‰œ ‘—«¡ „‰ Ã „⁄Ì»
+2025-09-24 13:53:02,667 - agent.web_search - INFO - Searching (45/50): ¬·Ì«   ﬁœÌ„ ‘ﬂÊÏ Õ„«Ì… «·„” Â·ﬂ
+2025-09-24 13:53:11,284 - agent.web_search - INFO - Searching (46/50): ⁄ﬁÊ»«  Ã—«∆„ «·«» “«“ «·≈·ﬂ —Ê‰Ì
+2025-09-24 13:53:19,704 - agent.web_search - INFO - Searching (47/50): ﬁ«‰Ê‰ „ﬂ«›Õ… Ã—«∆„  ﬁ‰Ì… «·„⁄·Ê„« 
+2025-09-24 13:53:27,519 - agent.web_search - INFO - Searching (48/50): √Œ·«ﬁÌ«  „Â‰… «·„Õ«„«…
+2025-09-24 13:53:35,384 - agent.web_search - INFO - Searching (49/50): œÊ— «·‰Ì«»… «·⁄«„… ›Ì «·‰Ÿ«„ «·ﬁ÷«∆Ì
+2025-09-24 13:53:44,181 - agent.web_search - INFO - Searching (50/50): ‘—Êÿ «·ﬁ»Ê· ›Ì ”·ﬂ «·ﬁ÷«¡
+2025-09-24 13:53:48,866 - agent.web_search - INFO - Total search results collected: 250
+2025-09-24 13:53:48,866 - agent.web_search - INFO - Completed execution of web_search in 396.19s
+2025-09-25 14:42:03,127 - agent.web_search - INFO - Starting execution of web_search
+2025-09-25 14:42:03,128 - agent.web_search - INFO - Performing web search for 50 queries
+2025-09-25 14:42:03,128 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-25 14:42:03,128 - agent.web_search - INFO - Searching (1/50): ≈“«Ì √⁄„· „Ì“«‰Ì… ‘Œ’Ì… ›⁄«·… ›Ì „’—ø
+2025-09-25 14:42:11,045 - agent.web_search - INFO - Searching (2/50): √›÷· «” —« ÌÃÌ«  «·«” À„«— ··„» œ∆Ì‰ ›Ì «·»Ê—’… «·„’—Ì…
+2025-09-25 14:42:17,126 - agent.web_search - INFO - Searching (3/50):  Õ·Ì· «·ﬁÊ«∆„ «·„«·Ì… ··‘—ﬂ«  «·„”«Â„…
+2025-09-25 14:42:24,843 - agent.web_search - INFO - Searching (4/50): „Œ«ÿ— ”Êﬁ «·⁄„·«  «·√Ã‰»Ì… Êÿ—ﬁ ≈œ«— Â«
+2025-09-25 14:42:32,588 - agent.web_search - INFO - Searching (5/50):  √ÀÌ— ”⁄— «·›«∆œ… ⁄·Ï «·«ﬁ ’«œ «·„’—Ì
+2025-09-25 14:42:40,398 - agent.web_search - INFO - Searching (6/50): „” ﬁ»· «· ﬂ‰Ê·ÊÃÌ« «·„«·Ì… (Fintech) ›Ì „’—
+2025-09-25 14:42:47,889 - agent.web_search - INFO - Searching (7/50): ≈ÌÂ ÂÌ √‰Ê«⁄ «·ﬁ—Ê÷ «·»‰ﬂÌ… «·„ «Õ… ··√›—«œ ›Ì „’—ø
+2025-09-25 14:42:55,389 - agent.web_search - INFO - Searching (8/50): ‘—Õ  ›’Ì·Ì ·’‰«œÌﬁ «·«” À„«— «·„‘ —ﬂ…
+2025-09-25 14:43:03,965 - agent.web_search - INFO - Searching (9/50):  ﬁÌÌ„ «·‘—ﬂ«  «·‰«‘∆…: ÿ—ﬁ Ê√œÊ« 
+2025-09-25 14:43:12,510 - agent.web_search - INFO - Searching (10/50): œÊ— «·»‰ﬂ «·„—ﬂ“Ì «·„’—Ì ›Ì «·”Ì«”… «·‰ﬁœÌ…
+2025-09-25 14:43:20,055 - agent.web_search - INFO - Searching (11/50): √”«”Ì«   œ«Ê· «·⁄„·«  «·—ﬁ„Ì… ··„’—ÌÌ‰
+2025-09-25 14:43:27,346 - agent.web_search - INFO - Searching (12/50): ﬂÌ›Ì… ≈œ«—… «·œÌÊ‰ «·‘Œ’Ì… Ê«·Œ—ÊÃ „‰Â«
+2025-09-25 14:43:34,678 - agent.web_search - INFO - Searching (13/50):  Õ·Ì· ›‰Ì ··√”Â„: «·„ƒ‘—«  Ê«·—”Ê„ «·»Ì«‰Ì…
+2025-09-25 14:43:39,984 - agent.web_search - INFO - Searching (14/50):  „ÊÌ· «·„‘—Ê⁄«  «·’€Ì—… Ê«·„ Ê”ÿ… ›Ì „’—
+2025-09-25 14:43:47,187 - agent.web_search - INFO - Searching (15/50): ﬁÊ«‰Ì‰ „ﬂ«›Õ… €”Ì· «·√„Ê«· ›Ì «·»‰Êﬂ «·„’—Ì…
+2025-09-25 14:43:55,049 - agent.web_search - INFO - Searching (16/50):  √ÀÌ— «· ÷Œ„ ⁄·Ï «·ﬁÊ… «·‘—«∆Ì… ··„Ê«ÿ‰ «·„’—Ì
+2025-09-25 14:44:02,721 - agent.web_search - INFO - Searching (17/50): „›ÂÊ„ «·«” À„«— «·⁄ﬁ«—Ì Ê√›÷· «·„‰«ÿﬁ ›Ì «·ﬁ«Â—…
+2025-09-25 14:44:09,988 - agent.web_search - INFO - Searching (18/50): ≈œ«—… «·„Œ«ÿ— «· ‘€Ì·Ì… ›Ì «·„ƒ””«  «·„«·Ì…
+2025-09-25 14:44:17,670 - agent.web_search - INFO - Searching (19/50): √Â„Ì… «· √„Ì‰ ⁄·Ï «·ÕÌ«… Ê«·„„ ·ﬂ« 
+2025-09-25 14:44:25,278 - agent.web_search - INFO - Searching (20/50): «· Õ·Ì· «·√”«”Ì ··‘—ﬂ«  ﬁ»· «·«” À„«—
+2025-09-25 14:44:34,024 - agent.web_search - INFO - Searching (21/50): ≈⁄œ«œ «·„Ê«“‰… «·—√”„«·Ì… ··‘—ﬂ« 
+2025-09-25 14:44:41,623 - agent.web_search - INFO - Searching (22/50): œÊ— ÂÌ∆… «·—ﬁ«»… «·„«·Ì… ›Ì  ‰ŸÌ„ «·”Êﬁ «·„’—Ì
+2025-09-25 14:44:49,035 - agent.web_search - INFO - Searching (23/50):  ÿ»Ìﬁ«  «·–ﬂ«¡ «·«’ÿ‰«⁄Ì ›Ì «·Œœ„«  «·„’—›Ì…
+2025-09-25 14:44:56,828 - agent.web_search - INFO - Searching (24/50): ﬂÌ›Ì… «· ŒÿÌÿ ·· ﬁ«⁄œ ›Ì „’—
+2025-09-25 14:45:04,630 - agent.web_search - INFO - Searching (25/50): «” —« ÌÃÌ«  «· ÕÊÿ ÷œ  ﬁ·»«  √”⁄«— «·⁄„·« 
+2025-09-25 14:45:14,815 - agent.web_search - INFO - Searching (26/50): √‰Ê«⁄ «·”‰œ«  «·ÕﬂÊ„Ì… Ê«·‘—ﬂ« 
+2025-09-25 14:45:28,530 - agent.web_search - INFO - Searching (27/50): œ„Ã Ê«” ÕÊ«– «·‘—ﬂ« : «·≈Ã—«¡«  Ê«· ÕœÌ« 
+2025-09-25 14:45:37,030 - agent.web_search - INFO - Searching (28/50):  √ÀÌ— «·”Ì«”… «·„«·Ì… «·ÕﬂÊ„Ì… ⁄·Ï «·«” À„«—
+2025-09-25 14:45:45,615 - agent.web_search - INFO - Searching (29/50): „›ÂÊ„ «·«ﬁ ’«œ «·”·ÊﬂÌ Ê √ÀÌ—Â ⁄·Ï «·ﬁ—«—«  «·„«·Ì…
+2025-09-25 14:45:53,547 - agent.web_search - INFO - Searching (30/50): ‘—Õ ‘Â«œ«  «·«œŒ«— Ê«·Êœ«∆⁄ «·»‰ﬂÌ… ›Ì „’—
+2025-09-25 14:46:01,130 - agent.web_search - INFO - Searching (31/50): √›÷· „‰’«  «· œ«Ê· «·≈·ﬂ —Ê‰Ì ··√”Â„ ›Ì „’—
+2025-09-25 14:46:07,644 - agent.web_search - INFO - Searching (32/50): ÿ—ﬁ  „ÊÌ· —√” «·„«· «·⁄«„· ··‘—ﬂ« 
+2025-09-25 14:46:16,491 - agent.web_search - INFO - Searching (33/50): √Â„Ì… ÕÊﬂ„… «·‘—ﬂ«  ÊœÊ—Â« ›Ì Ã–» «·«” À„«—
+2025-09-25 14:46:24,878 - agent.web_search - INFO - Searching (34/50): ‰Ÿ«„ «·÷—«∆» ›Ì „’—: √‰Ê«⁄Â« ÊﬂÌ›Ì… Õ”«»Â«
+2025-09-25 14:46:30,736 - agent.web_search - INFO - Searching (35/50): „” ﬁ»· «·„œ›Ê⁄«  «·—ﬁ„Ì… Ê«·„Õ«›Ÿ «·≈·ﬂ —Ê‰Ì…
+2025-09-25 14:46:38,290 - agent.web_search - INFO - Searching (36/50): ﬂÌ›Ì… «Œ Ì«— Ê”Ìÿ  √„Ì‰ „‰«”»
+2025-09-25 14:46:46,131 - agent.web_search - INFO - Searching (37/50):  ﬁÌÌ„ «·„‘«—Ì⁄ «·«” À„«—Ì… »«” Œœ«„ ’«›Ì «·ﬁÌ„… «·Õ«·Ì…
+2025-09-25 14:46:54,066 - agent.web_search - INFO - Searching (38/50): «·›—ﬁ »Ì‰ «· Õ·Ì· «·„«·Ì Ê«· Õ·Ì· «·«ﬁ ’«œÌ
+2025-09-25 14:47:02,050 - agent.web_search - INFO - Searching (39/50): √À— «· Ã«—… «·œÊ·Ì… ⁄·Ï ”⁄— ’—› «·Ã‰ÌÂ «·„’—Ì
+2025-09-25 14:47:09,863 - agent.web_search - INFO - Searching (40/50): „Œ«ÿ— «·«” À„«— ›Ì «·–Â» Ê«·›÷…
+2025-09-25 14:47:17,351 - agent.web_search - INFO - Searching (41/50): „›ÂÊ„ «·‘„Ê· «·„«·Ì ÊœÊ—Â ›Ì «· ‰„Ì… «·«ﬁ ’«œÌ…
+2025-09-25 14:47:24,813 - agent.web_search - INFO - Searching (42/50): ﬂÌ›Ì… ≈⁄œ«œ Œÿ… „«·Ì… ‘Œ’Ì… ÿÊÌ·… «·√Ã·
+2025-09-25 14:47:32,568 - agent.web_search - INFO - Searching (43/50): √œÊ«  ≈œ«—… «·„Œ«ÿ— «·„«·Ì… ··„ƒ””« 
+2025-09-25 14:47:41,559 - agent.web_search - INFO - Searching (44/50): ‘—Õ „ƒ‘—«  «·»Ê—’… «·—∆Ì”Ì… ›Ì „’—
+2025-09-25 14:47:49,062 - agent.web_search - INFO - Searching (45/50):  „ÊÌ· «·’«œ—«  Ê«·Ê«—œ« : ¬·Ì«  Ê⁄ﬁ»« 
+2025-09-25 14:47:56,188 - agent.web_search - INFO - Searching (46/50): œÊ— ’‰«œÌﬁ «·À—Ê… «·”Ì«œÌ… ›Ì «·«ﬁ ’«œ «·„’—Ì
+2025-09-25 14:48:04,996 - agent.web_search - INFO - Searching (47/50): «· ÕœÌ«  «·√Œ·«ﬁÌ… ›Ì «·ﬁÿ«⁄ «·„«·Ì
+2025-09-25 14:48:13,322 - agent.web_search - INFO - Searching (48/50): ﬂÌ›Ì… ﬁ—«¡… Ê Õ·Ì· «·„Ì“«‰Ì… «·⁄„Ê„Ì…
+2025-09-25 14:48:21,208 - agent.web_search - INFO - Searching (49/50): √‰Ê«⁄ «·„‘ ﬁ«  «·„«·Ì… Ê«” Œœ«„« Â«
+2025-09-25 14:48:29,295 - agent.web_search - INFO - Searching (50/50):  √ÀÌ— «· €Ì—«  «·œÌ„Ê€—«›Ì… ⁄·Ï √‰Ÿ„… «·„⁄«‘« 
+2025-09-25 14:48:34,001 - agent.web_search - INFO - Total search results collected: 250
+2025-09-25 14:48:34,001 - agent.web_search - INFO - Completed execution of web_search in 390.87s
+2025-09-25 15:40:43,911 - agent.web_search - INFO - Starting execution of web_search
+2025-09-25 15:40:43,911 - agent.web_search - INFO - Performing web search for 50 queries
+2025-09-25 15:40:43,911 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-25 15:40:43,911 - agent.web_search - INFO - Searching (1/50): ≈œ«—… «·„Õ«›Ÿ «·«” À„«—Ì… ··„» œ∆Ì‰
+2025-09-25 15:40:51,889 - agent.web_search - INFO - Searching (2/50):  Õ·Ì· «·√”Â„ «·„’—Ì… ﬁ»· «·‘—«¡
+2025-09-25 15:40:59,878 - agent.web_search - INFO - Searching (3/50): ÿ—ﬁ  ﬁÌÌ„ «·‘—ﬂ«  «·‰«‘∆…
+2025-09-25 15:41:07,960 - agent.web_search - INFO - Searching (4/50): „Œ«ÿ— «·«” À„«— ›Ì «·⁄„·«  «·„‘›—…
+2025-09-25 15:41:16,320 - agent.web_search - INFO - Searching (5/50): √Â„Ì… «· ŒÿÌÿ «·„«·Ì «·‘Œ’Ì
+2025-09-25 15:41:24,087 - agent.web_search - INFO - Searching (6/50): ﬂÌ›Ì… ≈⁄œ«œ „Ì“«‰Ì… „‰“·Ì… ›⁄«·…
+2025-09-25 15:41:32,517 - agent.web_search - INFO - Searching (7/50): √‰Ê«⁄ «·ﬁ—Ê÷ «·»‰ﬂÌ… ›Ì „’—
+2025-09-25 15:41:40,757 - agent.web_search - INFO - Searching (8/50): „»«œ∆ «· „ÊÌ· «·⁄ﬁ«—Ì «·≈”·«„Ì
+2025-09-25 15:41:49,155 - agent.web_search - INFO - Searching (9/50):  √ÀÌ— «· ÷Œ„ ⁄·Ï «·ﬁÊ… «·‘—«∆Ì…
+2025-09-25 15:41:57,477 - agent.web_search - INFO - Searching (10/50): «” —« ÌÃÌ«  «· ÕÊÿ ›Ì «·√”Ê«ﬁ «·„«·Ì…
+2025-09-25 15:42:05,988 - agent.web_search - INFO - Searching (11/50): ›Â„ „ƒ‘—«  «·»Ê—’… «·„’—Ì…
+2025-09-25 15:42:15,894 - agent.web_search - INFO - Searching (12/50): œÊ— «·»‰ﬂ «·„—ﬂ“Ì ›Ì «·”Ì«”… «·‰ﬁœÌ…
+2025-09-25 15:42:24,498 - agent.web_search - INFO - Searching (13/50):  Õ·Ì· «·»Ì«‰«  «·„«·Ì… ··‘—ﬂ«  «·„”«Â„…
+2025-09-25 15:42:34,021 - agent.web_search - INFO - Searching (14/50): √”«”Ì«  «·„Õ«”»… «·„«·Ì… ··„œÌ—Ì‰
+2025-09-25 15:42:41,385 - agent.web_search - INFO - Searching (15/50): ﬂÌ›Ì… «Œ Ì«— ’‰œÊﬁ «” À„«— „‰«”»
+2025-09-25 15:42:51,411 - agent.web_search - INFO - Searching (16/50): „” ﬁ»· «·„œ›Ê⁄«  «·—ﬁ„Ì… ›Ì „’—
+2025-09-25 15:42:59,917 - agent.web_search - INFO - Searching (17/50):  ÕœÌ«  «·«· “«„ »«··Ê«∆Õ «·„’—›Ì…
+2025-09-25 15:43:08,950 - agent.web_search - INFO - Searching (18/50):  ﬁÌÌ„ «·„Œ«ÿ— «·«∆ „«‰Ì… ··√›—«œ
+2025-09-25 15:43:17,562 - agent.web_search - INFO - Searching (19/50): «·›—ﬁ »Ì‰ «·”‰œ«  Ê«·√”Â„ ›Ì «·«” À„«—
+2025-09-25 15:43:25,434 - agent.web_search - INFO - Searching (20/50): ≈œ«—… —√” «·„«· «·⁄«„· ›Ì «·‘—ﬂ«  «·’€Ì—…
+2025-09-25 15:43:33,256 - agent.web_search - INFO - Searching (21/50): ‰’«∆Õ ··«” À„«— ›Ì «·–Â» Ê«·›÷…
+2025-09-25 15:43:41,385 - agent.web_search - INFO - Searching (22/50): „›ÂÊ„ «· √„Ì‰ ⁄·Ï «·ÕÌ«… Ê√‰Ê«⁄Â
+2025-09-25 15:43:49,631 - agent.web_search - INFO - Searching (23/50):  Õ·Ì· ›‰Ì ··⁄„·«  «·√Ã‰»Ì… («·›Ê—ﬂ”)
+2025-09-25 15:43:57,363 - agent.web_search - INFO - Searching (24/50): ﬂÌ›Ì… Õ”«» «·⁄«∆œ ⁄·Ï «·«” À„«— (ROI)
+2025-09-25 15:44:05,712 - agent.web_search - INFO - Searching (25/50): œÊ— ’‰«œÌﬁ «· ÕÊÿ ›Ì «·√”Ê«ﬁ «·⁄«·„Ì…
+2025-09-25 15:44:13,861 - agent.web_search - INFO - Searching (26/50):  √ÀÌ— √”⁄«— «·›«∆œ… ⁄·Ï «·«ﬁ ’«œ «·„’—Ì
+2025-09-25 15:44:22,271 - agent.web_search - INFO - Searching (27/50): «” —« ÌÃÌ«  «· Ê›Ì— ·· ﬁ«⁄œ ›Ì ”‰ „»ﬂ—
+2025-09-25 15:44:31,079 - agent.web_search - INFO - Searching (28/50): √‰Ê«⁄ «·«Õ Ì«· «·„«·Ì ÊﬂÌ›Ì…  Ã‰»Â
+2025-09-25 15:44:39,169 - agent.web_search - INFO - Searching (29/50):  ﬁ‰Ì«  «· ⁄·„ «·¬·Ì ›Ì «· Õ·Ì· «·„«·Ì
+2025-09-25 15:44:45,923 - agent.web_search - INFO - Searching (30/50): √”«”Ì«   „ÊÌ· «·„‘«—Ì⁄ «·’€Ì—… Ê«·„ Ê”ÿ…
+2025-09-25 15:44:53,485 - agent.web_search - INFO - Searching (31/50): ﬁÊ«‰Ì‰ Õ„«Ì… «·„” Â·ﬂ «·„«·Ì ›Ì „’—
+2025-09-25 15:45:02,032 - agent.web_search - INFO - Searching (32/50): ﬂÌ›Ì… «· ›—Ìﬁ »Ì‰ «· „ÊÌ· Ê«·«” À„«—
+2025-09-25 15:45:10,856 - agent.web_search - INFO - Searching (33/50): «· ﬂ‰Ê·ÊÃÌ« «·„«·Ì… (FinTech) Ê√À—Â« ⁄·Ï «·»‰Êﬂ
+2025-09-25 15:45:18,492 - agent.web_search - INFO - Searching (34/50): ≈œ«—… «·œÌÊ‰ «·‘Œ’Ì… »›⁄«·Ì…
+2025-09-25 15:45:26,655 - agent.web_search - INFO - Searching (35/50):  Õ·Ì· ”·Êﬂ «·„” À„—Ì‰ ›Ì √Êﬁ«  «·√“„« 
+2025-09-25 15:45:34,054 - agent.web_search - INFO - Searching (36/50): „›ÂÊ„ «·ﬁÌ„… «·“„‰Ì… ··‰ﬁÊœ
+2025-09-25 15:45:41,063 - agent.web_search - INFO - Searching (37/50): √›÷· ÿ—ﬁ «·«” À„«— ›Ì «·⁄ﬁ«—«  «·”ﬂ‰Ì…
+2025-09-25 15:45:48,147 - agent.web_search - INFO - Searching (38/50): œÊ— «·„—«Ã⁄… «·„«·Ì… ›Ì «·‘—ﬂ«  «·ﬂ»—Ï
+2025-09-25 15:45:56,271 - agent.web_search - INFO - Searching (39/50): ﬂÌ›Ì… › Õ Õ”«»  œ«Ê· √”Â„ ⁄»— «·≈‰ —‰ 
+2025-09-25 15:46:04,753 - agent.web_search - INFO - Searching (40/50): ›Â„ „ƒ‘— ”⁄— «·„” Â·ﬂ (CPI) Ê √ÀÌ—Â
+2025-09-25 15:46:13,142 - agent.web_search - INFO - Searching (41/50): «” —« ÌÃÌ«  «·«” À„«— «·√Œ·«ﬁÌ Ê«·„”ƒÊ·
+2025-09-25 15:46:21,232 - agent.web_search - INFO - Searching (42/50):  ÕœÌ«   „ÊÌ· «·»‰Ì… «· Õ Ì… ›Ì «·œÊ· «·‰«„Ì…
+2025-09-25 15:46:29,690 - agent.web_search - INFO - Searching (43/50): ﬂÌ›Ì…  ﬁœÌ— ﬁÌ„… «·⁄„·«  «·—ﬁ„Ì…
+2025-09-25 15:46:35,939 - agent.web_search - INFO - Searching (44/50): √”” «· ŒÿÌÿ ··÷—«∆» «·‘Œ’Ì… ›Ì „’—
+2025-09-25 15:46:45,887 - agent.web_search - INFO - Searching (45/50):  Õ·Ì· «·„Œ«ÿ— «·”Ì«œÌ… ··œÊ·
+2025-09-25 15:46:54,634 - agent.web_search - INFO - Searching (46/50): œÊ— «·»Ê—’«  «·”·⁄Ì… ›Ì  ÕœÌœ «·√”⁄«—
+2025-09-25 15:47:02,347 - agent.web_search - INFO - Searching (47/50): «” —« ÌÃÌ«  «· „ÊÌ· «·Ã„«⁄Ì (Crowdfunding) ··„‘«—Ì⁄
+2025-09-25 15:47:10,594 - agent.web_search - INFO - Searching (48/50): √À— «·–ﬂ«¡ «·«’ÿ‰«⁄Ì ⁄·Ï «·Œœ„«  «·„’—›Ì…
+2025-09-25 15:47:18,782 - agent.web_search - INFO - Searching (49/50): ﬂÌ›Ì… »‰«¡ „Õ›Ÿ… «” À„«—Ì… „ Ê«“‰…
+2025-09-25 15:47:26,527 - agent.web_search - INFO - Searching (50/50): „›ÂÊ„ «·„‘ ﬁ«  «·„«·Ì… Ê«” Œœ«„« Â«
+2025-09-25 15:47:31,366 - agent.web_search - INFO - Total search results collected: 250
+2025-09-25 15:47:31,367 - agent.web_search - INFO - Completed execution of web_search in 407.46s
+2025-09-25 16:19:03,872 - agent.web_search - INFO - Starting execution of web_search
+2025-09-25 16:19:03,872 - agent.web_search - INFO - Performing web search for 20 queries
+2025-09-25 16:19:03,873 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-25 16:19:03,873 - agent.web_search - INFO - Searching (1/20): ≈“«Ì √⁄„· „Ì“«‰Ì… ‘Œ’Ì… ›⁄«·… ›Ì „’—ø
+2025-09-25 16:19:10,886 - agent.web_search - INFO - Searching (2/20): ŒÿÊ«  «·«” À„«— ›Ì «·»Ê—’… «·„’—Ì… ··„» œ∆Ì‰
+2025-09-25 16:19:18,446 - agent.web_search - INFO - Searching (3/20): ÿ—ﬁ  ﬁÌÌ„ «·‘—ﬂ«  «·‰«‘∆… ›Ì «·”Êﬁ «·„’—Ì
+2025-09-25 16:19:26,711 - agent.web_search - INFO - Searching (4/20): „” ﬁ»· «·œ›⁄ «·≈·ﬂ —Ê‰Ì ›Ì «·»‰Êﬂ «·„’—Ì…
+2025-09-25 16:19:34,521 - agent.web_search - INFO - Searching (5/20): ≈œ«—… „Œ«ÿ— «· ﬁ·»«  «·”ÊﬁÌ… ›Ì «·„Õ«›Ÿ «·«” À„«—Ì…
+2025-09-25 16:19:44,563 - agent.web_search - INFO - Searching (6/20): √›÷· Œÿÿ «· ﬁ«⁄œ Ê«· √„Ì‰ «·«Ã „«⁄Ì ›Ì „’—
+2025-09-25 16:19:52,447 - agent.web_search - INFO - Searching (7/20): „›ÂÊ„ «·⁄„·«  «·—ﬁ„Ì… Ê √ÀÌ—Â« ⁄·Ï «·«ﬁ ’«œ «·⁄«·„Ì
+2025-09-25 16:19:59,853 - agent.web_search - INFO - Searching (8/20):  Õ·Ì· ›—’ «·«” À„«— «·⁄ﬁ«—Ì ›Ì «·⁄«’„… «·≈œ«—Ì… «·ÃœÌœ…
+2025-09-25 16:20:08,404 - agent.web_search - INFO - Searching (9/20): „’«œ—  „ÊÌ· «·„‘—Ê⁄«  «·’€Ì—… Ê«·„ Ê”ÿ… ›Ì „’—
+2025-09-25 16:20:16,254 - agent.web_search - INFO - Searching (10/20): ﬂÌ›Ì… «· ⁄—› ⁄·Ï «·«Õ Ì«· «·„«·Ì ÊÕ„«Ì… ‰›”ﬂ „‰Â
+2025-09-25 16:20:24,357 - agent.web_search - INFO - Searching (11/20): œÊ— «·–ﬂ«¡ «·«’ÿ‰«⁄Ì ›Ì  Õ·Ì· «·»Ì«‰«  «·„«·Ì…
+2025-09-25 16:20:32,481 - agent.web_search - INFO - Searching (12/20): «·«” À„«— ›Ì «·”‰œ«  Ê√–Ê‰ «·Œ“«‰… «·ÕﬂÊ„Ì…
+2025-09-25 16:20:40,365 - agent.web_search - INFO - Searching (13/20): „»«œ∆ «· „ÊÌ· «·≈”·«„Ì Ê«·„‰ Ã«  «·„ Ê«›ﬁ… „⁄ «·‘—Ì⁄…
+2025-09-25 16:20:48,182 - agent.web_search - INFO - Searching (14/20):  √ÀÌ— ﬁ—«—«  «·»‰ﬂ «·„—ﬂ“Ì «·„’—Ì ⁄·Ï ”⁄— «·›«∆œ…
+2025-09-25 16:20:56,312 - agent.web_search - INFO - Searching (15/20): √”«”Ì«   œ«Ê· «·⁄„·«  «·√Ã‰»Ì… («·›Ê—ﬂ”) ··„» œ∆Ì‰
+2025-09-25 16:21:04,429 - agent.web_search - INFO - Searching (16/20): «” —« ÌÃÌ«  ”œ«œ «·œÌÊ‰ «·‘Œ’Ì… Ê Ã‰» «· —«ﬂ„
+2025-09-25 16:21:12,516 - agent.web_search - INFO - Searching (17/20): √Â„Ì… «·Àﬁ«›… «·„«·Ì… ›Ì »‰«¡ „” ﬁ»· „«·Ì „” ﬁ—
+2025-09-25 16:21:21,734 - agent.web_search - INFO - Searching (18/20): ⁄„·Ì«  «·«‰œ„«Ã Ê«·«” ÕÊ«– ›Ì «·ﬁÿ«⁄ «·„’—›Ì «·„’—Ì
+2025-09-25 16:21:30,266 - agent.web_search - INFO - Searching (19/20): √ÕœÀ «· ⁄œÌ·«  ⁄·Ï ﬁ«‰Ê‰ ”Êﬁ «·„«· «·„’—Ì
+2025-09-25 16:21:38,116 - agent.web_search - INFO - Searching (20/20): ﬂÌ›Ì…  œ«Ê· «·”·⁄ «·√”«”Ì… “Ì «·œÂ» Ê«·» —Ê·
+2025-09-25 16:21:43,862 - agent.web_search - INFO - Total search results collected: 100
+2025-09-25 16:21:43,863 - agent.web_search - INFO - Completed execution of web_search in 159.99s
+2025-09-25 21:09:47,906 - agent.web_search - INFO - Starting execution of web_search
+2025-09-25 21:09:47,906 - agent.web_search - INFO - Performing web search for 20 queries
+2025-09-25 21:09:47,906 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-25 21:09:47,906 - agent.web_search - INFO - Searching (1/20): ≈œ«—… «·„Ì“«‰Ì… «·‘Œ’Ì… ··„» œ∆Ì‰ ›Ì „’—
+2025-09-25 21:09:55,869 - agent.web_search - INFO - Searching (2/20):  Õ·Ì· «·ﬁÊ«∆„ «·„«·Ì… ··‘—ﬂ«  «·„”«Â„…
+2025-09-25 21:10:04,379 - agent.web_search - INFO - Searching (3/20): «” —« ÌÃÌ«  «·«” À„«— ›Ì «·»Ê—’… «·„’—Ì… ··„œÏ «·ÿÊÌ·
+2025-09-25 21:10:12,861 - agent.web_search - INFO - Searching (4/20): „Œ«ÿ— ”Êﬁ «·⁄„·«  «·√Ã‰»Ì… ÊﬂÌ›Ì… ≈œ«— Â«
+2025-09-25 21:10:20,630 - agent.web_search - INFO - Searching (5/20): œÊ— «·»‰ﬂ «·„—ﬂ“Ì «·„’—Ì ›Ì «·”Ì«”… «·‰ﬁœÌ…
+2025-09-28 12:46:51,294 - agent.web_search - INFO - Starting execution of web_search
+2025-09-28 12:46:51,294 - agent.web_search - INFO - Performing web search for 20 queries
+2025-09-28 12:46:51,295 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-28 12:46:51,295 - agent.web_search - INFO - Searching (1/20): ≈œ«—… «·„Õ«›Ÿ «·«” À„«—Ì… ··„» œ∆Ì‰
+2025-09-28 12:46:58,767 - agent.web_search - INFO - Searching (2/20):  Õ·Ì· «·»Ì«‰«  «·„«·Ì… ··‘—ﬂ«  «·’€Ì—… Ê«·„ Ê”ÿ…
+2025-09-28 13:00:12,378 - agent.web_search - INFO - Starting execution of web_search
+2025-09-28 13:00:12,379 - agent.web_search - INFO - Performing web search for 20 queries
+2025-09-28 13:00:12,379 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-28 13:00:12,379 - agent.web_search - INFO - Searching (1/20): ≈œ«—… «·„Ì“«‰Ì… «·‘Œ’Ì… Ê«· Õﬂ„ ›Ì «·„’—Ê›« 
+2025-09-28 13:04:00,604 - agent.web_search - INFO - Starting execution of web_search
+2025-09-28 13:04:00,605 - agent.web_search - INFO - Performing web search for 20 queries
+2025-09-28 13:04:00,605 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-28 13:04:00,605 - agent.web_search - INFO - Searching (1/20): «“«Ì √⁄„· „Ì“«‰Ì… ‘Œ’Ì… ›⁄«·… ›Ì „’—ø
+2025-09-28 13:11:26,592 - agent.web_search - INFO - Starting execution of web_search
+2025-09-28 13:11:26,593 - agent.web_search - INFO - Performing web search for 20 queries
+2025-09-28 13:11:26,593 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-28 13:11:26,593 - agent.web_search - INFO - Searching (1/20): «“«Ì √⁄„· „Ì“«‰Ì… ‘Œ’Ì… ›⁄«·… ›Ì „’—ø
+2025-09-28 19:03:48,079 - agent.web_search - INFO - Starting execution of web_search
+2025-09-28 19:03:48,079 - agent.web_search - INFO - Performing web search for 20 queries
+2025-09-28 19:03:48,079 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-28 19:03:48,079 - agent.web_search - INFO - Searching (1/20):  √ÀÌ— «·–ﬂ«¡ «·«’ÿ‰«⁄Ì ⁄·Ï «·„Ã „⁄ «·„’—Ì
+2025-09-28 19:03:56,783 - agent.web_search - INFO - Searching (2/20): «” —« ÌÃÌ«  «·Êﬁ«Ì… „‰ «·√„—«÷ «·„“„‰… »„’—
+2025-09-28 19:04:03,894 - agent.web_search - INFO - Searching (3/20):  Õ·Ì· «· €Ì—«  ›Ì «·⁄«œ«  «·«Ã „«⁄Ì… «·„’—Ì…
+2025-09-28 19:04:12,095 - agent.web_search - INFO - Searching (4/20):  ÕœÌ«  «·„‘—Ê⁄«  «·’€Ì—… Ê«·„ Ê”ÿ… »„’—
+2025-09-28 19:04:19,895 - agent.web_search - INFO - Searching (5/20):  ﬁ‰Ì«  „⁄«·Ã… «·„Œ·›«  «·’·»… »«·ﬁ«Â—…
+2025-09-28 19:04:27,263 - agent.web_search - INFO - Searching (6/20): „” ﬁ»· «· ⁄·Ì„ «·—ﬁ„Ì ›Ì «·„œ«—” «·„’—Ì…
+2025-09-28 19:04:35,129 - agent.web_search - INFO - Searching (7/20):  ŒÿÌÿ «·„œ‰ «·ÃœÌœ… Ê√À—Â« «·»Ì∆Ì
+2025-09-28 19:04:43,437 - agent.web_search - INFO - Searching (8/20): œÊ— «·≈⁄·«„ «·ÃœÌœ ›Ì  ‘ﬂÌ· «·—√Ì «·⁄«„
+2025-09-28 19:04:52,621 - agent.web_search - INFO - Searching (9/20): «·√„‰ «·€–«∆Ì ›Ì „’—: «· ÕœÌ«  Ê«·Õ·Ê·
+2025-09-28 19:05:00,422 - agent.web_search - INFO - Searching (10/20):  ÿÊ— ’‰«⁄… «·”Ì‰„« «·„” ﬁ·… »„’—
+2025-09-28 19:05:07,601 - agent.web_search - INFO - Searching (11/20): Ÿ«Â—… «·ÂÃ—… €Ì— «·‘—⁄Ì… Ê √ÀÌ—Â« «·„Ã „⁄Ì
+2025-09-28 19:05:15,512 - agent.web_search - INFO - Searching (12/20): «·≈ÿ«— «·ﬁ«‰Ê‰Ì ·Õ„«Ì… «·„” Â·ﬂ «·„’—Ì
+2025-09-28 19:05:23,222 - agent.web_search - INFO - Searching (13/20): «·’Õ… «·‰›”Ì… ··‘»«»: „›«ÂÌ„ Ê ÿ»Ìﬁ« 
+2025-09-28 19:05:28,618 - agent.web_search - INFO - Searching (14/20):  ÿÊÌ— ‘»ﬂ… «·‰ﬁ· «·⁄«„ »„œ‰ «·œ· «
+2025-09-28 19:05:39,021 - agent.web_search - INFO - Searching (15/20): „’«œ— «·ÿ«ﬁ… «·„ Ãœœ… Ê ÿ»Ìﬁ« Â« «·’‰«⁄Ì… »„’—
+2025-09-28 19:05:46,020 - agent.web_search - INFO - Searching (16/20): «” œ«„… «·”Ì«Õ… «·»Ì∆Ì… »«·Ê«Õ«  «·„’—Ì…
+2025-09-28 19:05:54,392 - agent.web_search - INFO - Searching (17/20): ”Êﬁ «·⁄„· «·„’—Ì: ›—’ Ê ÕœÌ«  «·Œ—ÌÃÌ‰
+2025-09-28 19:06:03,780 - agent.web_search - INFO - Searching (18/20): ÃÊœ… «·Œœ„«  «·ÕﬂÊ„Ì… «·—ﬁ„Ì… ··„Ê«ÿ‰Ì‰
+2025-09-28 19:06:11,898 - agent.web_search - INFO - Searching (19/20): «· €Ì—«  «·œÌ„Ê€—«›Ì… Ê √ÀÌ—Â« ⁄·Ï «·√”—… «·„’—Ì…
+2025-09-28 19:06:19,778 - agent.web_search - INFO - Searching (20/20):  ÿ»Ìﬁ«  «· ﬂ‰Ê·ÊÃÌ« «·ÕÌÊÌ… ›Ì «·“—«⁄… «·„’—Ì…
+2025-09-28 19:06:24,813 - agent.web_search - INFO - Total search results collected: 100
+2025-09-28 19:06:24,814 - agent.web_search - INFO - Completed execution of web_search in 156.73s
+2025-09-28 19:45:05,749 - agent.web_search - INFO - Starting execution of web_search
+2025-09-28 19:45:05,749 - agent.web_search - INFO - Performing web search for 20 queries
+2025-09-28 19:45:05,749 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-28 19:45:05,749 - agent.web_search - INFO - Searching (1/20): √›÷·  ÿ»Ìﬁ«  ≈‰ «ÃÌ… «·„Ê»«Ì·
+2025-09-28 19:45:14,262 - agent.web_search - INFO - Searching (2/20): «” —« ÌÃÌ«  «·«œŒ«— «·‘Œ’Ì «·›⁄«·…
+2025-09-28 19:45:21,935 - agent.web_search - INFO - Searching (3/20): ›Ê«∆œ «·„‘Ì «·ÌÊ„Ì ··’Õ…
+2025-09-28 19:45:29,639 - agent.web_search - INFO - Searching (4/20):  ÿÊ— «·›‰ «·„⁄«’— «·„’—Ì
+2025-09-28 19:45:37,008 - agent.web_search - INFO - Searching (5/20):  ﬁ‰Ì«  «· ⁄·„ «·”—Ì⁄ «·›⁄«·…
+2025-09-28 19:45:44,502 - agent.web_search - INFO - Searching (6/20): ≈Ã—«¡«  «” Œ—«Ã «·√Ê—«ﬁ «·ÕﬂÊ„Ì…
+2025-09-28 19:45:53,295 - agent.web_search - INFO - Searching (7/20): Õ·Ê·  ·ÊÀ «·ÂÊ«¡ »«·ﬁ«Â—…
+2025-09-28 19:46:01,789 - agent.web_search - INFO - Searching (8/20): √›÷· ÊÃÂ«  «·”Ì«Õ… «·œ«Œ·Ì…
+2025-09-28 19:46:10,819 - agent.web_search - INFO - Searching (9/20): ‰’«∆Õ  ‰ŸÌ„ «·„‰“· «·›⁄¯«·
+2025-09-28 19:46:18,586 - agent.web_search - INFO - Searching (10/20): „Â«—«  ”Êﬁ «·⁄„· «·„ÿ·Ê»…
+2025-09-28 19:46:26,875 - agent.web_search - INFO - Searching (11/20): √”” Õ„«Ì… «·»Ì«‰«  «·‘Œ’Ì…
+2025-09-28 19:46:32,819 - agent.web_search - INFO - Searching (12/20): ÕﬁÊﬁ «·„” Â·ﬂ »«·‘—«¡ «·≈·ﬂ —Ê‰Ì
+2025-09-28 19:46:40,409 - agent.web_search - INFO - Searching (13/20): œ·Ì· «· €–Ì… «·’ÕÌ… «·„ Ê«“‰…
+2025-09-28 19:46:47,963 - agent.web_search - INFO - Searching (14/20): ÿ—ﬁ ≈œ«—… «·÷€Êÿ «·‰›”Ì…
+2025-09-28 19:46:55,254 - agent.web_search - INFO - Searching (15/20):  ÕœÌ«  «· ŒÿÌÿ «·⁄„—«‰Ì ··„œ‰
+2025-09-28 19:47:02,841 - agent.web_search - INFO - Searching (16/20): ŒÿÊ«   √”Ì” „‘—Ê⁄ ’€Ì—
+2025-09-28 19:47:09,482 - agent.web_search - INFO - Searching (17/20):  √ÀÌ— «·”Ê‘Ì«· „ÌœÌ« «·„Ã „⁄Ì
+2025-09-28 19:47:10,368 - agent.web_search - ERROR - Tavily API quota is exhausted. Halting all further web searches.
+2025-09-28 19:47:10,369 - agent.web_search - WARNING - Proceeding with partially collected search results.
+2025-09-28 19:47:10,370 - agent.web_search - INFO - Total search results collected: 80
+2025-09-28 19:47:10,370 - agent.web_search - INFO - Completed execution of web_search in 124.62s
+2025-09-29 11:00:49,787 - agent.web_search - INFO - Starting execution of web_search
+2025-09-29 11:00:49,787 - agent.web_search - INFO - Performing web search for 5 queries
+2025-09-29 11:00:49,787 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-29 11:00:49,787 - agent.web_search - INFO - Searching (1/5):  ÕœÌ«  «·ÿ«ﬁ… «·„ Ãœœ… »„’—
+2025-09-29 11:00:51,046 - agent.web_search - ERROR - Tavily API quota is exhausted. Halting all further web searches.
+2025-09-29 11:00:51,046 - agent.web_search - ERROR - An error occurred in the web search agent that will halt the workflow: Web search failed completely due to Tavily quota exhaustion. Halting workflow.
+2025-09-29 11:00:51,047 - agent.web_search - ERROR - Error in web_search after 1.26s: Web search failed completely due to Tavily quota exhaustion. Halting workflow.
+2025-09-29 11:01:36,774 - agent.web_search - INFO - Starting execution of web_search
+2025-09-29 11:01:36,774 - agent.web_search - INFO - Performing web search for 5 queries
+2025-09-29 11:01:36,775 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-29 11:01:36,776 - agent.web_search - INFO - Searching (1/5):  ÕœÌ«  «·ÿ«ﬁ… «·„ Ãœœ… »„’—
+2025-09-29 11:01:37,612 - agent.web_search - ERROR - Tavily API quota is exhausted. Halting all further web searches.
+2025-09-29 11:01:37,612 - agent.web_search - ERROR - An error occurred in the web search agent that will halt the workflow: Web search failed completely due to Tavily quota exhaustion. Halting workflow.
+2025-09-29 11:01:37,612 - agent.web_search - ERROR - Error in web_search after 0.84s: Web search failed completely due to Tavily quota exhaustion. Halting workflow.
+2025-09-29 11:02:49,419 - agent.web_search - INFO - Starting execution of web_search
+2025-09-29 11:02:49,419 - agent.web_search - INFO - Performing web search for 5 queries
+2025-09-29 11:02:49,419 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-29 11:02:49,419 - agent.web_search - INFO - Searching (1/5):  ÕœÌ«  «·ÿ«ﬁ… «·„ Ãœœ… »„’—
+2025-09-29 11:02:56,982 - agent.web_search - INFO - Searching (2/5):  √ÀÌ— «·”Ê‘Ì«· „ÌœÌ« ⁄ «·„Ã „⁄ «·„’—Ì
+2025-09-29 11:03:05,328 - agent.web_search - INFO - Searching (3/5): √ÕœÀ «ﬂ ‘«›«  «·¬À«— «·„’—Ì…
+2025-09-29 11:03:13,093 - agent.web_search - INFO - Searching (4/5): ›—’ «·«” À„«— › «·„‘—Ê⁄«  «·’€Ì—…
+2025-09-29 11:03:20,619 - agent.web_search - INFO - Searching (5/5):  ÕœÌ«  «· Ê⁄Ì… »«·’Õ… «·‰›”Ì…
+2025-09-29 11:03:25,556 - agent.web_search - INFO - Total search results collected: 25
+2025-09-29 11:03:25,557 - agent.web_search - INFO - Completed execution of web_search in 36.14s
+2025-09-29 11:47:59,750 - agent.web_search - INFO - Starting execution of web_search
+2025-09-29 11:47:59,750 - agent.web_search - INFO - Performing web search for 1 queries
+2025-09-29 11:47:59,751 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-29 11:47:59,751 - agent.web_search - INFO - Searching (1/1):  √ÀÌ— «· ﬂ‰Ê·ÊÃÌ« ⁄·Ï «·„Ã „⁄
+2025-09-29 11:48:03,225 - agent.web_search - INFO - Total search results collected: 5
+2025-09-29 11:48:03,225 - agent.web_search - INFO - Completed execution of web_search in 3.48s
+2025-09-29 11:48:43,880 - agent.web_search - INFO - Starting execution of web_search
+2025-09-29 11:48:43,880 - agent.web_search - INFO - Performing web search for 1 queries
+2025-09-29 11:48:43,880 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-29 11:48:43,880 - agent.web_search - INFO - Searching (1/1): «” —« ÌÃÌ«  Õ· «·„‘ﬂ·« 
+2025-09-29 11:48:49,004 - agent.web_search - INFO - Total search results collected: 5
+2025-09-29 11:48:49,004 - agent.web_search - INFO - Completed execution of web_search in 5.12s
+2025-09-29 11:49:30,114 - agent.web_search - INFO - Starting execution of web_search
+2025-09-29 11:49:30,115 - agent.web_search - INFO - Performing web search for 1 queries
+2025-09-29 11:49:30,115 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-29 11:49:30,115 - agent.web_search - INFO - Searching (1/1): «” —« ÌÃÌ«  Õ· «·„‘ﬂ·« 
+2025-09-29 11:49:32,109 - agent.web_search - INFO - Total search results collected: 5
+2025-09-29 11:49:32,111 - agent.web_search - INFO - Completed execution of web_search in 2.00s
+2025-09-29 11:50:09,738 - agent.web_search - INFO - Starting execution of web_search
+2025-09-29 11:50:09,738 - agent.web_search - INFO - Performing web search for 1 queries
+2025-09-29 11:50:09,739 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-29 11:50:09,739 - agent.web_search - INFO - Searching (1/1):  √ÀÌ— «· ÷Œ„ ⁄·Ï «·√”—… «·„’—Ì…
+2025-09-29 11:50:14,058 - agent.web_search - INFO - Total search results collected: 5
+2025-09-29 11:50:14,058 - agent.web_search - INFO - Completed execution of web_search in 4.32s
+2025-09-29 11:53:42,475 - agent.web_search - INFO - Starting execution of web_search
+2025-09-29 11:53:42,475 - agent.web_search - INFO - Performing web search for 1 queries
+2025-09-29 11:53:42,476 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-29 11:53:42,476 - agent.web_search - INFO - Searching (1/1):  ÕœÌ«  «· ‰„Ì… «·„” œ«„… ›Ì „’—
+2025-09-29 11:53:47,294 - agent.web_search - INFO - Total search results collected: 5
+2025-09-29 11:53:47,294 - agent.web_search - INFO - Completed execution of web_search in 4.82s
+2025-09-29 12:05:55,416 - agent.web_search - INFO - Starting execution of web_search
+2025-09-29 12:05:55,417 - agent.web_search - INFO - Performing web search for 1 queries
+2025-09-29 12:05:55,417 - agent.web_search - INFO - Strategy: 5 results per query
+2025-09-29 12:05:55,417 - agent.web_search - INFO - Searching (1/1): «” —« ÌÃÌ«  «· ›ﬂÌ— «·‰ﬁœÌ
+2025-09-29 12:05:58,346 - agent.web_search - INFO - Total search results collected: 5
+2025-09-29 12:05:58,346 - agent.web_search - INFO - Completed execution of web_search in 2.93s
+2025-09-29 12:24:36,411 - agent.web_search - INFO - Starting execution of web_search
+2025-09-29 12:24:36,411 - agent.web_search - INFO - Performing web search for 1 queries
+2025-09-29 12:24:36,412 - agent.web_search - INFO - Strategy: 3 results per query
+2025-09-29 12:24:36,412 - agent.web_search - INFO - Searching (1/1):  √ÀÌ— «· €Ì—«  «·„‰«ŒÌ… ⁄·Ï „’—
+2025-09-29 12:24:40,505 - agent.web_search - INFO - Total search results collected: 3
+2025-09-29 12:24:40,505 - agent.web_search - INFO - Completed execution of web_search in 4.09s
+2025-09-29 12:56:43,785 - agent.web_search - INFO - Starting execution of web_search
+2025-09-29 12:56:43,785 - agent.web_search - INFO - Performing web search for 1 queries
+2025-09-29 12:56:43,785 - agent.web_search - INFO - Strategy: 3 results per query
+2025-09-29 12:56:43,786 - agent.web_search - INFO - Searching (1/1): «” —« ÌÃÌ«  Õ· «·„‘ﬂ·«  «·›⁄«·…
+2025-09-29 12:56:46,346 - agent.web_search - INFO - Total search results collected: 3
+2025-09-29 12:56:46,346 - agent.web_search - INFO - Completed execution of web_search in 2.56s
+2025-09-29 13:00:08,025 - agent.web_search - INFO - Starting execution of web_search
+2025-09-29 13:00:08,025 - agent.web_search - INFO - Performing web search for 1 queries
+2025-09-29 13:00:08,025 - agent.web_search - INFO - Strategy: 3 results per query
+2025-09-29 13:00:08,025 - agent.web_search - INFO - Searching (1/1):  √ÀÌ— «· ﬂ‰Ê·ÊÃÌ« ⁄·Ï «·„Ã „⁄ «·„’—Ì
+2025-09-29 13:00:11,048 - agent.web_search - INFO - Total search results collected: 3
+2025-09-29 13:00:11,048 - agent.web_search - INFO - Completed execution of web_search in 3.02s
+2025-09-29 13:06:55,863 - agent.web_search - INFO - Starting execution of web_search
+2025-09-29 13:06:55,863 - agent.web_search - INFO - Performing web search for 1 queries
+2025-09-29 13:06:55,863 - agent.web_search - INFO - Strategy: 3 results per query
+2025-09-29 13:06:55,864 - agent.web_search - INFO - Searching (1/1):  ÿÊ—«  «· ﬂ‰Ê·ÊÃÌ« «·ÕœÌÀ…
+2025-09-29 13:07:00,515 - agent.web_search - INFO - Total search results collected: 3
+2025-09-29 13:07:00,516 - agent.web_search - INFO - Completed execution of web_search in 4.65s
+2025-09-29 13:09:34,414 - agent.web_search - INFO - Starting execution of web_search
+2025-09-29 13:09:34,414 - agent.web_search - INFO - Performing web search for 1 queries
+2025-09-29 13:09:34,415 - agent.web_search - INFO - Strategy: 3 results per query
+2025-09-29 13:09:34,415 - agent.web_search - INFO - Searching (1/1): „‰ÂÃÌ«  Õ· «·„‘ﬂ·«  «·›⁄«·…
+2025-09-29 13:10:09,295 - agent.web_search - INFO - Starting execution of web_search
+2025-09-29 13:10:09,295 - agent.web_search - INFO - Performing web search for 1 queries
+2025-09-29 13:10:09,296 - agent.web_search - INFO - Strategy: 3 results per query
+2025-09-29 13:10:09,296 - agent.web_search - INFO - Searching (1/1): „‰ÂÃÌ«  Õ· «·„‘ﬂ·«  «·›⁄«·…
+2025-09-29 13:10:11,633 - agent.web_search - INFO - Total search results collected: 3
+2025-09-29 13:10:11,634 - agent.web_search - INFO - Completed execution of web_search in 2.34s

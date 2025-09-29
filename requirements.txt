@@ -60,3 +60,7 @@ colorlog>=6.8.0
 # Security & Environment
 cryptography>=41.0.8
 python-jose>=3.3.0
+
+
+
+langdetect

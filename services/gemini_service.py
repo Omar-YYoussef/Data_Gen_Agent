@@ -1,5 +1,6 @@
 import google.generativeai as genai
 from typing import Dict, Any, List, Optional
+import asyncio
 import json
 import time
 import logging
@@ -13,11 +14,10 @@ class GeminiService:
     """Enhanced service with flexible JSON generation for user-specified data types"""
     
     def __init__(self):
-        if not settings.GEMINI_API_KEYS:
+        if not settings.GEMINI_API_KEY:
             raise ValueError("No GEMINI_API_KEYS found in environment variables. Please provide at least one.")
         
-        self.api_keys = settings.GEMINI_API_KEYS
-        self.current_key_index = 0
+        self.api_key = settings.GEMINI_API_KEY 
         self._configure_gemini_with_current_key()
 
         self.model = genai.GenerativeModel('gemini-2.5-flash')
@@ -28,16 +28,8 @@ class GeminiService:
             max_output_tokens=settings.GEMINI_MAX_TOKENS,
         )
 
-    def _get_current_api_key(self) -> str:
-        return self.api_keys[self.current_key_index]
-
-    def _rotate_api_key(self):
-        self.current_key_index = (self.current_key_index + 1) % len(self.api_keys)
-        self._configure_gemini_with_current_key()
-        self.logger.warning(f"Rotated to API key index: {self.current_key_index}")
-
     def _configure_gemini_with_current_key(self):
-        genai.configure(api_key=self._get_current_api_key())
+        genai.configure(api_key=self.api_key)
 
     def generate_text(self, prompt: str, 
                      system_instruction: Optional[str] = None,
@@ -48,43 +40,22 @@ class GeminiService:
         if system_instruction:
             full_prompt = f"System: {system_instruction}\n\nUser: {prompt}"
         
-        # We will try each key up to `max_retries` times, with a 60s cooldown if all keys fail in a row.
-        for cycle in range(max_retries):
-            time.sleep(3)
-            # Try each key once in a cycle
-            for _ in range(len(self.api_keys)):
-                try:
-                    self.logger.info(f"Attempting Gemini API call with key index: {self.current_key_index}")
-                    response = self.model.generate_content(
-                        full_prompt,
-                        generation_config=self.generation_config
-                    )
-                    # Success!
-                    return response.text
-                
-                except Exception as e:
-                    error_message = str(e).lower()
-                    self.logger.error(f"Gemini API call with key index {self.current_key_index} failed: {e}")
-                    
-                    # For any rate limit/quota error, we immediately rotate the key and try the next one.
-                    if "rate limit" in error_message or "quota" in error_message or "resource has been exhausted" in error_message:
-                        self.logger.warning("Rate limit/quota issue detected. Rotating to next API key.")
-                        self._rotate_api_key()
-                        continue # Try next key immediately
-                    else:
-                        # For other types of errors, rotate and continue the loop.
-                        self.logger.warning(f"An unexpected error occurred. Rotating to next API key.")
-                        self._rotate_api_key()
-
-            # If we've completed a full loop through all keys and all of them failed
-            self.logger.warning(
-                f"All API keys failed in cycle {cycle + 1}/{max_retries}. "
-                f"Waiting for 60 seconds before starting the next cycle."
+        try:
+            self.logger.info(f"Attempting Gemini API call with key index: {0}")
+            response = self.model.generate_content(
+                full_prompt,
+                generation_config=self.generation_config
             )
-            time.sleep(60)
-
-        # If all retry cycles fail
-        raise Exception(f"Failed to generate text after {max_retries} cycles through all API keys. Please check your API keys and quotas.")
+            return response.text
+        except Exception as e:
+            error_message = str(e).lower()
+            self.logger.error(f"Gemini API call with key index {0} failed: {e}")
+            
+            if "rate limit" in error_message or "quota" in error_message or "resource has been exhausted" in error_message:
+                raise Exception(f"Gemini API quota exhausted for key index {0}. Stopping.") from e
+            else:
+                # For other errors, re-raise to indicate failure
+                raise Exception(f"Gemini API call failed unexpectedly for key index {0}. Error: {e}") from e
 
     def check_and_parse_query(self, user_query: str) -> Dict[str, Any]:
         """
@@ -143,7 +114,8 @@ class GeminiService:
                 "domain_type": "string - specific domain/industry context or 'general' if unspecified",
                 "data_type": "string",
                 "sample_count": integer - exact number requested (never estimate or default),
-                "language": "string ",
+                "language": "string - full language name (e.g., English, Egyptian Arabic, German, French, Spanish, Arabic)",
+                "iso_language": "string - ISO 639-1 code (e.g., en, ar). For dialects, use the base language code (e.g., 'ar' for Egyptian Arabic)",
                 "description": "string - comprehensive summary of requirements, constraints, and formatting details"
             }
 
@@ -157,7 +129,8 @@ class GeminiService:
             - domain_type`: Extract from context clues (medical, finance, education, etc.) or use "general"
             - data_type`: Identify structure (QA, classification, text-label pairs, etc.) or use "unspecified"
             - sample_count`: Must be explicitly stated number only
-            - language: (English, Arabic, French, Egyptian Arabic,etc....), default to "Englishn" (Keep the dialect)
+            - language: "full language name (e.g., English, Arabic, Egyptian Arabic)"
+            - iso_language: "ISO 639-1 code (e.g., en, ar). For dialects, use the base language code (e.g., 'ar' for Egyptian Arabic)"
             - description`: Capture ALL specific requirements, formatting needs, and constraints
 
             4. **Edge Case Handling**:
@@ -179,10 +152,10 @@ class GeminiService:
         ---
         Examples:
         User Query: "I want 1000 medical QA data points in English"
-        JSON Output: {{"query_type": "not_data_generation", "domain_type": "medical", "data_type": "QA", "sample_count": 1000, "language": "English", "description": null}}
+        JSON Output: {{"query_type": "data_generation", "domain_type": "medical", "data_type": "QA", "sample_count": 1000, "language": "English", "iso_language": "en", "description": null}}
 
-        User Query: "Generate 500 finance classification examples"
-        JSON Output: {{"query_type": "data_generation", "domain_type": "finance", "data_type": "classification", "sample_count": 500, "language": "English", "description": the data contains two columns(text, label)}}
+        User Query: "Generate 500 classification examples"
+        JSON Output: {{"query_type": "data_generation", "data_type": "classification", "sample_count": 500, "language": "English", "iso_language": "en", "description": "the data contains two columns(text, label)"}}
 
         User Query: "I need data about cybersecurity"
         JSON Output: {{"query_type": "incomplete"}}
@@ -248,37 +221,53 @@ class GeminiService:
         """
         
         prompt = f"""
-        Generate {count} search queries in {language} for "{domain_type}" domain:
-        
-        Examples for medical domain (but generate in {language}):
-        diabetes treatment methods
-        cancer prevention strategies
-        surgical procedures cardiology
-        pharmaceutical drug interactions
-        medical diagnosis techniques
-        emergency medicine protocols
-        mental health therapies
-        pediatric care guidelines
-        antibiotic resistance mechanisms
-        medical imaging technologies
-        
-        Examples for cybersecurity domain (but generate in {language}):
-        network security threats
-        malware detection techniques
-        data encryption methods
-        firewall configuration best practices
-        incident response protocols
-        
-        Examples for finance domain (but generate in {language}):
-        investment portfolio management
-        risk assessment methodologies
-        financial market analysis
-        banking regulations compliance
-        cryptocurrency trading strategies
-        
-        Generate {count} similar diverse queries for "{domain_type}" in {language}:
+        Generate {count} diverse and professional search queries in {language} for the "{domain_type}" domain.
+
+        Requirements:
+        - Each query should be 2-10 words long and use domain-specific terminology
+        - Queries must cover different aspects, subtopics, and specializations within the domain
+        - Use professional vocabulary that experts in this field would search for
+        - Ensure variety in query types: techniques, methods, tools, concepts, procedures, guidelines, and technologies
+        - All queries must be in {language}
+        - Focus on practical, actionable, and research-oriented terms
+        - Avoid generic or overly broad queries
+        - Each query should be distinct and non-redundant
+
+        Output format:
+        - List each query on a separate line
+        - Use lowercase unless proper nouns are involved
+        - No numbering or bullet points needed
+
+        Generate {count} search queries for "{domain_type}" domain in {language}:
         """
         
+        # Examples for medical domain (but generate in {language}):
+        # diabetes treatment methods
+        # cancer prevention strategies
+        # surgical procedures cardiology
+        # pharmaceutical drug interactions
+        # medical diagnosis techniques
+        # emergency medicine protocols
+        # mental health therapies
+        # pediatric care guidelines
+        # antibiotic resistance mechanisms
+        # medical imaging technologies
+        
+        # Examples for cybersecurity domain (but generate in {language}):
+        # network security threats
+        # malware detection techniques
+        # data encryption methods
+        # firewall configuration best practices
+        # incident response protocols
+        
+        # Examples for finance domain (but generate in {language}):
+        # investment portfolio management
+        # risk assessment methodologies
+        # financial market analysis
+        # banking regulations compliance
+        # cryptocurrency trading strategies
+        
+        # Generate {count} similar diverse queries for "{domain_type}" in {language}:
         response = self.generate_text(prompt, system_instruction)
         
         # Clean and extract queries
@@ -353,8 +342,67 @@ class GeminiService:
         except Exception as e:
             self.logger.warning(f"Failed to extract topics: {e}")
             return []
+
+    async def extract_topics_async(self, content: str, language: str, domain_type: str) -> List[str]:
+        """Asynchronously extract subtopic names in specified language related to the given domain"""
+        
+        system_instruction = f"""
+        You are an expert content analyst specializing in subtopic extraction for synthetic data generation. 
+        Your task is to identify optimal subtopics from provided content that will enable high-quality, focused data point creation.
+        ## What to look for:
+            - Main concepts, methods, or procedures mentioned
+            - Specific topics that have enough depth for questions/examples
+            - Concrete subjects rather than vague themes
+
+        ## Guidelines:
+            - Each subtopic should be specific enough to create multiple related examples
+            - Focus only on topics clearly present in the content
+            - Use {language} for all subtopic names
+            - Keep subtopics relevant to {domain_type}
+
+        ## Examples:
+            Instead of: "General principles" 
+            Use: "Risk assessment procedures"
+
+            Instead of: "Technology" 
+            Use: "Database indexing strategies"
+
+        ## Output:
+            Return a JSON array of subtopic strings in {language}:
+            ["subtopic 1", "subtopic 2", "subtopic 3"]
+
+            Extract 5-10 focused subtopics from the content.
+        """
+        
+        prompt = f"""
+        Extract focused subtopics from this content and express them in {language}, ensuring relevance to the {domain_type} domain:
+        {content}
+        
+        Examples of good subtopics:
+        "Diabetes medication side effects"
+        "Heart surgery recovery protocols"
+        "Cancer screening guidelines"
+        "Antibiotic resistance mechanisms"
+        "Network intrusion detection"
+        "Financial risk assessment methods"
     
-    def generate_synthetic_data(self, topic: str, data_type: str, language: str, description: Optional[str] = None) -> List[Dict[str, Any]]:
+        Make sure the subtopics are falling within the {domain_type}, this point is very important.
+        Return JSON array with subtopics in {language}: ["subtopic1", "subtopic2", ...]
+        """
+        
+        response = await self.generate_text_async(prompt, system_instruction)
+        time.sleep(3)
+        try:
+            start_idx = response.find('[')
+            end_idx = response.rfind(']') + 1
+            json_str = response[start_idx:end_idx]
+            topics_list = json.loads(json_str)
+            return [str(topic) for topic in topics_list if isinstance(topic, str)]
+        except Exception as e:
+            self.logger.warning(f"Failed to extract topics asynchronously: {e}")
+            return []
+
+    async def generate_synthetic_data(self, topic: str, data_type: str, language: str, description: Optional[str] = None) -> List[Dict[str, Any]]:
         """Generate synthetic data based on a topic, data type, language, and optional description"""
         
         self.logger.debug(f"Generating synthetic data for topic: '{topic}' in {language}")
@@ -395,7 +443,7 @@ class GeminiService:
             {description_prompt}
         """
         
-        response = self.generate_text(prompt, system_instruction)
+        response = await self.generate_text_async(prompt, system_instruction)
         
         # Clean and parse the JSON response
         try:
@@ -430,6 +478,32 @@ class GeminiService:
         except Exception as e:
             self.logger.error(f"An unexpected error occurred during data generation for topic '{topic}': {e}")
             return []
+
+    async def generate_text_async(self, prompt: str, 
+                                system_instruction: Optional[str] = None,
+                                max_retries: int = 3) -> str:
+        """Asynchronously generate text using Gemini with enhanced retry logic and cooldown."""
+        
+        full_prompt = prompt
+        if system_instruction:
+            full_prompt = f"System: {system_instruction}\n\nUser: {prompt}"
+        
+        try:
+            self.logger.info(f"Attempting async Gemini API call with key index: {0}")
+            response = await self.model.generate_content_async(
+                full_prompt,
+                generation_config=self.generation_config
+            )
+            return response.text
+        except Exception as e:
+            error_message = str(e).lower()
+            self.logger.error(f"Async Gemini API call with key index {0} failed: {e}")
+            
+            if "rate limit" in error_message or "quota" in error_message or "resource has been exhausted" in error_message:
+                raise GeminiQuotaExhaustedError(f"Gemini API quota exhausted for key index {0}. Stopping.") from e
+            else:
+                # For other errors, re-raise to indicate failure
+                raise Exception(f"Async Gemini API call failed unexpectedly for key index {0}. Error: {e}") from e
 
 # Initialize service
 gemini_service = GeminiService()

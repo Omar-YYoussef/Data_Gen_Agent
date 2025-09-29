@@ -137,3 +137,47 @@ class BaseAgent(ABC):
                                   required_count: int) -> bool:
         """Validate if we have enough subtopics"""
         return len(extracted_topics) >= required_count
+
+    def append_data(self, data: Any, filename: str, directory: Path) -> Path:
+        """Helper method to append data to file with error handling"""
+        try:
+            directory.mkdir(parents=True, exist_ok=True)
+            file_path = directory / filename
+            
+            if isinstance(data, (dict, list)):
+                # For JSON data, we need to handle appending differently
+                existing_data = []
+                if file_path.exists():
+                    try:
+                        with open(file_path, 'r', encoding='utf-8') as f:
+                            existing_data = json.load(f)
+                            if not isinstance(existing_data, list):
+                                existing_data = [existing_data]
+                    except (json.JSONDecodeError, ValueError):
+                        # If file exists but is corrupted, start fresh
+                        existing_data = []
+                
+                # Append new data
+                if isinstance(data, list):
+                    existing_data.extend(data)
+                else:
+                    existing_data.append(data)
+                
+                # Write back to file
+                with open(file_path, 'w', encoding='utf-8') as f:
+                    json.dump(existing_data, f, indent=2, ensure_ascii=False, default=str)
+            else:
+                # For text data, simply append
+                with open(file_path, 'a', encoding='utf-8') as f:
+                    f.write(str(data) + '\n')
+            
+            self.logger.debug(f"Data appended to {file_path}")
+            return file_path
+        except Exception as e:
+            self.logger.error(f"Failed to append data to {directory / filename}: {e}")
+            raise
+
+    def check_file_exists(self, filename: str, directory: Path) -> bool:
+        """Helper method to check if a file exists"""
+        file_path = directory / filename
+        return file_path.exists()

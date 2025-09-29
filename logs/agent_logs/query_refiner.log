@@ -457,3 +457,222 @@ priority
 2025-09-23 16:18:08,419 - agent.query_refiner - INFO - Generated 30 refined queries
 2025-09-23 16:18:08,421 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_LAW.json
 2025-09-23 16:18:08,421 - agent.query_refiner - INFO - Completed execution of query_refiner in 16.12s
+2025-09-23 20:45:09,948 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-23 20:45:09,948 - agent.query_refiner - INFO - Refining queries for domain: LAW
+2025-09-23 20:45:09,948 - agent.query_refiner - INFO - Target: 30 queries
+2025-09-23 20:45:28,779 - agent.query_refiner - INFO - Generated 30 refined queries
+2025-09-23 20:45:28,780 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_LAW.json
+2025-09-23 20:45:28,781 - agent.query_refiner - INFO - Completed execution of query_refiner in 18.83s
+2025-09-23 21:14:30,740 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-23 21:14:30,740 - agent.query_refiner - INFO - Refining queries for domain: LAW
+2025-09-23 21:14:30,740 - agent.query_refiner - INFO - Target: 30 queries
+2025-09-23 21:14:52,967 - agent.query_refiner - INFO - Generated 30 refined queries
+2025-09-23 21:14:52,968 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_LAW.json
+2025-09-23 21:14:52,969 - agent.query_refiner - INFO - Completed execution of query_refiner in 22.23s
+2025-09-23 23:01:40,697 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-23 23:01:40,697 - agent.query_refiner - INFO - Refining queries for domain: LAW
+2025-09-23 23:01:40,697 - agent.query_refiner - INFO - Target: 1 queries
+2025-09-23 23:01:50,284 - agent.query_refiner - INFO - Generated 1 refined queries
+2025-09-23 23:01:50,285 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_LAW.json
+2025-09-23 23:01:50,286 - agent.query_refiner - INFO - Completed execution of query_refiner in 9.59s
+2025-09-23 23:28:20,197 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-23 23:28:20,198 - agent.query_refiner - INFO - Refining queries for domain: LAW
+2025-09-23 23:28:20,198 - agent.query_refiner - INFO - Target: 30 queries
+2025-09-23 23:28:37,491 - agent.query_refiner - INFO - Generated 30 refined queries
+2025-09-23 23:28:37,492 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_LAW.json
+2025-09-23 23:28:37,492 - agent.query_refiner - INFO - Completed execution of query_refiner in 17.30s
+2025-09-24 12:19:05,607 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-24 12:19:05,608 - agent.query_refiner - INFO - Refining queries for domain: LAW
+2025-09-24 12:19:05,608 - agent.query_refiner - INFO - Target: 30 queries
+2025-09-24 12:19:21,052 - agent.query_refiner - INFO - Generated 30 refined queries
+2025-09-24 12:19:21,053 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_LAW.json
+2025-09-24 12:19:21,053 - agent.query_refiner - INFO - Completed execution of query_refiner in 15.45s
+2025-09-24 12:22:22,044 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-24 12:22:22,044 - agent.query_refiner - INFO - Refining queries for domain: LAW
+2025-09-24 12:22:22,044 - agent.query_refiner - INFO - Target: 30 queries
+2025-09-24 12:22:41,664 - agent.query_refiner - INFO - Generated 30 refined queries
+2025-09-24 12:22:41,666 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_LAW.json
+2025-09-24 12:22:41,667 - agent.query_refiner - INFO - Completed execution of query_refiner in 19.62s
+2025-09-24 12:48:31,244 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-24 12:48:31,245 - agent.query_refiner - INFO - Refining queries for domain: LAW
+2025-09-24 12:48:31,245 - agent.query_refiner - INFO - Target: 30 queries
+2025-09-24 12:48:47,565 - agent.query_refiner - INFO - Generated 30 refined queries
+2025-09-24 12:48:47,566 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_LAW.json
+2025-09-24 12:48:47,566 - agent.query_refiner - INFO - Completed execution of query_refiner in 16.32s
+2025-09-24 12:57:08,870 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-24 12:57:08,871 - agent.query_refiner - INFO - Refining queries for domain: LAW
+2025-09-24 12:57:08,871 - agent.query_refiner - INFO - Target: 30 queries
+2025-09-24 13:11:54,715 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-24 13:11:54,715 - agent.query_refiner - INFO - Refining queries for domain: LAW
+2025-09-24 13:11:54,715 - agent.query_refiner - INFO - Target: 30 queries
+2025-09-24 13:12:12,466 - agent.query_refiner - INFO - Generated 30 refined queries
+2025-09-24 13:12:12,467 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_LAW.json
+2025-09-24 13:12:12,467 - agent.query_refiner - INFO - Completed execution of query_refiner in 17.75s
+2025-09-24 13:19:47,717 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-24 13:19:47,717 - agent.query_refiner - INFO - Refining queries for domain: LAW
+2025-09-24 13:19:47,718 - agent.query_refiner - INFO - Target: 30 queries
+2025-09-24 13:20:34,673 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-24 13:20:34,674 - agent.query_refiner - INFO - Refining queries for domain: LAW
+2025-09-24 13:20:34,674 - agent.query_refiner - INFO - Target: 30 queries
+2025-09-24 13:20:55,125 - agent.query_refiner - INFO - Generated 30 refined queries
+2025-09-24 13:20:55,127 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_LAW.json
+2025-09-24 13:20:55,127 - agent.query_refiner - INFO - Completed execution of query_refiner in 20.45s
+2025-09-24 13:34:20,905 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-24 13:34:20,905 - agent.query_refiner - INFO - Refining queries for domain: finance
+2025-09-24 13:34:20,905 - agent.query_refiner - INFO - Target: 1 queries
+2025-09-24 13:34:27,549 - agent.query_refiner - INFO - Generated 1 refined queries
+2025-09-24 13:34:27,550 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_finance.json
+2025-09-24 13:34:27,551 - agent.query_refiner - INFO - Completed execution of query_refiner in 6.65s
+2025-09-24 13:37:19,583 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-24 13:37:19,583 - agent.query_refiner - INFO - Refining queries for domain: finance
+2025-09-24 13:37:19,583 - agent.query_refiner - INFO - Target: 1 queries
+2025-09-24 13:37:25,991 - agent.query_refiner - INFO - Generated 1 refined queries
+2025-09-24 13:37:25,993 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_finance.json
+2025-09-24 13:37:25,993 - agent.query_refiner - INFO - Completed execution of query_refiner in 6.41s
+2025-09-24 13:46:48,919 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-24 13:46:48,919 - agent.query_refiner - INFO - Refining queries for domain: LAW
+2025-09-24 13:46:48,920 - agent.query_refiner - INFO - Target: 50 queries
+2025-09-24 13:47:12,674 - agent.query_refiner - INFO - Generated 50 refined queries
+2025-09-24 13:47:12,675 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_LAW.json
+2025-09-24 13:47:12,676 - agent.query_refiner - INFO - Completed execution of query_refiner in 23.76s
+2025-09-24 14:49:52,102 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-24 14:49:52,102 - agent.query_refiner - INFO - Refining queries for domain: LAW
+2025-09-24 14:49:52,102 - agent.query_refiner - INFO - Target: 50 queries
+2025-09-24 14:53:02,986 - agent.query_refiner - ERROR - Failed to refine queries: Failed to generate text after 3 cycles through all API keys. Please check your API keys and quotas.
+2025-09-24 14:53:02,986 - agent.query_refiner - ERROR - Error in query_refiner after 190.88s: Failed to generate text after 3 cycles through all API keys. Please check your API keys and quotas.
+2025-09-24 15:35:21,456 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-24 15:35:21,456 - agent.query_refiner - INFO - Refining queries for domain: LAW
+2025-09-24 15:35:21,456 - agent.query_refiner - INFO - Target: 50 queries
+2025-09-25 14:41:39,818 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-25 14:41:39,818 - agent.query_refiner - INFO - Refining queries for domain: finance
+2025-09-25 14:41:39,818 - agent.query_refiner - INFO - Target: 50 queries
+2025-09-25 14:42:03,124 - agent.query_refiner - INFO - Generated 50 refined queries
+2025-09-25 14:42:03,125 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_finance.json
+2025-09-25 14:42:03,125 - agent.query_refiner - INFO - Completed execution of query_refiner in 23.31s
+2025-09-25 15:40:25,682 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-25 15:40:25,682 - agent.query_refiner - INFO - Refining queries for domain: Finance
+2025-09-25 15:40:25,682 - agent.query_refiner - INFO - Target: 50 queries
+2025-09-25 15:40:43,904 - agent.query_refiner - INFO - Generated 50 refined queries
+2025-09-25 15:40:43,905 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_Finance.json
+2025-09-25 15:40:43,905 - agent.query_refiner - INFO - Completed execution of query_refiner in 18.22s
+2025-09-25 16:18:47,976 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-25 16:18:47,976 - agent.query_refiner - INFO - Refining queries for domain: finance
+2025-09-25 16:18:47,976 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-25 16:19:03,869 - agent.query_refiner - INFO - Generated 20 refined queries
+2025-09-25 16:19:03,871 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_finance.json
+2025-09-25 16:19:03,871 - agent.query_refiner - INFO - Completed execution of query_refiner in 15.89s
+2025-09-25 21:09:31,212 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-25 21:09:31,212 - agent.query_refiner - INFO - Refining queries for domain: finance
+2025-09-25 21:09:31,212 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-25 21:09:47,903 - agent.query_refiner - INFO - Generated 20 refined queries
+2025-09-25 21:09:47,904 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_finance.json
+2025-09-25 21:09:47,904 - agent.query_refiner - INFO - Completed execution of query_refiner in 16.69s
+2025-09-28 12:46:39,134 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-28 12:46:39,134 - agent.query_refiner - INFO - Refining queries for domain: finance
+2025-09-28 12:46:39,135 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-28 12:46:51,291 - agent.query_refiner - INFO - Generated 20 refined queries
+2025-09-28 12:46:51,293 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_finance.json
+2025-09-28 12:46:51,293 - agent.query_refiner - INFO - Completed execution of query_refiner in 12.16s
+2025-09-28 12:47:06,878 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-28 12:47:06,878 - agent.query_refiner - INFO - Refining queries for domain: finance
+2025-09-28 12:47:06,879 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-28 12:59:24,655 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-28 12:59:24,655 - agent.query_refiner - INFO - Refining queries for domain: finance
+2025-09-28 12:59:24,655 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-28 12:59:52,184 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-28 12:59:52,184 - agent.query_refiner - INFO - Refining queries for domain: finance
+2025-09-28 12:59:52,184 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-28 13:00:12,375 - agent.query_refiner - INFO - Generated 20 refined queries
+2025-09-28 13:00:12,376 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_finance.json
+2025-09-28 13:00:12,377 - agent.query_refiner - INFO - Completed execution of query_refiner in 20.19s
+2025-09-28 13:03:48,024 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-28 13:03:48,025 - agent.query_refiner - INFO - Refining queries for domain: finance
+2025-09-28 13:03:48,025 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-28 13:04:00,601 - agent.query_refiner - INFO - Generated 20 refined queries
+2025-09-28 13:04:00,603 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_finance.json
+2025-09-28 13:04:00,603 - agent.query_refiner - INFO - Completed execution of query_refiner in 12.58s
+2025-09-28 19:03:28,745 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-28 19:03:28,746 - agent.query_refiner - INFO - Refining queries for domain: general
+2025-09-28 19:03:28,746 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-28 19:03:48,075 - agent.query_refiner - INFO - Generated 20 refined queries
+2025-09-28 19:03:48,076 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_general.json
+2025-09-28 19:03:48,077 - agent.query_refiner - INFO - Completed execution of query_refiner in 19.33s
+2025-09-28 19:44:46,227 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-28 19:44:46,228 - agent.query_refiner - INFO - Refining queries for domain: general
+2025-09-28 19:44:46,228 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-28 19:45:05,745 - agent.query_refiner - INFO - Generated 20 refined queries
+2025-09-28 19:45:05,746 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_general.json
+2025-09-28 19:45:05,747 - agent.query_refiner - INFO - Completed execution of query_refiner in 19.52s
+2025-09-29 11:00:20,670 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-29 11:00:20,670 - agent.query_refiner - INFO - Refining queries for domain: general
+2025-09-29 11:00:20,670 - agent.query_refiner - INFO - Target: 20 queries
+2025-09-29 11:00:40,493 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-29 11:00:40,493 - agent.query_refiner - INFO - Refining queries for domain: general
+2025-09-29 11:00:40,493 - agent.query_refiner - INFO - Target: 5 queries
+2025-09-29 11:00:49,783 - agent.query_refiner - INFO - Generated 5 refined queries
+2025-09-29 11:00:49,784 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_general.json
+2025-09-29 11:00:49,785 - agent.query_refiner - INFO - Completed execution of query_refiner in 9.29s
+2025-09-29 11:47:51,142 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-29 11:47:51,143 - agent.query_refiner - INFO - Refining queries for domain: general
+2025-09-29 11:47:51,143 - agent.query_refiner - INFO - Target: 1 queries
+2025-09-29 11:47:59,745 - agent.query_refiner - INFO - Generated 1 refined queries
+2025-09-29 11:47:59,747 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_general.json
+2025-09-29 11:47:59,747 - agent.query_refiner - INFO - Completed execution of query_refiner in 8.60s
+2025-09-29 11:48:39,395 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-29 11:48:39,395 - agent.query_refiner - INFO - Refining queries for domain: general
+2025-09-29 11:48:39,395 - agent.query_refiner - INFO - Target: 1 queries
+2025-09-29 11:48:43,877 - agent.query_refiner - INFO - Generated 1 refined queries
+2025-09-29 11:48:43,878 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_general.json
+2025-09-29 11:48:43,878 - agent.query_refiner - INFO - Completed execution of query_refiner in 4.48s
+2025-09-29 11:49:24,631 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-29 11:49:24,631 - agent.query_refiner - INFO - Refining queries for domain: general
+2025-09-29 11:49:24,631 - agent.query_refiner - INFO - Target: 1 queries
+2025-09-29 11:49:30,112 - agent.query_refiner - INFO - Generated 1 refined queries
+2025-09-29 11:49:30,113 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_general.json
+2025-09-29 11:49:30,113 - agent.query_refiner - INFO - Completed execution of query_refiner in 5.48s
+2025-09-29 11:50:05,451 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-29 11:50:05,451 - agent.query_refiner - INFO - Refining queries for domain: general
+2025-09-29 11:50:05,451 - agent.query_refiner - INFO - Target: 1 queries
+2025-09-29 11:50:09,734 - agent.query_refiner - INFO - Generated 1 refined queries
+2025-09-29 11:50:09,735 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_general.json
+2025-09-29 11:50:09,736 - agent.query_refiner - INFO - Completed execution of query_refiner in 4.29s
+2025-09-29 11:53:30,701 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-29 11:53:30,702 - agent.query_refiner - INFO - Refining queries for domain: general
+2025-09-29 11:53:30,702 - agent.query_refiner - INFO - Target: 1 queries
+2025-09-29 11:53:42,471 - agent.query_refiner - INFO - Generated 1 refined queries
+2025-09-29 11:53:42,473 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_general.json
+2025-09-29 11:53:42,473 - agent.query_refiner - INFO - Completed execution of query_refiner in 11.77s
+2025-09-29 12:05:50,449 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-29 12:05:50,449 - agent.query_refiner - INFO - Refining queries for domain: general
+2025-09-29 12:05:50,449 - agent.query_refiner - INFO - Target: 1 queries
+2025-09-29 12:05:55,413 - agent.query_refiner - INFO - Generated 1 refined queries
+2025-09-29 12:05:55,414 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_general.json
+2025-09-29 12:05:55,414 - agent.query_refiner - INFO - Completed execution of query_refiner in 4.97s
+2025-09-29 12:24:29,952 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-29 12:24:29,952 - agent.query_refiner - INFO - Refining queries for domain: general
+2025-09-29 12:24:29,952 - agent.query_refiner - INFO - Target: 1 queries
+2025-09-29 12:24:36,407 - agent.query_refiner - INFO - Generated 1 refined queries
+2025-09-29 12:24:36,409 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_general.json
+2025-09-29 12:24:36,409 - agent.query_refiner - INFO - Completed execution of query_refiner in 6.46s
+2025-09-29 12:56:31,241 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-29 12:56:31,242 - agent.query_refiner - INFO - Refining queries for domain: general
+2025-09-29 12:56:31,242 - agent.query_refiner - INFO - Target: 1 queries
+2025-09-29 12:56:43,781 - agent.query_refiner - INFO - Generated 1 refined queries
+2025-09-29 12:56:43,782 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_general.json
+2025-09-29 12:56:43,783 - agent.query_refiner - INFO - Completed execution of query_refiner in 12.54s
+2025-09-29 13:00:02,516 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-29 13:00:02,516 - agent.query_refiner - INFO - Refining queries for domain: general
+2025-09-29 13:00:02,516 - agent.query_refiner - INFO - Target: 1 queries
+2025-09-29 13:00:08,021 - agent.query_refiner - INFO - Generated 1 refined queries
+2025-09-29 13:00:08,022 - agent.query_refiner - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\debug\refined_queries_general.json
+2025-09-29 13:00:08,022 - agent.query_refiner - INFO - Completed execution of query_refiner in 5.51s
+2025-09-29 13:06:49,857 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-29 13:06:49,857 - agent.query_refiner - INFO - Refining queries for domain: general
+2025-09-29 13:06:49,858 - agent.query_refiner - INFO - Target: 1 queries
+2025-09-29 13:06:55,860 - agent.query_refiner - INFO - Generated 1 refined queries
+2025-09-29 13:06:55,860 - agent.query_refiner - INFO - Completed execution of query_refiner in 6.00s
+2025-09-29 13:09:30,794 - agent.query_refiner - INFO - Starting execution of query_refiner
+2025-09-29 13:09:30,794 - agent.query_refiner - INFO - Refining queries for domain: general
+2025-09-29 13:09:30,794 - agent.query_refiner - INFO - Target: 1 queries
+2025-09-29 13:09:34,412 - agent.query_refiner - INFO - Generated 1 refined queries
+2025-09-29 13:09:34,412 - agent.query_refiner - INFO - Completed execution of query_refiner in 3.62s

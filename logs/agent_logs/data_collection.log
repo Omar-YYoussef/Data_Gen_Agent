@@ -233,3 +233,35 @@
 2025-09-23 17:55:23,015 - agent.data_collection - INFO - Final dataset created with 895 samples
 2025-09-23 17:55:23,016 - agent.data_collection - INFO - Completion rate: 44.8%
 2025-09-23 17:55:23,016 - agent.data_collection - INFO - Completed execution of data_collection in 0.02s
+2025-09-23 22:15:42,065 - agent.data_collection - INFO - Collecting synthetic data from 1 sources
+2025-09-23 22:15:42,065 - agent.data_collection - INFO - Target sample count: 2000
+2025-09-23 22:15:42,065 - agent.data_collection - INFO - Total data points before deduplication: 0
+2025-09-23 22:15:42,066 - agent.data_collection - INFO - Data points after deduplication: 0
+2025-09-23 22:15:42,066 - agent.data_collection - INFO - Final data points to be saved: 0
+2025-09-23 22:15:42,066 - agent.data_collection - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\final_output\collected_datasets\final_dataset_QA_LAW.json
+2025-09-23 22:15:42,067 - agent.data_collection - INFO - Final dataset created with 0 samples
+2025-09-23 22:15:42,067 - agent.data_collection - INFO - Completion rate: 0.0%
+2025-09-24 00:36:56,937 - agent.data_collection - INFO - Collecting synthetic data from 1 sources
+2025-09-24 00:36:56,937 - agent.data_collection - INFO - Target sample count: 2000
+2025-09-24 00:36:56,937 - agent.data_collection - INFO - Total data points before deduplication: 920
+2025-09-24 00:36:56,954 - agent.data_collection - INFO - Data points after deduplication: 920
+2025-09-24 00:36:56,954 - agent.data_collection - INFO - Final data points to be saved: 920
+2025-09-24 00:36:56,987 - agent.data_collection - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\final_output\collected_datasets\final_dataset_QA_LAW.json
+2025-09-24 00:36:56,987 - agent.data_collection - INFO - Final dataset created with 920 samples
+2025-09-24 00:36:56,987 - agent.data_collection - INFO - Completion rate: 46.0%
+2025-09-24 11:45:37,524 - agent.data_collection - INFO - Collecting synthetic data from 1 sources
+2025-09-24 11:45:37,524 - agent.data_collection - INFO - Target sample count: 2000
+2025-09-24 11:45:37,524 - agent.data_collection - INFO - Total data points before deduplication: 920
+2025-09-24 11:45:37,539 - agent.data_collection - INFO - Data points after deduplication: 920
+2025-09-24 11:45:37,539 - agent.data_collection - INFO - Final data points to be saved: 920
+2025-09-24 11:45:37,571 - agent.data_collection - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\final_output\collected_datasets\final_dataset_QA_LAW.json
+2025-09-24 11:45:37,571 - agent.data_collection - INFO - Final dataset created with 920 samples
+2025-09-24 11:45:37,571 - agent.data_collection - INFO - Completion rate: 46.0%
+2025-09-24 11:45:53,691 - agent.data_collection - INFO - Collecting synthetic data from 1 sources
+2025-09-24 11:45:53,691 - agent.data_collection - INFO - Target sample count: 2000
+2025-09-24 11:45:53,691 - agent.data_collection - INFO - Total data points before deduplication: 920
+2025-09-24 11:45:53,708 - agent.data_collection - INFO - Data points after deduplication: 920
+2025-09-24 11:45:53,708 - agent.data_collection - INFO - Final data points to be saved: 920
+2025-09-24 11:45:53,749 - agent.data_collection - DEBUG - Data saved to D:\Learn\web_data_generation_pipeline\storage\final_output\collected_datasets\final_dataset_QA_LAW.json
+2025-09-24 11:45:53,749 - agent.data_collection - INFO - Final dataset created with 920 samples
+2025-09-24 11:45:53,749 - agent.data_collection - INFO - Completion rate: 46.0%

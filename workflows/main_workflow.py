@@ -16,7 +16,6 @@ from agents.filtration_agent import FiltrationAgent
 from agents.web_scraping_agent import WebScrapingAgent
 from agents.topic_extraction_agent import TopicExtractionAgent
 from agents.synthetic_data_generator_agent import SyntheticDataGeneratorAgent
-from agents.data_collection_agent import DataCollectionAgent
 from services.chunking_service import chunking_service
 from utils.json_handler import JsonHandler
 
@@ -32,7 +31,6 @@ class PipelineState(Dict):
     scraped_data: List
     extracted_topics: List
     synthetic_data: List
-    final_dataset: Dict
     error_info: Optional[Dict]
     stage_timings: Dict
     status: str
@@ -59,7 +57,6 @@ class WebSearchSyntheticDataWorkflow:
         graph.add_node("extract_topics", self._extract_topics_node)
         graph.add_node("check_topic_coverage", self._check_topic_coverage_node)
         graph.add_node("generate_synthetic_data", self._generate_synthetic_data_node)
-        graph.add_node("collect_final_data", self._collect_final_data_node)
         graph.add_node("handle_error", self._handle_error_node)
         
         # Define edges (workflow flow)
@@ -83,8 +80,7 @@ class WebSearchSyntheticDataWorkflow:
             }
         )
         
-        graph.add_edge("generate_synthetic_data", "collect_final_data")
-        graph.add_edge("collect_final_data", END)
+        graph.add_edge("generate_synthetic_data", END)
         graph.add_edge("handle_error", END)
         
         return graph.compile()
@@ -279,25 +275,6 @@ class WebSearchSyntheticDataWorkflow:
         
         return state
     
-    def _collect_final_data_node(self, state: PipelineState) -> PipelineState:
-        """Collect and finalize dataset node"""
-        self._log_stage_start(state, "collect_final_data")
-        
-        try:
-            agent = DataCollectionAgent()
-            final_result = agent.run(state["synthetic_data"], state["parsed_query"])
-            state["final_dataset"] = final_result
-            state["status"] = "completed"
-            
-            delivered_samples = final_result["final_dataset"]["metadata"]["actual_count"]
-            self.logger.info(f"Final dataset complete with {delivered_samples} samples")
-            self._log_stage_end(state, "collect_final_data", True)
-            
-        except Exception as e:
-            self._handle_stage_error(state, "collect_final_data", e)
-        
-        return state
-    
     def _handle_error_node(self, state: PipelineState) -> PipelineState:
         """Handle workflow errors"""
         state["status"] = "failed"
@@ -385,10 +362,6 @@ class WebSearchSyntheticDataWorkflow:
             },
             "stage_timings": state["stage_timings"],
             "topic_coverage": state.get("topic_coverage", {}),
-            "final_metrics": {
-                "total_topics": len(state["extracted_topics"]),
-                "delivered_samples": state["final_dataset"]["final_dataset"]["metadata"]["actual_count"] if state.get("final_dataset") else 0
-            } if state["status"] == "completed" else None,
             "error_info": state.get("error_info"),
             "timestamp": datetime.now().isoformat()
         }

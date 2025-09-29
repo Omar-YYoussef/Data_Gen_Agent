@@ -3,8 +3,8 @@ from typing import List, Dict, Any
 from models.data_schemas import ContentChunk
 from config.settings import settings
 import logging
-from utils.json_handler import JsonHandler
-from datetime import datetime
+# from utils.json_handler import JsonHandler # Remove JsonHandler import
+# from datetime import datetime # Remove datetime import
 
 class ChunkingService:
     """Service to chunk content for processing"""
@@ -64,32 +64,10 @@ class ChunkingService:
         
         self.logger.info(f"Created {len(chunks)} chunks from {len(scraped_data)} scraped pages")
         
-        # Save the chunks to a file
-        self._save_chunks_to_file(chunks)
+        # Remove the call to save chunks to a file
+        # self._save_chunks_to_file(chunks)
         
         return chunks
-
-    def _save_chunks_to_file(self, chunks: List[ContentChunk]):
-        """Saves the generated chunks to a JSON file for inspection."""
-        if not chunks:
-            self.logger.info("No chunks were generated, nothing to save.")
-            return
-            
-        self.logger.info(f"Saving {len(chunks)} chunks to a file for inspection.")
-        
-        # Convert chunk objects to a list of dictionaries
-        chunks_as_dicts = [chunk.dict() for chunk in chunks]
-        
-        # Define the file path
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        file_path = settings.PROCESSED_CHUNKS_PATH / f"chunks_{timestamp}.json"
-        
-        # Save the data using the JsonHandler
-        try:
-            JsonHandler.save_json(chunks_as_dicts, file_path)
-            self.logger.info(f"Successfully saved chunks to {file_path}")
-        except Exception as e:
-            self.logger.error(f"Failed to save chunks to file: {e}")
 
 # Initialize service
 chunking_service = ChunkingService()

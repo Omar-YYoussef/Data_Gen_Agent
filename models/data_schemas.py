@@ -10,6 +10,8 @@ class ParsedQuery(BaseModel):
     data_type: str           # User-specified data type
     sample_count: int
     language: str            # User-specified language
+    required_topics: int = Field(default=0) # Add this line
+    iso_language: Optional[str] = None # New: ISO 639-1 language code
     description: Optional[str] = None # New: User-provided description or example data
     additional_requirements: Optional[Dict[str, Any]] = None
     timestamp: datetime = Field(default_factory=datetime.now)
@@ -21,7 +23,7 @@ class ParsedQuery(BaseModel):
 class SearchQuery(BaseModel):
     query: str
     domain: str
-    priority: int = Field(ge=1, le=50)  # Updated for 20 queries
+    priority: int = Field(ge=1, le=50)  # Updated for 50 queries
 
 class SearchResult(BaseModel):
     url: str
@@ -56,7 +58,6 @@ class ExtractedTopic(BaseModel):
 class SyntheticDataPoint(BaseModel):
     data_type: str           # The user-specified data type
     content: Dict[str, Any]  # Flexible structure decided by agent
-    quality_score: Optional[float] = None
     source_topics: List[str]
     generation_timestamp: datetime = Field(default_factory=datetime.now)
 

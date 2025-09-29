@@ -884,3 +884,230 @@ language
 2025-09-23 16:17:52,302 - agent.query_parser - INFO -   - Sample Count: 2000
 2025-09-23 16:17:52,303 - agent.query_parser - INFO -   - Required Subtopics: 400
 2025-09-23 16:17:52,303 - agent.query_parser - INFO - Completed execution of query_parser in 9.45s
+2025-09-23 20:42:54,711 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-23 20:42:54,711 - agent.query_parser - INFO - Analyzing and parsing query: I want 500 medical QA data points in English about diabetes treatment.
+2025-09-23 20:45:00,707 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-23 20:45:00,708 - agent.query_parser - INFO - Analyzing and parsing query: I want to generate 2000 QA synthitic LAW datasets in Egyptian Arabic, The dataset consists of 
+        the data set consisist of (question - answer) pairs, mix between short and long answers.
+2025-09-23 20:45:09,944 - agent.query_parser - INFO - Query identified as a valid data generation request.
+2025-09-23 20:45:09,944 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-23 20:45:09,944 - agent.query_parser - INFO -   - Domain: LAW
+2025-09-23 20:45:09,945 - agent.query_parser - INFO -   - Data Type: QA
+2025-09-23 20:45:09,945 - agent.query_parser - INFO -   - Sample Count: 2000
+2025-09-23 20:45:09,945 - agent.query_parser - INFO -   - Required Subtopics: 400
+2025-09-23 20:45:09,946 - agent.query_parser - INFO - Completed execution of query_parser in 9.24s
+2025-09-23 22:09:20,543 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-23 22:09:20,544 - agent.query_parser - INFO - Analyzing and parsing query: I want to generate 2000 QA synthitic LAW datasets in Egyptian Arabic, The dataset consists of 
+        the data set consisist of (question - answer) pairs, mix between short and long answers.
+2025-09-23 22:09:29,884 - agent.query_parser - INFO - Query identified as a valid data generation request.
+2025-09-23 22:09:29,885 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-23 22:09:29,885 - agent.query_parser - INFO -   - Domain: LAW
+2025-09-23 22:09:29,885 - agent.query_parser - INFO -   - Data Type: QA
+2025-09-23 22:09:29,886 - agent.query_parser - INFO -   - Sample Count: 2000
+2025-09-23 22:09:29,886 - agent.query_parser - INFO -   - Required Subtopics: 400
+2025-09-23 22:09:29,886 - agent.query_parser - INFO - Completed execution of query_parser in 9.34s
+2025-09-23 23:01:33,482 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-23 23:01:33,483 - agent.query_parser - INFO - Analyzing and parsing query: I want to generate 2000 QA synthitic LAW datasets in Egyptian Arabic, The dataset consists of 
+        the data set consisist of (question - answer) pairs, mix between short and long answers.
+2025-09-23 23:01:40,692 - agent.query_parser - INFO - Query identified as a valid data generation request.
+2025-09-23 23:01:40,693 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-23 23:01:40,693 - agent.query_parser - INFO -   - Domain: LAW
+2025-09-23 23:01:40,693 - agent.query_parser - INFO -   - Data Type: QA
+2025-09-23 23:01:40,694 - agent.query_parser - INFO -   - Sample Count: 2000
+2025-09-23 23:01:40,694 - agent.query_parser - INFO -   - Required Subtopics: 400
+2025-09-23 23:01:40,694 - agent.query_parser - INFO - Completed execution of query_parser in 7.21s
+2025-09-24 13:34:08,367 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-24 13:34:08,367 - agent.query_parser - INFO - Analyzing and parsing query: I want to generate 100 QA synthitic Finance datasets in Egyptian Arabic, The dataset consists of 
+        the data set consisist of (question - answer) pairs, mix between short and long answers.
+2025-09-24 13:34:20,901 - agent.query_parser - INFO - Query identified as a valid data generation request.
+2025-09-24 13:34:20,901 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-24 13:34:20,901 - agent.query_parser - INFO -   - Domain: finance
+2025-09-24 13:34:20,901 - agent.query_parser - INFO -   - Data Type: QA
+2025-09-24 13:34:20,901 - agent.query_parser - INFO -   - Sample Count: 100
+2025-09-24 13:34:20,902 - agent.query_parser - INFO -   - Required Subtopics: 20
+2025-09-24 13:34:20,902 - agent.query_parser - INFO - Completed execution of query_parser in 12.54s
+2025-09-24 13:46:42,395 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-24 13:46:42,395 - agent.query_parser - INFO - Analyzing and parsing query: I want to generate 4000 QA synthitic LAW datasets in Egyptian Arabic, The dataset consists of 
+        the data set consisist of (question - answer) pairs, mix between short and long answers.
+2025-09-24 13:46:48,915 - agent.query_parser - INFO - Query identified as a valid data generation request.
+2025-09-24 13:46:48,915 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-24 13:46:48,915 - agent.query_parser - INFO -   - Domain: LAW
+2025-09-24 13:46:48,916 - agent.query_parser - INFO -   - Data Type: QA
+2025-09-24 13:46:48,916 - agent.query_parser - INFO -   - Sample Count: 4000
+2025-09-24 13:46:48,916 - agent.query_parser - INFO -   - Required Subtopics: 800
+2025-09-24 13:46:48,917 - agent.query_parser - INFO - Completed execution of query_parser in 6.52s
+2025-09-25 14:41:29,576 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-25 14:41:29,576 - agent.query_parser - INFO - Analyzing and parsing query: I want to generate 4000 Translation synthitic Fainance datasets in Egyptian Arabic, The dataset consists of 
+        (English - Egyptian Arabic) pairs, mix between short and long answers. Please avoid literal translation and maintain the original terminology.
+2025-09-25 14:41:39,812 - agent.query_parser - INFO - Query identified as a valid data generation request.
+2025-09-25 14:41:39,813 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-25 14:41:39,813 - agent.query_parser - INFO -   - Domain: finance
+2025-09-25 14:41:39,813 - agent.query_parser - INFO -   - Data Type: translation
+2025-09-25 14:41:39,815 - agent.query_parser - INFO -   - Sample Count: 4000
+2025-09-25 14:41:39,815 - agent.query_parser - INFO -   - Required Subtopics: 800
+2025-09-25 14:41:39,815 - agent.query_parser - INFO - Completed execution of query_parser in 10.24s
+2025-09-25 15:40:05,034 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-25 15:40:05,034 - agent.query_parser - INFO - Analyzing and parsing query: I want to generate 5000 Translation synthitic Fainance datasets in Egyptian Arabic, The dataset consists of two columns
+        (English - Egyptian Arabic), mix between short and long answers. You provide the sentence In English and its translation in Egyptian Arabic (FUll Translation).
+        Please avoid literal translation and maintain the original terminology.
+2025-09-25 15:40:25,677 - agent.query_parser - INFO - Query identified as a valid data generation request.
+2025-09-25 15:40:25,678 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-25 15:40:25,678 - agent.query_parser - INFO -   - Domain: Finance
+2025-09-25 15:40:25,678 - agent.query_parser - INFO -   - Data Type: Translation
+2025-09-25 15:40:25,679 - agent.query_parser - INFO -   - Sample Count: 5000
+2025-09-25 15:40:25,679 - agent.query_parser - INFO -   - Required Subtopics: 1000
+2025-09-25 15:40:25,679 - agent.query_parser - INFO - Completed execution of query_parser in 20.64s
+2025-09-25 16:17:09,362 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-25 16:17:09,363 - agent.query_parser - INFO - Analyzing and parsing query: I want to generate 5000 Translation synthitic Fainance datasets in Egyptian Arabic, The dataset consists of two columns
+        (English - Egyptian Arabic), mix between short and long sentences. You provide the sentence In English and its translation in Egyptian Arabic (FUll Translation).
+        Avoid literal translation and maintain the original terminology.
+2025-09-25 16:18:32,264 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-25 16:18:32,264 - agent.query_parser - INFO - Analyzing and parsing query: I want to generate 5000 Translation synthitic Fainance datasets in Egyptian Arabic, The dataset consists of two columns
+        (English - Egyptian Arabic), mix between short and long sentences. You provide the sentence In English and its translation in Egyptian Arabic (FUll Translation).
+        Avoid literal translation and maintain the original terminology.
+2025-09-25 16:18:47,971 - agent.query_parser - INFO - Query identified as a valid data generation request.
+2025-09-25 16:18:47,972 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-25 16:18:47,972 - agent.query_parser - INFO -   - Domain: finance
+2025-09-25 16:18:47,973 - agent.query_parser - INFO -   - Data Type: translation
+2025-09-25 16:18:47,973 - agent.query_parser - INFO -   - Sample Count: 5000
+2025-09-25 16:18:47,973 - agent.query_parser - INFO -   - Required Subtopics: 1000
+2025-09-25 16:18:47,973 - agent.query_parser - INFO - Completed execution of query_parser in 15.71s
+2025-09-28 12:59:16,581 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-28 12:59:16,581 - agent.query_parser - INFO - Analyzing and parsing query: I want to generate 5000 Translation synthitic Fainance datasets in Egyptian Arabic, The dataset consists of two columns
+        (English - Egyptian Arabic), mix between short and long sentences. You provide the sentence In English and its translation in Egyptian Arabic (FUll Translation).
+        Avoid literal translation and maintain the original terminology.
+2025-09-28 12:59:24,637 - agent.query_parser - INFO - Query identified as a valid data generation request.
+2025-09-28 12:59:24,638 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-28 12:59:24,638 - agent.query_parser - INFO -   - Domain: finance
+2025-09-28 12:59:24,638 - agent.query_parser - INFO -   - Data Type: translation
+2025-09-28 12:59:24,638 - agent.query_parser - INFO -   - Sample Count: 5000
+2025-09-28 12:59:24,638 - agent.query_parser - INFO -   - Required Subtopics: 1000
+2025-09-28 12:59:24,638 - agent.query_parser - INFO - Completed execution of query_parser in 8.06s
+2025-09-28 13:03:39,728 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-28 13:03:39,729 - agent.query_parser - INFO - Analyzing and parsing query: I want to generate 5000 Translation synthitic Fainance datasets in Egyptian Arabic, The dataset consists of two columns
+        (English - Egyptian Arabic), mix between short and long sentences. You provide the sentence In English and its translation in Egyptian Arabic (FUll Translation).
+        Avoid literal translation and maintain the original terminology.
+2025-09-28 13:03:48,006 - agent.query_parser - INFO - Query identified as a valid data generation request.
+2025-09-28 13:03:48,006 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-28 13:03:48,006 - agent.query_parser - INFO -   - Domain: finance
+2025-09-28 13:03:48,006 - agent.query_parser - INFO -   - Data Type: translation
+2025-09-28 13:03:48,007 - agent.query_parser - INFO -   - Sample Count: 5000
+2025-09-28 13:03:48,007 - agent.query_parser - INFO -   - Required Subtopics: 1000
+2025-09-28 13:03:48,007 - agent.query_parser - INFO - Completed execution of query_parser in 8.28s
+2025-09-28 13:07:31,594 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-28 13:07:31,595 - agent.query_parser - INFO - Analyzing and parsing query: I want to generate 5000 Translation synthitic Fainance datasets in Egyptian Arabic, The dataset consists of two columns
+        (English - Egyptian Arabic), mix between short and long sentences. You provide the sentence In English and its translation in Egyptian Arabic (FUll Translation).
+        Avoid literal translation and maintain the original terminology.
+2025-09-28 13:07:40,436 - agent.query_parser - INFO - Query identified as a valid data generation request.
+2025-09-28 13:07:40,437 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-28 13:07:40,437 - agent.query_parser - INFO -   - Domain: finance
+2025-09-28 13:07:40,437 - agent.query_parser - INFO -   - Data Type: translation
+2025-09-28 13:07:40,438 - agent.query_parser - INFO -   - Sample Count: 5000
+2025-09-28 13:07:40,438 - agent.query_parser - INFO -   - Required Subtopics: 1000
+2025-09-28 13:07:40,438 - agent.query_parser - INFO - Completed execution of query_parser in 8.84s
+2025-09-28 19:03:19,856 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-28 19:03:19,856 - agent.query_parser - INFO - Analyzing and parsing query: I want to generate 5000 summarization synthitic datasets in Egyptian Arabic, The dataset consists of two columns
+        (text - summarized_text), mix between short and long paragraphes.
+2025-09-28 19:03:28,737 - agent.query_parser - INFO - Query identified as a valid data generation request.
+2025-09-28 19:03:28,740 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-28 19:03:28,740 - agent.query_parser - INFO -   - Domain: general
+2025-09-28 19:03:28,740 - agent.query_parser - INFO -   - Data Type: summarization
+2025-09-28 19:03:28,740 - agent.query_parser - INFO -   - Sample Count: 5000
+2025-09-28 19:03:28,741 - agent.query_parser - INFO -   - Required Subtopics: 1000
+2025-09-28 19:03:28,741 - agent.query_parser - INFO - Completed execution of query_parser in 8.89s
+2025-09-29 11:00:16,692 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-29 11:00:16,692 - agent.query_parser - INFO - Analyzing and parsing query: I want to generate 50 summarization synthitic datasets in Egyptian Arabic, The dataset consists of two columns
+        (text - summarized_text), mix between short and long paragraphes.
+2025-09-29 11:00:20,666 - agent.query_parser - INFO - Query identified as a valid data generation request.
+2025-09-29 11:00:20,667 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-29 11:00:20,667 - agent.query_parser - INFO -   - Domain: general
+2025-09-29 11:00:20,667 - agent.query_parser - INFO -   - Data Type: summarization
+2025-09-29 11:00:20,668 - agent.query_parser - INFO -   - Sample Count: 50
+2025-09-29 11:00:20,668 - agent.query_parser - INFO -   - Required Subtopics: 10
+2025-09-29 11:00:20,668 - agent.query_parser - INFO - Completed execution of query_parser in 3.98s
+2025-09-29 11:45:59,068 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-29 11:45:59,069 - agent.query_parser - INFO - Analyzing and parsing query: I want to generate 10 summarization synthitic datasets in Egyptian Arabic, The dataset consists of two columns
+        (text - summarized_text), mix between short and long paragraphes.
+2025-09-29 11:46:06,962 - agent.query_parser - WARNING - Query is an incomplete data generation request.
+2025-09-29 11:46:06,962 - agent.query_parser - ERROR - Failed during query parsing and analysis: Your request is incomplete. Please specify the number of rows, a description of the data, and the data type (e.g., '1000 medical QA pairs').
+2025-09-29 11:46:06,963 - agent.query_parser - ERROR - Error in query_parser after 7.89s: Your request is incomplete. Please specify the number of rows, a description of the data, and the data type (e.g., '1000 medical QA pairs').
+2025-09-29 11:47:46,948 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-29 11:47:46,948 - agent.query_parser - INFO - Analyzing and parsing query: I want to generate 10 rows summarization synthitic datasets in Egyptian Arabic, The dataset consists of two columns
+        (text - summarized_text), mix between short and long paragraphes.
+2025-09-29 11:47:51,134 - agent.query_parser - INFO - Query identified as a valid data generation request.
+2025-09-29 11:47:51,135 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-29 11:47:51,135 - agent.query_parser - INFO -   - Domain: general
+2025-09-29 11:47:51,136 - agent.query_parser - INFO -   - Data Type: summarization
+2025-09-29 11:47:51,136 - agent.query_parser - INFO -   - Sample Count: 10
+2025-09-29 11:47:51,136 - agent.query_parser - INFO -   - Required Subtopics: 2
+2025-09-29 11:47:51,137 - agent.query_parser - INFO - Completed execution of query_parser in 4.19s
+2025-09-29 11:53:27,350 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-29 11:53:27,351 - agent.query_parser - INFO - Analyzing and parsing query: I want to generate 10 rows summarization synthitic datasets in Egyptian Arabic, The dataset consists of two columns
+        (text - summarized_text), mix between short and long paragraphes.
+2025-09-29 11:53:30,697 - agent.query_parser - INFO - Query identified as a valid data generation request.
+2025-09-29 11:53:30,698 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-29 11:53:30,698 - agent.query_parser - INFO -   - Domain: general
+2025-09-29 11:53:30,698 - agent.query_parser - INFO -   - Data Type: summarization
+2025-09-29 11:53:30,699 - agent.query_parser - INFO -   - Sample Count: 10
+2025-09-29 11:53:30,699 - agent.query_parser - INFO -   - Required Subtopics: 2
+2025-09-29 11:53:30,699 - agent.query_parser - INFO - Completed execution of query_parser in 3.35s
+2025-09-29 12:05:45,963 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-29 12:05:45,963 - agent.query_parser - INFO - Analyzing and parsing query: I want to generate 10 rows summarization synthitic datasets in Egyptian Arabic, The dataset consists of two columns
+        (text - summarized_text), mix between short and long paragraphes.
+2025-09-29 12:05:50,445 - agent.query_parser - INFO - Query identified as a valid data generation request.
+2025-09-29 12:05:50,445 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-29 12:05:50,446 - agent.query_parser - INFO -   - Domain: general
+2025-09-29 12:05:50,446 - agent.query_parser - INFO -   - Data Type: summarization
+2025-09-29 12:05:50,446 - agent.query_parser - INFO -   - Sample Count: 10
+2025-09-29 12:05:50,446 - agent.query_parser - INFO -   - Required Subtopics: 2
+2025-09-29 12:05:50,447 - agent.query_parser - INFO - Completed execution of query_parser in 4.48s
+2025-09-29 12:24:25,265 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-29 12:24:25,266 - agent.query_parser - INFO - Analyzing and parsing query: I want to generate 10 rows summarization synthitic datasets in Egyptian Arabic, The dataset consists of two columns
+        (text - summarized_text), mix between short and long paragraphes.
+2025-09-29 12:24:29,948 - agent.query_parser - INFO - Query identified as a valid data generation request.
+2025-09-29 12:24:29,948 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-29 12:24:29,948 - agent.query_parser - INFO -   - Domain: general
+2025-09-29 12:24:29,949 - agent.query_parser - INFO -   - Data Type: summarization
+2025-09-29 12:24:29,949 - agent.query_parser - INFO -   - Sample Count: 10
+2025-09-29 12:24:29,949 - agent.query_parser - INFO -   - Required Subtopics: 2
+2025-09-29 12:24:29,949 - agent.query_parser - INFO - Completed execution of query_parser in 4.68s
+2025-09-29 12:56:26,754 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-29 12:56:26,754 - agent.query_parser - INFO - Analyzing and parsing query: I want to generate 15 rows summarization synthitic datasets in Egyptian Arabic, The dataset consists of two columns
+        (text - summarized_text), mix between short and long paragraphes.
+2025-09-29 12:56:31,235 - agent.query_parser - INFO - Query identified as a valid data generation request.
+2025-09-29 12:56:31,236 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-29 12:56:31,236 - agent.query_parser - INFO -   - Domain: general
+2025-09-29 12:56:31,236 - agent.query_parser - INFO -   - Data Type: summarization
+2025-09-29 12:56:31,236 - agent.query_parser - INFO -   - Sample Count: 15
+2025-09-29 12:56:31,236 - agent.query_parser - INFO -   - Required Subtopics: 3
+2025-09-29 12:56:31,237 - agent.query_parser - INFO - Completed execution of query_parser in 4.48s
+2025-09-29 12:59:58,718 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-29 12:59:58,718 - agent.query_parser - INFO - Analyzing and parsing query: I want to generate 15 rows summarization synthitic datasets in Egyptian Arabic, The dataset consists of two columns
+        (text - summarized_text), mix between short and long paragraphes.
+2025-09-29 13:00:02,510 - agent.query_parser - INFO - Query identified as a valid data generation request.
+2025-09-29 13:00:02,510 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-29 13:00:02,510 - agent.query_parser - INFO -   - Domain: general
+2025-09-29 13:00:02,512 - agent.query_parser - INFO -   - Data Type: summarization
+2025-09-29 13:00:02,512 - agent.query_parser - INFO -   - Sample Count: 15
+2025-09-29 13:00:02,512 - agent.query_parser - INFO -   - Required Subtopics: 3
+2025-09-29 13:00:02,512 - agent.query_parser - INFO - Completed execution of query_parser in 3.79s
+2025-09-29 13:06:45,358 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-29 13:06:45,359 - agent.query_parser - INFO - Analyzing and parsing query: I want to generate 10 rows summarization synthitic datasets in Egyptian Arabic, The dataset consists of two columns
+        (text - summarized_text), mix between short and long paragraphes.
+2025-09-29 13:06:49,853 - agent.query_parser - INFO - Query identified as a valid data generation request.
+2025-09-29 13:06:49,855 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-29 13:06:49,855 - agent.query_parser - INFO -   - Domain: general
+2025-09-29 13:06:49,855 - agent.query_parser - INFO -   - Data Type: summarization
+2025-09-29 13:06:49,855 - agent.query_parser - INFO -   - Sample Count: 10
+2025-09-29 13:06:49,855 - agent.query_parser - INFO -   - Required Subtopics: 2
+2025-09-29 13:06:49,855 - agent.query_parser - INFO - Completed execution of query_parser in 4.50s
+2025-09-29 13:09:25,644 - agent.query_parser - INFO - Starting execution of query_parser
+2025-09-29 13:09:25,644 - agent.query_parser - INFO - Analyzing and parsing query: I want to generate 15rows summarization synthitic datasets in Egyptian Arabic, The dataset consists of two columns
+        (text - summarized_text), mix between short and long paragraphes.
+2025-09-29 13:09:30,790 - agent.query_parser - INFO - Query identified as a valid data generation request.
+2025-09-29 13:09:30,790 - agent.query_parser - INFO - Parsed query successfully:
+2025-09-29 13:09:30,791 - agent.query_parser - INFO -   - Domain: general
+2025-09-29 13:09:30,791 - agent.query_parser - INFO -   - Data Type: summarization
+2025-09-29 13:09:30,791 - agent.query_parser - INFO -   - Sample Count: 15
+2025-09-29 13:09:30,791 - agent.query_parser - INFO -   - Required Subtopics: 3
+2025-09-29 13:09:30,791 - agent.query_parser - INFO - Completed execution of query_parser in 5.15s

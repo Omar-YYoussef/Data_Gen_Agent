@@ -46,6 +46,7 @@ class QueryParserAgent(BaseAgent):
                     data_type=parsed_data.get("data_type"),
                     sample_count=parsed_data.get("sample_count"),
                     language=parsed_data.get("language", "en"),
+                    iso_language=parsed_data.get("iso_language"), # New: ISO 639-1 language code
                     description=parsed_data.get("description")
                 )
                 
