@@ -1,0 +1,112 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "synthetic-data-pipeline"
+version = "0.1.6"
+description = "AI-powered synthetic data generation pipeline with web search and topic extraction"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Omar Youssef", email = "omarjooo595@gmail.com"}
+]
+keywords = ["synthetic data", "ai", "data generation", "nlp"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    # Core Dependencies
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.7.4,<3.0.0",
+    "google-generativeai>=0.3.0",
+    "langgraph>=0.2.20",
+    "langchain>=0.3.0",
+    "langchain-core>=0.3.0",
+    "langchain-community>=0.3.0",
+    
+    # Web Search & Scraping
+    "tavily-python>=0.7.0",
+    "crawl4ai>=0.7.0",
+    "requests>=2.31.0",
+    "beautifulsoup4>=4.12.3",
+    "aiohttp>=3.9.0",
+    "httpx>=0.25.0",
+    "Scrapy>=2.11.0",
+    
+    # ScraperAPI Integration
+    "scraperapi-sdk>=1.5.3",
+    "langchain-scraperapi>=0.1.0",
+    
+    # Data Processing
+    "pandas>=2.2.3",
+    "numpy>=1.26.0,<3.0.0",
+    "jsonschema>=4.23.0",
+    
+    # Async Processing
+    "asyncio-throttle>=1.0.2",
+    "nest-asyncio>=1.5.0",
+    
+    # Language Detection
+    "langdetect>=1.0.9",
+    
+    # Logging
+    "structlog>=23.2.0",
+    "colorlog>=6.8.0",
+    
+    # Security
+    "cryptography>=41.0.8",
+    "python-jose>=3.3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.10.0",
+    "isort>=5.12.0",
+    "mypy>=1.7.0",
+]
+
+api = [
+    "fastapi>=0.104.0",
+    "uvicorn>=0.24.0",
+    "python-multipart>=0.0.6",
+]
+
+ui = [
+    "gradio>=4.0.0",
+    "streamlit>=1.28.0",
+    "plotly>=5.17.0",
+]
+
+cli = [
+    "click>=8.1.7",
+    "rich>=13.7.0",
+    "typer>=0.9.0",
+]
+
+monitoring = [
+    "prometheus-client>=0.19.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Omar-YYoussef/Data_Gen_Agent"
+Repository = "https://github.com/Omar-YYoussef/Data_Gen_Agent"
+
+[project.scripts]
+synthetic-data = "synthetic_data_pipeline.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
