@@ -56,7 +56,8 @@ async def run_pipeline(
     user_query: str,
     refined_queries_count: Optional[int] = None,
     search_results_per_query: Optional[int] = None,
-    rows_per_subtopic: Optional[int] = None
+    rows_per_subtopic: Optional[int] = None,
+    gemini_model_name: Optional[str] = None
 ) -> None:
     """
     Run the pipeline and save results automatically.
@@ -89,7 +90,7 @@ async def run_pipeline(
             logger.info("STAGE 1: PARSING QUERY")
             logger.info("="*60)
             query_parser = QueryParserAgent()
-            parsed_query = query_parser.run(user_query)
+            parsed_query = query_parser.run(user_query, context={"gemini_model_name": gemini_model_name})
             parsed_query.required_topics = parsed_query.calculate_required_subtopics(_rows_per_subtopic)
             state_manager.state["parsed_query"] = parsed_query.model_dump()
             state_manager.update_status("query_parsed")
@@ -336,7 +337,8 @@ def generate_synthetic_data(
     user_query: str,
     refined_queries_count: Optional[int] = None,
     search_results_per_query: Optional[int] = None,
-    rows_per_subtopic: Optional[int] = None
+    rows_per_subtopic: Optional[int] = None,
+    gemini_model_name: Optional[str] = None
 ) -> None:
     """
     Generate synthetic data based on the query.

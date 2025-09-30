@@ -21,18 +21,16 @@ class Settings:
     TOPIC_EXTRACTION_CONCURRENCY = 4
     
     # Gemini Configuration
+    GEMINI_DEFAULT_MODEL = os.getenv("GEMINI_DEFAULT_MODEL", "gemini-2.5-flash")
     GEMINI_MAX_TOKENS = 8192
     GEMINI_TEMPERATURE = 0.7
     
     # Storage Paths
     PROJECT_ROOT = Path(__file__).resolve().parents[3]
     
-    # User-defined output directory, defaults to 'storage' at project root
-    # OUTPUT_DIR = os.getenv("OUTPUT_DIR", str(PROJECT_ROOT / "storage"))
-    BASE_DIR = Path(__file__).resolve().parent
     OUTPUT_DIR = os.getenv("OUTPUT_DIR")
     STORAGE_ROOT = Path(OUTPUT_DIR)
-    DATA_PATH = STORAGE_ROOT / "data" # Rename DEBUG_PATH to DATA_PATH
+    DATA_PATH = STORAGE_ROOT / "data"
     
     # Logging Configuration
     # LOG_ROOT = PROJECT_ROOT / "logs"

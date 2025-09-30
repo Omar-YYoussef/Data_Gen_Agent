@@ -1,7 +1,7 @@
 from typing import Dict, Any, Optional, List
 from ..models.data_schemas import ContentChunk, ExtractedTopic
 from ..agents.base_agent import BaseAgent
-from ..services.gemini_service import gemini_service
+from ..services.gemini_service import GeminiService
 from ..config.settings import settings
 import asyncio
 import time
@@ -40,6 +40,9 @@ class TopicExtractionAgent(BaseAgent):
         language = input_data["language"]
         domain_type = input_data["domain_type"]
         required_topics_count = input_data["required_topics_count"]
+
+        gemini_model_name = context.get("gemini_model_name")
+        gemini_service = GeminiService(model_name=gemini_model_name if gemini_model_name else settings.GEMINI_DEFAULT_MODEL)
         
         self.logger.info(f"Processing {len(chunks)} chunks in {language} for domain {domain_type}")
         

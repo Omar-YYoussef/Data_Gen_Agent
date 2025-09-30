@@ -1,7 +1,7 @@
 from typing import Dict, Any, Optional, List
 from ..models.data_schemas import ParsedQuery, SearchQuery
 from ..agents.base_agent import BaseAgent
-from ..services.gemini_service import gemini_service
+from ..services.gemini_service import GeminiService
 from ..config.settings import settings
 
 class QueryRefinerAgent(BaseAgent):
@@ -27,6 +27,9 @@ class QueryRefinerAgent(BaseAgent):
         if refined_queries_count is None:
             raise ValueError("refined_queries_count not found in context")
 
+        gemini_model_name = context.get("gemini_model_name")
+        gemini_service = GeminiService(model_name=gemini_model_name if gemini_model_name else settings.GEMINI_DEFAULT_MODEL)
+
         self.logger.info(f"Refining queries for domain: {parsed_query.domain_type}")
         self.logger.info(f"Target: {refined_queries_count} queries")
         
@@ -35,7 +38,8 @@ class QueryRefinerAgent(BaseAgent):
             refined_queries = gemini_service.refine_queries(
                 parsed_query.domain_type, 
                 language=parsed_query.language, 
-                count=refined_queries_count
+                count=refined_queries_count,
+                categories=parsed_query.categories
             )
             
             # Create SearchQuery objects

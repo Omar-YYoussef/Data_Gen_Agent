@@ -13,6 +13,7 @@ class ParsedQuery(BaseModel):
     required_topics: int = Field(default=0) # Add this line
     iso_language: Optional[str] = None # New: ISO 639-1 language code
     description: Optional[str] = None # New: User-provided description or example data
+    categories: Optional[List[str]] = None # New: User-defined categories within the domain
     additional_requirements: Optional[Dict[str, Any]] = None
     timestamp: datetime = Field(default_factory=datetime.now)
     

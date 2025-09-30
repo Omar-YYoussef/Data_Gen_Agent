@@ -1,7 +1,7 @@
 from typing import Dict, Any, Optional, List
 from ..models.data_schemas import SyntheticDataPoint
 from ..agents.base_agent import BaseAgent
-from ..services.gemini_service import gemini_service
+from ..services.gemini_service import GeminiService
 from ..config.settings import settings
 from datetime import datetime # Uncomment datetime import
 # import time # Remove time import
@@ -42,6 +42,9 @@ class SyntheticDataGeneratorAgent(BaseAgent):
         data_type = input_data["data_type"]
         language = input_data["language"]
         description = input_data.get("description", None)
+
+        gemini_model_name = context.get("gemini_model_name")
+        gemini_service = GeminiService(model_name=gemini_model_name if gemini_model_name else settings.GEMINI_DEFAULT_MODEL)
         
         self.logger.info(f"Agent {self.agent_index} starting generation for {len(topics)} topics in {language}")
         

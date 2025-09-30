@@ -3,10 +3,10 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "synthetic-data-pipeline"
-version = "0.1.6"
+name = "Data_Generation_Agent"
+version = "0.1.0"
 description = "AI-powered synthetic data generation pipeline with web search and topic extraction"
-readme = "README.md"
+readme = "README_PYPI.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
 authors = [

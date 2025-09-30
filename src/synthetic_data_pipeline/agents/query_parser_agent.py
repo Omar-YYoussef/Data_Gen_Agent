@@ -1,9 +1,10 @@
 from typing import Dict, Any, Optional
 from ..models.data_schemas import ParsedQuery
 from ..agents.base_agent import BaseAgent
-from ..services.gemini_service import gemini_service
+from ..services.gemini_service import GeminiService
 from ..config.settings import settings  # Import settings
 import math
+
 class QueryParserAgent(BaseAgent):
     """Agent to parse user queries and extract domain, data type, and sample count"""
     
@@ -21,6 +22,9 @@ class QueryParserAgent(BaseAgent):
     def execute(self, input_data: str, context: Optional[Dict[str, Any]] = None) -> ParsedQuery:
         """Analyzes and parses the user query in a single step."""
         
+        gemini_model_name = context.get("gemini_model_name")
+        gemini_service = GeminiService(model_name=gemini_model_name if gemini_model_name else settings.GEMINI_DEFAULT_MODEL)
+
         self.logger.info(f"Analyzing and parsing query: {input_data}")
         
         try:
@@ -47,7 +51,8 @@ class QueryParserAgent(BaseAgent):
                     sample_count=parsed_data.get("sample_count"),
                     language=parsed_data.get("language"),
                     iso_language=parsed_data.get("iso_language"), # New: ISO 639-1 language code
-                    description=parsed_data.get("description")
+                    description=parsed_data.get("description"),
+                    categories=parsed_data.get("categories")  # New: User-defined categories
                 )
                 
                 # Calculate required subtopics based on settings
@@ -57,6 +62,7 @@ class QueryParserAgent(BaseAgent):
                 self.logger.info(f"  - Domain: {parsed_query.domain_type}")
                 self.logger.info(f"  - Data Type: {parsed_query.data_type}")
                 self.logger.info(f"  - Sample Count: {parsed_query.sample_count}")
+                self.logger.info(f"  - Categories: {parsed_query.categories}")
                 self.logger.info(f"  - Required Subtopics: {required_subtopics}")
                 
                 return parsed_query

@@ -13,14 +13,14 @@ class GeminiQuotaExhaustedError(Exception):
 class GeminiService:
     """Enhanced service with flexible JSON generation for user-specified data types"""
     
-    def __init__(self):
+    def __init__(self, model_name: str = 'gemini-2.5-flash'):
         if not settings.GEMINI_API_KEY:
             raise ValueError("No GEMINI_API_KEYS found in environment variables. Please provide at least one.")
         
         self.api_key = settings.GEMINI_API_KEY 
         self._configure_gemini_with_current_key()
 
-        self.model = genai.GenerativeModel('gemini-2.5-flash')
+        self.model = genai.GenerativeModel(model_name)
         self.logger = logging.getLogger(__name__)
         
         self.generation_config = genai.types.GenerationConfig(
@@ -99,6 +99,7 @@ class GeminiService:
 
             **Optional Parameters:**
             - **Domain**: Specific field or industry context
+            - **Categories**: User-defined categories within the domain (e.g., "cardiovascular, neurology, oncology" for medical domain)
 
             ## Response Format Specifications
 
@@ -116,7 +117,8 @@ class GeminiService:
                 "sample_count": integer - exact number requested (never estimate or default),
                 "language": "string - full language name (e.g., English, Egyptian Arabic, German, French, Spanish, Arabic)",
                 "iso_language": "string - ISO 639-1 code (e.g., en, ar). For dialects, use the base language code (e.g., 'ar' for Egyptian Arabic)",
-                "description": "string - comprehensive summary of requirements, constraints, and formatting details"
+                "description": "string - comprehensive summary of requirements, constraints, and formatting details",
+                "categories": "array of strings - user-defined categories within the domain, or null if not specified"
             }
 
             ## Critical Guidelines
@@ -132,6 +134,7 @@ class GeminiService:
             - language: "full language name (e.g., English, Arabic, Egyptian Arabic)"
             - iso_language: "ISO 639-1 code (e.g., en, ar). For dialects, use the base language code (e.g., 'ar' for Egyptian Arabic)"
             - description`: Capture ALL specific requirements, formatting needs, and constraints
+            - categories`: Extract user-defined subcategories within the domain (e.g., ["cardiovascular", "neurology"] for medical) or null if not specified
 
             4. **Edge Case Handling**:
             - Ambiguous quantities (e.g., "some data", "a few examples") → incomplete
@@ -152,7 +155,7 @@ class GeminiService:
         ---
         Examples:
         User Query: "I want 1000 medical QA data points in English"
-        JSON Output: {{"query_type": "data_generation", "domain_type": "medical", "data_type": "QA", "sample_count": 1000, "language": "English", "iso_language": "en", "description": null}}
+        JSON Output: {{"query_type": "data_generation", "domain_type": "medical", "data_type": "QA", "sample_count": 1000, "language": "English", "iso_language": "en", "description":data columns are (question, answer) and mix between shor and long exampls}}
 
         User Query: "Generate 500 classification examples"
         JSON Output: {{"query_type": "data_generation", "data_type": "classification", "sample_count": 500, "language": "English", "iso_language": "en", "description": "the data contains two columns(text, label)"}}
@@ -165,6 +168,12 @@ class GeminiService:
         
         User Query: "Generate medical QA data"
         JSON Output: {{"query_type": "incomplete"}}
+
+        User Query: "Generate 500 medical QA pairs in English covering cardiovascular and neurology topics"
+        JSON Output: {{"query_type": "data_generation", "domain_type": "medical", "data_type": "QA", "sample_count": 500, "language": "English", "iso_language": "en", "description": "QA pairs with question and answer columns", "categories": ["cardiovascular", "neurology"]}}
+
+        User Query: "Create 200 finance classification examples in Arabic"
+        JSON Output: {{"query_type": "data_generation", "domain_type": "finance", "data_type": "classification", "sample_count": 200, "language": "Arabic", "iso_language": "ar", "description": "text-label classification pairs", "categories": null}}
 
         User Query: "How are you?"
         JSON Output: {{"query_type": "not_data_generation"}}
@@ -192,17 +201,37 @@ class GeminiService:
             # Fallback for safety
             return {"query_type": "not_data_generation"}
             
-    def refine_queries(self, domain_type: str, language: str, count: int = 20) -> List[str]:
+    def refine_queries(self, domain_type: str, language: str, count: int = 20, categories: Optional[List[str]] = None) -> List[str]:
         """Generate domain-specific search queries in specified language"""
         
+        # Determine category instruction based on whether categories are provided
+        if categories:
+            category_instruction = f"""
+        ## Category Focus
+            The user has specified the following categories within the {domain_type} domain: {', '.join(categories)}
+            - Prioritize generating queries that cover these specific categories
+            - Ensure queries are distributed across all provided categories
+            - Focus on sub-topics, methods, and concepts within these categories
+            - Use category-specific terminology and concepts
+            """
+        else:
+            category_instruction = f"""
+        ## Domain Coverage
+            Cover the entire {domain_type} domain comprehensively since no specific categories were provided.
+            - Ensure broad coverage across all major aspects of the domain
+            - Include foundational and advanced topics
+            """
+
         system_instruction = f"""
         You are an expert query generator specializing in creating diverse, high-quality search queries for synthetic data generation pipelines.
 
         ## Task Overview
             Generate {count} strategically diverse search queries for the "{domain_type}" domain in {language} language. 
             These queries will be used to create training data, so maximize topical coverage and query variety.
+        
+        {category_instruction}
+        
         ### Topic Breadth
-            - Cover ALL major subtopics and subfields within the {domain_type} domain
             - Include both foundational concepts and advanced/specialized areas
             - Balance theoretical knowledge with practical applications
             - Span different complexity levels (beginner to expert)
@@ -220,8 +249,23 @@ class GeminiService:
         Generate diverse, high-quality search queries that will enable comprehensive synthetic data creation for the {domain_type} domain.
         """
         
+        # Create category-specific prompt
+        if categories:
+            category_prompt = f"""
+        Categories to focus on: {', '.join(categories)}
+        - Ensure queries are distributed across these categories
+        - Use terminology specific to each category
+        """
+        else:
+            category_prompt = """
+        - Cover the entire domain comprehensively
+        - Include all major subtopics and specializations
+        """
+
         prompt = f"""
         Generate {count} diverse and professional search queries in {language} for the "{domain_type}" domain.
+
+        {category_prompt}
 
         Requirements:
         - Each query should be 2-10 words long and use domain-specific terminology
@@ -258,58 +302,6 @@ class GeminiService:
         
         return queries[:count]
     
-    # def extract_topics(self, content: str, language: str, domain_type: str) -> List[str]:
-    #     """Extract subtopic names in specified language related to the given domain"""
-        
-    #     system_instruction = f"""
-    #     You are an expert content analyst specializing in subtopic extraction for synthetic data generation. 
-    #     Your task is to identify optimal subtopics from provided content that will enable high-quality, focused data point creation.
-    #     ## What to look for:
-    #         - Main concepts, methods, or procedures mentioned
-    #         - Specific topics that have enough depth for questions/examples
-    #         - Concrete subjects rather than vague themes
-
-    #     ## Guidelines:
-    #         - Each subtopic should be specific enough to create multiple related examples
-    #         - Focus only on topics clearly present in the content
-    #         - Use {language} for all subtopic names
-    #         - Keep subtopics relevant to {domain_type}
-
-
-    #     ## Output:
-    #         Return a JSON array of subtopic strings in {language}:
-    #         ["subtopic 1", "subtopic 2", "subtopic 3"]
-
-    #         Extract 5-15 focused subtopics from the content.
-    #     """
-        
-    #     prompt = f"""
-    #     Extract focused subtopics from this content and express them in {language}, ensuring relevance to the {domain_type} domain:
-    #     {content}
-        
-    #     Examples of good subtopics:
-    #     "Diabetes medication side effects"
-    #     "Heart surgery recovery protocols"
-    #     "Cancer screening guidelines"
-    #     "Antibiotic resistance mechanisms"
-    #     "Network intrusion detection"
-    #     "Financial risk assessment methods"
-    
-    #     Make sure the subtopics are falling within the {domain_type}, this point is very important.
-    #     Return JSON array with subtopics in {language}: ["subtopic1", "subtopic2", ...]
-    #     """
-        
-    #     response = self.generate_text(prompt, system_instruction)
-        
-    #     try:
-    #         start_idx = response.find('[')
-    #         end_idx = response.rfind(']') + 1
-    #         json_str = response[start_idx:end_idx]
-    #         topics_list = json.loads(json_str)
-    #         return [str(topic) for topic in topics_list if isinstance(topic, str)]
-    #     except Exception as e:
-    #         self.logger.warning(f"Failed to extract topics: {e}")
-    #         return []
 
     async def extract_topics_async(self, content: str, language: str, domain_type: str) -> List[str]:
         """Asynchronously extract subtopic names in specified language related to the given domain"""
@@ -399,15 +391,17 @@ class GeminiService:
                 
         prompt = f"""
 
-        Generate {settings.ROWS_PER_SUBTOPIC} data points about "{topic}" as {data_type} in {language}.
+        Generate {settings.ROWS_PER_SUBTOPIC} high-quality, diverse data points about "{topic}" as {data_type} in {language}.
 
         ## Requirements:
-            - Make each data point clear and self-explanatory
-            - Each data point is independent (don't reference other data points)
-            - Use {language} for all content
-            - Return valid JSON array only
+            - Ensure each data point is clear, self-contained, and immediately understandable without additional context
+            - Make every data point completely independent—avoid cross-references, pronouns referring to other entries, or sequential dependencies
+            - Vary sentence structure, complexity, and vocabulary to create natural diversity across all data points
+            - Use authentic, natural {language} appropriate for the context and domain
+            - Ensure factual accuracy and cultural appropriateness for {language} speakers
+            - Return ONLY a valid JSON array with no additional text, explanations, or markdown formatting
 
-        Follow this description
+        Follow this specific description and constraints:
             {description_prompt}
         """
         
@@ -472,6 +466,3 @@ class GeminiService:
             else:
                 # For other errors, re-raise to indicate failure
                 raise Exception(f"Async Gemini API call failed unexpectedly for key index {0}. Error: {e}") from e
-
-# Initialize service
-gemini_service = GeminiService()
