@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "Data_Generation_Agents"
-version = "0.1.0"
+version = "0.1.1"
 description = "AI-powered synthetic data generation pipeline with web search and topic extraction"
 readme = "README_PYPI.md"
 requires-python = ">=3.8"
@@ -106,7 +106,7 @@ Homepage = "https://github.com/Omar-YYoussef/Data_Gen_Agent"
 Repository = "https://github.com/Omar-YYoussef/Data_Gen_Agent"
 
 [project.scripts]
-synthetic-data = "synthetic_data_pipeline.__main__:main"
+synthetic-data = "Data_Generation_Agents.__main__:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

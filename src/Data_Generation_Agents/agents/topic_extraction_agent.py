@@ -41,7 +41,7 @@ class TopicExtractionAgent(BaseAgent):
         domain_type = input_data["domain_type"]
         required_topics_count = input_data["required_topics_count"]
 
-        gemini_model_name = context.get("gemini_model_name")
+        gemini_model_name = (context or {}).get("gemini_model_name")
         gemini_service = GeminiService(model_name=gemini_model_name if gemini_model_name else settings.GEMINI_DEFAULT_MODEL)
         
         self.logger.info(f"Processing {len(chunks)} chunks in {language} for domain {domain_type}")

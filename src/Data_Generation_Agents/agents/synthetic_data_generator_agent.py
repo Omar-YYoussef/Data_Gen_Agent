@@ -43,6 +43,8 @@ class SyntheticDataGeneratorAgent(BaseAgent):
         language = input_data["language"]
         description = input_data.get("description", None)
 
+        # Tolerate missing context
+        context = context or {}
         gemini_model_name = context.get("gemini_model_name")
         gemini_service = GeminiService(model_name=gemini_model_name if gemini_model_name else settings.GEMINI_DEFAULT_MODEL)
         

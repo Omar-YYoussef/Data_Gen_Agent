@@ -103,6 +103,9 @@ async def run_pipeline(
 
         state_manager.update_checkpoint(required_topics=parsed_query.required_topics)
 
+        # Ensure final_synthetic_data is always defined for summary logging
+        final_synthetic_data = []
+
         while True:
             current_synthetic_data = state_manager.load_asset("synthetic_data") or []
             current_count = len(current_synthetic_data)
@@ -277,7 +280,7 @@ async def run_pipeline(
                                 "data_type": parsed_query.data_type,
                                 "language": parsed_query.language,
                                 "description": parsed_query.description
-                            })
+                            }, context={"gemini_model_name": gemini_model_name})
 
                             if new_synthetic_data:
                                 current_synthetic_data.extend(new_synthetic_data)
@@ -309,6 +312,13 @@ async def run_pipeline(
                 logger.info("\n" + "="*60)
                 logger.info("STAGE 4: SKIPPED (loaded from cache)")
                 logger.info("="*60)
+
+            # If the pipeline has reached the terminal stage for data generation,
+            # exit the generation loop to avoid endlessly repeating SKIPPED logs
+            if state_manager.get_status_level() >= STATUS_LEVELS["data_generated"]:
+                logger.info("Data generation stage reached terminal state. Exiting generation loop.")
+                state_manager.update_status("completed")
+                break
 
             final_synthetic_data = state_manager.load_asset("synthetic_data") or []
 

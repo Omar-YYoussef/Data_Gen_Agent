@@ -15,7 +15,7 @@ class Settings:
     
     # Pipeline Configuration (Updated for 30x5 strategy)
        # Pipeline Configuration - Allow override from .env
-    REFINED_QUERIES_COUNT = int(os.getenv("REFINED_QUERIES_COUNT", "30"))
+    REFINED_QUERIES_COUNT = int(os.getenv("REFINED_QUERIES_COUNT", "2"))
     SEARCH_RESULTS_PER_QUERY = int(os.getenv("SEARCH_RESULTS_PER_QUERY", "5"))
     ROWS_PER_SUBTOPIC = int(os.getenv("ROWS_PER_SUBTOPIC", "5"))
     TOPIC_EXTRACTION_CONCURRENCY = 4
@@ -28,8 +28,9 @@ class Settings:
     # Storage Paths
     PROJECT_ROOT = Path(__file__).resolve().parents[3]
     
+    # If OUTPUT_DIR is provided, use it; otherwise, default to project root
     OUTPUT_DIR = os.getenv("OUTPUT_DIR")
-    STORAGE_ROOT = Path(OUTPUT_DIR)
+    STORAGE_ROOT = Path(OUTPUT_DIR) if OUTPUT_DIR else PROJECT_ROOT
     DATA_PATH = STORAGE_ROOT / "data"
     
     # Logging Configuration
