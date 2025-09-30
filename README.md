@@ -22,17 +22,59 @@ An AI-powered synthetic data generation pipeline that leverages web search, cont
 
 The pipeline consists of several specialized AI agents working in coordination:
 
-1. **Query Parser Agent**: Analyzes user queries to extract requirements, including optional categories within the specified domain
-2. **Query Refiner Agent**: Generates multiple refined search queries
-3. **Web Search Agent**: Performs comprehensive web searches
-4. **Filtration Agent**: Filters and validates search results
-5. **Web Scraping Agent**: Extracts content from web pages
-6. **Topic Extraction Agent**: Identifies relevant topics from content
-7. **Synthetic Data Generator Agent**: Creates synthetic data based on extracted topics
+1. **📝 Query Parser Agent**: Analyzes user queries to extract requirements, including optional categories within the specified domain
+2. **🔍 Query Refiner Agent**: Generates multiple refined search queries
+3. **🌐 Web Search Agent**: Performs comprehensive web searches
+4. **🔎 Filtration Agent**: Filters and validates search results
+5. **🕷️ Web Scraping Agent**: Extracts content from web pages
+6. **🏷️ Topic Extraction Agent**: Identifies relevant topics from content
+7. **🎯 Synthetic Data Generator Agent**: Creates synthetic data based on extracted topics
 
-## Pipeline Flowchart
+## 📊 Pipeline Flowchart
 
 ![Pipeline Flowchart](pipeline.png)
+
+## ⚠️ Important: Topic Extraction Requirement
+
+**CRITICAL**: The data generation phase will **NOT begin** until the topic extraction stage identifies enough unique topics to support your requested data volume.
+
+### How It Works:
+
+The pipeline calculates the required number of topics using this formula:
+
+```
+Required Topics = Number of Requested Rows / ROWS_PER_SUBTOPIC
+```
+
+**Example**:
+- If you request **1000 rows** of data
+- And `ROWS_PER_SUBTOPIC = 5` (default)
+- The pipeline needs to extract at least **200 unique topics** before data generation begins
+
+### What This Means For You:
+
+1. **Larger Datasets Need More Topics**: Requesting 5000 rows requires significantly more topics than 500 rows
+2. **Search Configuration Matters**: If the pipeline can't extract enough topics, you may need to:
+   - Increase `REFINED_QUERIES_COUNT` (generate more search queries)
+   - Increase `SEARCH_RESULTS_PER_QUERY` (scrape more web pages)
+   - Broaden your domain/categories (provide more diverse content sources)
+3. **Pipeline Will Wait**: The data generation agent will not start until sufficient topics are extracted
+4. **Monitor Progress**: Watch the topic extraction output to see how many topics have been identified
+
+### Configuration Tips:
+
+For large datasets (1000+ rows), consider adjusting these parameters:
+
+```python
+generate_synthetic_data(
+    "Generate 5000 English QA pairs about machine learning...",
+    refined_queries_count=40,      # More search queries
+    search_results_per_query=8,    # More results per query
+    rows_per_subtopic=5            # Or increase this to need fewer topics
+)
+```
+
+**Pro Tip**: If you're generating a very large dataset and topic extraction is taking too long, you can increase `ROWS_PER_SUBTOPIC` to reduce the number of required topics (but this may reduce data diversity).
 
 ## 🚀 Quick Start
 
@@ -58,19 +100,6 @@ generate_synthetic_data(
 synthetic-data "prompt"
 ```
 
-## Examples
-
-Here are some example prompts you can use with the pipeline:
-
-1. **Machine Learning QA Pairs**:  
-   "Generate 1000 English QA pairs about machine learning in categories: supervised learning, unsupervised learning, reinforcement learning."
-
-2. **Product Reviews**:  
-   "Create 500 Spanish product reviews for fashion items in categories: clothing, shoes, accessories."
-
-3. **Conversations**:  
-   "Produce 200 conversations in French about daily life in categories: work, family, hobbies."
-
 ## ⚙️ Configuration
 
 ### Environment Setup
@@ -93,11 +122,11 @@ ROWS_PER_SUBTOPIC=5
 LOG_LEVEL=INFO
 ```
 
-### API Keys Setup
+### 🔑 API Keys Setup
 
-1. **Gemini API**: Get your key from [Google AI Studio](https://makersuite.google.com/app/apikey)
-2. **Tavily API**: Sign up at [Tavily](https://tavily.com/) for web search capabilities
-3. **ScraperAPI**: Register at [ScraperAPI](https://www.scraperapi.com/) for robust web scraping
+1. **🤖 Gemini API**: Get your key from [Google AI Studio](https://makersuite.google.com/app/apikey)
+2. **🔍 Tavily API**: Sign up at [Tavily](https://tavily.com/) for web search capabilities
+3. **🕷️ ScraperAPI**: Register at [ScraperAPI](https://www.scraperapi.com/) for robust web scraping
 
 
 ## 🔄 Stateful Pipeline Example
@@ -263,13 +292,16 @@ generate_synthetic_data("Generate 5000 English QA pairs about machine learning i
 ```
 
 **Checkpoint Levels**:
-- `query_parsed` - Query analysis completed
-- `query_refined` - Search queries generated
-- `web_searched` - Web search completed
-- `web_scraped` - Content scraping completed
-- `content_gathered` - Content processing completed
-- `topics_extracted` - Topic extraction completed
-- `data_generated` - Synthetic data generation completed
+- 🏁 `initial` (0) - Pipeline initialized
+- 🎬 `initialized` (1) - Setup completed
+- 📝 `query_parsed` (2) - Query analysis completed
+- 🔍 `query_refined` (3) - Search queries generated
+- 🌐 `web_searched` (4) - Web search completed
+- 🕷️ `web_scraped` (5) - Content scraping completed
+- 📦 `content_gathered` (6) - Content processing completed
+- 🏷️ `topics_extracted` (7) - Topic extraction completed
+- 🎯 `data_generated` (8) - Synthetic data generation completed
+- ✅ `completed` (9) - Pipeline fully completed
 
 **Benefits**:
 - **No Lost Progress**: Never lose hours of work due to interruptions
