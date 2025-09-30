@@ -1,7 +1,7 @@
 from typing import Dict, Any, Optional, List
 from ..models.data_schemas import SyntheticDataPoint
 from ..agents.base_agent import BaseAgent
-from ..services.gemini_service import GeminiService
+from ..services.gemini_service import GeminiService, GeminiQuotaExhaustedError
 from ..config.settings import settings
 from datetime import datetime # Uncomment datetime import
 # import time # Remove time import
@@ -96,6 +96,11 @@ class SyntheticDataGeneratorAgent(BaseAgent):
                 
                 await asyncio.sleep(3)
 
+            except GeminiQuotaExhaustedError as e:
+                self.logger.error(f"Gemini API quota exhausted: {e}")
+                self.logger.warning("Stopping data generation due to quota exhaustion.")
+                # Re-raise to signal quota exhaustion to the main pipeline
+                raise
             except Exception as e:
                 self.logger.error(f"An API error occurred during synthetic data generation: {e}")
                 self.logger.warning("This is likely due to exhausted API quotas or rate limits.")

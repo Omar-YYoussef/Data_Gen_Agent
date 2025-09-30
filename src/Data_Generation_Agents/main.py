@@ -18,6 +18,7 @@ from .agents.synthetic_data_generator_agent import SyntheticDataGeneratorAgent
 from .services.chunking_service import chunking_service
 from .utils.pipeline_state_manager import PipelineStateManager, STATUS_LEVELS
 from .models.data_schemas import SearchQuery, SyntheticDataPoint, ParsedQuery, ScrapedContent, ContentChunk, SearchResult
+from .services.gemini_service import GeminiQuotaExhaustedError
 
 # Setup enhanced logging
 logging.basicConfig(
@@ -297,6 +298,12 @@ async def run_pipeline(
                                 logger.info("Target sample count reached.")
                                 break
                             
+                        except GeminiQuotaExhaustedError as e:
+                            logger.error(f"Gemini API quota exhausted: {e}")
+                            logger.warning("Stopping data generation due to quota exhaustion.")
+                            logger.info(f"Final data count: {len(current_synthetic_data)} samples generated before quota exhaustion")
+                            state_manager.update_status("completed")
+                            break
                         except Exception as e:
                             logger.error(f"Error processing topic {actual_topic_index + 1}: {e}")
                             current_topic_index += 1
