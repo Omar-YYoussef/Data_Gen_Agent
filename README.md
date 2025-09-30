@@ -1,4 +1,3 @@
-```
 # 🚀 Synthetic Data Generation Pipeline
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -16,7 +15,6 @@ An AI-powered synthetic data generation pipeline that leverages web search, cont
 - **🌍 Multi-Language Support**: Generate data in multiple languages with automatic language detection
 - **💾 Stateful Pipeline**: Resume interrupted processes with intelligent checkpointing
 - **🔧 Highly Configurable**: Customizable parameters for queries, results, and generation strategies
-- **🌍 Multi-Language Support**: Generate data in multiple languages with automatic language detection
 - **🏷️ Domain Categories**: Optional specification of categories within domains for more targeted and precise data generation
 - **📈 Scalable Architecture**: Agent-based architecture for modular and extensible functionality
 
@@ -31,6 +29,10 @@ The pipeline consists of several specialized AI agents working in coordination:
 5. **Web Scraping Agent**: Extracts content from web pages
 6. **Topic Extraction Agent**: Identifies relevant topics from content
 7. **Synthetic Data Generator Agent**: Creates synthetic data based on extracted topics
+
+## Pipeline Flowchart
+
+![Pipeline Flowchart](Pipeline.svg)
 
 ## 🚀 Quick Start
 
@@ -55,6 +57,19 @@ generate_synthetic_data(
 ```bash
 synthetic-data "prompt"
 ```
+
+## Examples
+
+Here are some example prompts you can use with the pipeline:
+
+1. **Machine Learning QA Pairs**:  
+   "Generate 1000 English QA pairs about machine learning in categories: supervised learning, unsupervised learning, reinforcement learning."
+
+2. **Product Reviews**:  
+   "Create 500 Spanish product reviews for fashion items in categories: clothing, shoes, accessories."
+
+3. **Conversations**:  
+   "Produce 200 conversations in French about daily life in categories: work, family, hobbies."
 
 ## ⚙️ Configuration
 
@@ -344,7 +359,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **Made with ❤️ by [Omar Youssef](https://github.com/Omar-YYoussef)**
-
-```
-
-update the Readme again to add a 3 good examples of the prompt and include this image (D:\Learn\web_data_generation_pipeline\Pipeline.svg
