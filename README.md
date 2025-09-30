@@ -39,13 +39,13 @@ The pipeline consists of several specialized AI agents working in coordination:
 ### Installation
 
 ```bash
-pip install synthetic-data-pipeline
+pip install Data_Generation_Agents
 ```
 
 ### Basic Usage
 
 ```python
-from synthetic_data_pipeline import generate_synthetic_data
+from Data_Generation_Agents import generate_synthetic_data
 
 generate_synthetic_data(
     "prompt"

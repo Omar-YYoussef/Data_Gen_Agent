@@ -6,7 +6,7 @@ AI-powered synthetic data generation pipeline with web search and topic extracti
 
 Install the package using pip:
 
-    pip install synthetic-data-pipeline
+    pip install Data_Generation_Agents
 
 ## Requirements
 
@@ -30,7 +30,7 @@ Note: The `.env` file must be in the directory where you run your scripts.
 
 Basic usage example:
 
-    from synthetic_data_pipeline import generate_synthetic_data
+    from Data_Generation_Agents import generate_synthetic_data
     
     generate_synthetic_data("prompt")
 
@@ -41,6 +41,7 @@ Advanced usage with custom parameters:
         refined_queries_count=20,
         search_results_per_query=5,
         rows_per_subtopic=5
+        gemini_model_name="gemeni-2.0-flash
     )
 
 **Step 3: Use CLI**
@@ -93,9 +94,9 @@ If no categories are specified, the pipeline will comprehensively cover the enti
 **Examples:**
 
 ```python
-from synthetic_data_pipeline import generate_synthetic_data
+from Data_Generation_Agents import generate_synthetic_data
 
-result = generate_synthetic_data(
+generate_synthetic_data(
     user_query= "Generate 5000 diverse, contextually rich English-to-Egyptian Arabic translation pairs In Law domain with varying sentence complexities, ensuring authentic colloquial Egyptian Arabic translations while preserving English technical terms, proper nouns, and specialized terminology untranslated. the data the data contains two columns (English, Egyptian Arabic)"
     refined_queries_count=25,
     search_results_per_query=5,
@@ -104,13 +105,14 @@ result = generate_synthetic_data(
 ```
 
 ```python
-from synthetic_data_pipeline import generate_synthetic_data
+from Data_Generation_Agents import generate_synthetic_data
 
-result = generate_synthetic_data(
+generate_synthetic_data(
     user_query="Generate 2000 finance classification examples in Arabic covering banking, insurance, and investment topics, the data contains two columns (Text, classification_type)",
     refined_queries_count=30,
     search_results_per_query=5,
     rows_per_subtopic=5
+    gemini_model_name="gemini-1.5-pro"
 )
 ```
 
