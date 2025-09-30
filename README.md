@@ -32,7 +32,7 @@ The pipeline consists of several specialized AI agents working in coordination:
 
 ## Pipeline Flowchart
 
-![Pipeline Flowchart](Pipeline.png)
+![Pipeline Flowchart](pipeline.png)
 
 ## 🚀 Quick Start
 
