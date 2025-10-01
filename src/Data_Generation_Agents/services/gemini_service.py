@@ -52,7 +52,7 @@ class GeminiService:
             self.logger.error(f"Gemini API call with key index {0} failed: {e}")
             
             if "rate limit" in error_message or "quota" in error_message or "resource has been exhausted" in error_message:
-                raise Exception(f"Gemini API quota exhausted for key index {0}. Stopping.") from e
+                raise GeminiQuotaExhaustedError(f"Gemini API quota exhausted for key index {0}. Stopping.") from e
             else:
                 # For other errors, re-raise to indicate failure
                 raise Exception(f"Gemini API call failed unexpectedly for key index {0}. Error: {e}") from e

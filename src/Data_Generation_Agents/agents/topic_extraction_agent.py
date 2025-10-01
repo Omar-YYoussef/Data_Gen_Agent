@@ -68,6 +68,9 @@ class TopicExtractionAgent(BaseAgent):
                         all_topics.extend(chunk_topics)
                         self.logger.debug(f"Extracted {len(chunk_topics)} topics from chunk {chunk.chunk_id}")
                 except Exception as e:
+                    # Propagate quota exhaustion to main; log others
+                    if hasattr(e, '__class__') and e.__class__.__name__ == 'GeminiQuotaExhaustedError':
+                        raise
                     self.logger.error(f"Error processing chunk {chunk.chunk_id}: {e}")
 
         tasks = [process_chunk(chunk) for chunk in chunks]

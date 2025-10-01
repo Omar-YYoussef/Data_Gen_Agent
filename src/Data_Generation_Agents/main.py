@@ -91,7 +91,12 @@ async def run_pipeline(
             logger.info("STAGE 1: PARSING QUERY")
             logger.info("="*60)
             query_parser = QueryParserAgent()
-            parsed_query = query_parser.run(user_query, context={"gemini_model_name": gemini_model_name})
+            try:
+                parsed_query = query_parser.run(user_query, context={"gemini_model_name": gemini_model_name})
+            except GeminiQuotaExhaustedError as e:
+                logger.error(f"Gemini API quota exhausted during query parsing: {e}")
+                logger.info("Stopping pipeline at stage: initialized (no changes saved beyond initialization)")
+                return
             parsed_query.required_topics = parsed_query.calculate_required_subtopics(_rows_per_subtopic)
             state_manager.state["parsed_query"] = parsed_query.model_dump()
             state_manager.update_status("query_parsed")
@@ -106,6 +111,8 @@ async def run_pipeline(
 
         # Ensure final_synthetic_data is always defined for summary logging
         final_synthetic_data = []
+        # Track if we should stop the outer loop early (e.g., quota exhaustion)
+        should_stop_loop = False
 
         while True:
             current_synthetic_data = state_manager.load_asset("synthetic_data") or []
@@ -124,10 +131,16 @@ async def run_pipeline(
                 
                 if state_manager.get_status_level() < STATUS_LEVELS["query_refined"]:
                     query_refiner = QueryRefinerAgent()
-                    refined_queries = query_refiner.run(
-                        parsed_query, 
-                        context={"refined_queries_count": _refined_queries_count}
-                    )
+                    try:
+                        refined_queries = query_refiner.run(
+                            parsed_query, 
+                            context={"refined_queries_count": _refined_queries_count, "gemini_model_name": gemini_model_name}
+                        )
+                    except GeminiQuotaExhaustedError as e:
+                        logger.error(f"Gemini API quota exhausted during query refinement: {e}")
+                        logger.info("Stopping pipeline at stage: query_parsed (so it can resume later)")
+                        state_manager.save_state()
+                        return
                     state_manager.save_asset("refined_queries", [q.model_dump() for q in refined_queries])
                     state_manager.update_status("query_refined")
                 else:
@@ -208,12 +221,19 @@ async def run_pipeline(
                         topic_extraction_agent = TopicExtractionAgent()
                         
                         for idx, chunk in enumerate(chunks_to_process):
-                            newly_extracted_topics = await topic_extraction_agent.execute({
-                                "chunks": [chunk],
-                                "language": parsed_query.language,
-                                "domain_type": parsed_query.domain_type,
-                                "required_topics_count": parsed_query.required_topics
-                            })
+                            try:
+                                newly_extracted_topics = await topic_extraction_agent.execute({
+                                    "chunks": [chunk],
+                                    "language": parsed_query.language,
+                                    "domain_type": parsed_query.domain_type,
+                                    "required_topics_count": parsed_query.required_topics
+                                }, context={"gemini_model_name": gemini_model_name})
+                            except GeminiQuotaExhaustedError as e:
+                                logger.error(f"Gemini API quota exhausted during topic extraction: {e}")
+                                logger.info("Stopping pipeline at stage: content_gathered (so it can resume topic extraction later)")
+                                state_manager.save_state()
+                                should_stop_loop = True
+                                break
 
                             all_topics = list(dict.fromkeys(existing_topics + newly_extracted_topics))
                             existing_topics = all_topics
@@ -235,6 +255,8 @@ async def run_pipeline(
                             state_manager.update_status("query_parsed")
                             state_manager.clear_asset("refined_queries")
                             state_manager.clear_asset("search_results")
+                            if should_stop_loop:
+                                break
                             continue
                         else:
                             state_manager.update_status("topics_extracted")
@@ -245,6 +267,8 @@ async def run_pipeline(
                             state_manager.update_status("query_parsed")
                             state_manager.clear_asset("refined_queries")
                             state_manager.clear_asset("search_results")
+                            if should_stop_loop:
+                                break
                             continue
                         else:
                             state_manager.update_status("topics_extracted")
@@ -252,6 +276,9 @@ async def run_pipeline(
                 logger.info("\n" + "="*60)
                 logger.info("STAGE 3: SKIPPED (loaded from cache)")
                 logger.info("="*60)
+
+            if should_stop_loop:
+                break
 
             # STAGE 4: SYNTHETIC DATA GENERATION
             if state_manager.get_status_level() < STATUS_LEVELS["data_generated"]:
@@ -302,7 +329,9 @@ async def run_pipeline(
                             logger.error(f"Gemini API quota exhausted: {e}")
                             logger.warning("Stopping data generation due to quota exhaustion.")
                             logger.info(f"Final data count: {len(current_synthetic_data)} samples generated before quota exhaustion")
-                            state_manager.update_status("completed")
+                            # Keep the pipeline at topics_extracted so it can resume later
+                            state_manager.update_status("topics_extracted")
+                            should_stop_loop = True
                             break
                         except Exception as e:
                             logger.error(f"Error processing topic {actual_topic_index + 1}: {e}")
@@ -320,18 +349,21 @@ async def run_pipeline(
                 logger.info("STAGE 4: SKIPPED (loaded from cache)")
                 logger.info("="*60)
 
+            if should_stop_loop:
+                break
+
             # If the pipeline has reached the terminal stage for data generation,
             # exit the generation loop to avoid endlessly repeating SKIPPED logs
             if state_manager.get_status_level() >= STATUS_LEVELS["data_generated"]:
                 logger.info("Data generation stage reached terminal state. Exiting generation loop.")
-                state_manager.update_status("completed")
+                # Don't mark completed here; allow resume if needed
                 break
 
             final_synthetic_data = state_manager.load_asset("synthetic_data") or []
 
             if len(final_synthetic_data) >= parsed_query.sample_count:
                 logger.info("Target sample count met. Exiting generation loop.")
-                state_manager.update_status("completed")
+                state_manager.update_status("data_generated")
                 break
 
         state_manager.save_state()
@@ -342,7 +374,10 @@ async def run_pipeline(
         logger.info("="*80)
         logger.info("🎉 PIPELINE EXECUTION FINISHED!")
         logger.info(f"Total execution time: {execution_time:.2f} seconds")
-        logger.info(f"Final samples generated: {len(final_synthetic_data)} / {parsed_query.sample_count}")
+        # Always reflect the rows saved on disk
+        final_data_on_disk = state_manager.load_asset("synthetic_data") or []
+        logger.info(f"Final samples : {len(final_data_on_disk)} / {parsed_query.sample_count}")
+        logger.info(f"Pipeline status: {state_manager.get_status()}")
         logger.info("="*80)
 
     except Exception as e:
