@@ -1,5 +1,5 @@
 from typing import Dict, Any, Optional, List
-from ..models.data_schemas import ContentChunk, ExtractedTopic
+from ..models.data_schemas import ContentChunk
 from ..agents.base_agent import BaseAgent
 from ..services.gemini_service import GeminiService
 from ..config.settings import settings

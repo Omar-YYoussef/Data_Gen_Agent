@@ -10,6 +10,13 @@ class GeminiQuotaExhaustedError(Exception):
     """Custom exception for when all Gemini API keys have their quotas exhausted."""
     pass
 
+class PipelineStopRequested(Exception):
+    """Raised when pipeline should stop gracefully (e.g., quota exhausted)."""
+    def __init__(self, reason: str, stage: str):
+        self.reason = reason
+        self.stage = stage
+        super().__init__(f"Pipeline stop requested at {stage}: {reason}")
+
 class GeminiService:
     """Enhanced service with flexible JSON generation for user-specified data types"""
     

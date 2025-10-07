@@ -1,11 +1,19 @@
 # Core Dependencies
 python-dotenv==1.0.0
 pydantic>=2.7.4,<3.0.0
-google-generativeai==0.3.0
-langgraph==0.2.20
 langchain>=0.3.0
 langchain-core>=0.3.0
 langchain-community>=0.3.0
+
+# LangGraph Dependencies (Updated for compatibility)
+langgraph>=0.6.0
+langgraph-checkpoint>=2.0.0
+langgraph-checkpoint-sqlite>=2.0.0  # Changed from 1.0.0
+
+
+# Google Generative AI (Updated for compatibility)
+google-generativeai==0.3.0
+#google-genai>=1.7.0
 
 # Web Search & Scraping (Updated versions)
 tavily-python>=0.7.0
@@ -24,6 +32,9 @@ langchain-scraperapi>=0.1.0
 pandas==2.2.3
 numpy>=1.26.0,<3.0.0
 jsonschema==4.23.0
+
+# Language Detection (Added)
+langdetect>=1.0.9
 
 # Async Processing & Concurrency  
 asyncio-throttle==1.0.2
@@ -60,7 +71,3 @@ colorlog>=6.8.0
 # Security & Environment
 cryptography>=41.0.8
 python-jose>=3.3.0
-
-
-
-langdetect

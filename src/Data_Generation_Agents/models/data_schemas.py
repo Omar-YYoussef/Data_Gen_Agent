@@ -51,9 +51,9 @@ class ContentChunk(BaseModel):
     total_chunks: int
     token_count: int
 
-# Simplified Topic Model - Only topic names
-class ExtractedTopic(BaseModel):
-    topic_name: str
+# # Simplified Topic Model - Only topic names
+# class ExtractedTopic(BaseModel):
+#     topic_name: str
 
 # Enhanced Synthetic Data Models with flexible structure
 class SyntheticDataPoint(BaseModel):
@@ -62,26 +62,26 @@ class SyntheticDataPoint(BaseModel):
     source_topics: List[str]
     generation_timestamp: datetime = Field(default_factory=datetime.now)
 
-# Agent Communication Models
-class AgentState(BaseModel):
-    agent_name: str
-    status: Literal["pending", "running", "completed", "failed"]
-    data: Dict[str, Any]
-    metadata: Dict[str, Any] = Field(default_factory=dict)
-    error_message: Optional[str] = None
-    timestamp: datetime = Field(default_factory=datetime.now)
+# # Agent Communication Models
+# class AgentState(BaseModel):
+#     agent_name: str
+#     status: Literal["pending", "running", "completed", "failed"]
+#     data: Dict[str, Any]
+#     metadata: Dict[str, Any] = Field(default_factory=dict)
+#     error_message: Optional[str] = None
+#     timestamp: datetime = Field(default_factory=datetime.now)
 
-# Workflow State Model
-class WorkflowState(BaseModel):
-    workflow_id: str
-    current_stage: str
-    parsed_query: Optional[ParsedQuery] = None
-    refined_queries: List[SearchQuery] = Field(default_factory=list)
-    search_results: List[SearchResult] = Field(default_factory=list)
-    scraped_content: List[ScrapedContent] = Field(default_factory=list)
-    extracted_topics: List[ExtractedTopic] = Field(default_factory=list)
-    synthetic_data: List[SyntheticDataPoint] = Field(default_factory=list)
-    subtopic_requirements: Optional[int] = None
-    agent_states: Dict[str, AgentState] = Field(default_factory=dict)
-    created_at: datetime = Field(default_factory=datetime.now)
-    updated_at: datetime = Field(default_factory=datetime.now)
+# # Workflow State Model
+# class WorkflowState(BaseModel):
+#     workflow_id: str
+#     current_stage: str
+#     parsed_query: Optional[ParsedQuery] = None
+#     refined_queries: List[SearchQuery] = Field(default_factory=list)
+#     search_results: List[SearchResult] = Field(default_factory=list)
+#     scraped_content: List[ScrapedContent] = Field(default_factory=list)
+#     extracted_topics: List[ExtractedTopic] = Field(default_factory=list)
+#     synthetic_data: List[SyntheticDataPoint] = Field(default_factory=list)
+#     subtopic_requirements: Optional[int] = None
+#     agent_states: Dict[str, AgentState] = Field(default_factory=dict)
+#     created_at: datetime = Field(default_factory=datetime.now)
+#     updated_at: datetime = Field(default_factory=datetime.now)

@@ -28,10 +28,13 @@ class Settings:
     # Storage Paths
     PROJECT_ROOT = Path(__file__).resolve().parents[3]
     
-    # If OUTPUT_DIR is provided, use it; otherwise, default to project root
     OUTPUT_DIR = os.getenv("OUTPUT_DIR")
-    STORAGE_ROOT = Path(OUTPUT_DIR) if OUTPUT_DIR else PROJECT_ROOT
+    if not OUTPUT_DIR:
+        raise ValueError("OUTPUT_DIR is not set in the .env file. Please specify a directory to save the output data.")
+        
+    STORAGE_ROOT = Path(OUTPUT_DIR)
     DATA_PATH = STORAGE_ROOT / "data"
+    DATA_DIR = STORAGE_ROOT / "data"
     
     # Logging Configuration
     # LOG_ROOT = PROJECT_ROOT / "logs"

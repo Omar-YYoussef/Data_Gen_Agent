@@ -1,72 +1,32 @@
-﻿# Python
+﻿# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python Cache
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
 
-# Virtual Environments
-venv/
-env/
-ENV/
-.venv/
-test_env/
-.env
-
-# Distribution / packaging
+# Distribution / Packaging
 build/
 dist/
 *.egg-info/
-*.egg
-MANIFEST
 .eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
+*.egg
 wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.manifest
-*.spec
+*.whl
 
-# PyInstaller
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# pyenv
-.python-version
-
-# Environments
+# Environment Variables (CRITICAL - API KEYS!)
 .env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+.env.local
+.env.*.local
+*.env
 
 # IDE
 .vscode/
@@ -76,26 +36,33 @@ venv.bak/
 *~
 .DS_Store
 
+# Data & Outputs (Generated files)
+data/
+test_env/
+output/
+logs/
+*.log
+
+# Jupyter Notebooks (if you use them)
+.ipynb_checkpoints/
+*.ipynb
+
+# Coverage Reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# pytest
+.pytest_cache/
+.tox/
+
 # MyPy
 .mypy_cache/
 .dmypy.json
 dmypy.json
 
-# Pyre type checker
-.pyre/
-
-# Project specific
-synthetic_data_outputs/
-*.log
-logs/
-data/
-*.json
-*.csv
-*.db
-*.sqlite
-temp/
-tmp/
-
-# OS
+# OS Files
 Thumbs.db
 .DS_Store

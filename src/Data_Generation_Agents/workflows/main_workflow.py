@@ -1,378 +1,160 @@
-import uuid
+from __future__ import annotations
 import logging
-from typing import Dict, Any, Optional, List
+import hashlib
 from datetime import datetime
-from langgraph.graph import StateGraph, END
-from langchain_core.runnables import RunnableLambda
-import json
-import traceback
+from typing import Optional
 
+from ..langgraph_integration.graph_builder import build_pipeline_graph
+from ..utils.data_saver import DataSaver
+from ..utils.status_manager import StatusManager
 from ..config.settings import settings
-from ..models.data_schemas import ParsedQuery, WorkflowState
-from ..agents.query_parser_agent import QueryParserAgent
-from ..agents.query_refiner_agent import QueryRefinerAgent
-from ..agents.web_search_agent import WebSearchAgent
-from ..agents.filtration_agent import FiltrationAgent
-from ..agents.web_scraping_agent import WebScrapingAgent
-from ..agents.topic_extraction_agent import TopicExtractionAgent
-from ..agents.synthetic_data_generator_agent import SyntheticDataGeneratorAgent
-from ..services.chunking_service import chunking_service
+from ..services.gemini_service import PipelineStopRequested
 
-class PipelineState(Dict):
-    """State object for LangGraph workflow"""
-    workflow_id: str
-    current_stage: str
-    user_query: str
-    parsed_query: Optional[ParsedQuery]
-    refined_queries: List
-    search_results: List
-    filtered_results: List
-    scraped_data: List
-    extracted_topics: List
-    synthetic_data: List
-    error_info: Optional[Dict]
-    stage_timings: Dict
-    status: str
+logger = logging.getLogger(__name__)
 
-class WebSearchSyntheticDataWorkflow:
-    """Main LangGraph workflow orchestrator for the complete pipeline"""
-    
-    def __init__(self):
-        self.logger = logging.getLogger(__name__)
-        self.workflow_graph = self._build_workflow()
-    
-    def _build_workflow(self) -> StateGraph:
-        """Build the LangGraph workflow"""
-        
-        # Define workflow graph
-        graph = StateGraph(PipelineState)
-        
-        # Add nodes for each stage
-        graph.add_node("parse_query", self._parse_query_node)
-        graph.add_node("refine_queries", self._refine_queries_node)
-        graph.add_node("web_search", self._web_search_node)
-        graph.add_node("filter_results", self._filter_results_node)
-        graph.add_node("scrape_content", self._scrape_content_node)
-        graph.add_node("extract_topics", self._extract_topics_node)
-        graph.add_node("check_topic_coverage", self._check_topic_coverage_node)
-        graph.add_node("generate_synthetic_data", self._generate_synthetic_data_node)
-        graph.add_node("handle_error", self._handle_error_node)
-        
-        # Define edges (workflow flow)
-        graph.set_entry_point("parse_query")
-        
-        graph.add_edge("parse_query", "refine_queries")
-        graph.add_edge("refine_queries", "web_search")
-        graph.add_edge("web_search", "filter_results")
-        graph.add_edge("filter_results", "scrape_content")
-        graph.add_edge("scrape_content", "extract_topics")
-        graph.add_edge("extract_topics", "check_topic_coverage")
-        
-        # Conditional edge for topic coverage
-        graph.add_conditional_edges(
-            "check_topic_coverage",
-            self._should_continue_or_expand,
-            {
-                "continue": "generate_synthetic_data",
-                "expand": "refine_queries",  # Loop back to get more topics
-                "error": "handle_error"
-            }
-        )
-        
-        graph.add_edge("generate_synthetic_data", END)
-        graph.add_edge("handle_error", END)
-        
-        return graph.compile()
-    
-    def _log_stage_start(self, state: PipelineState, stage_name: str):
-        """Log stage start and update state"""
-        state["current_stage"] = stage_name
-        state["stage_timings"][stage_name] = {"start": datetime.now().isoformat()}
-        self.logger.info(f"Workflow {state['workflow_id']} - Starting stage: {stage_name}")
-    
-    def _log_stage_end(self, state: PipelineState, stage_name: str, success: bool = True):
-        """Log stage completion"""
-        state["stage_timings"][stage_name]["end"] = datetime.now().isoformat()
-        start_time = datetime.fromisoformat(state["stage_timings"][stage_name]["start"])
-        end_time = datetime.fromisoformat(state["stage_timings"][stage_name]["end"])
-        duration = (end_time - start_time).total_seconds()
-        state["stage_timings"][stage_name]["duration_seconds"] = duration
-        
-        status = "✅ COMPLETED" if success else "❌ FAILED"
-        self.logger.info(f"Workflow {state['workflow_id']} - {status} {stage_name} in {duration:.2f}s")
-    
-    def _parse_query_node(self, state: PipelineState) -> PipelineState:
-        """Parse user query node"""
-        self._log_stage_start(state, "parse_query")
-        
-        try:
-            agent = QueryParserAgent()
-            parsed_query = agent.run(state["user_query"])
-            state["parsed_query"] = parsed_query
-            
-            self.logger.info(f"Parsed query - Domain: {parsed_query.domain_type}, "
-                           f"Type: {parsed_query.data_type}, "
-                           f"Count: {parsed_query.sample_count}, "
-                           f"Language: {parsed_query.language}")
-            
-            self._log_stage_end(state, "parse_query", True)
-            
-        except Exception as e:
-            self._handle_stage_error(state, "parse_query", e)
-        
-        return state
-    
-    def _refine_queries_node(self, state: PipelineState) -> PipelineState:
-        """Refine queries node"""
-        self._log_stage_start(state, "refine_queries")
-        
-        try:
-            agent = QueryRefinerAgent()
-            refined_queries = agent.run(
-                parsed_query=state["parsed_query"],
-                refined_queries_count=settings.REFINED_QUERIES_COUNT
-            )
-            state["refined_queries"] = refined_queries
-            
-            self.logger.info(f"Generated {len(refined_queries)} refined queries")
-            self._log_stage_end(state, "refine_queries", True)
-            
-        except Exception as e:
-            self._handle_stage_error(state, "refine_queries", e)
-        
-        return state
-    
-    def _web_search_node(self, state: PipelineState) -> PipelineState:
-        """Web search node"""
-        self._log_stage_start(state, "web_search")
-        
-        try:
-            agent = WebSearchAgent()
-            search_results = agent.run(state["refined_queries"])
-            state["search_results"] = search_results
-            
-            self.logger.info(f"Found {len(search_results)} search results")
-            self._log_stage_end(state, "web_search", True)
-            
-        except Exception as e:
-            self._handle_stage_error(state, "web_search", e)
-        
-        return state
-    
-    def _filter_results_node(self, state: PipelineState) -> PipelineState:
-        """Filter results node"""
-        self._log_stage_start(state, "filter_results")
-        
-        try:
-            agent = FiltrationAgent()
-            filtered_results = agent.run(state["search_results"])
-            state["filtered_results"] = filtered_results
-            
-            self.logger.info(f"Filtered to {len(filtered_results)} unique URLs")
-            self._log_stage_end(state, "filter_results", True)
-            
-        except Exception as e:
-            self._handle_stage_error(state, "filter_results", e)
-        
-        return state
-    
-    def _scrape_content_node(self, state: PipelineState) -> PipelineState:
-        """Scrape content node"""
-        self._log_stage_start(state, "scrape_content")
-        
-        try:
-            agent = WebScrapingAgent()
-            scraped_data = agent.run(state["filtered_results"])
-            state["scraped_data"] = scraped_data
-            
-            successful_scrapes = len([d for d in scraped_data if d.get("success", False)])
-            self.logger.info(f"Successfully scraped {successful_scrapes}/{len(scraped_data)} pages")
-            self._log_stage_end(state, "scrape_content", True)
-            
-        except Exception as e:
-            self._handle_stage_error(state, "scrape_content", e)
-        
-        return state
-    
-    def _extract_topics_node(self, state: PipelineState) -> PipelineState:
-        """Extract topics node"""
-        self._log_stage_start(state, "extract_topics")
-        
-        try:
-            agent = TopicExtractionAgent()
-            extracted_topics = agent.run(state["scraped_data"])
-            state["extracted_topics"] = extracted_topics
-            
-            self.logger.info(f"Extracted {len(extracted_topics)} unique topics")
-            self._log_stage_end(state, "extract_topics", True)
-            
-        except Exception as e:
-            self._handle_stage_error(state, "extract_topics", e)
-        
-        return state
-    
-    def _check_topic_coverage_node(self, state: PipelineState) -> PipelineState:
-        """Check if we have enough topics for the requested sample count"""
-        self._log_stage_start(state, "check_topic_coverage")
-        
-        try:
-            required_topics = state["parsed_query"].calculate_required_subtopics()
-            available_topics = len(state["extracted_topics"])
-            
-            state["topic_coverage"] = {
-                "required": required_topics,
-                "available": available_topics,
-                "sufficient": available_topics >= required_topics,
-                "coverage_ratio": available_topics / required_topics if required_topics > 0 else 1.0
-            }
-            
-            self.logger.info(f"Topic coverage: {available_topics}/{required_topics} "
-                           f"({(available_topics/required_topics)*100:.1f}%)")
-            
-            self._log_stage_end(state, "check_topic_coverage", True)
-            
-        except Exception as e:
-            self._handle_stage_error(state, "check_topic_coverage", e)
-        
-        return state
-    
-    def _should_continue_or_expand(self, state: PipelineState) -> str:
-        """Decide whether to continue with synthesis or expand topic search"""
-        
-        if state.get("error_info"):
-            return "error"
-        
-        coverage = state.get("topic_coverage", {})
-        
-        # If we have sufficient topics, continue
-        if coverage.get("sufficient", False):
-            return "continue"
-        
-        # If coverage is very low, try to expand (but limit retries)
-        retry_count = state.get("expansion_retries", 0)
-        if retry_count < 2 and coverage.get("coverage_ratio", 0) < 0.5:
-            state["expansion_retries"] = retry_count + 1
-            self.logger.info(f"Insufficient topic coverage, expanding search (attempt {retry_count + 1})")
-            return "expand"
-        
-        # Otherwise continue with what we have
-        self.logger.warning(f"Proceeding with insufficient topics: {coverage}")
-        return "continue"
-    
-    def _generate_synthetic_data_node(self, state: PipelineState) -> PipelineState:
-        """Generate synthetic data node"""
-        self._log_stage_start(state, "generate_synthetic_data")
-        
-        try:
-            agent = SyntheticDataGeneratorAgent()
-            synthetic_data = agent.run(state["extracted_topics"], state["parsed_query"])
-            state["synthetic_data"] = synthetic_data
-            
-            total_generated = len(synthetic_data)
-            self.logger.info(f"Generated {total_generated} synthetic data points")
-            self._log_stage_end(state, "generate_synthetic_data", True)
-            
-        except Exception as e:
-            self._handle_stage_error(state, "generate_synthetic_data", e)
-        
-        return state
-    
-    def _handle_error_node(self, state: PipelineState) -> PipelineState:
-        """Handle workflow errors"""
-        state["status"] = "failed"
-        error_info = state.get("error_info", {})
-        
-        self.logger.error(f"Workflow {state['workflow_id']} failed at stage {error_info.get('stage', 'unknown')}")
-        self.logger.error(f"Error: {error_info.get('message', 'Unknown error')}")
-        
-        return state
-    
-    def _handle_stage_error(self, state: PipelineState, stage_name: str, error: Exception):
-        """Handle stage-specific errors"""
-        error_info = {
-            "stage": stage_name,
-            "message": str(error),
-            "traceback": traceback.format_exc(),
-            "timestamp": datetime.now().isoformat()
-        }
-        
-        state["error_info"] = error_info
-        state["status"] = "failed"
-        
-        self._log_stage_end(state, stage_name, False)
-        self.logger.exception(f"Stage {stage_name} failed: {error}")
-    
-    def run_workflow(self, user_query: str, workflow_id: Optional[str] = None) -> Dict[str, Any]:
-        """Run the complete workflow"""
-        
-        if not workflow_id:
-            workflow_id = f"workflow_{uuid.uuid4().hex[:8]}"
-        
-        # Initialize state
-        initial_state = PipelineState({
-            "workflow_id": workflow_id,
-            "current_stage": "initialized",
-            "user_query": user_query,
-            "parsed_query": None,
-            "refined_queries": [],
-            "search_results": [],
-            "filtered_results": [],
-            "scraped_data": [],
-            "extracted_topics": [],
-            "synthetic_data": [],
-            "final_dataset": {},
-            "error_info": None,
-            "stage_timings": {},
-            "status": "running",
-            "expansion_retries": 0
-        })
-        
-        self.logger.info(f"Starting workflow {workflow_id} with query: {user_query}")
-        
-        try:
-            # Run the workflow
-            final_state = self.workflow_graph.invoke(initial_state)
-            
-            # Save workflow state for monitoring
-            self._save_workflow_state(final_state)
-            
-            return final_state
-            
-        except Exception as e:
-            self.logger.exception(f"Workflow {workflow_id} crashed: {e}")
-            initial_state["status"] = "crashed"
-            initial_state["error_info"] = {
-                "stage": "workflow_execution",
-                "message": str(e),
-                "traceback": traceback.format_exc()
-            }
-            return initial_state
-    
-    def _save_workflow_state(self, state: PipelineState):
-        """Save workflow state for monitoring and debugging"""
-        
-        # Create summary for storage
-        workflow_summary = {
-            "workflow_id": state["workflow_id"],
-            "status": state["status"],
-            "user_query": state["user_query"],
-            "parsed_query": {
-                "domain_type": state["parsed_query"].domain_type if state["parsed_query"] else None,
-                "data_type": state["parsed_query"].data_type if state["parsed_query"] else None,
-                "language": state["parsed_query"].language if state["parsed_query"] else None,
-                "sample_count": state["parsed_query"].sample_count if state["parsed_query"] else None
-            },
-            "stage_timings": state["stage_timings"],
-            "topic_coverage": state.get("topic_coverage", {}),
-            "error_info": state.get("error_info"),
-            "timestamp": datetime.now().isoformat()
-        }
-        
-        # Save to workflow logs
-        JsonHandler.save_json(
-            workflow_summary,
-            settings.WORKFLOW_LOGS_PATH / f"workflow_{state['workflow_id']}.json"
-        )
 
-# Initialize workflow
-main_workflow = WebSearchSyntheticDataWorkflow()
+def _hash_prompt(prompt: str) -> str:
+    """Create SHA-256 hash of prompt for thread_id."""
+    return hashlib.sha256(prompt.encode('utf-8')).hexdigest()
+
+
+async def run_pipeline(
+    user_query: str,
+    refined_queries_count: Optional[int] = None,
+    search_results_per_query: Optional[int] = None,
+    rows_per_subtopic: Optional[int] = None,
+    gemini_model_name: Optional[str] = None
+) -> None:
+    """Run the synthetic data generation pipeline using LangGraph."""
+    
+    _refined_queries_count = refined_queries_count or settings.REFINED_QUERIES_COUNT
+    _search_results_per_query = search_results_per_query or settings.SEARCH_RESULTS_PER_QUERY
+    _rows_per_subtopic = rows_per_subtopic or settings.ROWS_PER_SUBTOPIC
+    
+    logger.info("="*80)
+    logger.info("Synthetic Data Generation Pipeline (LangGraph)")
+    logger.info("="*80)
+    logger.info(f"Query: {user_query[:100]}...")
+    logger.info(f"Config: Queries={_refined_queries_count}, Results/Query={_search_results_per_query}, Rows/Topic={_rows_per_subtopic}")
+    logger.info("="*80)
+    
+    pipeline_start_time = datetime.now()
+    thread_id = _hash_prompt(user_query)
+    logger.info(f"Thread ID: {thread_id[:16]}...")
+    
+    status_manager = StatusManager(thread_id)
+    data_saver = DataSaver(thread_id)
+    
+    # Check if already completed
+    if status_manager.is_completed():
+        logger.info("="*80)
+        logger.info("🎉 PIPELINE ALREADY COMPLETED!")
+        logger.info("="*80)
+        logger.info(f"Data location: {data_saver.get_data_dir()}")
+        logger.info("="*80)
+        return
+    
+    # Check if resuming
+    last_node = status_manager.get_last_completed_node()
+    next_node = status_manager.get_next_node()
+    
+    if last_node:
+        logger.info("="*80)
+        logger.info("RESUMING PIPELINE")
+        logger.info("="*80)
+        logger.info(f"Last completed: {last_node}")
+        logger.info(f"Next node: {next_node}")
+        logger.info("="*80)
+    else:
+        logger.info("="*80)
+        logger.info("STARTING NEW PIPELINE")
+        logger.info("="*80)
+    
+    # Prepare initial input
+    initial_input = {
+        "user_query": user_query,
+        "config_params": {
+            "refined_queries_count": _refined_queries_count,
+            "search_results_per_query": _search_results_per_query,
+            "rows_per_subtopic": _rows_per_subtopic
+        },
+        "status_manager_thread_id": thread_id
+    }
+    
+    # Build graph
+    logger.info("Building graph...")
+    graph = build_pipeline_graph()
+    logger.info("Graph built successfully")
+    
+    # Create configuration
+    config = {
+        "configurable": {
+            "thread_id": thread_id,
+            "gemini_model_name": gemini_model_name
+        },
+        "recursion_limit": 100
+    }
+    
+    try:
+        logger.info("Starting graph execution...\n")
+        
+        # Stream execution
+        async for event in graph.astream(initial_input, config, stream_mode="updates"):
+            for node_name, node_output in event.items():
+                if node_output:
+                    logger.info(f"✓ Node '{node_name}' completed")
+        
+        # Normal completion
+        pipeline_end_time = datetime.now()
+        execution_time = (pipeline_end_time - pipeline_start_time).total_seconds()
+        
+        logger.info("\n" + "="*80)
+        logger.info("🎉 PIPELINE EXECUTION FINISHED!")
+        logger.info("="*80)
+        logger.info(f"Execution time: {execution_time:.2f} seconds")
+        logger.info(f"Data location: {data_saver.get_data_dir()}")
+        logger.info(f"Thread ID: {thread_id}")
+        logger.info("="*80)
+    
+    except PipelineStopRequested as e:
+        # Clean stop - quota exhausted (no traceback)
+        pipeline_end_time = datetime.now()
+        execution_time = (pipeline_end_time - pipeline_start_time).total_seconds()
+        
+        logger.info("\n" + "="*80)
+        logger.info("⚠ PIPELINE STOPPED - API QUOTA EXHAUSTED")
+        logger.info("="*80)
+        logger.info(f"Stage: {e.stage}")
+        logger.info(f"Execution time: {execution_time:.2f} seconds")
+        logger.info(f"Progress saved at: {status_manager.get_last_completed_node() or 'initial'}")
+        logger.info(f"Resume by running the same command after quota resets.")
+        logger.info(f"Data location: {data_saver.get_data_dir()}")
+        logger.info(f"Thread ID: {thread_id}")
+        logger.info("="*80)
+        # Exit cleanly without re-raising
+        return
+        
+    except KeyboardInterrupt:
+        logger.info("\n" + "="*80)
+        logger.info("⚠ PIPELINE INTERRUPTED BY USER")
+        logger.info("="*80)
+        logger.info(f"Progress saved at: {status_manager.get_last_completed_node() or 'initial'}")
+        logger.info(f"Resume by running the same command again.")
+        logger.info(f"Thread ID: {thread_id}")
+        logger.info("="*80)
+        # Exit cleanly
+        return
+        
+    except Exception as e:
+        # Unexpected errors only
+        logger.critical("\n" + "="*80)
+        logger.critical("❌ UNEXPECTED PIPELINE ERROR")
+        logger.critical("="*80)
+        logger.critical(f"Error: {str(e)}")
+        logger.critical(f"Status preserved at: {status_manager.get_last_completed_node() or 'initial'}")
+        logger.critical(f"Resume by running the same command again.")
+        logger.critical(f"Thread ID: {thread_id}")
+        logger.critical("="*80)
+        # Don't show full traceback to user
+        logger.debug("Full traceback:", exc_info=True)  # Only in DEBUG mode
+        return
