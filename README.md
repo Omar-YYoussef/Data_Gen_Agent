@@ -1,6 +1,3 @@
-# **Updated README.md - Production-Ready Synthetic Data Pipeline**
-
-```markdown
 # 🚀 Synthetic Data Generation Pipeline
 
 [![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
@@ -57,7 +54,7 @@ The pipeline uses **8 specialized AI agents** orchestrated by **LangGraph**:
 
 ## 📊 Pipeline Flow Visualization
 
-```
+```mermaid
 graph TD
     A[User Query] --> B[Query Parser]
     B --> C[Query Refiner]
@@ -65,11 +62,11 @@ graph TD
     D --> E[Filtration]
     E --> F[Web Scraping]
     F --> G[Chunking]
-    G --> H{Topics<br/>Sufficient?}
+    G --> H{Topics Sufficient?}
     H -->|No| I[Topic Extraction]
     I --> H
     H -->|Yes| J[Synthetic Generator]
-    J --> K{All Topics<br/>Processed?}
+    J --> K{All Topics Processed?}
     K -->|No| J
     K -->|Yes| L[Complete]
 ```
@@ -80,13 +77,13 @@ graph TD
 
 ### Installation
 
-```
+```bash
 pip install Data-Generation-Agents
 ```
 
 ### Basic Usage
 
-```
+```python
 from Data_Generation_Agents import generate_synthetic_data
 
 # Simple: Just provide your request
@@ -97,7 +94,7 @@ generate_synthetic_data(
 
 ### Advanced Usage with Categories
 
-```
+```python
 generate_synthetic_data(
     """Generate 5000 medical QA pairs in English covering categories: 
     cardiology, neurology, oncology. Use columns (Question, Answer).
@@ -110,7 +107,7 @@ generate_synthetic_data(
 
 ### CLI Usage
 
-```
+```bash
 synthetic-data "your-prompt"
 ```
 
@@ -122,7 +119,7 @@ synthetic-data "your-prompt"
 
 Create `.env` file:
 
-```
+```env
 # Required Configuration
 GEMINI_API_KEY=your_gemini_api_key_here
 TAVILY_API_KEY=your_tavily_api_key_here
@@ -130,7 +127,6 @@ SCRAPERAPI_API_KEY=your_scraper_api_key_here
 OUTPUT_DIR=./data
 
 # Optional Configuration
-
 REFINED_QUERIES_COUNT=50
 SEARCH_RESULTS_PER_QUERY=5
 ROWS_PER_SUBTOPIC=5
@@ -155,7 +151,7 @@ LOG_LEVEL=INFO
 
 The pipeline **never loses progress**:
 
-```
+```python
 # First run: Generates 1000 samples, interrupted after 400
 generate_synthetic_data("Generate 1000 English QA pairs about Python...")
 
@@ -222,7 +218,7 @@ Required Topics = Sample Count / ROWS_PER_SUBTOPIC
 
 ### For Large Datasets
 
-```
+```python
 generate_synthetic_data(
     "Generate 10000 samples...",
     refined_queries_count=50,      # More search queries
@@ -239,7 +235,7 @@ generate_synthetic_data(
 
 Generated data saved as structured JSON:
 
-```
+```json
 {
   "Question": "What is machine learning?",
   "Answer": "Machine learning is a subset of artificial intelligence that enables systems to learn and improve from experience without explicit programming..."
@@ -266,7 +262,7 @@ Pipeline adapts automatically to domains:
 
 ### Category Support
 
-```
+```python
 # With categories (more targeted):
 "Generate 2000 finance QA pairs in categories: cryptocurrency, stocks, bonds...."
 
@@ -276,7 +272,7 @@ Pipeline adapts automatically to domains:
 
 ### Custom Gemini Models
 
-```
+```python
 generate_synthetic_data(
     "Your query",
     gemini_model_name="gemini-1.5-pro"  # Default: gemini-2.5-flash
@@ -289,7 +285,7 @@ generate_synthetic_data(
 
 ### Local Setup
 
-```
+```bash
 git clone https://github.com/Omar-YYoussef/Data_Gen_Agent
 cd Data_Gen_Agent
 python -m venv venv
@@ -363,6 +359,3 @@ MIT License - see [LICENSE](LICENSE) file
 **Made with ❤️ by [Omar Youssef](https://github.com/Omar-YYoussef)**
 
 *Building the future of synthetic data generation, one pipeline at a time.*
-```
-
-***
