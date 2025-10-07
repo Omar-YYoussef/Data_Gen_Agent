@@ -55,20 +55,36 @@ The pipeline uses **8 specialized AI agents** orchestrated by **LangGraph**:
 ## 📊 Pipeline Flow Visualization
 
 ```mermaid
-graph TD
-    A[User Query] --> B[Query Parser]
-    B --> C[Query Refiner]
-    C --> D[Web Search]
-    D --> E[Filtration]
-    E --> F[Web Scraping]
-    F --> G[Chunking]
-    G --> H{Topics Sufficient?}
-    H -->|No| I[Topic Extraction]
-    I --> H
-    H -->|Yes| J[Synthetic Generator]
-    J --> K{All Topics Processed?}
-    K -->|No| J
-    K -->|Yes| L[Complete]
+flowchart TD
+    Start([Start]) --> UserQuery[User Query]
+    UserQuery --> QueryParser[Query Parser]
+    QueryParser --> DataGen{Data Generation?}
+    
+    DataGen -->|No| Exit([Exit])
+    DataGen -->|Yes| QueryRefiner[Query Refiner]
+    
+    QueryRefiner --> WebSearch[Web Search]
+    WebSearch --> WebScraping[Web Scraping]
+    WebScraping --> TopicExtraction[Topic Extraction]
+    
+    TopicExtraction --> TopicCheck{Required Topics Met?}
+    TopicCheck -->|No| QueryRefiner
+    TopicCheck -->|Yes| SyntheticGen[Synthetic Data Generation]
+    
+    SyntheticGen --> End([End])
+    
+    style Start fill:#1e4d7b
+    style UserQuery fill:#1e4d7b
+    style QueryParser fill:#1e4d7b
+    style QueryRefiner fill:#1e4d7b
+    style WebSearch fill:#1e4d7b
+    style WebScraping fill:#1e4d7b
+    style TopicExtraction fill:#1e4d7b
+    style SyntheticGen fill:#1e4d7b
+    style Exit fill:#1e4d7b
+    style End fill:#1e4d7b
+    style DataGen fill:#2d8659
+    style TopicCheck fill:#2d8659
 ```
 
 ---
