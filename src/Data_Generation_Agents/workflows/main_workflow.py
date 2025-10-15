@@ -92,7 +92,7 @@ async def run_pipeline(
             "thread_id": thread_id,
             "gemini_model_name": gemini_model_name
         },
-        "recursion_limit": 100
+        "recursion_limit": 1000000000000000000000000 
     }
     
     try:

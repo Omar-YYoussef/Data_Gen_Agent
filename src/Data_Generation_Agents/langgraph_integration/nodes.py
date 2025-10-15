@@ -3,7 +3,9 @@ from typing import Optional
 from langgraph.types import RunnableConfig
 import logging
 from ..services.gemini_service import GeminiQuotaExhaustedError, PipelineStopRequested
-
+from ..services.tavily_service import TavilyQuotaExhaustedError
+from ..services.scraping_service import ScraperAPIQuotaExhaustedError
+from ..services.gemini_service import PipelineStopRequested
 from ..agents.query_parser_agent import QueryParserAgent
 from ..agents.query_refiner_agent import QueryRefinerAgent
 from ..agents.web_search_agent import WebSearchAgent
@@ -87,10 +89,6 @@ def query_parser_node(state: PipelineState, config: RunnableConfig) -> dict:
         )
 
 
-# ============================================================================
-# STAGE 2A: Query Refinement
-# ============================================================================
-
 def query_refiner_node(state: PipelineState, config: RunnableConfig) -> dict:
     """Generate refined search queries."""
     logger.info("\n" + "="*60)
@@ -100,10 +98,39 @@ def query_refiner_node(state: PipelineState, config: RunnableConfig) -> dict:
     thread_id = state["status_manager_thread_id"]
     deps = load_dependencies(state, thread_id, "parsed_query")
     
+    # NEW: Check if this is a regather operation
+    data_saver = DataSaver(thread_id)
+    status_manager = StatusManager(thread_id)
+    checkpoint_metadata = status_manager.get_checkpoint_metadata()
+    
+    # If we have processed chunks but are back at query_refiner, this is a regather
+    if checkpoint_metadata.get("last_processed_chunk_index", -1) >= 0:
+        logger.info("🔄 REGATHER OPERATION DETECTED - Cleaning up intermediate files")
+        
+        # Delete intermediate files
+        files_to_delete = [
+            "all_chunks",
+            "filtered_results", 
+            "refined_queries",
+            "scraped_content",
+            "search_results"
+        ]
+        
+        for file_name in files_to_delete:
+            try:
+                data_saver.delete_agent_output(file_name)
+                logger.info(f"  ✓ Deleted {file_name}.json")
+            except Exception as e:
+                logger.warning(f"  ⚠ Could not delete {file_name}.json: {e}")
+        
+        # Reset chunk processing index
+        checkpoint_metadata["last_processed_chunk_index"] = -1
+        status_manager.update_checkpoint_metadata(**checkpoint_metadata)
+        logger.info("  ✓ Reset last_processed_chunk_index to -1")
+    
     try:
         parsed_query = ParsedQuery(**deps["parsed_query"])
         query_refiner = QueryRefinerAgent()
-        
         refined_queries_count = state["config_params"]["refined_queries_count"]
         gemini_model_name = config["configurable"].get("gemini_model_name")
         
@@ -116,15 +143,10 @@ def query_refiner_node(state: PipelineState, config: RunnableConfig) -> dict:
         )
         
         refined_queries_data = [q.model_dump() for q in refined_queries]
-        
-        data_saver = DataSaver(thread_id)
         data_saver.save_agent_output("refined_queries", refined_queries_data)
-        
-        status_manager = StatusManager(thread_id)
         status_manager.mark_node_completed("query_refiner", "query_refined")
         
         logger.info(f"Generated {len(refined_queries_data)} refined queries")
-        
         return {"refined_queries": refined_queries_data}
         
     except GeminiQuotaExhaustedError as e:
@@ -135,11 +157,11 @@ def query_refiner_node(state: PipelineState, config: RunnableConfig) -> dict:
         logger.critical(f"Error: {e}")
         logger.critical(f"Pipeline stopped. Progress saved at: query_parser")
         logger.critical("="*60)
-
         raise PipelineStopRequested(
             reason=f"Gemini API quota exhausted: {e}",
             stage="query_refiner"
         )
+
 
 
 # ============================================================================
@@ -153,27 +175,39 @@ def web_search_node(state: PipelineState, config: RunnableConfig) -> dict:
     logger.info("="*60)
     
     thread_id = state["status_manager_thread_id"]
-    
-    # ✨ USE HELPER
     deps = load_dependencies(state, thread_id, "refined_queries")
     
-    refined_queries = [SearchQuery(**q) for q in deps["refined_queries"]]
-    web_search = WebSearchAgent()
-    
-    search_results_per_query = state["config_params"]["search_results_per_query"]
-    search_results = web_search.run(refined_queries, context={"max_results": search_results_per_query})
-    
-    search_results_data = [r.model_dump() for r in search_results]
-    
-    data_saver = DataSaver(thread_id)
-    data_saver.save_agent_output("search_results", search_results_data)
-    
-    status_manager = StatusManager(thread_id)
-    status_manager.mark_node_completed("web_search", "web_searched")
-    
-    logger.info(f"Found {len(search_results_data)} search results")
-    
-    return {"search_results": search_results_data}
+    try:
+        refined_queries = [SearchQuery(**q) for q in deps["refined_queries"]]
+        web_search = WebSearchAgent()
+        
+        search_results_per_query = state["config_params"]["search_results_per_query"]
+        search_results = web_search.run(refined_queries, context={"max_results": search_results_per_query})
+        
+        search_results_data = [r.model_dump() for r in search_results]
+        
+        data_saver = DataSaver(thread_id)
+        data_saver.save_agent_output("search_results", search_results_data)
+        
+        status_manager = StatusManager(thread_id)
+        status_manager.mark_node_completed("web_search", "web_searched")
+        
+        logger.info(f"Found {len(search_results_data)} search results")
+        
+        return {"search_results": search_results_data}
+        
+    except TavilyQuotaExhaustedError as e:
+        logger.critical("\n" + "="*60)
+        logger.critical("❌ TAVILY API QUOTA EXHAUSTED")
+        logger.critical("="*60)
+        logger.critical(f"Stage: Web Search")
+        logger.critical(f"Error: {e}")
+        logger.critical("="*60)
+        
+        raise PipelineStopRequested(
+            reason=f"Tavily API quota exhausted: {e}",
+            stage="web_search"
+        )
 
 
 # ============================================================================
@@ -221,26 +255,39 @@ async def web_scraping_node(state: PipelineState, config: RunnableConfig) -> dic
     logger.info("="*60)
     
     thread_id = state["status_manager_thread_id"]
-    
-    # ✨ USE HELPER
     deps = load_dependencies(state, thread_id, "filtered_results")
     
-    filtered_results = [SearchResult(**r) for r in deps["filtered_results"]]
-    scraping_agent = WebScrapingAgent()
-    
-    scraped_content = await scraping_agent.execute_async(filtered_results)
-    scraped_content_data = [c.model_dump() for c in scraped_content]
-    
-    data_saver = DataSaver(thread_id)
-    data_saver.save_agent_output("scraped_content", scraped_content_data)
-    
-    status_manager = StatusManager(thread_id)
-    status_manager.mark_node_completed("web_scraping", "web_scraped")
-    
-    successful_scrapes = sum(1 for c in scraped_content if c.success)
-    logger.info(f"Scraped {successful_scrapes}/{len(scraped_content)} pages successfully")
-    
-    return {"scraped_content": scraped_content_data}
+    try:
+        filtered_results = [SearchResult(**r) for r in deps["filtered_results"]]
+        scraping_agent = WebScrapingAgent()
+        
+        scraped_content = await scraping_agent.execute_async(filtered_results)
+        scraped_content_data = [c.model_dump() for c in scraped_content]
+        
+        data_saver = DataSaver(thread_id)
+        data_saver.save_agent_output("scraped_content", scraped_content_data)
+        
+        status_manager = StatusManager(thread_id)
+        status_manager.mark_node_completed("web_scraping", "web_scraped")
+        
+        successful_scrapes = sum(1 for c in scraped_content if c.success)
+        logger.info(f"Scraped {successful_scrapes}/{len(scraped_content)} pages successfully")
+        
+        return {"scraped_content": scraped_content_data}
+        
+    except ScraperAPIQuotaExhaustedError as e:
+        logger.critical("\n" + "="*60)
+        logger.critical("❌ SCRAPERAPI QUOTA EXHAUSTED")
+        logger.critical("="*60)
+        logger.critical(f"Stage: Web Scraping")
+        logger.critical(f"Error: {e}")
+        logger.critical("="*60)
+        
+        raise PipelineStopRequested(
+            reason=f"ScraperAPI quota exhausted: {e}",
+            stage="web_scraping"
+        )
+
 
 
 # ============================================================================

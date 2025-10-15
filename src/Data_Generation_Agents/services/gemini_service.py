@@ -136,7 +136,7 @@ class GeminiService:
 
             3. **Parameter Extraction Rules**:
             - domain_type`: Extract from context clues (medical, finance, education, etc.) or use "general"
-            - data_type`: Identify structure (QA, classification, text-label pairs, etc.) or use "unspecified"
+            - data_type`: Identify structure (QA, classification, text-label pairs, etc.)"
             - sample_count`: Must be explicitly stated number only
             - language: "full language name (e.g., English, Arabic, Egyptian Arabic)"
             - iso_language: "ISO 639-1 code (e.g., en, ar). For dialects, use the base language code (e.g., 'ar' for Egyptian Arabic)"

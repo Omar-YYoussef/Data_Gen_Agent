@@ -90,6 +90,27 @@ class DataSaver:
         
         logger.info(f"Appended {len(new_items)} items to {agent_name}.json (total: {len(existing_data)})")
         return file_path
+
+    def delete_agent_output(self, agent_name: str) -> bool:
+        """
+        Delete agent output JSON file.
+        
+        Args:
+            agent_name: Name of the agent (e.g., 'refined_queries')
+            
+        Returns:
+            True if file was deleted, False if file didn't exist
+        """
+        file_path = self.data_dir / f"{agent_name}.json"
+        
+        if file_path.exists():
+            file_path.unlink()
+            logger.info(f"Deleted {agent_name}.json from {self.data_dir}")
+            return True
+        else:
+            logger.debug(f"File {agent_name}.json does not exist, skipping deletion")
+            return False
+
     
     def load_agent_output(self, agent_name: str) -> Optional[Any]:
         """

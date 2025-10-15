@@ -7,12 +7,18 @@ import time
 import json
 from ..config.settings import settings
 
+
+class ScraperAPIQuotaExhaustedError(Exception):
+    """Raised when ScraperAPI quota is exhausted."""
+    pass
+
+
 class WebScrapingService:
     """Service for web scraping integration using ScraperAPI"""
     
     def __init__(self):
         self.logger = logging.getLogger(__name__)
-        self.api_key =settings.SCRAPERAPI_API_KEY
+        self.api_key = settings.SCRAPERAPI_API_KEY
         if not self.api_key:
             raise ValueError("SCRAPERAPI_API_KEY environment variable is required")
         
@@ -22,6 +28,17 @@ class WebScrapingService:
     async def ascrape_url(self, url: str, max_retries: int = 3, use_autoparse: bool = False) -> Optional[Dict[str, Any]]:
         """Scrape a single URL and return structured content (async)"""
         return await self._scraperapi_scrape(url, max_retries, use_autoparse)
+
+    def _is_quota_error(self, error_message: str) -> bool:
+        """Detect if error is quota/rate limit related"""
+        error_lower = error_message.lower()
+        quota_indicators = [
+            'quota', 'limit exceeded', 'rate limit', 
+            '429', 'too many requests',
+            'billing', 'account suspended',
+            'credits', 'balance'
+        ]
+        return any(indicator in error_lower for indicator in quota_indicators)
 
     async def _scraperapi_scrape(self, url: str, max_retries: int = 3, use_autoparse: bool = False) -> Optional[Dict[str, Any]]:
         """Scraper using ScraperAPI with optional autoparse"""
@@ -105,6 +122,14 @@ class WebScrapingService:
                     }
                 
             except Exception as e:
+                error_message = str(e)
+                
+                # Check if error is quota-related
+                if self._is_quota_error(error_message):
+                    self.logger.error(f"ScraperAPI quota exhausted: {e}")
+                    raise ScraperAPIQuotaExhaustedError(f"ScraperAPI quota exhausted: {e}") from e
+                
+                # Regular error handling for non-quota errors
                 if attempt == max_retries - 1:
                     self.logger.error(f"ScraperAPI scraping failed for {url} after {max_retries} attempts: {e}")
                     return {
@@ -207,6 +232,14 @@ class WebScrapingService:
                 }
                 
             except Exception as e:
+                error_message = str(e)
+                
+                # Check if error is quota-related
+                if self._is_quota_error(error_message):
+                    self.logger.error(f"ScraperAPI quota exhausted (premium): {e}")
+                    raise ScraperAPIQuotaExhaustedError(f"ScraperAPI quota exhausted: {e}") from e
+                
+                # Regular error handling
                 if attempt == max_retries - 1:
                     self.logger.error(f"Premium scraping failed for {url} after {max_retries} attempts: {e}")
                     return {
