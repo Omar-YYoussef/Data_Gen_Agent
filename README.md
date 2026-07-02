@@ -3,6 +3,7 @@
 [![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PyPI version](https://badge.fury.io/py/Data-Generation-Agents.svg)](https://badge.fury.io/py/Data-Generation-Agents)
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/data-generation-agents?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=RED&left_text=downloads)](https://pepy.tech/projects/data-generation-agents)
 
 An **enterprise-grade, fault-tolerant** synthetic data generation pipeline powered by **LangGraph**, **Google Gemini AI**, and intelligent web scraping. Create high-quality, multilingual training datasets with automatic resumption, state management, and graceful error handling.
 
